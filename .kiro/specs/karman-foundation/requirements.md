@@ -152,3 +152,18 @@ The implementation stack is fixed: Next.js (App Router) + TypeScript, PostgreSQL
 2. THE system SHALL produce brand assets (`logo.png`/`logo.svg`, `icon-512.png`, `favicon.png`, `og-image.png`) under `public/brand/` from the brand archive.
 3. THE system SHALL produce IRANYekanX `.woff2` files under `src/assets/fonts/iranyekanx/` from the font archive and wire them via `next/font/local`.
 4. WHEN extraction is complete THEN the system SHALL remove original archives and sensitive intermediate files from version control per repository hygiene rules.
+
+
+### Requirement 15: Taksa-Derived Reference Master Data
+
+**User Story:** As an integration engineer, I want Taksa sources treated as first-class reference/master-data inputs that are imported and mapped into PostgreSQL, so that calculations, reports, validation, and golden tests use real official reference data rather than code constants.
+
+#### Acceptance Criteria
+1. THE system SHALL treat Taksa sources (Taksa DB, SQL scripts, SVZT/BRVT/PSNT, Excel templates, official PDFs, extracted research) as first-class source/reference/master-data inputs that are imported/mapped into the PostgreSQL operational runtime database, while PostgreSQL remains the live operational runtime database.
+2. THE system SHALL provide normalized reference models — ReferenceSource, ReferenceImportRun, ReferenceBook, ReferenceChapter, ReferenceUnit, ReferenceItem (فهرست‌بها), ReferenceResource (منابع), ReferenceIndexPeriod (شاخص), ReferenceCircular (بخشنامه), ReferenceCoefficientRule (ضرایب), ReferenceDeductionRule (کسورات), and ReferenceMapping — with provenance fields and an explicit mapping-status lifecycle (RAW, MAPPED, VERIFIED, CONFLICT, DEPRECATED).
+3. WHERE a reference value is numeric (unitPrice, indexValue, coefficientValue, rate, fixedValue) THE system SHALL declare it as `Decimal @db.Decimal(18,4)` and SHALL reject a JavaScript `number` supplied as such a value.
+4. THE system SHALL preserve source provenance (source type, raw table name, raw code/row order, checksum) through mapping and SHALL record a ReferenceMapping linking each raw source row to its normalized entity.
+5. THE system SHALL NOT hard-code official values (شاخص/فهرست‌بها/ردیف/واحد/منبع/ضریب/کسورات/بخشنامه/تعدیل) in code, and SHALL require such values to come from imported/mapped reference data.
+6. THE system SHALL NOT implement full Taksa import/parsing logic (Taksa DB restore, SVZT/BRVT/PSNT parsing, PDF parsing) in this foundation; only typed contracts and the schema are provided so future importers can populate the reference tables without rework.
+
+> Note: Requirement 15 extends the Taksa compatibility scope of Requirement 9 (raw preservation) with the reference master-data mapping layer. Raw preservation remains for round-trip safety; reference master data is the usable, normalized form consumed by calculations/reports/validation.

@@ -161,7 +161,8 @@ Karman/
 │  │  ├─ workflow/                  # state machine: states, transition table, engine
 │  │  ├─ audit/                     # audit helper
 │  │  ├─ calc/                      # decimal-safe calculation engine contracts
-│  │  └─ taksa/                     # Taksa placeholder service contracts
+│  │  ├─ taksa/                     # Taksa raw preservation service (round-trip)
+│  │  └─ reference/                 # Taksa-derived reference master-data contracts
 │  ├─ lib/
 │  │  ├─ money.ts                   # Decimal helpers (decimal.js / Prisma.Decimal)
 │  │  ├─ errors.ts                  # typed domain errors
@@ -816,18 +817,99 @@ const iranYekanX = localFont({
 
 ---
 
-## Taksa Compatibility (placeholder design + round-trip preservation)
+## Taksa Compatibility (raw preservation + reference master data)
 
-This foundation ships the **shape** of Taksa interoperability, not the logic. The placeholder models (`TaksaArtifact`, `TaksaRawTable`, `TaksaRawRow`) are designed so a future import can ingest a Taksa source and a future export can reproduce it faithfully.
+Karman treats Taksa sources (the Taksa database, SQL scripts, SVZT/BRVT/PSNT
+files, Excel templates, official PDFs, and the extracted research package) as
+**first-class source / reference / master-data inputs** — they are not ignored,
+and they are not the live runtime operational database. The operational runtime
+DB is, and remains, **PostgreSQL** via Prisma; Taksa-derived data is
+imported/mapped *into* PostgreSQL as reference/master data that calculations,
+reports, validation, and golden tests rely on.
 
-**Round-trip preservation contract:**
-1. `TaksaRawTable.rawTableName` stores the original Taksa table name verbatim and is never normalized.
-2. `TaksaRawTable.tableOrder` and `TaksaRawRow.rowOrder` preserve original ordering; `@@unique` constraints enforce stability.
-3. `TaksaRawRow.rawJson` stores the original row content unmodified. Application edits go to `patchJson` (non-destructive overlay), so the raw source remains reconstructable.
-4. `checksum` fields at artifact/table/row granularity enable integrity verification and round-trip equality checks.
-5. `importStatus` / `exportStatus` track lifecycle without coupling to operational workflow state.
+This foundation ships the **shape** of that interoperability across two distinct
+layers — the raw preservation layer (built) and the reference master-data
+mapping layer (contracts built) — not the full parsers/importers.
 
-Export to Taksa is only reachable through the workflow (`EXPORT_READY → EXPORTED_TO_TAKSA`) and is fully audited. **Taksa sources are reference/import-export only — never the runtime DB.**
+### The reference-data pipeline
+
+```text
+Taksa sources (DB / SQL / SVZT / BRVT / PSNT / Excel / PDF / research)
+   → staging / extraction
+   → RAW PRESERVATION layer        (src/server/taksa; TaksaArtifact/RawTable/RawRow)
+   → REFERENCE MAPPING layer       (src/server/reference; map* contracts)
+   → normalized PostgreSQL tables  (Reference* models)
+   → calculations / reports / validation / golden tests
+```
+
+### Operational vs reference data (the explicit distinction)
+
+- **Operational runtime data** (User, Project, Contract, WorkflowCase, AuditLog,
+  …) is the live transactional state of the application. PostgreSQL is its
+  single source of truth.
+- **Reference / master data** (فهرست‌بها items, units, resources, شاخص indices,
+  بخشنامه circulars, ضرایب coefficients, کسورات deductions) is imported/mapped
+  from Taksa/official sources into normalized PostgreSQL `Reference*` tables and
+  consumed by the calculation/report/validation layers.
+- **Raw preservation vs reference master data:** raw preservation
+  (`src/server/taksa`) keeps every original Taksa row byte-for-byte for
+  round-trip safety and is intentionally *not* usable business data; reference
+  master data (`src/server/reference`) is the usable normalized form.
+  `ReferenceMapping` bridges a raw preserved row to the normalized entity it
+  produced.
+
+### Raw preservation contract (Correctness Property CP7)
+
+1. `TaksaRawTable.rawTableName` stores the original Taksa table name verbatim and
+   is never normalized.
+2. `TaksaRawTable.tableOrder` and `TaksaRawRow.rowOrder` preserve original
+   ordering; `@@unique` constraints enforce stability.
+3. `TaksaRawRow.rawJson` stores the original row content unmodified. Application
+   edits go to `patchJson` (non-destructive overlay), so the raw source remains
+   reconstructable.
+4. `checksum` fields at artifact/table/row granularity enable integrity
+   verification and round-trip equality checks.
+5. `importStatus` / `exportStatus` track lifecycle without coupling to
+   operational workflow state.
+
+### Reference master-data layer (models + contracts)
+
+New Prisma models normalize Taksa-derived reference data into PostgreSQL with
+full provenance and an explicit mapping-status lifecycle:
+
+- **Provenance roots:** `ReferenceSource` (the originating Taksa artifact, typed
+  by `ReferenceSourceType`), `ReferenceImportRun` (one import execution).
+- **Normalized reference entities:** `ReferenceBook` / `ReferenceChapter`
+  (typed by `ReferenceBookType`), `ReferenceUnit`, `ReferenceItem` (فهرست‌بها),
+  `ReferenceResource` (منابع), `ReferenceIndexPeriod` (شاخص),
+  `ReferenceCircular` (بخشنامه), `ReferenceCoefficientRule` (ضرایب),
+  `ReferenceDeductionRule` (کسورات).
+- **Bridge:** `ReferenceMapping` links a raw source row (sourceType,
+  rawTableName, rawRowId/rawRowOrder/rawCode, checksum) to the normalized entity
+  (`normalizedEntityType`, `normalizedEntityId`) with a `mappingStatus`.
+
+Every normalized entity carries provenance (sourceId/importRunId, rawTableName,
+rawCode/rawRowOrder, rawJson, checksum) and a `ReferenceMappingStatus`
+(`RAW → MAPPED → VERIFIED`, with `CONFLICT`/`DEPRECATED` reachable). All numeric
+reference values (`unitPrice`, `indexValue`, `coefficientValue`, `rate`,
+`fixedValue`) are `Decimal @db.Decimal(18,4)` — never Float/Int/number.
+
+The service contracts live in `src/server/reference/` (`createReferenceSource`,
+`startReferenceImportRun`, `completeReferenceImportRun`, `mapReference*`,
+`getReferenceItemByCode`, `getIndexPeriod`, `getReferenceMapping`). They persist
+the normalized shape and the mapping link, but do **not** perform a full Taksa DB
+restore, SVZT/BRVT/PSNT parsing, or PDF parsing — those importers are future work
+that will call these contracts.
+
+**HARD RULE — no hard-coded official values:** official values (شاخص /
+فهرست‌بها / ردیف / واحد / منبع / ضریب / کسورات / بخشنامه / تعدیل) must come from
+imported/mapped reference data, never from code constants. Every `map*` helper
+requires the caller to supply the value (sourced from a real import); none invent
+or default a numeric reference value, and no sample official numbers are seeded.
+
+Export to Taksa is only reachable through the workflow (`EXPORT_READY →
+EXPORTED_TO_TAKSA`) and is fully audited. See `docs/REFERENCE_DATA.md` and
+`docs/TAKSA_COMPATIBILITY.md` for the full model/lifecycle documentation.
 
 ---
 
@@ -907,7 +989,8 @@ The implementation must produce (referenced from the design):
 - `docs/ROLES_AND_PERMISSIONS.md` — roles, server-side enforcement model, helper usage.
 - `docs/WORKFLOW.md` — states, transition table, lock/revision rules, audit mapping.
 - `docs/DEPLOYMENT.md` — env vars, migrations, build/start, production notes.
-- `docs/TAKSA_COMPATIBILITY.md` — placeholder models, round-trip preservation contract.
+- `docs/TAKSA_COMPATIBILITY.md` — raw preservation + reference master data; the operational-vs-reference distinction.
+- `docs/REFERENCE_DATA.md` — reference master-data models, enums, provenance fields, mapping-status lifecycle, and the no-hard-coded-official-values rule.
 - `docs/taksa-map/` — only safe documentation files extracted from the research archive.
 
 ## Repository Hygiene / .gitignore Strategy

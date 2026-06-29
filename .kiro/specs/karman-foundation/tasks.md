@@ -185,6 +185,16 @@ Each task builds on prior tasks and ends with wiring things together so there is
     - Use fast-check to generate random table/row sequences and assert persisted order and `rawJson` are byte-stable after a simulated load→store, with edits confined to `patchJson`
     - _Requirements: 9.2, 9.3_
 
+  - [x] 13.3 Implement Taksa-derived reference master-data layer
+    - Add normalized reference Prisma models + enums (ReferenceSource, ReferenceImportRun, ReferenceBook, ReferenceChapter, ReferenceUnit, ReferenceItem, ReferenceResource, ReferenceIndexPeriod, ReferenceCircular, ReferenceCoefficientRule, ReferenceDeductionRule, ReferenceMapping; ReferenceSourceType/ReferenceMappingStatus/ReferenceBookType) with provenance fields, Decimal(18,4) numerics, and the `add_reference_master_data` migration
+    - Create `src/server/reference/` mapping contracts (`createReferenceSource`, `startReferenceImportRun`, `completeReferenceImportRun`, `mapReference*`, lookups) that carry provenance, set explicit mapping status, write a ReferenceMapping bridge from raw rows to normalized entities, and reject hard-coded/JS-number official values; no full Taksa parsing
+    - _Requirements: 15.1, 15.2, 15.3, 15.4, 15.5, 15.6_
+
+  - [x]* 13.4 Write reference master-data tests
+    - DB-free unit/property tests: Decimal-only numerics reject JS numbers; explicit mapping-status lifecycle; guard that no official values are hard-coded in service code
+    - DB-backed (`*.int.test.ts`, RUN_DB_TESTS=1): provenance preserved through mapping; ReferenceMapping links raw source info to normalized entities with correct type/id
+    - _Requirements: 15.2, 15.3, 15.4, 15.5_
+
 - [ ] 14. Checkpoint - Domain layer complete
   - Ensure all property and integration tests pass; ask the user if questions arise.
 

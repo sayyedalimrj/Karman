@@ -298,3 +298,386 @@ model TaksaRawRow {
   @@unique([rawTableId, rowOrder])
   @@index([rawTableId])
 }
+
+
+// ============================================================================
+// Reference Master Data layer
+// ----------------------------------------------------------------------------
+// Taksa-derived data (Taksa DB, SQL scripts, SVZT/BRVT/PSNT, Excel templates,
+// official PDFs, extracted research) is a FIRST-CLASS source / reference /
+// master-data input — NOT ignored, and NOT the live runtime DB.
+//
+// PostgreSQL (the models below) remains the operational runtime database.
+// Taksa sources flow through:
+//   source → staging/extraction → raw preservation (TaksaArtifact/RawTable/Row)
+//          → reference mapping layer (src/server/reference) → the normalized
+//            Reference* tables below → calculations / reports / validation /
+//            golden tests.
+//
+// HARD RULE: official values (شاخص / فهرست‌بها / ردیف / واحد / منبع / ضریب /
+// کسورات / بخشنامه / تعدیل) are NEVER hard-coded constants. They are imported
+// and mapped into these tables from real Taksa/official sources, with full
+// provenance and an explicit mapping-status lifecycle. This schema is contracts
+// + shape only; no official values are seeded here.
+//
+// All reference numeric values (unitPrice, indexValue, coefficientValue, rate,
+// fixedValue, ...) are Decimal @db.Decimal(18, 4) — NEVER Float/Int/number.
+// ============================================================================
+
+// ---------- Reference enums ----------
+
+enum ReferenceSourceType {
+  TAKSA_DB
+  TAKSA_SQL_SCRIPT
+  SVZT
+  BRVT
+  PSNT
+  EXCEL
+  PDF_OFFICIAL_DOC
+  MANUAL_VERIFIED
+}
+
+enum ReferenceMappingStatus {
+  RAW
+  MAPPED
+  VERIFIED
+  CONFLICT
+  DEPRECATED
+}
+
+enum ReferenceBookType {
+  PRICE_LIST
+  INDEX
+  RESOURCE
+  CIRCULAR
+  COEFFICIENT
+  DEDUCTION
+  OTHER
+}
+
+// ---------- Provenance roots ----------
+
+model ReferenceSource {
+  id                 String              @id @default(uuid())
+  sourceType         ReferenceSourceType
+  name               String
+  // Provenance: the original Taksa artifact this source represents (verbatim).
+  originalFileName   String?
+  originalDbName     String?
+  originalScriptName String?
+  checksum           String?
+  notes              String?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+
+  importRuns ReferenceImportRun[]
+
+  @@unique([sourceType, name])
+  @@index([sourceType])
+  @@index([checksum])
+}
+
+model ReferenceImportRun {
+  id          String    @id @default(uuid())
+  sourceId    String
+  // Lifecycle status (e.g. STARTED, COMPLETED, FAILED) — free-form, not coupled
+  // to the operational WorkflowState enum.
+  status      String    @default("STARTED")
+  startedAt   DateTime  @default(now())
+  completedAt DateTime?
+  rowsRead    Int?
+  rowsMapped  Int?
+  notes       String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  source ReferenceSource @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+
+  @@index([sourceId])
+  @@index([status])
+}
+
+// ---------- Normalized reference hierarchy (فهرست‌بها / منابع / شاخص ...) ----------
+
+model ReferenceBook {
+  id            String                 @id @default(uuid())
+  bookType      ReferenceBookType
+  code          String
+  title         String
+  effectiveYear Int
+  // Provenance (indexed; links back to ReferenceSource / ReferenceImportRun).
+  sourceId      String?
+  importRunId   String?
+  rawTableName  String?
+  rawCode       String?
+  checksum      String?
+  mappingStatus ReferenceMappingStatus @default(RAW)
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+
+  chapters ReferenceChapter[]
+  items    ReferenceItem[]
+
+  @@unique([bookType, code, effectiveYear])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+  @@index([effectiveYear])
+}
+
+model ReferenceChapter {
+  id            String                 @id @default(uuid())
+  bookId        String
+  code          String
+  title         String
+  order         Int
+  // Provenance
+  sourceId      String?
+  importRunId   String?
+  rawTableName  String?
+  rawRowOrder   Int?
+  rawCode       String?
+  checksum      String?
+  mappingStatus ReferenceMappingStatus @default(RAW)
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+
+  book  ReferenceBook   @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  items ReferenceItem[]
+
+  @@unique([bookId, code])
+  @@index([bookId])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+}
+
+model ReferenceUnit {
+  id            String                 @id @default(uuid())
+  code          String
+  name          String
+  // Provenance
+  sourceId      String?
+  importRunId   String?
+  rawTableName  String?
+  rawCode       String?
+  checksum      String?
+  mappingStatus ReferenceMappingStatus @default(RAW)
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+
+  items     ReferenceItem[]
+  resources ReferenceResource[]
+
+  @@unique([code])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+}
+
+model ReferenceItem {
+  id               String                 @id @default(uuid())
+  bookId           String
+  chapterId        String?
+  itemCode         String
+  shortDescription String
+  fullDescription  String?
+  unitId           String?
+  // Reference numeric — Decimal-only, never Float/Int/number.
+  unitPrice        Decimal                @db.Decimal(18, 4)
+  effectiveYear    Int
+  // Full source provenance
+  sourceId         String?
+  importRunId      String?
+  rawTableName     String?
+  rawCode          String?
+  rawRowOrder      Int?
+  rawJson          Json?
+  checksum         String?
+  mappingStatus    ReferenceMappingStatus @default(RAW)
+  createdAt        DateTime               @default(now())
+  updatedAt        DateTime               @updatedAt
+
+  book    ReferenceBook    @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  chapter ReferenceChapter? @relation(fields: [chapterId], references: [id])
+  unit    ReferenceUnit?   @relation(fields: [unitId], references: [id])
+
+  @@unique([bookId, itemCode, effectiveYear])
+  @@index([bookId])
+  @@index([chapterId])
+  @@index([unitId])
+  @@index([itemCode])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+  @@index([effectiveYear])
+}
+
+model ReferenceResource {
+  id            String                 @id @default(uuid())
+  resourceCode  String
+  name          String
+  unitId        String?
+  // Reference numeric — Decimal-only (optional until a value is mapped/verified).
+  unitPrice     Decimal?               @db.Decimal(18, 4)
+  effectiveYear Int
+  // Provenance
+  sourceId      String?
+  importRunId   String?
+  rawTableName  String?
+  rawCode       String?
+  rawRowOrder   Int?
+  rawJson       Json?
+  checksum      String?
+  mappingStatus ReferenceMappingStatus @default(RAW)
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+
+  unit ReferenceUnit? @relation(fields: [unitId], references: [id])
+
+  @@unique([resourceCode, effectiveYear])
+  @@index([resourceCode])
+  @@index([unitId])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+  @@index([effectiveYear])
+}
+
+model ReferenceIndexPeriod {
+  id            String                 @id @default(uuid())
+  // Optional links to the entity the index applies to (kept loose by design).
+  bookId        String?
+  chapterId     String?
+  itemId        String?
+  category      String?
+  // Period descriptors — at least one of (year) or effectivePeriod is expected.
+  year          Int?
+  quarter       Int?
+  month         Int?
+  effectivePeriod String?
+  // Reference numeric — Decimal-only.
+  indexValue    Decimal                @db.Decimal(18, 4)
+  // Provenance
+  sourceId      String?
+  importRunId   String?
+  rawTableName  String?
+  rawCode       String?
+  rawRowOrder   Int?
+  rawJson       Json?
+  checksum      String?
+  mappingStatus ReferenceMappingStatus @default(RAW)
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+
+  @@index([bookId])
+  @@index([chapterId])
+  @@index([itemId])
+  @@index([category])
+  @@index([year])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+}
+
+model ReferenceCircular {
+  id            String                 @id @default(uuid())
+  circularNo    String
+  title         String
+  issuedAt      DateTime?
+  effectiveDate DateTime?
+  description   String?
+  // Document provenance
+  sourceId      String?
+  importRunId   String?
+  rawTableName  String?
+  rawCode       String?
+  checksum      String?
+  mappingStatus ReferenceMappingStatus @default(RAW)
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+
+  @@unique([circularNo])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+}
+
+model ReferenceCoefficientRule {
+  id               String                 @id @default(uuid())
+  code             String
+  title            String
+  // Reference numeric — Decimal-only.
+  coefficientValue Decimal                @db.Decimal(18, 4)
+  // Applicability metadata (scope, conditions) — structured, no official values.
+  applicability    Json?
+  effectiveYear    Int?
+  // Provenance
+  sourceId         String?
+  importRunId      String?
+  rawTableName     String?
+  rawCode          String?
+  checksum         String?
+  mappingStatus    ReferenceMappingStatus @default(RAW)
+  createdAt        DateTime               @default(now())
+  updatedAt        DateTime               @updatedAt
+
+  @@unique([code, effectiveYear])
+  @@index([code])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+}
+
+model ReferenceDeductionRule {
+  id            String                 @id @default(uuid())
+  code          String
+  title         String
+  // Reference numerics — Decimal-only. `rate` is a fraction (e.g. 0.0500),
+  // `fixedValue` is an absolute amount; either/both may apply.
+  rate          Decimal?               @db.Decimal(18, 4)
+  fixedValue    Decimal?               @db.Decimal(18, 4)
+  applicability Json?
+  effectiveYear Int?
+  // Provenance
+  sourceId      String?
+  importRunId   String?
+  rawTableName  String?
+  rawCode       String?
+  checksum      String?
+  mappingStatus ReferenceMappingStatus @default(RAW)
+  createdAt     DateTime               @default(now())
+  updatedAt     DateTime               @updatedAt
+
+  @@unique([code, effectiveYear])
+  @@index([code])
+  @@index([sourceId])
+  @@index([importRunId])
+  @@index([mappingStatus])
+}
+
+// ---------- The raw → normalized bridge ----------
+
+model ReferenceMapping {
+  id                   String                 @id @default(uuid())
+  sourceType           ReferenceSourceType
+  rawTableName         String
+  rawRowId             String?
+  rawRowOrder          Int?
+  rawCode              String?
+  // The normalized entity this raw source row was mapped to.
+  normalizedEntityType String
+  normalizedEntityId   String
+  mappingStatus        ReferenceMappingStatus @default(RAW)
+  checksum             String?
+  notes                String?
+  importRunId          String?
+  createdAt            DateTime               @default(now())
+  updatedAt            DateTime               @updatedAt
+
+  @@index([normalizedEntityType, normalizedEntityId])
+  @@index([rawTableName, rawCode])
+  @@index([sourceType])
+  @@index([importRunId])
+  @@index([mappingStatus])
+}

@@ -1,11 +1,11 @@
 /**
- * Taksa compatibility — PLACEHOLDER service contracts.
+ * Taksa RAW PRESERVATION service.
  *
- * Karman is designed to import from and export to legacy "Taksa" sources for
- * round-trip interoperability. This module ships the *shape* of that
- * interoperability and the preservation guarantees — NOT the full
- * SVZT/BRVT/PSNT parsing or export logic (which is intentionally out of scope
- * for the foundation).
+ * Karman ingests legacy "Taksa" sources (the Taksa DB, SQL scripts,
+ * SVZT/BRVT/PSNT files, Excel templates, official PDFs) for round-trip
+ * interoperability. This module ships the *shape* of that interoperability and
+ * its preservation guarantees — NOT the full SVZT/BRVT/PSNT parsing or export
+ * logic (intentionally out of scope for the foundation).
  *
  * Preservation contract (Correctness Property CP7): for every raw row, after a
  * load→store cycle the original `rawTableName`, `tableOrder`, `rowOrder`, and
@@ -13,9 +13,18 @@
  * non-destructive `patchJson` overlay; the raw source is never mutated, so it
  * always remains reconstructable.
  *
- * IMPORTANT: Taksa sources are reference / import-export only. They are NEVER
- * the runtime operational database — the operational store is PostgreSQL via
- * Prisma.
+ * ── Raw preservation vs Reference master data ──────────────────────────────
+ * This module is the RAW PRESERVATION layer: its job is round-trip safety, so
+ * Taksa rows are kept verbatim and are intentionally NOT usable business data.
+ * The usable, normalized business/calculation form (فهرست‌بها items, units,
+ * resources, indices, circulars, coefficients, deductions) lives in the
+ * REFERENCE MASTER DATA layer (`src/server/reference`). `ReferenceMapping` is
+ * the bridge that links a raw preserved row here to the normalized reference
+ * entity it produced there.
+ *
+ * IMPORTANT: Taksa sources are first-class reference/master-data inputs, but
+ * they are NEVER the runtime operational database — the operational store is
+ * PostgreSQL via Prisma. Taksa-derived data is imported/mapped INTO PostgreSQL.
  *
  * Requirements: 9.1, 9.2, 9.3, 9.4 (and Correctness Property CP7)
  */
