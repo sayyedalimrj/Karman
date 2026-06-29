@@ -1,0 +1,11 @@
+﻿module,entities,responsibility,priority
+Compatibility Layer,"TaksaArtifact, TaksaRawTable, TaksaRawRow","import/export, raw preservation, patch/merge, validation",Critical
+Reference Data,"ReferenceBook, PriceListChapter, PriceListItem, Unit, Resource, IndexPeriod",فهرست‌بها، شاخص‌ها، منابع، واحدها، تطبیق سال,Critical
+Project Core,"Project, Contract, ProjectParty, Attachment",پروژه، قرارداد، عوامل، پیوست‌ها,Critical
+Commercial Documents,"CommercialDocument, PaymentPeriod, DocumentVersion, ProjectItemSnapshot, ChapterSummary",برآورد، پیشنهاد، صورت‌وضعیت و نسخه‌ها,Critical
+Measurement & Review,"MeasurementGroup, MeasurementLine, ActivitySchedule, ReviewedWorkLine",متره، ریزمتره، صورتجلسه، رسیدگی,Critical
+Financial Engine,"FinancialStatementLine, DeductionLine, CoefficientAssignment",برگه مالی، ضرایب، کسورات,Critical
+Adjustment Engine,"AdjustmentRun, AdjustmentLine, IndexPeriod",تعدیل، درون‌یابی، شاخص,Critical
+Transport & Analysis,"TransportDistance, AnalysisLine, Resource",حمل، فاصله، منابع، آنالیز بها,High
+Workflow & Governance,"WorkflowCase, AuditLog, DocumentVersion",کارتابل، تأیید، برگشت، قفل، audit,Critical
+Reports & Exports,ReportTemplate plus calculated projections,PDF/Excel/Print + SVZT export validation,High

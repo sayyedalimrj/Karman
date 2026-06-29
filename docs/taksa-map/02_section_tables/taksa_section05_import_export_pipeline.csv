@@ -1,0 +1,13 @@
+﻿step,stage,purpose,critical_rule
+1,receive_file,دریافت فایل .svzt و محاسبه size/sha256,هیچ تغییری در فایل خام انجام نشود.
+2,parse_manifest,خواندن NewDataSet، جدول‌ها، ترتیب rowها و fieldها,table order و row ordinal ذخیره شود.
+3,raw_store,ذخیره raw artifact + raw rows + unknown fields,نام tagها case-sensitive ذخیره شود.
+4,schema_match,مقایسه با ScriptXML و actual field matrix,actual-only و script-only پذیرفته شوند.
+5,normalize_lookup,نرمال‌سازی lookupها: واحد، نقش، نوع وضعیت، ماه، شاخص,به rawRowId لینک شود.
+6,normalize_project,ساخت Project/Contract از brv_contract,taksaProjectId جدا از internal ID.
+7,normalize_workflow,"ساخت roles, periods, certificate versions از brv_type/brv_situ/brv_type_situ",type+nusv کلید نسخه است.
+8,normalize_business_lines,ساخت آیتم‌ها، ریزمتره، کارکرد، برگه مالی، ضرایب، کسورات,هر record به raw row وصل بماند.
+9,validation,اعتبارسنجی تعدادها، کلیدها، totals، referenceها,خطاها report شوند؛ import نابودکننده نباشد.
+10,web_edit_patch,هر تغییر وب به patch قابل ردیابی تبدیل شود,raw را مستقیم overwrite نکنیم.
+11,export_merge,patchها روی XML اصلی merge شوند,unknown tables/fields همان‌طور برگردند.
+12,roundtrip_manifest,ساخت گزارش export با counts/hash/changed rows,برای تست re-import در تکسا استفاده شود.

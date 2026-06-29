@@ -1,0 +1,10 @@
+﻿phase,title,description,depends_on
+P0-1,Calculation Orchestrator,یک سرویس مرکزی برای اجرای stepها و ذخیره CalculationRun/Trace,section12 order + APIs
+P0-2,Decimal/Numeric Foundation,همه مقدار/مبلغ‌ها Decimal شوند؛ UI فقط نمایش فارسی کند,numeric_policy
+P0-3,Measurement Engine MVP,محاسبه quantity از ریزمتره و اتصال به آیتم,brv_rzmt + MeasurementGrid
+P0-4,Financial Engine MVP,previous/current/total qty و amount,brv_bgml + Mali.xls
+P0-5,Coefficient Trace MVP,اعمال ضرایب با trace و بدون فرض غیرقابل تست,brv_mult + golden tests
+P0-6,Deduction MVP,کسورات پایه و جدول‌های case-sensitive,brv_kosorat + brv_Tadilkosorat
+P0-7,Adjustment MVP,شاخص دوره و خروجی تعدیل با trace,brv_intp/brv_ahta + Shkh
+P0-8,Export Validator,چک SVZT قبل از خروجی,raw + patch + roundtrip rules
+P0-9,Golden Test Harness,مقایسه خروجی وب با خروجی تکسا,PDF/Excel/SVZT samples

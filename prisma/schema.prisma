@@ -1,0 +1,300 @@
+// Karman operational database schema (source of truth: design.md).
+// All monetary fields use Decimal(18,4) — never Float/Int for currency.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------- Enums ----------
+
+enum Role {
+  SYSTEM_ADMIN
+  PROJECT_ADMIN
+  EMPLOYER
+  CONSULTANT
+  CONTRACTOR
+  FINANCIAL_CONTROLLER
+  REVIEWER
+  VIEWER
+  SUPPORT_ADMIN
+}
+
+enum ProjectStatus {
+  DRAFT
+  ACTIVE
+  ARCHIVED
+}
+
+enum WorkflowState {
+  PROJECT_DRAFT
+  PROJECT_ACTIVE
+  DOCUMENT_DRAFT
+  MEASUREMENT_IN_PROGRESS
+  CONTRACTOR_INTERNAL_CHECK
+  SUBMITTED_TO_CONSULTANT
+  CONSULTANT_REVIEWING
+  RETURNED_TO_CONTRACTOR
+  CONSULTANT_APPROVED
+  SUBMITTED_TO_EMPLOYER
+  EMPLOYER_REVIEWING
+  RETURNED_BY_EMPLOYER
+  EMPLOYER_APPROVED
+  DOCUMENT_LOCKED
+  EXPORT_READY
+  EXPORTED_TO_TAKSA
+}
+
+enum PartyType {
+  EMPLOYER
+  CONSULTANT
+  CONTRACTOR
+  OTHER
+}
+
+enum AuditAction {
+  CREATE
+  UPDATE
+  DELETE
+  LOGIN
+  LOGOUT
+  WORKFLOW_TRANSITION
+  LOCK
+  UNLOCK
+  EXPORT
+  IMPORT
+}
+
+enum TaksaImportStatus {
+  NOT_IMPORTED
+  PENDING
+  IMPORTED
+  FAILED
+}
+
+enum TaksaExportStatus {
+  NOT_EXPORTED
+  PENDING
+  EXPORTED
+  FAILED
+}
+
+// ---------- Core identity ----------
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  fullName     String
+  isActive     Boolean  @default(true)
+  systemRole   Role     @default(VIEWER)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  memberships     ProjectMember[]
+  auditLogs       AuditLog[]
+  createdProjects Project[]       @relation("ProjectCreatedBy")
+  createdCases    WorkflowCase[]  @relation("CaseCreatedBy")
+
+  @@index([email])
+  @@index([systemRole])
+}
+
+// ---------- Projects & membership ----------
+
+model Project {
+  id          String        @id @default(uuid())
+  code        String        @unique
+  name        String
+  description String?
+  status      ProjectStatus @default(DRAFT)
+  createdById String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  createdBy      User            @relation("ProjectCreatedBy", fields: [createdById], references: [id])
+  members        ProjectMember[]
+  contracts      Contract[]
+  parties        ProjectParty[]
+  cases          WorkflowCase[]
+  taksaArtifacts TaksaArtifact[]
+  auditLogs      AuditLog[]
+
+  @@index([status])
+  @@index([createdById])
+}
+
+model ProjectMember {
+  id        String   @id @default(uuid())
+  projectId String
+  userId    String
+  role      Role
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, userId])
+  @@index([userId])
+  @@index([role])
+}
+
+// ---------- Contracts & parties ----------
+
+model Contract {
+  id          String    @id @default(uuid())
+  projectId   String
+  code        String
+  title       String
+  // Decimal-safe monetary field — NEVER Float/Int.
+  totalAmount Decimal   @db.Decimal(18, 4)
+  currency    String    @default("IRR")
+  startDate   DateTime?
+  endDate     DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, code])
+  @@index([projectId])
+}
+
+model ProjectParty {
+  id         String    @id @default(uuid())
+  projectId  String
+  partyType  PartyType
+  name       String
+  nationalId String?
+  contact    String?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+  @@index([partyType])
+}
+
+// ---------- Workflow ----------
+
+model WorkflowCase {
+  id           String        @id @default(uuid())
+  projectId    String
+  title        String
+  state        WorkflowState @default(DOCUMENT_DRAFT)
+  isLocked     Boolean       @default(false)
+  lockedAt     DateTime?
+  revision     Int           @default(1)
+  supersedesId String?
+  createdById  String
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  project    Project        @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  createdBy  User           @relation("CaseCreatedBy", fields: [createdById], references: [id])
+  supersedes WorkflowCase?  @relation("CaseRevision", fields: [supersedesId], references: [id])
+  revisions  WorkflowCase[] @relation("CaseRevision")
+  auditLogs  AuditLog[]
+
+  @@index([projectId])
+  @@index([state])
+  @@index([isLocked])
+}
+
+// ---------- Audit (append-only) ----------
+
+model AuditLog {
+  id             String         @id @default(uuid())
+  actorUserId    String
+  projectId      String?
+  workflowCaseId String?
+  action         AuditAction
+  entityType     String
+  entityId       String
+  fromState      WorkflowState?
+  toState        WorkflowState?
+  metadata       Json?
+  createdAt      DateTime       @default(now())
+
+  actor        User          @relation(fields: [actorUserId], references: [id])
+  project      Project?      @relation(fields: [projectId], references: [id])
+  workflowCase WorkflowCase? @relation(fields: [workflowCaseId], references: [id])
+
+  @@index([actorUserId])
+  @@index([projectId])
+  @@index([workflowCaseId])
+  @@index([entityType, entityId])
+  @@index([createdAt])
+}
+
+// ---------- Attachment (placeholder) ----------
+
+model Attachment {
+  id          String   @id @default(uuid())
+  entityType  String
+  entityId    String
+  fileName    String
+  storageKey  String
+  contentType String?
+  byteSize    Int?
+  checksum    String?
+  createdAt   DateTime @default(now())
+
+  @@index([entityType, entityId])
+}
+
+// ---------- Taksa compatibility (placeholders, shaped for round-trip) ----------
+
+model TaksaArtifact {
+  id           String            @id @default(uuid())
+  projectId    String?
+  sourceName   String
+  importStatus TaksaImportStatus @default(NOT_IMPORTED)
+  exportStatus TaksaExportStatus @default(NOT_EXPORTED)
+  checksum     String?
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+
+  project   Project?        @relation(fields: [projectId], references: [id])
+  rawTables TaksaRawTable[]
+
+  @@index([projectId])
+  @@index([importStatus])
+  @@index([exportStatus])
+}
+
+model TaksaRawTable {
+  id           String   @id @default(uuid())
+  artifactId   String
+  rawTableName String // PRESERVE original Taksa table name verbatim
+  tableOrder   Int // preserve original table ordering
+  checksum     String?
+  createdAt    DateTime @default(now())
+
+  artifact TaksaArtifact @relation(fields: [artifactId], references: [id], onDelete: Cascade)
+  rawRows  TaksaRawRow[]
+
+  @@unique([artifactId, rawTableName])
+  @@index([artifactId])
+}
+
+model TaksaRawRow {
+  id         String   @id @default(uuid())
+  rawTableId String
+  rowOrder   Int // PRESERVE original row order
+  rawJson    Json // PRESERVE original raw row content verbatim
+  patchJson  Json? // non-destructive overlay/edits
+  checksum   String?
+  createdAt  DateTime @default(now())
+
+  rawTable TaksaRawTable @relation(fields: [rawTableId], references: [id], onDelete: Cascade)
+
+  @@unique([rawTableId, rowOrder])
+  @@index([rawTableId])
+}

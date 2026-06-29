@@ -1,0 +1,38 @@
+﻿area,route,page_component,purpose,roles,primary_entities,main_permission,priority
+public,/,Landing / redirect,معرفی یا هدایت به کارتابل,none/auth optional,none,none,P2
+auth,/login,LoginPage,ورود کاربران نقش‌دار,guest,AuthSession,login_user,P0
+auth,/forgot-password,ForgotPasswordPage,بازیابی رمز,guest,AuthSession,password_reset,P2
+workspace,/app,WorkspaceRedirect,هدایت به آخرین پروژه/کارتابل,authenticated,UserWorkspace,read_workspace,P0
+workspace,/app/inbox,InboxPage,کارتابل من؛ کارهایی که باید انجام دهم,all roles,"WorkflowCase, DocumentVersion",read_assigned_tasks,P0
+workspace,/app/projects,ProjectListPage,لیست پروژه‌ها,all permitted roles,Project,read_projects,P0
+workspace,/app/imports,GlobalImportCenterPage,مرکز کلی import/export تکسا,"project_admin, support_admin","TaksaArtifact, ImportJob",manage_imports,P0
+project,/app/projects/[projectId],ProjectDashboardPage,داشبورد پروژه,project members,"Project, Contract, WorkflowCase",read_project_dashboard,P0
+project,/app/projects/[projectId]/setup,ProjectSetupWizardPage,ویزارد تکمیل پروژه، قرارداد، عوامل و مبانی,project_admin,"Project, Contract, ProjectParty, ReferenceBook",configure_project,P0
+project,/app/projects/[projectId]/contract,ContractPage,اطلاعات قرارداد و الحاقیه‌ها,"project_admin, consultant, employer, contractor",Contract,read_update_contract_by_permission,P0
+project,/app/projects/[projectId]/parties,ProjectPartiesPage,عوامل پروژه و نقش‌ها,project_admin,ProjectParty,manage_parties,P0
+project,/app/projects/[projectId]/references,ReferenceSelectionPage,مبانی پروژه: سال فهرست‌بها، رشته، شاخص‌ها,"project_admin, consultant","ReferenceBook, PriceListItem, IndexPeriod",configure_references,P0
+project,/app/projects/[projectId]/price-list,PriceListExplorerPage,جستجو و مشاهده فهرست‌بها و آیتم‌ها,project members,"ReferenceBook, PriceListChapter, PriceListItem",read_price_list,P0
+documents,/app/projects/[projectId]/documents,CommercialDocumentListPage,فهرست برآوردها، پیشنهادها و صورت‌وضعیت‌ها,project members,"CommercialDocument, PaymentPeriod",read_documents,P0
+documents,/app/projects/[projectId]/documents/new,NewCommercialDocumentWizardPage,ساخت سند مالی جدید,"contractor, project_admin","CommercialDocument, PaymentPeriod",create_document,P0
+documents,/app/projects/[projectId]/documents/[documentId],DocumentOverviewPage,نمای کلی سند؛ timeline، مبالغ، وضعیت,project members,"CommercialDocument, WorkflowCase",read_document,P0
+documents,/app/projects/[projectId]/documents/[documentId]/items,DocumentItemsPage,آیتم‌های سند و خلاصه فصل‌ها,"contractor, consultant, project_admin","ProjectItemSnapshot, ChapterSummary",edit_items_by_state,P0
+documents,/app/projects/[projectId]/documents/[documentId]/coefficients,CoefficientsPage,ضرایب سند/فصل/ردیف,"project_admin, consultant, financial_controller",CoefficientAssignment,manage_coefficients_by_state,P0
+measurement,/app/projects/[projectId]/documents/[documentId]/measurement,MeasurementBuilderPage,متره و ریزمتره سند,"contractor, consultant","MeasurementGroup, MeasurementLine, Attachment",edit_measurement_by_state,P0
+measurement,/app/projects/[projectId]/documents/[documentId]/measurement/groups/[groupId],MeasurementGroupDetailPage,جزئیات گروه متره/صورتجلسه,"contractor, consultant","MeasurementGroup, MeasurementLine",read_update_measurement_group,P1
+measurement,/app/projects/[projectId]/documents/[documentId]/activities,ActivityMeasurementPage,ریزمتره فعالیت‌محور,"contractor, consultant","ActivitySchedule, MeasurementLine",manage_activity_measurement,P1
+financial,/app/projects/[projectId]/documents/[documentId]/financial,FinancialSummaryPage,برگه مالی، مقادیر قبلی/این دوره/تجمعی,project members,"FinancialStatementLine, DeductionLine",read_financial_summary,P0
+review,/app/projects/[projectId]/documents/[documentId]/review,ConsultantReviewDeskPage,میز رسیدگی مشاور,consultant_reviewer,"ReviewedWorkLine, DocumentVersion, AuditLog",review_document,P0
+review,/app/projects/[projectId]/documents/[documentId]/employer,EmployerApprovalPage,تأیید کارفرما,employer_approver,"FinancialStatementLine, DeductionLine, AdjustmentRun",employer_approval,P0
+review,/app/projects/[projectId]/documents/[documentId]/versions,DocumentVersionHistoryPage,تاریخچه نسخه‌ها و برگشت‌ها,project members,"DocumentVersion, AuditLog",read_versions,P0
+adjustment,/app/projects/[projectId]/documents/[documentId]/adjustment,AdjustmentEnginePage,تعدیل و شاخص‌های سند,"consultant, financial_controller, employer","AdjustmentRun, AdjustmentLine, IndexPeriod",manage_adjustment_by_state,P0
+transport,/app/projects/[projectId]/documents/[documentId]/transport,TransportDistancePage,حمل و فاصله,"contractor, consultant",TransportDistance,manage_transport,P1
+analysis,/app/projects/[projectId]/documents/[documentId]/analysis,ResourceAnalysisPage,آنالیز بها و منابع,"contractor, consultant, financial_controller","AnalysisLine, Resource",manage_analysis,P1
+reports,/app/projects/[projectId]/reports,ProjectReportsCenterPage,مرکز گزارش‌های پروژه,project members,ReportTemplate,read_generate_reports,P0
+reports,/app/projects/[projectId]/documents/[documentId]/reports,DocumentReportsPage,گزارش‌های سند مالی,project members,"ReportTemplate, CommercialDocument",read_generate_document_reports,P0
+export,/app/projects/[projectId]/documents/[documentId]/export,DocumentExportCenterPage,خروجی PDF/Excel/SVZT,"project_admin, support_admin, allowed roles","ExportJob, TaksaArtifact",export_document,P0
+taksa,/app/projects/[projectId]/taksa,ProjectTaksaCompatibilityPage,وضعیت سازگاری تکسا برای پروژه,"project_admin, support_admin",TaksaArtifact,read_taksa_compatibility,P0
+taksa,/app/projects/[projectId]/taksa/artifacts/[artifactId],TaksaArtifactInspectorPage,بررسی فایل خام، tableها و mapping,support_admin,"TaksaArtifact, TaksaRawTable, TaksaRawRow",inspect_raw_artifact,P0 internal
+taksa,/app/projects/[projectId]/taksa/artifacts/[artifactId]/diff,TaksaExportDiffPage,مقایسه raw اصلی و export patch‌شده,support_admin,"TaksaRawRow, ExportJob",inspect_export_diff,P0 internal
+settings,/app/projects/[projectId]/settings,ProjectSettingsPage,تنظیمات پروژه,project_admin,Project,manage_project_settings,P1
+settings,/app/admin/users,UserManagementPage,مدیریت کاربران و نقش‌ها,"system_admin, project_admin scoped","User, ProjectParty",manage_users,P1
+settings,/app/admin/reference-data,ReferenceDataAdminPage,مدیریت مبانی و دیتابیس مرجع,"system_admin, support_admin","ReferenceBook, PriceListItem, IndexPeriod",manage_reference_data,P1

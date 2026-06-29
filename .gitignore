@@ -1,0 +1,66 @@
+# ============================================================================
+# Karman repository hygiene
+# Prevents sensitive/raw Taksa material, secrets, and build cruft from being
+# tracked. See docs/TAKSA_COMPATIBILITY.md and Requirement 12.
+# ============================================================================
+
+# --- Dependencies & build output ---
+node_modules/
+.next/
+out/
+build/
+dist/
+next-env.d.ts
+*.tsbuildinfo
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# --- Environment files (never commit secrets; keep .env.example only) ---
+.env
+.env.*
+!.env.example
+
+# --- Raw Taksa database / source files (NEVER commit) ---
+*.DB
+*.MDB
+*.mdb
+*.svzt
+*.brvt
+*.psnt
+*.bak
+*.backup
+
+# --- Recovered / sensitive text dumps (NEVER commit) ---
+readable_strings*
+taksa_passwords_found*
+sql_objects.txt
+
+# --- Binaries (NEVER commit) ---
+*.exe
+*.dll
+*.ocx
+*.sys
+
+# --- Archives (extracted at build time, then removed from VCS) ---
+*.zip
+*.rar
+*.7z
+
+# --- Private / licensed assets ---
+private-assets/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# --- Prisma local artifacts ---
+src/generated/

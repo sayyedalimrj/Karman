@@ -1,0 +1,13 @@
+﻿contract_name,fields,used_by,priority
+CalculationContext,"project_id, document_id, version_id, document_kind, taksa_type, taksa_nusv, taksa_situ, lock_state",همه engineها,P0
+ReferenceContext,"book_year, book_code, discipline_code, price_items_snapshot, units, index_periods","price list, adjustment, coefficient",P0
+RawAnchorContext,"artifact_id, raw_table_name, raw_row_order, raw_json, key_fields",roundtrip/export/patch,P0
+MeasurementInput,"measurement_line_id, item_snapshot_id, formula_raw, dimensions_json, count, unit, row_order",measurement,P0
+QuantityResult,"line_id, quantity_decimal, formula_trace, warnings, source_line_ids",financial/review,P0
+ReviewQuantityInput,"line_id, contractor_qty, consultant_qty, employer_qty, approved_qty, review_status",review/financial,P0
+FinancialLineResult,"item_key, previous_qty, current_qty, total_qty, unit_price, current_amount, total_amount",financial/report,P0
+CoefficientTrace,"scope, target_key, coefficient_type, coefficient_value, apply_order, before_amount, after_amount",financial/report/audit,P0
+DeductionTrace,"deduction_type, base_amount, percent, sign, amount, applies_to, raw_table_case",financial/export,P0
+AdjustmentTrace,"index_type, base_period, work_period, base_index, work_index, formula_version, before_amount, adjustment_amount",adjustment/report,P0
+ReportProjection,"report_key, rows_json, totals_json, source_engine_version, generated_at",reports,P0
+ExportPatch,"raw_row_id, field_name, old_value, new_value, reason, engine_key, audit_id",roundtrip export,P0

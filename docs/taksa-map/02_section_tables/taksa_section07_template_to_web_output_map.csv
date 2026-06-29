@@ -1,0 +1,8 @@
+﻿template,web_screen,web_output,mode,must_preserve
+Fosool.xls,Report Center / Chapter Summary,خلاصه فصل‌ها,Export,شماره فصل، مبلغ فصل با احتساب ضرایب، ترتیب ستون‌ها، فرمت عددی
+Mali.xls,Payment Builder / Financial Sheet,برگه مالی,Export + possible controlled import,کد فهرست‌بها، مقدار کارکرد، مقدار برآوردی، بهای واحد پایه/پیشنهادی، ملاحظات
+Rizmertreh.xls,Measurement Builder,ریزمتره تفصیلی,Import/Export,کد فهرست‌بها، ابعاد، جمع جزئی، شرح عملیات، ملاحظات، شرح آیتم، واحد
+kholaseh_metreh.xls,Measurement Summary / Site Minutes,خلاصه متره,Export + validation import,کد فهرست‌بها، جمع جزئی، شماره/تاریخ صورت‌مجلس، نقل از، شرح آیتم
+rzmt_act.xls,Activity-linked Measurement,ریزمتره فعالیت‌محور,Import/Export,همه ستون‌های ریزمتره + کد فعالیت
+resource_price.xlsx,Resource Price Importer,قیمت روز منابع,Import,کدعامل و بهای واحد؛ دریافت فقط پس از محاسبه فرم منابع پروژه و براساس کد عامل مشترک
+FaragamTemplate.mpp/read_msp.txt,Schedule/MS Project Integration,تبادل برنامه زمان‌بندی,Integration,map خروجی MS Project به Excel و امکان خواندن فایل خروجی در تکسا/وب

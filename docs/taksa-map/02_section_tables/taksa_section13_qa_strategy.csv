@@ -1,0 +1,9 @@
+﻿qa_id,type,scope,when,priority
+QA-001,Unit tests,"Decimal helpers, permission helpers, workflow guards, parser utilities",Every PR,P0
+QA-002,Parser tests,"SVZT parse, table case, row order, unknown fields",S2,P0
+QA-003,Workflow tests,all transition matrix states and role permissions,S4/S7,P0
+QA-004,Calculation tests,measurement/financial/coefficient/deduction/adjustment,S6-S8,P0
+QA-005,Golden tests,compare with Taksa PDF/Excel/SVZT outputs,S11,P0
+QA-006,Export tests,"SVZT raw merge, diff, validation checklist",S10,P0
+QA-007,UI smoke tests,main routes render and role access,S0 onward,P1
+QA-008,Security tests,"secret scan, file upload restrictions, permission bypass",S11,P0

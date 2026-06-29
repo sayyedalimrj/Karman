@@ -1,0 +1,28 @@
+﻿token,meaning_fa,meaning_en,confidence,report_count,unique_report_names,main_prefixes,web_area,note
+bgml,برگه مالی / خلاصه مالی,Payment financial summary,High,200,72,"br, sv, ps, ppsv, rpt, pbr",صورت‌وضعیت/برآورد/پیشنهاد - برگه مالی,خروجی مالی بسیار پرتکرار؛ وجود فایل Mali.xls نیز مؤید نقش مالی است.
+note,نوت / یادداشت / ریز توضیحات گزارش,Notes/detail sheet,Medium,198,65,"sv, br, ps, bs",جزئیات و یادداشت‌های گزارش,در همه ماژول‌ها پرتکرار است؛ معنی دقیق باید با RPT/SQL قطعی شود.
+seas,خلاصه فصل‌ها / فصل‌بندی,Chapter summary / فصل‌ها,Medium-High,166,55,"sv, ps, br",فهرست فصل‌ها و خلاصه فصلی,در کنار Fosool.xls و تکرار در br/sv/ps محتمل‌ترین معنی فصل‌بندی است.
+acts,فعالیت‌ها / ردیف‌های عملیاتی,Activities,Medium-High,156,54,"sv, br, ps",فعالیت‌ها,acts در br/sv/ps و گزارش‌های ریز دیده می‌شود.
+ana,آنالیز بها / آنالیز آیتم,Analysis,High,125,42,"sv, ps, br, bs, az",آنالیز بها,در br/ps/sv دیده می‌شود و با مفهوم ana روشن است.
+sorc,صورت/جمع‌بندی ردیف‌ها - ابهام‌دار,Summary/source style reports,Low-Medium,117,33,"sv, ps, bs, br",جمع‌بندی و صورت‌های کنترلی,خیلی پرتکرار است اما معنی دقیق از نام تنها قطعی نیست.
+pymn,پیمان / مشخصات قرارداد,Contract reports,High,90,34,"sv, br, ps, pk",اطلاعات پیمان و قرارداد,نام pymn در گزارش‌های list/tree/all آمده و به پیمان نزدیک است.
+tdil,تعدیل,Adjustment reports,High,74,28,"ps, br, sv, bs",تعدیل,tdil/tadil در اسم‌ها و اسناد تعدیل کاملاً روشن است.
+dife,مابه‌التفاوت / اختلاف / تفکیک,Difference/differential reports,Medium,73,24,"sv, ps, br",اختلاف‌ها و مابه‌التفاوت‌ها,one/totl/fatd/bakh نشان می‌دهد گزارش‌های اختلاف/تفکیک هستند؛ معنی دقیق بعداً تثبیت می‌شود.
+comp,مقایسه / مقایسه پروژه‌ها یا اجزا,Comparison reports,Medium-High,65,33,"bs, br, ps, pk, sv, report",مقایسه,comp و compare در گزارش‌ها زیاد است.
+fhbh,فهرست‌بها,Price list,High,56,19,"bs, ps, br, sv",فهرست‌بها,fhbh و PDFهای فهرست‌بها موجودند.
+rzmt,ریزمتره,Detailed measurement,High,52,18,"sv, ps, br",متره و ریزمتره,با فایل Rizmertreh.xls و فرم Frm_rzmt همخوان است.
+zrib,ضرایب,Coefficient reports,High,45,21,"br, sv, ps",ضرایب پروژه,zrib در فارسی‌سازی تکسا به ضرایب نزدیک است و در br/sv/ps تکرار شده.
+hmpy,حمل/همپایه/خلاصه مرتبط با ریزمتره - ابهام‌دار,Transport/combined measurement reports,Low-Medium,35,12,"sv, br, ps",حمل/ریزمتره ترکیبی,در کنار distance و rzmt دیده می‌شود؛ معنی دقیق نیازمند مرحله DB/GWS است.
+khmt,خدمات / خلاصه خدمات - ابهام‌دار,Service-related reports,Low-Medium,33,10,"sv, ps, br",خدمات/گزارش‌های خاص,با نام تنها قطعی نیست؛ ولی در br/ps/sv و خروجی انگلیسی دیده می‌شود.
+fosi,شاخص/فصلی - نیازمند تثبیت,FOSI reports,Medium,30,10,"bs, ps",شاخص/فصلی,در کنار Shkh و fhbh می‌آید؛ احتمالاً شاخص/فصلی است.
+crs,کراس/ارجاع مادر - ابهام‌دار,Cross/mother reference,Low-Medium,22,6,"sv, br, ps",ارجاعات مادر/کراس,crs_mother/crs_note دیده می‌شود.
+intp,درون‌یابی/محاسبات شاخص تعدیل,Interpolation / index interpolation,Medium-High,20,6,"sv, intp, pk, ps",درون‌یابی شاخص/تعدیل,intp کنار tdil و zritd دیده می‌شود؛ برای تعدیل مهم است.
+khjo,کسورات/خروجی خاص مالی - ابهام‌دار,Deduction/special financial reports,Low-Medium,20,4,sv,کسورات/گزارش مالی خاص,ksrt در کنار khjo دیده می‌شود؛ باید در DB بررسی شود.
+mhjo,مبلغ/مابه‌التفاوت فصلی/رشته‌ای - ابهام‌دار,Financial delta by chapter/discipline,Low-Medium,20,4,sv,مابه‌التفاوت مالی,fasli/reshte در کنار آن دیده می‌شود.
+mhtd,مابه‌التفاوت تعدیل فصلی/رشته‌ای - ابهام‌دار,Adjustment delta by chapter/discipline,Medium,18,8,"sv, ps",مابه‌التفاوت تعدیل,mhtd_fasli/reshte و tdil نزدیک هستند.
+shkh,شاخص,Index reports,High,18,6,"bs, ps",شاخص‌ها,با پوشه Shkh و اسناد شاخص همخوان است.
+dist,فاصله / فاصله حمل,Distance reports,High,15,5,"pk, br, ps",فاصله حمل,pk_dist_points/distances و br_hmpy_distance روشن است.
+khtd,کسورات/خاتمه/کسر تعدیل - ابهام‌دار,Deduction/adjustment related,Low,15,5,"sv, ps",کسورات/تعدیل خاص,khtd و khtd_ksrt هست اما معنی قطعی نیست.
+toonel,تونل,Tunnel-specific report,High,13,5,"sv, br, ps",گزارش خاص تونل,نام واضح است.
+tatb,تطبیق/تطابق,Reconciliation reports,Medium,12,4,"sv, ps",تطبیق,tatb_mp/tatb_seas نشانگر تطبیق است.
+separator,جداکننده گزارش,Report separator,High,11,3,"sv, br, ps",چاپ و صفحه‌بندی,نقش چاپی/گزارشی دارد.

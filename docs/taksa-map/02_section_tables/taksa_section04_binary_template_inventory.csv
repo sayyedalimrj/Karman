@@ -1,0 +1,8 @@
+﻿file,size_bytes,file_type,string_token_count,likely_tokens
+SVZT.MDB,622592,/mnt/data/taksa_combined/Main/SVZT.MDB: data,28,intp|fhpy|fhbh|dstn2|contract|ahta|acts|SysRel|MSysDb|MSysRelationships|MSysQueries|MSysACEs|MSysIndexes|MSysColumns|MSysObjects|sorc|seas|rzmt|bgml|dstn|dstn2c|MSysMacros|MSysAccessObjects|khmt|MSysACE|mult|MSysMacros0|MSysAccessObjects7
+BRVT.MDB,557056,/mnt/data/taksa_combined/Main/BRVT.MDB: data,27,fhbh|dstn2c|dstn|contract|bgml|acts|SysRel|MSysDb|MSysRelationships|MSysQueries|MSysACEs|MSysIndexes|MSysColumns|MSysObjects|ahta|MSysL|fhpy|dstn2|khmt|sorc|seas|rzmt|mult|MSysMacros|MSysAccessObjects|MSysMacros0|MSysAccessObjects7
+PSNT.MDB,589824,/mnt/data/taksa_combined/Main/PSNT.MDB: data,26,fhbh|dstn2c|dstn|contract|bgml|acts|SysRel|MSysDb|MSysRelationships|MSysQueries|MSysACEs|MSysIndexes|MSysColumns|MSysObjects|khmt|ahta|fhpy|dstn2|sorc|mult|MSysMacros|MSysAccessObjects|MSysMacros0|MSysAccessObjects7|seas|rzmt
+MSPSchema.mdb,458752,/mnt/data/taksa_combined/Main/MSPSchema.mdb: Microsoft Access Database,0,
+svz_importer.dts,3156480,"/mnt/data/taksa_combined/Main/svz_importer.dts: Composite Document File V2 Document, Cannot read section info",0,
+brv_importer.dts,2628608,"/mnt/data/taksa_combined/Main/brv_importer.dts: Composite Document File V2 Document, Cannot read section info",0,
+psn_importer.dts,2764288,"/mnt/data/taksa_combined/Main/psn_importer.dts: Composite Document File V2 Document, Cannot read section info",0,

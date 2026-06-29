@@ -1,0 +1,16 @@
+﻿section,document,purpose,filename
+00,Tracker,وضعیت کل چک‌لیست,taksa_research_tracker.md
+01,Source Inventory,نقشه منابع و کاربرد فایل‌ها,taksa_section01_source_inventory.md
+02,Report Catalog,تحلیل RPTها و خروجی‌ها,taksa_section02_report_catalog.md
+03,Database Map,ساختار دیتابیس و روابط,taksa_section03_database_map.md
+03.1,DB Backup Addendum,الحاقیه دیتابیس اصلی 1 گیگ,taksa_db_backup_addendum.md
+04,Roundtrip Format Map,تحلیل SVZT/BRVT/PSNT,taksa_section04_roundtrip_format_map.md
+05,Import Export Mapping,نگاشت import/export,taksa_section05_import_export_mapping.md
+06,UI Workflow Map,ماژول‌ها و اصطلاحات UI,taksa_section06_ui_workflow_map.md
+07,Excel Template Analysis,قالب‌های Excel,taksa_section07_excel_template_analysis.md
+08,Business Rules Map,قوانین و منابع محاسبات,taksa_section08_business_rules_map.md
+09,Web Entity Model,موجودیت‌های نسخه وب,taksa_section09_web_entity_model.md
+10,Workflow and Cycles,نقش‌ها، کارتابل‌ها و سیکل‌ها,taksa_section10_workflow_and_cycles.md
+11,React/Next Page Architecture,صفحات، routeها، componentها,taksa_section11_react_next_page_architecture.md
+12,Calculation Engine,موتور محاسبات و تست تطبیق,taksa_section12_calculation_engine_and_validation.md
+13,Implementation Roadmap,نقشه اجرایی,taksa_section13_implementation_roadmap.md

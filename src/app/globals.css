@@ -1,0 +1,210 @@
+/* =============================================================================
+ * Karman global stylesheet
+ * - Base RTL resets using CSS logical properties (margin-inline, padding-inline,
+ *   inset-inline) so the UI is direction-agnostic and RTL-first by default.
+ * - Design-token CSS custom properties are appended by the design-token layer
+ *   (see :root block below). Components consume these variables and never raw hex.
+ * ========================================================================== */
+
+/* =============================================================================
+ * Design tokens as CSS custom properties (derived from src/design/tokens.ts).
+ * Components consume these variables and never hard-code raw hex values.
+ * Requirements: 10.1, 10.2, 1.2
+ * ========================================================================== */
+:root {
+  /* Palette */
+  --color-primary-navy: #071e41;
+  --color-secondary-navy: #0b2a5b;
+  --color-gold-accent: #d6a21e;
+  --color-ice-background: #f8fafc;
+  --color-text-dark: #111827;
+  --color-soft-cyan: #22b8cf;
+  --color-success: #0f766e;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+
+  /* Semantic status */
+  --status-ok: #0f766e;
+  --status-warn: #f59e0b;
+  --status-error: #dc2626;
+  --status-info: #22b8cf;
+
+  /* Surfaces */
+  --surface-base: #f8fafc;
+  --surface-panel: rgba(255, 255, 255, 0.72);
+  --surface-panel-strong: rgba(255, 255, 255, 0.85);
+
+  /* Glass */
+  --glass-blur: 16px;
+  --glass-border: 1px solid rgba(255, 255, 255, 0.35);
+  --glass-shadow: 0 8px 32px rgba(7, 30, 65, 0.12);
+
+  /* Borders */
+  --border-subtle: rgba(17, 24, 39, 0.08);
+  --border-strong: rgba(17, 24, 39, 0.16);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(7, 30, 65, 0.06);
+  --shadow-md: 0 4px 12px rgba(7, 30, 65, 0.1);
+  --shadow-lg: 0 8px 32px rgba(7, 30, 65, 0.14);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* Z-index */
+  --z-base: 0;
+  --z-sidebar: 90;
+  --z-header: 100;
+  --z-overlay: 1000;
+  --z-modal: 1100;
+  --z-toast: 1200;
+
+  /* Focus ring */
+  --focus-ring: 0 0 0 3px rgba(34, 184, 207, 0.45);
+
+  /* Typography: --font-iranyekanx is provided by next/font (see src/app/fonts.ts) */
+  --font-sans: var(--font-iranyekanx), system-ui, -apple-system, "Segoe UI", "Tahoma",
+    sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+/* RTL-first: the document direction is set on <html dir="rtl"> in the root
+ * layout. These resets rely on logical properties so they work in either
+ * direction without per-component overrides. */
+body {
+  direction: rtl;
+  text-align: start;
+  font-family: var(--font-sans, system-ui, -apple-system, "Segoe UI", sans-serif);
+  background-color: var(--surface-base, #f8fafc);
+  color: var(--color-text-dark, #111827);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+ul,
+ol {
+  margin-block: 0;
+  padding-inline-start: var(--space-lg, 24px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Logical-property utility resets favour inline-start/inline-end over left/right
+ * so navigation, padding, and offsets mirror correctly in RTL. */
+:where(.u-flow) > * + * {
+  margin-block-start: var(--space-md, 16px);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring, 0 0 0 3px rgba(34, 184, 207, 0.45));
+  border-radius: var(--radius-sm, 6px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* =============================================================================
+ * IRANYekanX variable-font utilities (opt-in).
+ * - Base document font binds the `--font-iranyekanx` variable with the
+ *   documented Tahoma → Arial → sans-serif fallback chain.
+ * - Weight utilities drive the variable `wght` axis (range 100–900).
+ * - `dots` axis is subtle/opt-in (headings & brand only) — never applied globally.
+ * - Digit utilities switch stylistic sets: ss02 = Persian-style digits,
+ *   ss03 = monospace/tabular digits (tables, amounts, financial summaries).
+ * ========================================================================== */
+html,
+body {
+  font-family: var(--font-iranyekanx), Tahoma, Arial, sans-serif;
+}
+
+.font-weight-regular {
+  font-variation-settings: "wght" 400;
+}
+.font-weight-medium {
+  font-variation-settings: "wght" 500;
+}
+.font-weight-semibold {
+  font-variation-settings: "wght" 600;
+}
+.font-weight-bold {
+  font-variation-settings: "wght" 700;
+}
+
+.font-dots-normal {
+  font-variation-settings: "dots" 0;
+}
+.font-dots-sharp {
+  font-variation-settings: "dots" 2;
+}
+
+.persian-digits {
+  font-feature-settings: "ss02";
+}
+.tabular-digits {
+  font-feature-settings: "ss03";
+}

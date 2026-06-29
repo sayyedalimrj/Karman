@@ -1,0 +1,16 @@
+﻿test_id,test_name,source_basis,inputs_checked,acceptance_criteria,engine,priority
+VAL-001,Import baseline,SVZT نمونه,"Raw table count, row count, case names",هیچ table/row حذف نشود,roundtrip_validation_engine,P0
+VAL-002,Price item lookup,base_fhbh + brv_fhbh,nufh/nuse/cofh/description/unit/price,آیتم پروژه با تکسا یکی باشد,reference_price_list_engine,P0
+VAL-003,Measurement quantity,brv_rzmt + Rizmertreh.xls,formula/quantity/unit,quantity با خروجی تکسا match شود,measurement_engine,P0
+VAL-004,Previous/current/total quantities,brv_bgml + viwSooratVaziat,previous_qty/current_qty/total_qty,سه مقدار اصلی برابر تکسا باشد,payment_certificate_engine,P0
+VAL-005,Financial line amounts,Mali.xls + bgml report,unit_price/current_amount/total_amount,اختلاف مبلغ صفر یا در حد rounding policy باشد,payment_certificate_engine,P0
+VAL-006,Chapter summary,Fosool.xls + seas reports,chapter totals before/after coefficient,جمع فصل‌ها با تکسا برابر باشد,coefficient_engine,P0
+VAL-007,Coefficient order,brv_mult + update_zarib_fhpy_mult,coefficient trace,ترتیب و مبلغ بعد از ضرایب match شود,coefficient_engine,P0
+VAL-008,Deductions,brv_kosorat + Mali.xls,base_amount/percent/sign/amount,کسورات و قابل پرداخت برابر باشد,deduction_engine,P0
+VAL-009,Tadil deduction case,brv_Tadilkosorat actual XML + ScriptXML mismatch,table name case,export با case واقعی فایل ساخته شود,roundtrip_validation_engine,P0
+VAL-010,Adjustment index,Shkh PDFs + brv_intp + viwTadil,base_index/work_index/adjustment_amount,تعدیل با تکسا match شود,adjustment_index_engine,P0
+VAL-011,Transport/distance,distance_view + pk_dist/haml reports,route/distance/amount,محاسبه حمل با تکسا match شود,transport_distance_engine,P1
+VAL-012,Resource analysis,resource_price.xlsx + ana reports,resource qty/unit_price/amount,آنالیز بها با تکسا match شود,resource_analysis_engine,P1
+VAL-013,PDF/Excel report projection,RPT catalog + Excel templates,rows/totals/format numeric,خروجی قابل مقایسه و numeric باشد,report_projection,P0
+VAL-014,SVZT export round-trip,Original SVZT + export diff,raw preservation + patch only,فایل export بدون critical validation error باشد,roundtrip_validation_engine,P0
+VAL-015,Locked version mutation,Workflow + Audit,"locked doc, patch attempt",تغییر مستقیم رد شود؛ revision بسازد,workflow/audit,P0

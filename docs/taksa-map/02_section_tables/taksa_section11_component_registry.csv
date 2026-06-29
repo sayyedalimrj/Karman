@@ -1,0 +1,33 @@
+﻿component,type,responsibility,used_in,priority
+AppShell,layout,"RTL shell, sidebar, topbar, user menu, project switcher",all pages,P0
+ProjectShell,layout,"Project context, breadcrumbs, project tabs, health badges",project pages,P0
+WorkflowTimeline,workflow,نمایش وضعیت سند از draft تا export,"DocumentOverview, Review, Employer, Export",P0
+StateActionBar,workflow,دکمه‌های مجاز بر اساس نقش و state,Document pages,P0
+RoleGuard,security,کنترل نقش در UI و redirect,all protected pages,P0
+PermissionGate,security,نمایش/عدم نمایش actionها,buttons/actions,P0
+SmartDataGrid,table,جدول راست‌چین با عدد numeric، freeze columns، inline edit، validation,"items, measurement, financial, review",P0
+TaksaRawAnchorBadge,compatibility,نشان می‌دهد رکورد از raw تکسا آمده و anchor دارد,support/admin grids,P0
+TaksaHealthBadge,compatibility,وضعیت سلامت import/export و round-trip,"dashboard, export center",P0
+ImportDropzone,import,آپلود SVZT/BRVT/PSNT و نمایش parse status,Import Center,P0
+ImportValidationPanel,import,نمایش خطاهای table/tag/field/key,Import Center,P0
+RawTableViewer,compatibility,مشاهده table و row خام با search,Artifact Inspector,P0 internal
+ExportDiffViewer,compatibility,diff raw original vs patched export,Export Diff,P0 internal
+FinancialSummaryCards,financial,جمع قرارداد، این دوره، تجمعی، کسورات، تعدیل، قابل پرداخت,"DocumentOverview, Financial, Employer",P0
+ChapterSummaryPanel,financial,خلاصه فصل‌ها و مبلغ با/بدون ضرایب,"Items, Financial, Reports",P0
+CoefficientMatrixEditor,calculation,ضرایب کلی/فصل/ردیف با ترتیب اعمال,Coefficients,P0
+MeasurementFormulaCell,measurement,ورود فرمول مقدار و محاسبه numeric,MeasurementGrid,P0
+AttachmentSidePanel,document,پیوست مرتبط با ردیف/صورتجلسه/سند,"Measurement, Review",P0
+ReviewDiffGrid,review,مقایسه مقدار پیمانکار/مشاور/کارفرما و اختلاف,Review Desk,P0
+ReviewCommentThread,review,کامنت و دلیل برگشت روی ردیف/سند,"Review Desk, Employer",P0
+BulkReviewToolbar,review,تأیید گروهی، فیلتر اختلاف، برگشت گروهی,Review Desk,P1
+EmployerSummaryPanel,approval,صفحه خلاصه مدیریتی کارفرما,Employer Approval,P0
+AdjustmentIndexSelector,adjustment,انتخاب دوره و شاخص مبنا/کارکرد,Adjustment,P0
+AdjustmentFormulaPanel,adjustment,نمایش فرمول و trace تعدیل,Adjustment,P0
+ReportRegistryGrid,reports,لیست گزارش‌های دسته‌بندی‌شده,Reports Center,P0
+ReportPreviewFrame,reports,پیش‌نمایش PDF/print,Reports,P1
+ExportValidationChecklist,export,چک قبل از خروجی PDF/Excel/SVZT,Export Center,P0
+VersionHistoryTimeline,audit,نسخه‌ها، برگشت‌ها، قفل‌ها و actorها,Version History,P0
+AuditDrawer,audit,before/after و patch log,"support/admin, version pages",P0
+PersianNumberInput,form,ورود عدد numeric با نمایش فارسی/تومان/ریال,all financial forms,P0
+JalaliDatePicker,form,تاریخ شمسی با ذخیره استاندارد,all date forms,P0
+EntitySearchCombobox,form,جستجوی آیتم فهرست‌بها/منبع/واحد,"PriceList, Items, Resources",P0

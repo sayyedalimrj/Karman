@@ -1,0 +1,29 @@
+﻿from_entity,to_entity,cardinality,meaning,taksa_evidence,priority
+Project,Contract,1:1 or 1:N,هر پروژه حداقل یک قرارداد دارد؛ الحاقیه‌ها جدا ذخیره می‌شوند.,"brv_contract, brv_elhagh",Critical
+Project,ProjectParty,1:N,عوامل پروژه با نقش‌های تکسا type_id دارند.,"brv_type, base_PersonalityTyp",Critical
+Project,CommercialDocument,1:N,برآورد/پیشنهاد/صورت‌وضعیت همگی سند مالی پروژه‌اند.,"brv_type_situ, importers",Critical
+CommercialDocument,PaymentPeriod,N:1,صورت‌وضعیت‌ها به دوره/شماره situ وصل‌اند.,"brv_situ, BaseSituNoe",Critical
+CommercialDocument,DocumentVersion,1:N,نسخه‌های پیمانکار/مشاور/کارفرما و حالت رسیدگی.,brv_type_situ,Critical
+ReferenceBook,PriceListChapter,1:N,دفترچه شامل فصل‌هاست.,"base_fsbs, base_fosi",Critical
+PriceListChapter,PriceListItem,1:N,فصل شامل ردیف‌های فهرست‌بهاست.,base_fhbh,Critical
+CommercialDocument,ProjectItemSnapshot,1:N,هر سند snapshot آیتم‌های خودش را دارد.,brv_fhbh,Critical
+ProjectItemSnapshot,PriceListItem,N:1 optional,snapshot به آیتم مرجع وصل می‌شود ولی متن/قیمت خام خودش را حفظ می‌کند.,brv_fhbh + base_fhbh,Critical
+CommercialDocument,ChapterSummary,1:N,خلاصه فصل‌های سند.,"brv_fhpy, seas reports",Critical
+CommercialDocument,CoefficientAssignment,1:N,ضرایب در سطوح مختلف سند/فصل/ردیف/دوره.,brv_mult,Critical
+CommercialDocument,MeasurementGroup,1:N,صورتجلسه/گروه ریزمتره.,brv_mogs,Critical
+MeasurementGroup,MeasurementLine,1:N,گروه متره شامل ردیف‌های متره است.,brv_rzmt,Critical
+ProjectItemSnapshot,MeasurementLine,1:N,هر ردیف متره به آیتم پروژه وصل می‌شود.,brv_rzmt + brv_fhbh keys,Critical
+MeasurementLine,ReviewedWorkLine,1:0..N,رسیدگی مقدارها از متره به khmt/کارکرد منتقل می‌شود.,brv_khmt,Critical
+DocumentVersion,FinancialStatementLine,1:N,برگه مالی برای هر نسخه/نقش/دوره.,brv_bgml,Critical
+DocumentVersion,DeductionLine,1:N,کسورات نسخه صورت‌وضعیت/تعدیل.,"brv_kosorat, brv_Tadilkosorat",Critical
+CommercialDocument,AdjustmentRun,1:N,تعدیل برای سند/دوره محاسبه می‌شود.,"brv_intp, brv_ahta",Critical
+AdjustmentRun,AdjustmentLine,1:N,خروجی ردیف/فصل تعدیل.,brv_ahta,Critical
+CommercialDocument,TransportDistance,1:N,حمل و فاصله برای سند و گاهی گروه متره.,"brv_dst*, brv_hmpy*",Medium-High
+ProjectItemSnapshot,AnalysisLine,1:N,آنالیز بها و منابع برای آیتم.,"brv_sorc, brv_nmmhb",High
+Resource,AnalysisLine,1:N,منبع به ردیف آنالیز وصل می‌شود.,"base_sorc, brv_sorc",High
+TaksaArtifact,TaksaRawTable,1:N,هر فایل خام شامل table/tagهاست.,Actual XML,Critical
+TaksaRawTable,TaksaRawRow,1:N,هر table خام شامل rowهاست.,Actual XML,Critical
+TaksaRawRow,Any normalized entity,1:0..1,هر رکورد وب در صورت import باید raw anchor داشته باشد.,raw_to_web_entity_mapping,Critical
+CommercialDocument,WorkflowCase,1:1,گردش کار سند مالی.,brv_type_situ + web workflow,Critical
+Any entity,AuditLog,1:N,همه تغییرات مهم audit می‌شوند.,Web requirement,Critical
+Any entity,Attachment,1:N,پیوست به پروژه/سند/متره/رسیدگی وصل می‌شود.,brv_documents + web extension,High

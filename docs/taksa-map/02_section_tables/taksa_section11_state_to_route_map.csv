@@ -1,0 +1,26 @@
+﻿workflow_state,primary_route,page_component,owner_role,next_action
+import_uploaded,/app/imports,ImportCenterPage,support_admin/project_admin,parse/validate
+import_parsed,/app/imports,ImportCenterPage,support_admin/project_admin,validate
+import_mapping_review,/app/projects/[projectId]/taksa/artifacts/[artifactId],TaksaArtifactInspectorPage,support_admin,approve mapping
+import_ready,/app/projects/[projectId],ProjectDashboardPage,project_admin,continue setup
+project_draft,/app/projects/[projectId]/setup,ProjectSetupWizardPage,project_admin,configure
+project_configured,/app/projects/[projectId]/setup,ProjectSetupWizardPage,project_admin,activate
+project_active,/app/projects/[projectId],ProjectDashboardPage,project members,create document
+doc_draft,/app/projects/[projectId]/documents/[documentId],DocumentOverviewPage,contractor/project_admin,start measurement
+measurement_in_progress,/app/projects/[projectId]/documents/[documentId]/measurement,MeasurementBuilderPage,contractor,finish measurement
+contractor_internal_check,/app/projects/[projectId]/documents/[documentId]/financial,FinancialSummaryPage,contractor,submit to consultant
+submitted_to_consultant,/app/projects/[projectId]/documents/[documentId]/review,ConsultantReviewDeskPage,consultant,start review
+consultant_reviewing,/app/projects/[projectId]/documents/[documentId]/review,ConsultantReviewDeskPage,consultant,approve/return
+returned_to_contractor,/app/projects/[projectId]/documents/[documentId]/measurement,MeasurementBuilderPage,contractor,correct/resubmit
+consultant_approved,/app/projects/[projectId]/documents/[documentId]/employer,EmployerApprovalPage,consultant/project_admin,submit to employer
+submitted_to_employer,/app/projects/[projectId]/documents/[documentId]/employer,EmployerApprovalPage,employer,start employer review
+employer_reviewing,/app/projects/[projectId]/documents/[documentId]/employer,EmployerApprovalPage,employer,approve/return
+returned_by_employer,/app/projects/[projectId]/documents/[documentId]/review,ConsultantReviewDeskPage,consultant,correct/resubmit
+employer_approved,/app/projects/[projectId]/documents/[documentId]/export,DocumentExportCenterPage,project_admin/support_admin,lock/prepare export
+document_locked,/app/projects/[projectId]/documents/[documentId]/export,DocumentExportCenterPage,project_admin/support_admin,validate export
+export_ready,/app/projects/[projectId]/documents/[documentId]/export,DocumentExportCenterPage,project_admin/support_admin,export pdf/excel/svzt
+exported_to_taksa,/app/projects/[projectId]/documents/[documentId]/versions,VersionHistoryPage,project members,view audit
+adjustment_draft,/app/projects/[projectId]/documents/[documentId]/adjustment,AdjustmentEnginePage,financial/consultant,calculate
+adjustment_calculated,/app/projects/[projectId]/documents/[documentId]/adjustment,AdjustmentEnginePage,financial/consultant,review
+adjustment_reviewing,/app/projects/[projectId]/documents/[documentId]/adjustment,AdjustmentEnginePage,employer/consultant,approve
+adjustment_approved,/app/projects/[projectId]/documents/[documentId]/financial,FinancialSummaryPage,project members,include in financial summary

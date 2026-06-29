@@ -1,0 +1,19 @@
+﻿folder,report_count,main_prefixes,interpretation
+Land,429,"ps, sv, br, bs, pk",مجموعه بزرگ گزارش‌های عمومی/عمرانی؛ شامل br/ps/sv/bs و یکی از منابع اصلی MVP
+stnd,422,"sv, ps, br, pk, bs",گزارش‌های استاندارد؛ برای baseline وب خیلی مهم
+Port,342,"sv, ps, br, bs, pk",پکیج بندری/پورت؛ بزرگ و مهم برای تنوع خروجی‌ها
+Custom_4,155,"sv, bs, pk, az, intp",گزارش‌های سفارشی صورت‌وضعیت و پایه؛ برای کشف variantها
+Custom_3,150,"sv, bs, pk, report, intp",گزارش‌های سفارشی صورت‌وضعیت و پایه؛ برای کشف variantها
+Custom,21,"sv, br, ps",گزارش‌های سفارشی سبک
+Fhbh_NaftGaz,13,"br, rpt",فهرست‌بها/نفت‌وگاز؛ تخصصی
+Custom_1,12,br,برآورد سفارشی
+Shahrdari,12,"sv, br, ps",گزارش‌های شهرداری؛ تخصصی
+Custom_5,11,"br, sv",برآورد/گزارش سفارشی
+English,11,"sv, arm, bs",گزارش‌های انگلیسی؛ مفید برای فهم نام‌های فنی
+Custom_2,8,br,نیازمند بررسی
+Comp_NaftGaz,6,br,مقایسه/نفت‌وگاز
+abfa,5,sv,آبفا
+gaz,3,sv,گاز
+abfa_ghom,2,sv,آبفای قم
+Naft_refahi,2,br,نفت رفاهی
+Naft_refahi_brv,2,br,نفت رفاهی - برآورد

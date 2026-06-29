@@ -1,0 +1,21 @@
+﻿scope,label,route,visible_for,entity,priority
+global,کارتابل من,/app/inbox,all,WorkflowCase,P0
+global,پروژه‌ها,/app/projects,all,Project,P0
+global,ورود فایل تکسا,/app/imports,project_admin/support_admin,TaksaArtifact,P0
+project,داشبورد,/app/projects/[projectId],project members,Project,P0
+project,تنظیمات پروژه,/app/projects/[projectId]/setup,project_admin,Project/Contract,P0
+project,قرارداد,/app/projects/[projectId]/contract,project members,Contract,P0
+project,عوامل,/app/projects/[projectId]/parties,project_admin,ProjectParty,P0
+project,فهرست‌بها,/app/projects/[projectId]/price-list,project members,ReferenceBook/PriceListItem,P0
+project,اسناد مالی,/app/projects/[projectId]/documents,project members,CommercialDocument,P0
+project,گزارش‌ها,/app/projects/[projectId]/reports,project members,ReportTemplate,P0
+project,سازگاری تکسا,/app/projects/[projectId]/taksa,project_admin/support_admin,TaksaArtifact,P0
+document,نمای کلی,/app/projects/[projectId]/documents/[documentId],project members,CommercialDocument,P0
+document,آیتم‌ها,/app/projects/[projectId]/documents/[documentId]/items,contractor/consultant/admin,ProjectItemSnapshot,P0
+document,متره,/app/projects/[projectId]/documents/[documentId]/measurement,contractor/consultant,MeasurementLine,P0
+document,مالی,/app/projects/[projectId]/documents/[documentId]/financial,project members,FinancialStatementLine,P0
+document,رسیدگی,/app/projects/[projectId]/documents/[documentId]/review,consultant,ReviewedWorkLine,P0
+document,تأیید کارفرما,/app/projects/[projectId]/documents/[documentId]/employer,employer,WorkflowCase,P0
+document,تعدیل,/app/projects/[projectId]/documents/[documentId]/adjustment,consultant/financial/employer,AdjustmentRun,P0
+document,خروجی,/app/projects/[projectId]/documents/[documentId]/export,allowed roles,ExportJob,P0
+document,نسخه‌ها,/app/projects/[projectId]/documents/[documentId]/versions,project members,DocumentVersion,P0

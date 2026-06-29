@@ -1,0 +1,7 @@
+﻿state_key,persian_name,description,owner
+queued,در صف,درخواست محاسبه ثبت شده ولی شروع نشده,system
+running,در حال اجرا,pipeline در حال اجراست,system
+completed,کامل,محاسبه بدون خطای بحرانی تمام شده,system
+completed_with_warnings,کامل با هشدار,محاسبه انجام شده ولی warning دارد,user/system
+failed,ناموفق,خطای بحرانی در محاسبه,user/system
+needs_golden_validation,نیازمند تست با خروجی تکسا,فرمول/rounding هنوز با golden output قفل نشده,support_admin

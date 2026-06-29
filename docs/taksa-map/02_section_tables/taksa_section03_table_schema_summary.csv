@@ -1,0 +1,158 @@
+﻿database,table,prefix,family,column_count
+faragamara_taksa,Tmp_base_sorc_list,tmp,جدول موقت/تبدیل,5
+brv_importer,acti,acti,فعالیت/اکشن,13
+brv_importer,acts,acts,فعالیت‌ها/فهرست فعالیت,22
+brv_importer,ahta,ahta,تعدیل/آحاد,34
+brv_importer,bgml,bgml,برگه مالی,44
+brv_importer,bmac,bmac,پایه/ماشین‌آلات?,52
+brv_importer,contract,contract,قرارداد/پروژه,33
+brv_importer,dstb,dstb,حمل/فاصله,7
+brv_importer,dstn,dstn,فاصله/حمل,5
+brv_importer,dstn2,dstn2,نامشخص/نیازمند بررسی,10
+brv_importer,dstn2c,dstn2c,نامشخص/نیازمند بررسی,11
+brv_importer,fhbh,fhbh,فهرست‌بها/ردیف,16
+brv_importer,fhpy,fhpy,فهرست پیمان/فصل‌بندی,4
+brv_importer,fspy,fspy,فصل/صورتجلسه/پیشنهاد,14
+brv_importer,hmpy,hmpy,حمل/فاصله,24
+brv_importer,hsha,hsha,شاخص/حساب?,1
+brv_importer,hshm,hshm,شاخص/حساب?,1
+brv_importer,itac,itac,آیتم/فعالیت,17
+brv_importer,item,item,آیتم‌ها,15
+brv_importer,khmt,khmt,خدمات/کسورات/کارکرد مرتبط,29
+brv_importer,kmac,kmac,پایه/ماشین‌آلات?,33
+brv_importer,mogs,mogs,صورتجلسه/مقادیر,4
+brv_importer,mult,mult,ضرایب/چندگانه,25
+brv_importer,nmac,nmac,پایه/ماشین‌آلات?,23
+brv_importer,nmmh,nmmh,منابع/مصالح/حمل,21
+brv_importer,nots,nots,یادداشت‌ها,32
+brv_importer,ntac,ntac,نامشخص/نیازمند بررسی,8
+brv_importer,onac,onac,نامشخص/نیازمند بررسی,3
+brv_importer,pjsz,pjsz,پروژه/سازمان,6
+brv_importer,rplc,rplc,جایگزینی/رابطه,2
+brv_importer,rplo,rplo,نامشخص/نیازمند بررسی,2
+brv_importer,rsdn,rsdn,نامشخص/نیازمند بررسی,41
+brv_importer,rzmt,rzmt,ریزمتره,49
+brv_importer,sact,sact,نامشخص/نیازمند بررسی,47
+brv_importer,scac,scac,نامشخص/نیازمند بررسی,21
+brv_importer,seas,seas,خلاصه فصل‌ها,43
+brv_importer,secu,secu,نامشخص/نیازمند بررسی,4
+brv_importer,secu_n,secu,نامشخص/نیازمند بررسی,1
+brv_importer,situ,situ,نامشخص/نیازمند بررسی,9
+brv_importer,sorc,sorc,منابع/جمع‌بندی,16
+brv_importer,srch,srch,نامشخص/نیازمند بررسی,2
+brv_importer,srrz,srrz,نامشخص/نیازمند بررسی,3
+brv_importer,titz,titz,نامشخص/نیازمند بررسی,8
+brv_importer,zrhi,zrhi,نامشخص/نیازمند بررسی,3
+brv_importer,zrtb,zrtb,ضرایب/تجهیز,4
+psn_importer,acti,acti,فعالیت/اکشن,13
+psn_importer,acts,acts,فعالیت‌ها/فهرست فعالیت,24
+psn_importer,ahta,ahta,تعدیل/آحاد,34
+psn_importer,bgml,bgml,برگه مالی,47
+psn_importer,bmac,bmac,پایه/ماشین‌آلات?,55
+psn_importer,contract,contract,قرارداد/پروژه,15
+psn_importer,dstn,dstn,فاصله/حمل,5
+psn_importer,dstn2,dstn2,نامشخص/نیازمند بررسی,10
+psn_importer,dstn2c,dstn2c,نامشخص/نیازمند بررسی,11
+psn_importer,fhbh,fhbh,فهرست‌بها/ردیف,16
+psn_importer,fhpy,fhpy,فهرست پیمان/فصل‌بندی,4
+psn_importer,fspy,fspy,فصل/صورتجلسه/پیشنهاد,14
+psn_importer,hmpy,hmpy,حمل/فاصله,25
+psn_importer,hsha,hsha,شاخص/حساب?,1
+psn_importer,hshm,hshm,شاخص/حساب?,1
+psn_importer,itac,itac,آیتم/فعالیت,17
+psn_importer,item,item,آیتم‌ها,15
+psn_importer,khmt,khmt,خدمات/کسورات/کارکرد مرتبط,29
+psn_importer,kmac,kmac,پایه/ماشین‌آلات?,33
+psn_importer,mogs,mogs,صورتجلسه/مقادیر,4
+psn_importer,mult,mult,ضرایب/چندگانه,36
+psn_importer,nmac,nmac,پایه/ماشین‌آلات?,19
+psn_importer,nmmh,nmmh,منابع/مصالح/حمل,17
+psn_importer,nots,nots,یادداشت‌ها,45
+psn_importer,ntac,ntac,نامشخص/نیازمند بررسی,8
+psn_importer,ovhd,ovhd,بالاسری/هزینه‌های اضافه,5
+psn_importer,ovma,ovma,ماشین‌آلات/هزینه اضافه,10
+psn_importer,ovpr,ovpr,پرسنل/هزینه اضافه,8
+psn_importer,pjsz,pjsz,پروژه/سازمان,6
+psn_importer,rplc,rplc,جایگزینی/رابطه,2
+psn_importer,rplo,rplo,نامشخص/نیازمند بررسی,2
+psn_importer,rsdn,rsdn,نامشخص/نیازمند بررسی,41
+psn_importer,rzmt,rzmt,ریزمتره,49
+psn_importer,sact,sact,نامشخص/نیازمند بررسی,61
+psn_importer,scac,scac,نامشخص/نیازمند بررسی,18
+psn_importer,seas,seas,خلاصه فصل‌ها,57
+psn_importer,secu,secu,نامشخص/نیازمند بررسی,4
+psn_importer,situ,situ,نامشخص/نیازمند بررسی,9
+psn_importer,sorc,sorc,منابع/جمع‌بندی,16
+psn_importer,srch,srch,نامشخص/نیازمند بررسی,2
+psn_importer,srrz,srrz,نامشخص/نیازمند بررسی,3
+psn_importer,titz,titz,نامشخص/نیازمند بررسی,16
+psn_importer,tjhz,tjhz,نامشخص/نیازمند بررسی,9
+psn_importer,zrhi,zrhi,نامشخص/نیازمند بررسی,3
+psn_importer,zrtb,zrtb,ضرایب/تجهیز,4
+svz_importer,acti,acti,فعالیت/اکشن,13
+svz_importer,acts,acts,فعالیت‌ها/فهرست فعالیت,26
+svz_importer,ahta,ahta,تعدیل/آحاد,41
+svz_importer,bgml,bgml,برگه مالی,43
+svz_importer,bgts,bgts,نامشخص/نیازمند بررسی,48
+svz_importer,bmac,bmac,پایه/ماشین‌آلات?,51
+svz_importer,contract,contract,قرارداد/پروژه,87
+svz_importer,dstb,dstb,حمل/فاصله,7
+svz_importer,dstn,dstn,فاصله/حمل,7
+svz_importer,dstn2,dstn2,نامشخص/نیازمند بررسی,12
+svz_importer,dstn2c,dstn2c,نامشخص/نیازمند بررسی,13
+svz_importer,fhbh,fhbh,فهرست‌بها/ردیف,17
+svz_importer,fhpy,fhpy,فهرست پیمان/فصل‌بندی,4
+svz_importer,fsbs,fsbs,نامشخص/نیازمند بررسی,13
+svz_importer,fspy,fspy,فصل/صورتجلسه/پیشنهاد,20
+svz_importer,hmpy,hmpy,حمل/فاصله,29
+svz_importer,hsha,hsha,شاخص/حساب?,1
+svz_importer,hshm,hshm,شاخص/حساب?,1
+svz_importer,intm,intm,نامشخص/نیازمند بررسی,3
+svz_importer,intp,intp,درون‌یابی شاخص/تعدیل,4
+svz_importer,itac,itac,آیتم/فعالیت,21
+svz_importer,item,item,آیتم‌ها,19
+svz_importer,khmt,khmt,خدمات/کسورات/کارکرد مرتبط,36
+svz_importer,kmac,kmac,پایه/ماشین‌آلات?,40
+svz_importer,mogs,mogs,صورتجلسه/مقادیر,4
+svz_importer,mult,mult,ضرایب/چندگانه,37
+svz_importer,nmac,nmac,پایه/ماشین‌آلات?,20
+svz_importer,nmmh,nmmh,منابع/مصالح/حمل,18
+svz_importer,nots,nots,یادداشت‌ها,33
+svz_importer,ntac,ntac,نامشخص/نیازمند بررسی,12
+svz_importer,onac,onac,نامشخص/نیازمند بررسی,3
+svz_importer,pjsz,pjsz,پروژه/سازمان,6
+svz_importer,rplc,rplc,جایگزینی/رابطه,2
+svz_importer,rplo,rplo,نامشخص/نیازمند بررسی,2
+svz_importer,rsdn,rsdn,نامشخص/نیازمند بررسی,63
+svz_importer,rzmt,rzmt,ریزمتره,54
+svz_importer,sact,sact,نامشخص/نیازمند بررسی,32
+svz_importer,scac,scac,نامشخص/نیازمند بررسی,25
+svz_importer,seas,seas,خلاصه فصل‌ها,33
+svz_importer,secu,secu,نامشخص/نیازمند بررسی,4
+svz_importer,secu_n,secu,نامشخص/نیازمند بررسی,1
+svz_importer,situ,situ,نامشخص/نیازمند بررسی,24
+svz_importer,sorc,sorc,منابع/جمع‌بندی,23
+svz_importer,srch,srch,نامشخص/نیازمند بررسی,2
+svz_importer,srfb,srfb,نامشخص/نیازمند بررسی,2
+svz_importer,srrz,srrz,نامشخص/نیازمند بررسی,3
+svz_importer,titz,titz,نامشخص/نیازمند بررسی,8
+svz_importer,zrhi,zrhi,نامشخص/نیازمند بررسی,3
+svz_importer,zrtb,zrtb,ضرایب/تجهیز,4
+taksa_temp,ZrLc,zrlc,نامشخص/نیازمند بررسی,4
+taksa_temp,ader,ader,نامشخص/نیازمند بررسی,15
+taksa_temp,bkal,bkal,نامشخص/نیازمند بررسی,37
+taksa_temp,dstb,dstb,حمل/فاصله,8
+taksa_temp,fhbh,fhbh,فهرست‌بها/ردیف,16
+taksa_temp,fsbs,fsbs,نامشخص/نیازمند بررسی,8
+taksa_temp,fsbz,fsbz,نامشخص/نیازمند بررسی,10
+taksa_temp,grop,grop,گروه‌بندی,3
+taksa_temp,hmbs,hmbs,نامشخص/نیازمند بررسی,19
+taksa_temp,nmmhb,nmmhb,نامشخص/نیازمند بررسی,18
+taksa_temp,pyfs,pyfs,نامشخص/نیازمند بررسی,21
+taksa_temp,shkh1,shkh1,نامشخص/نیازمند بررسی,11
+taksa_temp,shkh2,shkh2,نامشخص/نیازمند بررسی,11
+taksa_temp,shkh3,shkh3,نامشخص/نیازمند بررسی,11
+taksa_temp,sorc_sc,sorc,منابع/جمع‌بندی,11
+taksa_temp,sorc_sn,sorc,منابع/جمع‌بندی,11
+taksa_temp,tatb,tatb,تطبیق,15
+taksa_temp,unit,unit,نامشخص/نیازمند بررسی,2

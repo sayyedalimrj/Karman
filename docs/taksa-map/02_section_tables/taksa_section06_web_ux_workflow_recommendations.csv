@@ -1,0 +1,9 @@
+﻿web_area,taksa_evidence,ui_workflow_decision,roundtrip_note
+Project Workbench / کارتابل پروژه,فرم‌ها و Gridهای متعدد برای brv/psn/svz و tips مربوط به دفترچه‌ها، منابع، تعدیل و صورت‌وضعیت,به جای منوی شلوغ تکسا، کاربر با کارت‌های اقدام وارد جریان شود: برآورد، پیشنهاد، صورت‌وضعیت، تعدیل، گزارش‌ها,هر اقدام باید raw source row و وضعیت export را حفظ کند
+Payment Certificate Builder / ساخت صورت‌وضعیت,"Gridهای list_svz, zrpy_svz_karkard, note_list_*_svz, sorcp_*_svz",Wizard سه مرحله‌ای: انتخاب دوره → ثبت/بررسی آیتم‌ها → خلاصه مالی و ارسال,مقادیر دوره، قبلی، تجمعی و nusv/type/situ نباید از raw جدا شوند
+Review Desk / رسیدگی,ستون‌های مقدار، درصد، مابه‌التفاوت، افزایش/کاهش، قیمت جدید، قبلی و جاری,نمای مقایسه‌ای پیمانکار/مشاور/کارفرما با approve/change/comment، نه جدول خام تکسا,تغییرات باید نسخه‌بندی و قابل merge به جدول‌های svz باشند
+Adjustment Engine / تعدیل,"styl_Tadil*, Zrtd_*, Shakhes, seas_shkh, tdil/intp report families",فرم انتخاب شاخص و دوره + محاسبه شفاف ضریب و مبلغ با نمایش فرمول,شاخص مبنا/دوره/ضریب باید هم raw و هم normalized ذخیره شود
+Price List Explorer / فهرست‌بها,"fhbh_norm, fhbh_shahr, Base_book, list_* با کد فهرست و شرح مختصر/کامل",جستجو و انتخاب آیتم با preview شرح کامل، فصل، واحد، بهای واحد و ستاره‌دار,کد فهرست، نوسه/نوفه/نوع ستاره‌دار بدون تغییر حفظ شود
+Resources & Analysis / منابع و آنالیز بها,Ana_ensani/machine/masaleh/haml و sorcp_*,نمای عوامل چهارگانه، قیمت مبنا/آمار/روز و درصد وزنی,منابع محاسبه‌ای اگر در raw نبودند، به عنوان extension نگه داشته شوند
+Reports Center / مرکز گزارش‌ها,1606 RPT و 209 grid config,گزارش‌ها دسته‌بندی و قابل جستجو باشند؛ MVP با ۲۰ خروجی اصلی شروع شود,PDF/Excel وب خروجی تکسا را شبیه کند ولی export SVZT جداگانه validate شود
+Advanced Taksa Compatibility / سازگاری تکسا,وجود modeهای brv/psn/svz و تفاوت ScriptXML با actual XML,بخش پیشرفته برای مشاهده raw tables، mapping و خطاهای round-trip,کاربر عادی raw نمی‌بیند، ولی تیم پشتیبانی برای تشخیص مشکل می‌بیند

@@ -1,0 +1,26 @@
+﻿id,title,description,mvp_level,area,target_sprint,priority
+MVP-001,AppShell RTL,ساخت layout اصلی راست‌چین، sidebar، topbar، project switcher,P0,UI,S0,Critical
+MVP-002,Auth + Role Guard,ورود، session، role guard و permission gate,P0,Security,S0,Critical
+MVP-003,Project Setup Wizard,تعریف پروژه، قرارداد، عوامل، مبانی,P0,Project,S1,Critical
+MVP-004,AuditLog Base,ثبت action، before/after، actor، entity,P0,Governance,S1,Critical
+MVP-005,Taksa Import Raw Layer,حفظ artifact/table/row/raw_json/order/case,P0,Compatibility,S2,Critical
+MVP-006,Import Validation Panel,نمایش table count، row count، mismatch، unknown fields,P0,Compatibility,S2,Critical
+MVP-007,Price List Explorer,جستجوی فهرست‌بها و انتخاب آیتم,P0,Reference,S3,Critical
+MVP-008,CommercialDocument Model,مدل مشترک estimate/bid/payment_certificate,P0,Documents,S4,Critical
+MVP-009,Workflow State Machine,state/action/transition/lock effect,P0,Workflow,S4,Critical
+MVP-010,Measurement Builder,گروه متره، ردیف متره، فرمول خام، quantity decimal,P0,Measurement,S5,Critical
+MVP-011,Attachment Side Panel,پیوست روی سند/گروه/ردیف,P0,Documents,S5,High
+MVP-012,Calculation Orchestrator,"CalculationRun, step pipeline, trace store",P0,Calculation,S6,Critical
+MVP-013,Financial Summary MVP,"previous/current/total, amount, summary cards",P0,Financial,S6,Critical
+MVP-014,Review Diff Grid,مقایسه پیمانکار/مشاور/کارفرما,P0,Review,S7,Critical
+MVP-015,Employer Approval Page,خلاصه مالی، approve/return/lock,P0,Approval,S7,Critical
+MVP-016,Version History,نسخه‌ها، برگشت‌ها، قفل‌ها، audit,P0,Governance,S7,Critical
+MVP-017,Coefficient Engine MVP,ضرایب با trace,P0,Calculation,S8,Critical
+MVP-018,Deduction Engine MVP,کسورات پایه و case-sensitive handling,P0,Financial,S8,Critical
+MVP-019,Adjustment Engine MVP,شاخص، تعدیل، trace,P0,Adjustment,S8,Critical
+MVP-020,Report Registry MVP,bgml/seas/rzmt/tdil دسته‌بندی‌شده,P0,Reports,S9,High
+MVP-021,Excel Numeric Export,"Excel numeric, RTL, format نمایش جدا",P0,Reports,S9,High
+MVP-022,SVZT Patch Export,raw + dirty_patch_json merge,P0,Compatibility,S10,Critical
+MVP-023,Export Validation Checklist,zero critical before export,P0,Compatibility,S10,Critical
+MVP-024,Golden Test Harness,مقایسه خروجی وب با تکسا,P0,QA,S11,Critical
+MVP-025,Security & Backup Pass,permission audit، secret scan، backup/export storage,P0,Security,S11,Critical

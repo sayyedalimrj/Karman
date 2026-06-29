@@ -1,0 +1,57 @@
+﻿resource_name,resource_kind
+_04s11,icon/action
+Active1,icon/action
+Actoff1,icon/action
+Acton1,icon/action
+Add,user action icon
+addBookmark,icon/action
+ApplicationTheme,icon/action
+bkIcon,icon/action
+brv,main module icon
+Btn_cancel_Image_16X161,icon/action
+Btn_cancel_Image1,icon/action
+Btn_Ok_Image__16x162,icon/action
+Btn_Ok_Image2,icon/action
+Btn_Ok1,icon/action
+Btn_Ok2,icon/action
+comment,user action icon
+copy,user action icon
+deactivate1,icon/action
+Delete1,user action icon
+DelFil1,user action icon
+delgray,icon/action
+doc1,icon/action
+DownLeft1,icon/action
+DownRight1,icon/action
+empty_template1,icon/action
+f11,icon/action
+HasAhjam,icon/action
+InEdit1,icon/action
+info___4_1,icon/action
+info1,icon/action
+info2,icon/action
+KarBkIcon,icon/action
+Left1,icon/action
+Main001_B,icon/action
+Main001_S,icon/action
+Main001_S_New,icon/action
+Main002_B,icon/action
+Main002_S,icon/action
+Main002_S_New,icon/action
+Main003_B,icon/action
+Main003_S,icon/action
+Main003_S_New,icon/action
+NoAhjam,icon/action
+Office2007Black,theme
+Office2007Blue,theme
+Office2007Green,theme
+Office2007GreenLight,theme
+Office2007Silver,theme
+paste,user action icon
+pin,user action icon
+psn,main module icon
+removeBookmark,icon/action
+Right1,icon/action
+side_down1,icon/action
+Start1,user action icon
+svz,main module icon

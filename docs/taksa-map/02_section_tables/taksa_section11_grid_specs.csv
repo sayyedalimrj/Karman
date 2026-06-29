@@ -1,0 +1,8 @@
+﻿grid_component,entity,main_columns,roundtrip_sensitive_fields,ux_notes
+DocumentItemsGrid,ProjectItemSnapshot,"nufh,nuse,cofh,description,unit,unit_price,quantity,amount,chapter",nufh/nuse/cofh/unit_price/row_order,Inline add/search from price list; preserve snapshot
+MeasurementGrid,MeasurementLine,"row_no,item_code,description,formula,length,width,height,count,quantity,unit,attachments","quantity numeric, formula raw, link_mog,row_order",Formula cells and evidence side panel
+ReviewDiffGrid,ReviewedWorkLine,"item,contractor_qty,consultant_qty,employer_qty,diff,status,comment","all quantities numeric, version_id","Diff colors, filters, comments"
+FinancialStatementGrid,FinancialStatementLine,"item,previous_qty,current_qty,total_qty,unit_price,current_amount,total_amount","amounts numeric, previous/current/total separate",Read mostly; recalc from engine
+DeductionGrid,DeductionLine,"type,title,base_amount,percent,amount,sign,applies_to",case sensitive raw table for Tadilkosorat,Financial controller editable by state
+AdjustmentLineGrid,AdjustmentLine,"chapter,item,base_amount,base_index,work_index,ratio,adjustment_amount","index periods, rounding trace",Show formula trace per row
+RawTableGrid,TaksaRawRow,"row_order,raw_json,normalized_entity,patch_status","raw_json complete, row_order","Support only, no accidental edits"

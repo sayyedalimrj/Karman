@@ -1,0 +1,12 @@
+﻿screen_key,persian_name,roles,entities,ux_notes,priority
+Project Dashboard,داشبورد پروژه,"project_admin, contractor, consultant, employer","Project, Contract, WorkflowCase",کارت‌های وضعیت، آخرین اسناد، هشدارها، مسیرهای سریع,P0
+Project Setup Wizard,ویزارد تعریف پروژه,project_admin,"Project, Contract, ProjectParty, ReferenceBook",مرحله‌ای، checklist، اعتبارسنجی مبانی,P0
+Import Center,مرکز ورود فایل تکسا,"support_admin, project_admin","TaksaArtifact, TaksaRawTable, TaksaRawRow",بارگذاری، parse، خطاها، mapping، سلامت فایل,P0
+Payment Certificate Builder,سازنده صورت‌وضعیت,contractor,"CommercialDocument, MeasurementLine, FinancialStatementLine",wizard + جدول حرفه‌ای + خلاصه مالی زنده,P0
+Measurement Grid,ریز‌متره و صورتجلسه,"contractor, consultant","MeasurementGroup, MeasurementLine, Attachment",فرمول‌نویسی، پیوست کنار ردیف، کپی از دوره قبل,P0
+Review Desk,میز رسیدگی مشاور,consultant_reviewer,"ReviewedWorkLine, DocumentVersion, AuditLog",diff پیمانکار/مشاور، کامنت، فیلتر اختلاف، bulk actions,P0
+Employer Approval,تأیید کارفرما,employer_approver,"FinancialStatementLine, DeductionLine, AdjustmentRun",خلاصه مدیریتی، گزارش‌ها، تأیید/برگشت,P0
+Adjustment Engine,تعدیل و شاخص,"financial_controller, consultant, employer","AdjustmentRun, AdjustmentLine, IndexPeriod",فرمول، انتخاب شاخص، گزارش مقایسه‌ای,P0
+Reports Center,مرکز گزارش‌ها,all permitted roles,ReportTemplate,گروه‌بندی br/sv/ps/tdil/bgml/seas/rzmt,P1
+Version History,تاریخچه نسخه‌ها,"project_admin, consultant, employer","DocumentVersion, AuditLog",timeline نسخه‌ها، diff، دلایل برگشت,P0
+Taksa Compatibility Inspector,بازرس سازگاری تکسا,support_admin,"TaksaRawTable, TaksaRawRow, ExportJob",نمایش raw، patch، validation، export diff,P0 internal

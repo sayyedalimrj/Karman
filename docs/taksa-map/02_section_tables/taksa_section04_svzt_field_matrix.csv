@@ -1,0 +1,1193 @@
+﻿table,field_order,field,occurrence_count,rows_in_table,presence_pct,inferred_type,sample_values
+BaseSituNoe,1,Id,3,3,100.0,integer,1 | 2 | 3
+BaseSituNoe,2,StnCode,3,3,100.0,integer,1 | 2 | 3
+BaseSituNoe,3,StnName,3,3,100.0,persian/text,موقت | ماقبل قطعی | قطعی
+base_PersonalityTyp,1,pty_id,7,7,100.0,integer,0 | 1 | 2
+base_PersonalityTyp,2,pty_Name,7,7,100.0,persian/text,پیمانکار | ناظر | مشاور
+base_PersonalityTyp,3,pty_isSystem,7,7,100.0,boolean,true
+base_PersonalityTyp,4,PtyOrder,7,7,100.0,integer,1 | 2 | 3
+base_PersonalityTyp,5,ptyShow,7,7,100.0,boolean,true
+BaseBarcode,1,Id,1000,1000,100.0,integer,1 | 2 | 3
+BaseBarcode,2,IsActive,1000,1000,100.0,boolean,true
+BaseBarcode,3,OrderBbc,1000,1000,100.0,integer,1 | 2 | 3
+BaseBarcode,4,BbcCode,1000,1000,100.0,integer,0 | 1 | 2
+BaseBarcode,5,BbcName,1000,1000,100.0,integer,00 | 01 | 02
+base_TajhzType,1,tjt_id,4,4,100.0,integer,1 | 2 | 3
+base_TajhzType,2,tjt_name,4,4,100.0,persian/text,اول | دوم | سوم
+Base_Months,1,mon_id,13,13,100.0,integer,0 | 1 | 2
+Base_Months,2,mon_name,13,13,100.0,persian/text,فروردین | اردیبهشت | خرداد
+base_ShakhesType,1,Sht_id,2,2,100.0,integer,1 | 2
+base_ShakhesType,2,Sht_Name,2,2,100.0,persian/text,سه ماهه | ماهانه
+Base_ItemType,1,Ity_id,6,6,100.0,integer,1 | 2 | 3
+Base_ItemType,2,Ity_name,6,6,100.0,persian/text,مصالح | دستمزد | عادی
+Base_ItemType,3,Ity_Code,3,6,50.0,integer,1 | 2
+Base_ItemType,4,ity_Summ,3,6,50.0,persian/text,م | د
+Base_ItemType,5,Ity_ShowInList,6,6,100.0,boolean,true | false
+base_unit,1,unt_id,1802,1802,100.0,integer,3817672 | 4027010 | 4027011
+base_unit,2,unt_unit,1802,1802,100.0,text,- | -- | ----
+base_unit,3,unt_rad,416,1802,23.09,integer,4 | 10 | 11
+base_tyun,1,tyn_id,8,8,100.0,integer,4 | 10 | 3
+base_tyun,2,tyn_tyun,8,8,100.0,persian/text,× × | × ×ارتفاع | ×عرض×
+base_tyun,3,tyn_tyun_vb6,8,8,100.0,persian/text,×   × | ×   ×ارتفاع | ×عرض×
+base_zrtj,1,zrt_id,18,18,100.0,integer,12 | 5 | 6
+base_zrtj,2,zrt_rad,18,18,100.0,integer,12 | 5 | 6
+base_zrtj,3,zrt_zrpr,18,18,100.0,text,0.5% | 1% | 1.5%
+base_IntpVaziat,1,itv_id,3,3,100.0,integer,1 | 2 | 3
+base_IntpVaziat,2,itv_Name,3,3,100.0,persian/text,مدت اولیه | تاخیر مجاز | تاخیر غیرمجاز
+brv_color,1,col_name_far,16,16,100.0,persian/text,مشکی | قرمز | سبز
+brv_color,2,col_rad,16,16,100.0,integer,1 | 2 | 3
+brv_color,3,col_name_eng,16,16,100.0,text,black | red | green
+brv_color,4,col_red,16,16,100.0,integer,0 | 255 | 128
+brv_color,5,col_green,16,16,100.0,integer,0 | 128 | 255
+brv_color,6,col_blue,16,16,100.0,integer,0 | 255 | 128
+base_acts_unit,1,acu_unit_id,203,203,100.0,integer,1 | 922867 | 922868
+base_acts_unit,2,acu_unit,203,203,100.0,text,- | Kg | M2
+base_acts_unit,3,acu_rad,33,203,16.26,integer,1 | 44 | 45
+brv_contract,1,ctc_id,1,1,100.0,integer,11
+brv_contract,2,ctc_project_type,1,1,100.0,integer,1
+brv_contract,3,ctc_archive,1,1,100.0,boolean,false
+brv_contract,4,ctc_copj,1,1,100.0,empty/nullable,
+brv_contract,5,ctc_rad,1,1,100.0,integer,11
+brv_contract,6,ctc_nmpj,1,1,100.0,persian/text,اجراي سازه ساختمان پاركينگ شرقي پروژه مجموعه آموزشي و فناوري خاتم
+brv_contract,7,ctc_yrfh,1,1,100.0,integer,1403
+brv_contract,8,ctc_parent,1,1,100.0,integer,14
+brv_contract,9,ctc_nmcs,1,1,100.0,persian/text,شارستان
+brv_contract,10,ctc_nmct,1,1,100.0,persian/text,شرکت سیوان تدبیر تجارت
+brv_contract,11,ctc_nmci,1,1,100.0,persian/text,دانشگاه خاتم
+brv_contract,12,ctc_Etebar_Omomi,1,1,100.0,boolean,false
+brv_contract,13,ctc_acon,1,1,100.0,boolean,false
+brv_contract,14,ctc_tdil,1,1,100.0,boolean,false
+brv_contract,15,ctc_tdil_psn,1,1,100.0,boolean,false
+brv_contract,16,ctc_tdnr,1,1,100.0,boolean,true
+brv_contract,17,ctc_tdty,1,1,100.0,integer,0
+brv_contract,18,ctc_prbs,1,1,100.0,integer,3
+brv_contract,19,ctc_yrbd,1,1,100.0,integer,1402
+brv_contract,20,ctc_prja,1,1,100.0,integer,0
+brv_contract,21,ctc_yrja,1,1,100.0,integer,1387
+brv_contract,22,ctc_prbs_svz,1,1,100.0,integer,3
+brv_contract,23,ctc_yrbd_svz,1,1,100.0,integer,1402
+brv_contract,24,ctc_ShEb_Yr,1,1,100.0,integer,1386
+brv_contract,25,ctc_ShEb_Sm,1,1,100.0,integer,0
+brv_contract,26,ctc_End_brv,1,1,100.0,empty/nullable,
+brv_contract,27,ctc_N,1,1,100.0,integer,0
+brv_contract,28,ctc_onta,1,1,100.0,empty/nullable,
+brv_contract,29,ctc_cota,1,1,100.0,empty/nullable,
+brv_contract,30,ctc_onpj,1,1,100.0,empty/nullable,
+brv_contract,31,ctc_coon,1,1,100.0,empty/nullable,
+brv_contract,32,ctc_sand,1,1,100.0,empty/nullable,
+brv_contract,33,ctc_sand_svz,1,1,100.0,empty/nullable,
+brv_contract,34,ctc_sand_psn,1,1,100.0,empty/nullable,
+brv_contract,35,ctc_dtbv,1,1,100.0,empty/nullable,
+brv_contract,36,ctc_neza,1,1,100.0,persian/text,مهندسین مشاور شارستان
+brv_contract,37,ctc_mont,1,1,100.0,empty/nullable,
+brv_contract,38,ctc_days,1,1,100.0,empty/nullable,
+brv_contract,39,ctc_area,1,1,100.0,integer,0
+brv_contract,40,ctc_plpj,1,1,100.0,persian/text,پردیس- دانشگاه خاتم
+brv_contract,41,ctc_mjta,1,1,100.0,empty/nullable,
+brv_contract,42,ctc_rsmo,1,1,100.0,empty/nullable,
+brv_contract,43,ctc_mota,1,1,100.0,empty/nullable,
+brv_contract,44,ctc_etmo,1,1,100.0,decimal,0.0000
+brv_contract,45,ctc_dscr,1,1,100.0,empty/nullable,
+brv_contract,46,mog_zrib1_tit,1,1,100.0,persian/text,ضریب 1
+brv_contract,47,mog_zrib2_tit,1,1,100.0,persian/text,ضریب 2
+brv_contract,48,mog_zrib3_tit,1,1,100.0,persian/text,ضریب 3
+brv_contract,49,ctc_AnalyzeType,1,1,100.0,integer,0
+brv_contract,50,ctc_AnalyzeAll,1,1,100.0,boolean,false
+brv_contract,51,ctc_AnalyzeNote,1,1,100.0,integer,1
+brv_contract,52,ctc_IsLocked,1,1,100.0,boolean,false
+brv_contract,53,ctc_Pass_Lock,1,1,100.0,empty/nullable,
+brv_contract,54,ctc_User_Lock,1,1,100.0,empty/nullable,
+brv_contract,55,ctc_type_tjhz,1,1,100.0,integer,1
+brv_contract,56,ctc_rzmt_tgnu,1,1,100.0,integer,2
+brv_contract,57,ctc_rzmt_tgtl,1,1,100.0,integer,2
+brv_contract,58,ctc_rzmt_tgaz,1,1,100.0,integer,2
+brv_contract,59,ctc_rzmt_tght,1,1,100.0,integer,2
+brv_contract,60,ctc_rzmt_tgwg,1,1,100.0,integer,4
+brv_contract,61,ctc_rzmt_tgjz,1,1,100.0,integer,2
+brv_contract,62,ctc_rzmt_tgjk,1,1,100.0,integer,2
+brv_contract,63,ctc_khmt_tgjz,1,1,100.0,integer,2
+brv_contract,64,ctc_khmt_tgjr,1,1,100.0,integer,2
+brv_contract,65,ctc_khmt_tgjk,1,1,100.0,integer,2
+brv_contract,66,ctc_khmt_tgmo_k123,1,1,100.0,integer,6
+brv_contract,67,ctc_khmt_tgmo,1,1,100.0,integer,6
+brv_contract,68,ctc_bgml_brqn,1,1,100.0,integer,2
+brv_contract,69,ctc_bgml_dnqn,1,1,100.0,integer,2
+brv_contract,70,ctc_bgml_dnpr,1,1,100.0,integer,2
+brv_contract,71,ctc_bgml_pcun,1,1,100.0,integer,1
+brv_contract,72,ctc_bgml_65_pcun,1,1,100.0,integer,4
+brv_contract,73,ctc_bgml_wgpr,1,1,100.0,integer,2
+brv_contract,74,ctc_bgml_roshd,1,1,100.0,integer,4
+brv_contract,75,ctc_seas_wgpr,1,1,100.0,integer,2
+brv_contract,76,ctc_seas_dnpr,1,1,100.0,integer,2
+brv_contract,77,ctc_note_wgpr,1,1,100.0,integer,2
+brv_contract,78,ctc_note_dnpr,1,1,100.0,integer,2
+brv_contract,79,ctc_haml_kzrb,1,1,100.0,integer,4
+brv_contract,80,ctc_haml_tzrb,1,1,100.0,integer,6
+brv_contract,81,ctc_haml_quan,1,1,100.0,integer,2
+brv_contract,82,ctc_haml_tgjm,1,1,100.0,integer,3
+brv_contract,83,ctc_dist_dist,1,1,100.0,integer,2
+brv_contract,84,ctc_dist_i,1,1,100.0,integer,2
+brv_contract,85,ctc_fosi_quan,1,1,100.0,integer,3
+brv_contract,86,ctc_fosi_pert,1,1,100.0,integer,2
+brv_contract,87,ctc_fosi_nrkh,1,1,100.0,integer,1
+brv_contract,88,ctc_fosi_sal,1,1,100.0,integer,3
+brv_contract,89,ctc_fosi_ksrt,1,1,100.0,integer,4
+brv_contract,90,ctc_anab_wgpr,1,1,100.0,integer,2
+brv_contract,91,ctc_anab_quan,1,1,100.0,integer,9
+brv_contract,92,ctc_anab_pcun,1,1,100.0,integer,1
+brv_contract,93,ctc_anab_zrib,1,1,100.0,integer,8
+brv_contract,94,ctc_anab_pcal,1,1,100.0,integer,1
+brv_contract,95,ctc_anab_zrib_ralc,1,1,100.0,integer,4
+brv_contract,96,ctc_anab_grpr,1,1,100.0,integer,2
+brv_contract,97,ctc_sorc_pcun,1,1,100.0,integer,1
+brv_contract,98,ctc_sorc_quan,1,1,100.0,integer,4
+brv_contract,99,ctc_sorc_wgpr,1,1,100.0,integer,2
+brv_contract,100,ctc_acts_phpr,1,1,100.0,integer,4
+brv_contract,101,ctc_acts_dnpr,1,1,100.0,integer,4
+brv_contract,102,ctc_acts_wgpr,1,1,100.0,integer,4
+brv_contract,103,ctc_acts_pcun,1,1,100.0,integer,1
+brv_contract,104,ctc_acts_quan,1,1,100.0,integer,4
+brv_contract,105,ctc_acts_quan_sorc,1,1,100.0,integer,4
+brv_contract,106,ctc_acts_wgpr_sorc,1,1,100.0,integer,2
+brv_contract,107,ctc_koli_pcal,1,1,100.0,integer,0
+brv_contract,108,ctc_koli_pcun,1,1,100.0,integer,1
+brv_contract,109,ctc_koli_quan,1,1,100.0,integer,2
+brv_contract,110,ctc_pic_arm,1,1,100.0,text,/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwM
+brv_contract,111,ctc_pic_status,1,1,100.0,integer,1
+brv_contract,112,ctc_haml_from,1,1,100.0,integer,0
+brv_contract,113,ctc_numb,1,1,100.0,text,C-KH-03-052
+brv_contract,114,ctc_dtct,1,1,100.0,date/text,1403/04/01
+brv_contract,115,ctc_dtst,1,1,100.0,date/text,1403/04/30
+brv_contract,116,ctc_timh,1,1,100.0,integer,7
+brv_contract,117,ctc_tidy,1,1,100.0,integer,0
+brv_contract,118,ctc_timp,1,1,100.0,integer,0
+brv_contract,119,ctc_tidp,1,1,100.0,integer,0
+brv_contract,120,ctc_pric_prim,1,1,100.0,decimal,3309443989166.00
+brv_contract,121,ctc_dend,1,1,100.0,date/text,1404/09/30
+brv_contract,122,ctc_pctj,1,1,100.0,decimal,127286307276.0000
+brv_contract,123,ctc_rpt_khzr,1,1,100.0,boolean,true
+brv_contract,124,ctc_rpt_wp_type,1,1,100.0,integer,0
+brv_contract,125,ctc_rpt_item,1,1,100.0,integer,0
+brv_contract,126,ctc_signatue_exist,1,1,100.0,boolean,false
+brv_contract,127,ctc_tjhz_sx,1,1,100.0,boolean,true
+brv_contract,128,ctc_tjhz_fc,1,1,100.0,boolean,false
+brv_contract,129,ctc_tjhz_mp,1,1,100.0,boolean,false
+brv_contract,130,ctc_fmul_tjhz,1,1,100.0,boolean,false
+brv_contract,131,ctc_ProjectCreator,1,1,100.0,persian/text,مدیر سیستم
+brv_contract,132,ctc_Description,1,1,100.0,empty/nullable,
+brv_contract,133,ctc_prja_astr,1,1,100.0,integer,0
+brv_contract,134,ctc_yrja_astr,1,1,100.0,integer,1387
+brv_contract,135,ctc_prmb_astr,1,1,100.0,integer,0
+brv_contract,136,ctc_yrmb_astr,1,1,100.0,integer,1387
+brv_contract,137,ctc_Is76574,1,1,100.0,boolean,false
+brv_contract,138,ctc_conc,1,1,100.0,boolean,false
+brv_contract,139,ctc_CheckCodeAmel,1,1,100.0,boolean,true
+brv_contract,140,ctc_atm_tg_pr,1,1,100.0,integer,2
+brv_contract,141,ctc_analyse_year,1,1,100.0,integer,1403
+brv_contract,142,ctc_code,1,1,100.0,integer,82028122
+brv_contract,143,ctc_DateCreate,1,1,100.0,date/text,1403/04/10 - 14:39
+brv_contract,144,ctc_DateModi,1,1,100.0,date/text,1405/02/30 - 12:40 - 20 پیمانکار
+brv_contract,145,ctc_DateRestore,1,1,100.0,date/text,1404/12/02 - 10:19 - 18 مشاور
+brv_contract,146,ctc_code_Create,1,1,100.0,integer,65460168
+brv_contract,147,ctc_calcTadilGhir,1,1,100.0,boolean,false
+brv_contract,148,ctc_restoreFromVb6,1,1,100.0,boolean,false
+brv_contract,149,ctc_Shart50Item,1,1,100.0,boolean,false
+brv_contract,150,ctc_hasEngFeh,1,1,100.0,boolean,false
+brv_contract,151,ctc_DarsadVazniType,1,1,100.0,integer,1
+brv_contract,152,ctc_sarjam96,1,1,100.0,boolean,false
+brv_contract,153,ctc_dtlastPishnahad,1,1,100.0,empty/nullable,
+brv_contract,154,ctc_showFullDesc,1,1,100.0,boolean,false
+brv_contract,155,ctc_kasrNew76574,1,1,100.0,boolean,false
+brv_contract,156,ctc_ShowTypSumm,1,1,100.0,boolean,false
+brv_contract,157,ctc_dteb,1,1,100.0,date/text,1403/04/30
+brv_contract,158,ctc_dendPrim,1,1,100.0,date/text,1403/10/01
+brv_contract,159,ctc_Barcode,1,1,100.0,empty/nullable,
+brv_contract,160,ctc_unit,1,1,100.0,integer,1
+brv_contract,161,Version,1,1,100.0,text,14.0.5
+brv_elhagh,1,elh_link_proj,1,1,100.0,integer,11
+brv_elhagh,2,elh_id,1,1,100.0,integer,1
+brv_elhagh,3,elh_rad,1,1,100.0,integer,1
+brv_elhagh,4,elh_dscr,1,1,100.0,persian/text,شماره 3
+brv_elhagh,5,elh_price,1,1,100.0,decimal,473661905556.0000
+brv_type,1,typ_link_proj,3,3,100.0,integer,11
+brv_type,2,typ_id,3,3,100.0,integer,0 | 1 | 2
+brv_type,3,typ_rad,3,3,100.0,integer,1 | 2 | 3
+brv_type,4,typ_name,3,3,100.0,persian/text,پیمانکار | مشاور | کارفرما
+brv_type,5,typ_color_name_far,3,3,100.0,persian/text,مشکی | قرمز | سبز
+brv_type,6,typ_name_delegate,3,3,100.0,empty/nullable,
+brv_type,7,typ_PrintSignature,3,3,100.0,boolean,true | false
+brv_type,8,typ_sum_work_ol_z,1,3,33.33,integer,0
+brv_type,9,typ_PrintName,3,3,100.0,boolean,true
+brv_type,10,typ_absName,3,3,100.0,persian/text,پ | م | ک
+brv_type,11,typ_PertypId,3,3,100.0,integer,0 | 2 | 4
+brv_situ,1,stu_link_proj,21,21,100.0,integer,11
+brv_situ,2,stu_id,21,21,100.0,integer,0 | 1 | 2
+brv_situ,3,stu_rad,21,21,100.0,integer,1 | 2 | 3
+brv_situ,4,stu_numb,21,21,100.0,integer,0 | 1 | 2
+brv_situ,5,stu_Barcode,21,21,100.0,integer,1 | 2 | 3
+brv_situ,6,stu_StnId,21,21,100.0,integer,1
+brv_intp,1,itp_link_proj,7,7,100.0,integer,11
+brv_intp,2,itp_nusv,7,7,100.0,integer,1 | 2 | 3
+brv_intp,3,itp_type,7,7,100.0,integer,0 | 1
+brv_intp,4,itp_nusv_previous,7,7,100.0,integer,0 | 1 | 2
+brv_intp,5,itp_type_previous,7,7,100.0,integer,0 | 1
+brv_intp,6,itp_num_prod,7,7,100.0,integer,2 | 3 | 4
+brv_intp,7,itp_year,7,7,100.0,integer,1403 | 1404
+brv_intp,8,itp_rad,7,7,100.0,integer,1 | 2
+brv_intp,9,itp_prod,7,7,100.0,persian/text,دوم | سوم | چهارم
+brv_intp,10,itp_tidy,7,7,100.0,integer,40 | 11 | 52
+brv_intp,11,itp_avg,7,7,100.0,boolean,false
+brv_intp,12,itp_year_shkh,7,7,100.0,integer,1402 | 1403 | 1404
+brv_intp,13,itp_num_prod_shkh,7,7,100.0,persian/text,چهارم | دوم
+brv_intp,14,itp_type_shkh,7,7,100.0,persian/text,علی الحساب
+brv_intp,15,itp_num_type_shkh,7,7,100.0,integer,1
+brv_intp,16,itp_prod_shkh,7,7,100.0,integer,4 | 2
+brv_intp,17,itp_t,7,7,100.0,decimal,0.00
+brv_intp,18,itp_num_mon_prod,7,7,100.0,integer,0
+brv_intp,19,itp_num_mon_shkh,7,7,100.0,integer,0
+brv_intp,20,itp_z_a,7,7,100.0,integer,0
+brv_intp,21,itp_b_a,7,7,100.0,decimal,0.0000
+brv_intp,22,itp_vaziat,7,7,100.0,integer,1 | 2
+brv_intp,23,itp_Noe,7,7,100.0,integer,1
+brv_intp,24,itp_type_current,7,7,100.0,integer,0 | 1
+brv_kosorat,1,ksr_link_proj,360,360,100.0,integer,11
+brv_kosorat,2,ksr_nusv,360,360,100.0,integer,1 | 2 | 3
+brv_kosorat,3,ksr_type,360,360,100.0,integer,0 | 1 | 2
+brv_kosorat,4,ksr_id,360,360,100.0,integer,1 | 2 | 3
+brv_kosorat,5,ksr_rad,360,360,100.0,integer,1 | 2 | 3
+brv_kosorat,6,ksr_name,360,360,100.0,persian/text,بیمه | مالیات | علی الحساب
+brv_kosorat,7,ksr_prcn,360,360,100.0,empty/nullable,
+brv_kosorat,8,ksr_PlusOrMinec,360,360,100.0,text,- | +
+brv_kosorat,9,ksr_Mablaghi,360,360,100.0,boolean,false
+brv_kosorat,10,ksr_price,152,360,42.22,decimal,0.0000
+brv_ahta,1,ata_link_proj,781,781,100.0,integer,11
+brv_ahta,2,ata_nufh,781,781,100.0,integer,1 | 3 | 4
+brv_ahta,3,ata_nuse,781,781,100.0,integer,0 | 1 | 10
+brv_ahta,4,ata_nusv_previous,781,781,100.0,integer,0 | 1 | 2
+brv_ahta,5,ata_type_previous,781,781,100.0,integer,0 | 1
+brv_ahta,6,ata_nusv,781,781,100.0,integer,1 | 2 | 3
+brv_ahta,7,ata_type,781,781,100.0,integer,0 | 1
+brv_ahta,8,ata_inrd,781,781,100.0,integer,2 | 3 | 4
+brv_ahta,9,ata_year,781,781,100.0,integer,1403 | 1404
+brv_ahta,10,ata_rad,781,781,100.0,integer,1 | 2 | 11
+brv_ahta,11,ata_nufh_name,781,781,100.0,persian/text,ابنیه | تاسیسات مکانیکی | تاسیسات برقی
+brv_ahta,12,ata_name,781,781,100.0,persian/text,عملیات تخریب و برچیدن | سقف تیرچه و بلوک | آجرکاری و شفته ریزی
+brv_ahta,13,ata_pcnw,670,781,85.79,decimal,94775623725.0000 | 77106187947.0000 | 96702854499.0000
+brv_ahta,14,ata_pcol,670,781,85.79,decimal,0.0000 | 94775623725.0000 | 96702854499.0000
+brv_ahta,15,ata_pcnz,670,781,85.79,decimal,155598392969.0000 | 126098544214.0000 | 176246140390.0000
+brv_ahta,16,ata_pcoz,670,781,85.79,decimal,0.0000 | 155598392969.0000 | 176246140390.0000
+brv_ahta,17,ata_zrta,781,781,100.0,decimal,0 | 0.173 | 0.649
+brv_ahta,18,ata_tidy,781,781,100.0,text,40:40 | 11:11 | 52:82
+brv_ahta,19,ata_pcwp,781,781,100.0,decimal,94775623725.0000 | 77106187947.0000 | 1222146344.0000
+brv_ahta,20,ata_pcwz,781,781,100.0,decimal,155598392969.0000 | 126098544214.0000 | 13093693486.0000
+brv_ahta,21,ata_pcta,781,781,100.0,decimal,0.0000 | 7898530516.0000 | 81712730747.0000
+brv_ahta,22,ata_pctz,781,781,100.0,decimal,0.0000 | 24073973307.0000 | 211704588865.0000
+brv_ahta,23,ata_shnw,781,781,100.0,decimal,6970.7 | 8239 | 11608
+brv_ahta,24,ata_shbs,781,781,100.0,decimal,6970.7 | 7012.8 | 5851.4
+brv_ahta,25,ata_fsrs,781,781,100.0,boolean,false | true
+brv_ahta,26,ata_str_prod,781,781,100.0,persian/text,چهارم 1402 | دوم 1403 | دوم 1404
+brv_ahta,27,ata_str_avg,781,781,100.0,empty/nullable,
+brv_ahta,28,ata_str_tatb,781,781,100.0,empty/nullable,
+brv_ahta,29,ata_pcnw_3m,781,781,100.0,decimal,94775623725.0000 | 77106187947.0000 | 96702854499.0000
+brv_ahta,30,ata_pcol_3m,781,781,100.0,decimal,0.0000 | 94775623725.0000 | 96702854499.0000
+brv_ahta,31,ata_pcnz_3m,781,781,100.0,decimal,155598392969.0000 | 126098544214.0000 | 176246140390.0000
+brv_ahta,32,ata_pcoz_3m,781,781,100.0,decimal,0.0000 | 155598392969.0000 | 176246140390.0000
+brv_ahta,33,ata_year_shkh,781,781,100.0,integer,1402 | 1403 | 1404
+brv_ahta,34,ata_prod_shkh,781,781,100.0,integer,4 | 2
+brv_ahta,35,ata_pcnz_bedunebalasari,670,781,85.79,decimal,110353470190.0000 | 89431591641.0000 | 124997262688.0000
+brv_ahta,36,ata_pcoz_bedunebalasari,670,781,85.79,decimal,0.0000 | 110353470190.0000 | 124997262688.0000
+brv_ahta,37,ata_inMon,781,781,100.0,integer,0
+brv_ahta,38,ata_inMon_shkh,781,781,100.0,integer,0
+brv_ahta,39,ata_itprad,781,781,100.0,integer,1 | 2
+brv_ahta,40,ata_str_avg_mbn_99,781,781,100.0,empty/nullable,
+brv_ahta,41,ata_SahmPishPar,781,781,100.0,decimal,0.0000
+brv_ahta,42,ata_No_Zero,753,781,96.41,boolean,true | false
+brv_ahta,43,ata_pcoz_compare,646,781,82.71,decimal,1461806082.0000 | 2333650384.0000 | 2061041413.0000
+brv_ahta,44,ata_str_avg_HamlExc,753,781,96.41,empty/nullable,
+brv_ahta,45,ata_nuse_real,110,781,14.08,integer,1 | 10 | 11
+brv_ahta,46,ata_NuseForSh,7,781,0.9,integer,28
+brv_acts,1,act_link_proj,122,122,100.0,integer,11
+brv_acts,2,act_coac,122,122,100.0,integer,0 | 00
+brv_acts,3,act_nusv,122,122,100.0,integer,0 | 1 | 2
+brv_acts,4,act_type,122,122,100.0,integer,0 | 1 | 2
+brv_acts,5,act_id,122,122,100.0,integer,1 | 0
+brv_acts,6,act_parent,122,122,100.0,integer,-1 | 1
+brv_acts,7,act_level,122,122,100.0,integer,0 | 1
+brv_acts,8,act_rad,122,122,100.0,integer,1
+brv_acts,9,act_name,122,122,100.0,persian/text,پروژه | فعاليت صفر
+brv_acts,10,act_unit,122,122,100.0,empty/nullable,
+brv_acts,11,act_zrib,122,122,100.0,integer,1
+brv_acts,12,act_prcn,122,122,100.0,integer,0
+brv_acts,13,act_prcn_ol,122,122,100.0,integer,0
+brv_acts,14,act_weit,122,122,100.0,integer,100
+brv_acts,15,act_prcf,122,122,100.0,integer,0
+brv_acts,16,act_task_type,122,122,100.0,text,Fixed Work
+brv_acts,17,act_duration,122,122,100.0,integer,1
+brv_acts,18,act_User_Edit,122,122,100.0,boolean,false
+brv_acts,19,act_Start,122,122,100.0,integer,0
+brv_acts,20,act_Finish,122,122,100.0,integer,0
+brv_acts,21,act_Min_Start_User,122,122,100.0,integer,0
+brv_acts,22,act_Min_Start_CPM,122,122,100.0,integer,0
+brv_acts,23,act_IsSummery,122,122,100.0,boolean,false
+brv_acts,24,act_IsPlanned,122,122,100.0,boolean,false
+brv_acts,25,act_weit_koll,122,122,100.0,integer,100
+brv_acts,26,act_SetTatbighDasti,122,122,100.0,boolean,false
+brv_acts,27,act_total_rad,32,122,26.23,integer,1 | 2
+brv_acts,28,IsParent,4,122,3.28,boolean,true | false
+brv_acts,29,IsLeaf,4,122,3.28,boolean,false | true
+brv_acts,30,NewCoac,2,122,1.64,integer,1 | 2
+brv_type_situ,1,tst_link_proj,33,33,100.0,integer,11
+brv_type_situ,2,tst_nusv,33,33,100.0,integer,0 | 1 | 2
+brv_type_situ,3,tst_type,33,33,100.0,integer,0 | 1
+brv_type_situ,4,tst_rad,33,33,100.0,integer,1 | 2 | 4
+brv_type_situ,5,tst_date,33,33,100.0,date/text,1403/04/30 | 1403/05/10 | 1403/07/30
+brv_type_situ,6,tst_date_previous,33,33,100.0,date/text,1403/04/30 | 1403/05/10 | 1403/07/30
+brv_type_situ,7,tst_type_previous_compare,13,33,39.39,integer,0
+brv_type_situ,8,tst_is_locked,30,33,90.91,boolean,false
+brv_type_situ,9,tst_lock_pass,33,33,100.0,text,ZxEMgUc/7KsLchyLmhc09w==
+brv_type_situ,10,tst_selected,30,33,90.91,boolean,true
+brv_type_situ,11,tst_FirstDay_Intp,30,33,90.91,boolean,false
+brv_type_situ,12,tst_code,33,33,100.0,integer,65460168
+brv_type_situ,13,tst_hastatbigh,33,33,100.0,boolean,true
+brv_type_situ,14,tst_tadilmanfi,30,33,90.91,boolean,false
+brv_type_situ,15,tst_type_current_tadil,31,33,93.94,integer,0 | 1
+brv_type_situ,16,tst_date_current_tadil,31,33,93.94,date/text,1403/04/30 | 1403/05/10 | 1403/07/30
+brv_type_situ,17,tst_PishPardakht,33,33,100.0,decimal,0.0000
+brv_type_situ,18,tst_PishPardakhtMande,30,33,90.91,decimal,0.0000
+brv_type_situ,19,tst_nusv_previous,32,33,96.97,integer,0 | 1 | 2
+brv_type_situ,20,tst_type_previous,32,33,96.97,integer,0 | 1
+brv_type_situ,21,tst_nusv_previous_tadil,32,33,96.97,integer,0 | 1 | 2
+brv_type_situ,22,tst_type_previous_tadil,32,33,96.97,integer,0 | 1
+brv_type_situ,23,tst_date_previous_tadil,32,33,96.97,date/text,1403/04/01 | 1403/05/10 | 1403/07/30
+brv_type_situ,24,tst_mbsv,32,33,96.97,decimal,155598392969.0000 | 176246140390.0000 | 484371294651.0000
+brv_type_situ,25,tst_mbtd_sum,6,33,18.18,decimal,0.0000 | 38266059793.0000 | 229677269561.0000
+brv_type_situ,26,tst_mbtd_sum_rs,6,33,18.18,decimal,0.0000 | 24073973307.0000 | 215478684639.0000
+brv_type_situ,27,tst_mbtd_sum_previous,6,33,18.18,decimal,0.0000 | 38266059793.0000
+brv_type_situ,28,tst_mbtd_sum_previous_rs,6,33,18.18,decimal,0.0000 | 24073973307.0000
+brv_type_situ,29,tst_codeModi,32,33,96.97,integer,78441576 | 88922075 | 50840957
+brv_type_situ,30,tst_DateModi,32,33,96.97,date/text,1403/08/05 - 12:09 | 1403/08/05 - 17:01 | 1403/08/30 - 17:07
+brv_type_situ,31,tst_dateCreateAuto,31,33,93.94,date/text,1403/08/05 | 1403/08/27 | 1403/09/26
+brv_type_situ,32,tst_nusv_previousAuto,31,33,93.94,integer,1 | 2 | 3
+brv_type_situ,33,tst_type_previousAuto,31,33,93.94,integer,0
+brv_type_situ,34,tst_codePrjSrcCopy,31,33,93.94,integer,82028122
+brv_type_situ,35,tst_mbsv_previous,2,33,6.06,decimal,0.0000
+brv_type_situ,36,tst_tgrb_zrtd,4,33,12.12,integer,3
+brv_type_situ,37,tst_type_tdil,4,33,12.12,integer,0
+brv_type_situ,38,tst_zrib_tdil,4,33,12.12,decimal,0.95
+brv_type_situ,39,tst_parent_nusv,5,33,15.15,integer,1 | 2 | 3
+brv_type_situ,40,tst_parent_type,5,33,15.15,integer,0 | 1
+brv_type_situ,41,tst_datetimeRestore,6,33,18.18,date/text,1404/12/02 - 10:19
+brv_fhpy,1,fhp_link_proj,183,183,100.0,integer,11
+brv_fhpy,2,fhp_nufh,183,183,100.0,integer,1 | 4 | 3
+brv_fhpy,3,fhp_nusv,183,183,100.0,integer,0 | 1 | 2
+brv_fhpy,4,fhp_type,183,183,100.0,integer,0 | 1 | 2
+brv_fhpy,5,fhp_abst,183,183,100.0,persian/text,ابنیه | تاسیسات برقی | تاسیسات مکانیکی
+brv_fhpy,6,fhp_dscr,183,183,100.0,persian/text,فهرست بهای واحد پایه رشته ابنیه رسته ساختمان سال 1403 | فهرست بهای واحد پایه رشته تاسیسات برقی رسته ساختمان سال 1403 | فهرست بهای واحد پایه رشته تاسیسات مکانیکی رسته ساختمان سال 1403
+brv_fhpy,7,fhp_rad,183,183,100.0,integer,1 | 2 | 3
+brv_fhpy,8,fhp_plmu_tit,183,183,100.0,persian/text,پیشنهادی
+brv_fhpy,9,fhp_loca_tit,183,183,100.0,persian/text,منطقه ای
+brv_fhpy,10,fhp_heit_tit,183,183,100.0,persian/text,ارتفاع
+brv_fhpy,11,fhp_taba_tit,183,183,100.0,persian/text,طبقات
+brv_fhpy,12,fhp_hard_tit,183,183,100.0,persian/text,صعوبت
+brv_fhpy,13,fhp_tatb_tit,183,183,100.0,empty/nullable,
+brv_fhpy,14,fhp_ovhd_tit,183,183,100.0,persian/text,بالاسری
+brv_fhpy,15,fhp_zrmp1_tit,183,183,100.0,text,70%
+brv_fhpy,16,fhp_zrmp2_tit,183,183,100.0,persian/text,پایکار
+brv_fhpy,17,fhp_loca_tit_psn,183,183,100.0,persian/text,منطقه ای
+brv_fhpy,18,fhp_heit_tit_psn,183,183,100.0,persian/text,ارتفاع
+brv_fhpy,19,fhp_taba_tit_psn,183,183,100.0,persian/text,طبقات
+brv_fhpy,20,fhp_hard_tit_psn,183,183,100.0,persian/text,صعوبت
+brv_fhpy,21,fhp_tatb_tit_psn,183,183,100.0,empty/nullable,
+brv_fhpy,22,fhp_ovhd_tit_psn,183,183,100.0,persian/text,بالاسری
+brv_fhpy,23,fhp_plmu,183,183,100.0,decimal,1 | 1.38
+brv_fhpy,24,fhp_plmu_s,183,183,100.0,integer,1
+brv_fhpy,25,fhp_plmu_fc,183,183,100.0,integer,1
+brv_fhpy,26,fhp_plmu_mp,183,183,100.0,integer,1
+brv_fhpy,27,fhp_plmu_s_mp,183,183,100.0,integer,1
+brv_fhpy,28,fhp_plmu_fc_mp,183,183,100.0,integer,1
+brv_fhpy,29,fhp_loca,183,183,100.0,decimal,1 | 1.01
+brv_fhpy,30,fhp_loca_s,183,183,100.0,decimal,1 | 1.01
+brv_fhpy,31,fhp_loca_fc,183,183,100.0,integer,1
+brv_fhpy,32,fhp_loca_mp,183,183,100.0,decimal,1 | 1.01
+brv_fhpy,33,fhp_loca_s_mp,183,183,100.0,decimal,1 | 1.01
+brv_fhpy,34,fhp_loca_fc_mp,183,183,100.0,integer,1
+brv_fhpy,35,fhp_heit,183,183,100.0,integer,1
+brv_fhpy,36,fhp_heit_s,183,183,100.0,integer,1
+brv_fhpy,37,fhp_heit_fc,183,183,100.0,integer,1
+brv_fhpy,38,fhp_heit_mp,183,183,100.0,integer,1
+brv_fhpy,39,fhp_heit_s_mp,183,183,100.0,integer,1
+brv_fhpy,40,fhp_heit_fc_mp,183,183,100.0,integer,1
+brv_fhpy,41,fhp_taba,183,183,100.0,decimal,1 | 1.0088
+brv_fhpy,42,fhp_taba_s,183,183,100.0,decimal,1 | 1.0088
+brv_fhpy,43,fhp_taba_fc,183,183,100.0,integer,1
+brv_fhpy,44,fhp_taba_mp,183,183,100.0,integer,1
+brv_fhpy,45,fhp_taba_s_mp,183,183,100.0,integer,1
+brv_fhpy,46,fhp_taba_fc_mp,183,183,100.0,integer,1
+brv_fhpy,47,fhp_hard,183,183,100.0,integer,1
+brv_fhpy,48,fhp_hard_s,183,183,100.0,integer,1
+brv_fhpy,49,fhp_hard_fc,183,183,100.0,integer,1
+brv_fhpy,50,fhp_hard_mp,183,183,100.0,integer,1
+brv_fhpy,51,fhp_hard_s_mp,183,183,100.0,integer,1
+brv_fhpy,52,fhp_hard_fc_mp,183,183,100.0,integer,1
+brv_fhpy,53,fhp_tatb,183,183,100.0,integer,1
+brv_fhpy,54,fhp_tatb_s,183,183,100.0,integer,1
+brv_fhpy,55,fhp_tatb_fc,183,183,100.0,integer,1
+brv_fhpy,56,fhp_tatb_mp,183,183,100.0,integer,1
+brv_fhpy,57,fhp_tatb_s_mp,183,183,100.0,integer,1
+brv_fhpy,58,fhp_tatb_fc_mp,183,183,100.0,integer,1
+brv_fhpy,59,fhp_oth1,183,183,100.0,decimal,1 | 1.04
+brv_fhpy,60,fhp_oth1_s,183,183,100.0,integer,1
+brv_fhpy,61,fhp_oth1_fc,183,183,100.0,integer,1
+brv_fhpy,62,fhp_oth1_mp,183,183,100.0,decimal,1 | 1.04
+brv_fhpy,63,fhp_oth1_s_mp,183,183,100.0,decimal,1 | 1.04
+brv_fhpy,64,fhp_oth1_fc_mp,183,183,100.0,integer,1
+brv_fhpy,65,fhp_oth2,183,183,100.0,integer,1
+brv_fhpy,66,fhp_oth2_s,183,183,100.0,integer,1
+brv_fhpy,67,fhp_oth2_fc,183,183,100.0,integer,1
+brv_fhpy,68,fhp_oth2_mp,183,183,100.0,integer,1
+brv_fhpy,69,fhp_oth2_s_mp,183,183,100.0,integer,1
+brv_fhpy,70,fhp_oth2_fc_mp,183,183,100.0,integer,1
+brv_fhpy,71,fhp_oth3,183,183,100.0,integer,1
+brv_fhpy,72,fhp_oth3_s,183,183,100.0,integer,1
+brv_fhpy,73,fhp_oth3_fc,183,183,100.0,integer,1
+brv_fhpy,74,fhp_oth3_mp,183,183,100.0,integer,1
+brv_fhpy,75,fhp_oth3_s_mp,183,183,100.0,integer,1
+brv_fhpy,76,fhp_oth3_fc_mp,183,183,100.0,integer,1
+brv_fhpy,77,fhp_ovhd,183,183,100.0,decimal,1.3 | 1.41
+brv_fhpy,78,fhp_ovhd_s,183,183,100.0,decimal,1.3 | 1.41
+brv_fhpy,79,fhp_ovhd_fc,183,183,100.0,decimal,1.3 | 1.41
+brv_fhpy,80,fhp_ovhd_mp,183,183,100.0,decimal,1.3 | 1.41
+brv_fhpy,81,fhp_ovhd_s_mp,183,183,100.0,decimal,1.3 | 1.41
+brv_fhpy,82,fhp_ovhd_fc_mp,183,183,100.0,decimal,1.3 | 1.41
+brv_fhpy,83,fhp_sumz,183,183,100.0,decimal,1.3 | 1.43663208 | 1.4940973632
+brv_fhpy,84,fhp_sumz_s,183,183,100.0,decimal,1.3 | 1.43663208 | 1.41
+brv_fhpy,85,fhp_sumz_fc,183,183,100.0,decimal,1.3 | 1.41
+brv_fhpy,86,fhp_sumz_mp,183,183,100.0,decimal,1.3 | 1.481064 | 1.4241
+brv_fhpy,87,fhp_sumz_s_mp,183,183,100.0,decimal,1.3 | 1.481064 | 1.4664
+brv_fhpy,88,fhp_sumz_fc_mp,183,183,100.0,decimal,1.3 | 1.41
+brv_fhpy,89,fhp_zrmp,183,183,100.0,decimal,0.7
+brv_fhpy,90,fhp_zrse,183,183,100.0,integer,41
+brv_fhpy,91,fhp_tjhz_prcn,183,183,100.0,text,4%
+brv_fhpy,92,fhp_tgrb,183,183,100.0,integer,14
+brv_fhpy,93,fhp_loca_psn,183,183,100.0,integer,1
+brv_fhpy,94,fhp_loca_s_psn,183,183,100.0,integer,1
+brv_fhpy,95,fhp_loca_fc_psn,183,183,100.0,integer,1
+brv_fhpy,96,fhp_heit_psn,183,183,100.0,integer,1
+brv_fhpy,97,fhp_heit_s_psn,183,183,100.0,integer,1
+brv_fhpy,98,fhp_heit_fc_psn,183,183,100.0,integer,1
+brv_fhpy,99,fhp_taba_psn,183,183,100.0,integer,1
+brv_fhpy,100,fhp_taba_s_psn,183,183,100.0,integer,1
+brv_fhpy,101,fhp_taba_fc_psn,183,183,100.0,integer,1
+brv_fhpy,102,fhp_hard_psn,183,183,100.0,integer,1
+brv_fhpy,103,fhp_hard_s_psn,183,183,100.0,integer,1
+brv_fhpy,104,fhp_hard_fc_psn,183,183,100.0,integer,1
+brv_fhpy,105,fhp_tatb_psn,183,183,100.0,integer,1
+brv_fhpy,106,fhp_tatb_s_psn,183,183,100.0,integer,1
+brv_fhpy,107,fhp_tatb_fc_psn,183,183,100.0,integer,1
+brv_fhpy,108,fhp_oth1_psn,183,183,100.0,integer,1
+brv_fhpy,109,fhp_oth1_s_psn,183,183,100.0,integer,1
+brv_fhpy,110,fhp_oth1_fc_psn,183,183,100.0,integer,1
+brv_fhpy,111,fhp_oth2_psn,183,183,100.0,integer,1
+brv_fhpy,112,fhp_oth2_s_psn,183,183,100.0,integer,1
+brv_fhpy,113,fhp_oth2_fc_psn,183,183,100.0,integer,1
+brv_fhpy,114,fhp_oth3_psn,183,183,100.0,integer,1
+brv_fhpy,115,fhp_oth3_s_psn,183,183,100.0,integer,1
+brv_fhpy,116,fhp_oth3_fc_psn,183,183,100.0,integer,1
+brv_fhpy,117,fhp_ovhd_psn,183,183,100.0,decimal,1.3
+brv_fhpy,118,fhp_ovhd_s_psn,183,183,100.0,decimal,1.3
+brv_fhpy,119,fhp_ovhd_fc_psn,183,183,100.0,decimal,1.3
+brv_fhpy,120,fhp_sumz_psn,183,183,100.0,decimal,1.3
+brv_fhpy,121,fhp_sumz_s_psn,183,183,100.0,decimal,1.3
+brv_fhpy,122,fhp_sumz_fc_psn,183,183,100.0,decimal,1.3
+brv_fhpy,123,fhp_tgrb_psn,183,183,100.0,integer,14
+brv_fhpy,124,fhp_mbfh_tdil_psn,171,183,93.44,integer,0
+brv_fhpy,125,fhp_mb_totl_tdil_psn,171,183,93.44,integer,0
+brv_fhpy,126,fhp_mbfh_tdil_psn_z,171,183,93.44,integer,0
+brv_fhpy,127,fhp_mb_totl_tdil_psn_z,171,183,93.44,integer,0
+brv_fhpy,128,fhp_is_locked,183,183,100.0,boolean,false
+brv_fhpy,129,fhp_tdil_tatb,183,183,100.0,boolean,false
+brv_fhpy,130,fhp_rzmt_numo_header,183,183,100.0,persian/text,تعداد
+brv_fhpy,131,fhp_rzmt_tool_header,183,183,100.0,persian/text,طول
+brv_fhpy,132,fhp_rzmt_arz_header,183,183,100.0,persian/text,عرض
+brv_fhpy,133,fhp_rzmt_heit_header,183,183,100.0,persian/text,ارتفاع
+brv_fhpy,134,fhp_rzmt_weit_header,183,183,100.0,persian/text,وزن یا ...
+brv_fhpy,135,fhp_2Item,183,183,100.0,boolean,false
+brv_fhpy,136,fhp_tdil_tatb_taj_Just_RahNufh,183,183,100.0,boolean,false
+brv_fhpy,137,fhp_mbfh,96,183,52.46,decimal,0.00 | 1605015592004.00
+brv_fhpy,138,fhp_mbsx,96,183,52.46,decimal,0.0000
+brv_fhpy,139,fhp_mbfc,96,183,52.46,decimal,0.0000 | 473661925274.0000 | 473661905556.0000
+brv_fhpy,140,fhp_mb_totl,96,183,52.46,decimal,0.00 | 1732301899280.00 | 1751248375502.00
+brv_fhpy,141,fhp_mbfh_z,96,183,52.46,decimal,0.00 | 3182157681892.00
+brv_fhpy,142,fhp_mbsx_z,96,183,52.46,decimal,0.0000
+brv_fhpy,143,fhp_mbfc_z,96,183,52.46,decimal,0.0000 | 473661925274.0000 | 473661905556.0000
+brv_fhpy,144,fhp_mb_totl_z,96,183,52.46,decimal,0.00 | 3309443989168.00 | 3328390465390.00
+brv_fhpy,145,fhp_mbfh_work,96,183,52.46,decimal,19841042725.0000 | 34113708216.0000 | 116364604136.0000
+brv_fhpy,146,fhp_mbsx_work,96,183,52.46,decimal,0.0000 | 477051283.0000 | 26738218619.0000
+brv_fhpy,147,fhp_mbfc_work,96,183,52.46,decimal,0.0000 | 196402201965.0000 | 473661925274.0000
+brv_fhpy,148,fhp_mbmp_work,96,183,52.46,decimal,74934581000.0000 | 62112095000.0000 | 125870272900.0000
+brv_fhpy,149,fhp_mb_work,96,183,52.46,decimal,94775623725.0000 | 96702854499.0000 | 268973095655.0000
+brv_fhpy,150,fhp_mbfh_work_z,96,183,52.46,decimal,42173858669.0000 | 80448426128.0000 | 260767804437.0000
+brv_fhpy,151,fhp_mbsx_work_z,96,183,52.46,decimal,0.0000 | 1781902660.0000 | 37700888253.0000
+brv_fhpy,152,fhp_mbfc_work_z,96,183,52.46,decimal,0.0000 | 597062693974.0000 | 666274829946.0000
+brv_fhpy,153,fhp_mbmp_work_z,96,183,52.46,decimal,113424534300.0000 | 94015811602.0000 | 185902601961.0000
+brv_fhpy,154,fhp_mb_work_z,96,183,52.46,decimal,155598392969.0000 | 176246140390.0000 | 484371294651.0000
+brv_fhpy,155,fhp_pr_work,96,183,52.46,decimal,100 | 99.9 | 114.58
+brv_fhpy,156,fhp_pr_work_z,96,183,52.46,decimal,100 | 101.2 | 0
+brv_fhpy,157,fhp_mbtj_work,96,183,52.46,decimal,0.0000 | 56157670077.4000 | 65892211298.0800
+brv_fhpy,158,fhp_mbtj_fmul_work,96,183,52.46,text,"4% * 3,997,209,829,263 | 4% * 3,207,338,649,768 | 4% * 3,201,643,587,008"
+brv_fhpy,159,fhp_mbfh_work_tatb,96,183,52.46,decimal,19841042725.0000 | 34113708216.0000 | 116364604136.0000
+brv_fhpy,160,fhp_mbsx_work_tatb,96,183,52.46,decimal,0.0000 | 477051283.0000 | 26738218619.0000
+brv_fhpy,161,fhp_mbfc_work_tatb,96,183,52.46,decimal,0.0000 | 196402201965.0000 | 473661925274.0000
+brv_fhpy,162,fhp_mbmp_work_tatb,96,183,52.46,decimal,74934581000.0000 | 62112095000.0000 | 125870272900.0000
+brv_fhpy,163,fhp_mb_work_tatb,96,183,52.46,decimal,94775623725.0000 | 96702854499.0000 | 268973095655.0000
+brv_fhpy,164,fhp_mbfh_work_tatb_z,96,183,52.46,decimal,42173858669.0000 | 80448426128.0000 | 260767804437.0000
+brv_fhpy,165,fhp_mbsx_work_tatb_z,96,183,52.46,decimal,0.0000 | 1781902660.0000 | 37700888253.0000
+brv_fhpy,166,fhp_mbfc_work_tatb_z,96,183,52.46,decimal,0.0000 | 597062693974.0000 | 666274829946.0000
+brv_fhpy,167,fhp_mbmp_work_tatb_z,96,183,52.46,decimal,113424534300.0000 | 94015811602.0000 | 185902601961.0000
+brv_fhpy,168,fhp_mb_work_tatb_z,96,183,52.46,decimal,155598392969.0000 | 176246140390.0000 | 484371294651.0000
+brv_fhpy,169,fhp_mbtj_work_tatb,96,183,52.46,decimal,0.0000 | 56157670077.4000 | 65892211298.0800
+brv_fhpy,170,fhp_fzkh_new,96,183,52.46,decimal,0.0000 | 477051283.0000 | 32950491519.0000
+brv_fhpy,171,fhp_fzkh,96,183,52.46,decimal,94775623725.0000 | 96225803216.0000 | 236022604136.0000
+brv_fhpy,172,fhp_fzkh_fznew,96,183,52.46,decimal,94775623725.0000 | 96702854499.0000 | 268973095655.0000
+brv_fhpy,173,fhp_fzkh_kh,96,183,52.46,decimal,0.0000 | -693057631754.5600 | -608430026598.0800
+brv_fhpy,174,fhp_fzkh_sum,96,183,52.46,decimal,94775623725.0000 | 96702854499.0000 | 268973095655.0000
+brv_fhpy,175,fhp_fzkh_new_z,96,183,52.46,decimal,0.0000 | 1781902660.0000 | 42483468668.0000
+brv_fhpy,176,fhp_fzkh_z,96,183,52.46,decimal,155598392969.0000 | 174464237730.0000 | 441887825983.0000
+brv_fhpy,177,fhp_fzkh_fznew_z,96,183,52.46,decimal,155598392969.0000 | 176246140390.0000 | 484371294651.0000
+brv_fhpy,178,fhp_fzkh_kh_z,96,183,52.46,decimal,0.0000 | -1311249557233.5600 | -1154126531355.0800
+brv_fhpy,179,fhp_fzkh_sum_z,96,183,52.46,decimal,155598392969.0000 | 176246140390.0000 | 484371294651.0000
+brv_fhpy,180,fhp_mbfh_tdil,96,183,52.46,decimal,0.0000
+brv_fhpy,181,fhp_mbsx_tdil,96,183,52.46,decimal,0.0000
+brv_fhpy,182,fhp_mb_totl_tdil,96,183,52.46,decimal,0.00
+brv_fhpy,183,fhp_mbfh_tdil_z,96,183,52.46,decimal,0.0000
+brv_fhpy,184,fhp_mbsx_tdil_z,96,183,52.46,decimal,0.0000
+brv_fhpy,185,fhp_mb_totl_tdil_z,96,183,52.46,decimal,0.00
+brv_fhpy,186,fhp_mb49,96,183,52.46,decimal,0.00
+brv_fhpy,187,fhp_mbtj,96,183,52.46,decimal,0.0000 | 127286307275.6800 | 146232783497.9200
+brv_fhpy,188,fhp_mbtj_fmul,96,183,52.46,text,"4% * 3,182,157,681,892 | 4% * 3,655,819,587,448"
+brv_fhpy,189,fhp_tl49,96,183,52.46,decimal,0.00 | 797772069143.00 | 816718545365.00
+brv_fhpy,190,fhp_mb_loca_fh,96,183,52.46,decimal,0.0000
+brv_fhpy,191,fhp_mb_loca_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,192,fhp_mb_loca,96,183,52.46,decimal,0.0000
+brv_fhpy,193,fhp_mb_heit_fh,96,183,52.46,decimal,0.0000
+brv_fhpy,194,fhp_mb_heit_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,195,fhp_mb_heit,96,183,52.46,decimal,0.0000
+brv_fhpy,196,fhp_mb_taba_fh,96,183,52.46,decimal,0.0000
+brv_fhpy,197,fhp_mb_taba_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,198,fhp_mb_taba,96,183,52.46,decimal,0.0000
+brv_fhpy,199,fhp_mb_hard_fh,96,183,52.46,decimal,0.0000
+brv_fhpy,200,fhp_mb_hard_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,201,fhp_mb_hard,96,183,52.46,decimal,0.0000
+brv_fhpy,202,fhp_mb_tatb_fh,96,183,52.46,decimal,0.0000
+brv_fhpy,203,fhp_mb_tatb_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,204,fhp_mb_tatb,96,183,52.46,decimal,0.0000
+brv_fhpy,205,fhp_mb_oth1_fh,96,183,52.46,decimal,0.0000
+brv_fhpy,206,fhp_mb_oth1_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,207,fhp_mb_oth1,96,183,52.46,decimal,0.0000
+brv_fhpy,208,fhp_mb_oth2_fh,96,183,52.46,decimal,0.0000
+brv_fhpy,209,fhp_mb_oth2_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,210,fhp_mb_oth2,96,183,52.46,decimal,0.0000
+brv_fhpy,211,fhp_mb_oth3_fh,96,183,52.46,decimal,0.0000
+brv_fhpy,212,fhp_mb_oth3_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,213,fhp_mb_oth3,96,183,52.46,decimal,0.0000
+brv_fhpy,214,fhp_mb_ovhd_fh,96,183,52.46,decimal,0.0000 | 670485761867.0000
+brv_fhpy,215,fhp_mb_ovhd_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,216,fhp_mb_ovhd,96,183,52.46,decimal,0.0000 | 670485761867.0000
+brv_fhpy,217,fhp_mb_sumz_fh,96,183,52.46,decimal,0.00 | 2275501353871.00
+brv_fhpy,218,fhp_mb_sumz_sx,96,183,52.46,decimal,0.0000
+brv_fhpy,219,fhp_mb_sumz,96,183,52.46,decimal,0.00 | 2402787661147.00 | 2421734137369.00
+brv_fhpy,220,fhp_mb_loca_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,221,fhp_mb_loca_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,222,fhp_mb_loca_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,223,fhp_mb_heit_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,224,fhp_mb_heit_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,225,fhp_mb_heit_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,226,fhp_mb_taba_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,227,fhp_mb_taba_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,228,fhp_mb_taba_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,229,fhp_mb_hard_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,230,fhp_mb_hard_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,231,fhp_mb_hard_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,232,fhp_mb_tatb_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,233,fhp_mb_tatb_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,234,fhp_mb_tatb_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,235,fhp_mb_oth1_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,236,fhp_mb_oth1_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,237,fhp_mb_oth1_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,238,fhp_mb_oth2_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,239,fhp_mb_oth2_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,240,fhp_mb_oth2_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,241,fhp_mb_oth3_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,242,fhp_mb_oth3_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,243,fhp_mb_oth3_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,244,fhp_mb_ovhd_fh_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,245,fhp_mb_ovhd_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,246,fhp_mb_ovhd_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,247,fhp_mb_sumz_fh_psn,96,183,52.46,decimal,0.00
+brv_fhpy,248,fhp_mb_sumz_sx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,249,fhp_mb_sumz_psn,96,183,52.46,decimal,0.00
+brv_fhpy,250,fhp_mb49_psn,96,183,52.46,decimal,0.00
+brv_fhpy,251,fhp_mbtj_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,252,fhp_mbtj_fmul_psn,96,183,52.46,text,4% *
+brv_fhpy,253,fhp_tl49_psn,96,183,52.46,decimal,0.00
+brv_fhpy,254,fhp_roshd_49,96,183,52.46,integer,0 | -100
+brv_fhpy,255,fhp_mbfh_psn,96,183,52.46,decimal,0.00
+brv_fhpy,256,fhp_mbsx_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,257,fhp_mbfc_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,258,fhp_mb_totl_psn,96,183,52.46,decimal,0.00
+brv_fhpy,259,fhp_roshd,32,183,17.49,integer,-100
+brv_fhpy,260,fhp_roshd_tdil,96,183,52.46,integer,0
+brv_fhpy,261,fhp_mbfh_psn_z,96,183,52.46,decimal,0.00
+brv_fhpy,262,fhp_mbsx_psn_z,96,183,52.46,decimal,0.0000
+brv_fhpy,263,fhp_mbfc_psn_z,96,183,52.46,decimal,0.0000
+brv_fhpy,264,fhp_mb_totl_psn_z,96,183,52.46,decimal,0.00
+brv_fhpy,265,fhp_roshd_z,32,183,17.49,integer,-100
+brv_fhpy,266,fhp_zrib_z,96,183,52.46,integer,0
+brv_fhpy,267,fhp_roshd_tdil_z,96,183,52.46,integer,0
+brv_fhpy,268,fhp_mbsx_tdil_psn,96,183,52.46,decimal,0.0000
+brv_fhpy,269,fhp_roshd_tdil_psn,96,183,52.46,integer,0 | -100
+brv_fhpy,270,fhp_mbsx_tdil_psn_z,96,183,52.46,decimal,0.0000
+brv_fhpy,271,fhp_roshd_tdil_psn_z,96,183,52.46,integer,0 | -100
+brv_fhpy,272,fhp_mb_khtd,96,183,52.46,decimal,0.0000 | 38266059793.0000 | 229677269561.0000
+brv_fhpy,273,fhp_mb_khtd_rs,96,183,52.46,decimal,0.0000 | 24073973307.0000 | 211704588865.0000
+brv_fhpy,274,fhp_mbfh_sxmb_work,90,183,49.18,decimal,0.0000 | 7500000000.0000 | 9766000000.0000
+brv_fhpy,275,fhp_mbfh_sxmb_work_z,90,183,49.18,decimal,0.0000 | 15084636840.0000 | 19642208451.0000
+brv_fhpy,276,fhp_mb_work_tatb_z_bedunebalasari,90,183,49.18,decimal,110353470190.0000 | 124997262688.0000 | 343525740884.0000
+brv_fhpy,277,fhp_mbtj_work_tatb_bedunebalasari,96,183,52.46,decimal,0.0000 | 56157670077.4000 | 65892211298.0800
+brv_fhpy,278,fhp_fzkh_new_z_taj,90,183,49.18,decimal,0.0000
+brv_fhpy,279,fhp_fzkh_z_taj,90,183,49.18,decimal,0.0000 | 56157670077.4000 | 65892211298.0800
+brv_fhpy,280,fhp_fzkh_kh_z_taj,90,183,49.18,decimal,0.0000 | -43344196048.5600 | -31992963706.0800
+brv_fhpy,281,fhp_fzkh_fznew_z_taj,90,183,49.18,decimal,0.0000 | 56157670077.4000 | 65892211298.0800
+brv_fhpy,282,fhp_fzkh_sum_z_taj,33,183,18.03,decimal,0.0000
+brv_fhpy,283,fhp_mb_work_ol,90,183,49.18,decimal,94775623725.0000 | 96702854499.0000 | 268973095655.0000
+brv_fhpy,284,fhp_mb_work_ol_z,90,183,49.18,decimal,155598392969.0000 | 176246140390.0000 | 484371294651.0000
+brv_fhpy,285,fhp_mbtj_work_ol,84,183,45.9,decimal,0.0000 | 56157670077.4000 | 65892211298.0800
+brv_fhpy,286,fhp_oth1_tit,33,183,18.03,persian/text,تجهیز
+brv_mult,1,mlt_link_proj,6705,6705,100.0,integer,11
+brv_mult,2,mlt_nufh,6705,6705,100.0,integer,1 | 3 | 4
+brv_mult,3,mlt_nuse,6705,6705,100.0,integer,1 | 2 | 3
+brv_mult,4,mlt_nusv,6705,6705,100.0,integer,0 | 1 | 2
+brv_mult,5,mlt_type,6705,6705,100.0,integer,0 | 1 | 2
+brv_mult,6,mlt_is_tjhz,6705,6705,100.0,boolean,false | true
+brv_mult,7,mlt_name,6705,6705,100.0,persian/text,عملیات تخریب و برچیدن | لوله های فولادی | چراغهای فضای داخلی - غیر صنعتی
+brv_mult,8,mlt_rad,6705,6705,100.0,integer,1 | 2 | 3
+brv_mult,9,mlt_plmu,6705,6705,100.0,decimal,1 | 1.38 | 2.3
+brv_mult,10,mlt_plmu_s,6705,6705,100.0,decimal,1 | 1.38 | 2.3
+brv_mult,11,mlt_plmu_fc,6705,6705,100.0,decimal,1 | 3.04 | 3.3924
+brv_mult,12,mlt_plmu_mp,6705,6705,100.0,decimal,1 | 1.38 | 2.3
+brv_mult,13,mlt_plmu_s_mp,6705,6705,100.0,decimal,1 | 1.38 | 2.3
+brv_mult,14,mlt_plmu_fc_mp,6705,6705,100.0,integer,1
+brv_mult,15,mlt_loca,6705,6705,100.0,decimal,1 | 1.01
+brv_mult,16,mlt_loca_s,6705,6705,100.0,decimal,1 | 1.01
+brv_mult,17,mlt_loca_fc,6705,6705,100.0,integer,1
+brv_mult,18,mlt_loca_mp,6705,6705,100.0,decimal,1 | 1.01
+brv_mult,19,mlt_loca_s_mp,6705,6705,100.0,decimal,1 | 1.01
+brv_mult,20,mlt_loca_fc_mp,6705,6705,100.0,integer,1
+brv_mult,21,mlt_heit,6705,6705,100.0,integer,1
+brv_mult,22,mlt_heit_s,6705,6705,100.0,integer,1
+brv_mult,23,mlt_heit_fc,6705,6705,100.0,integer,1
+brv_mult,24,mlt_heit_mp,6705,6705,100.0,integer,1
+brv_mult,25,mlt_heit_s_mp,6705,6705,100.0,integer,1
+brv_mult,26,mlt_heit_fc_mp,6705,6705,100.0,integer,1
+brv_mult,27,mlt_taba,6705,6705,100.0,decimal,1 | 1.0088
+brv_mult,28,mlt_taba_s,6705,6705,100.0,decimal,1 | 1.0088
+brv_mult,29,mlt_taba_fc,6705,6705,100.0,integer,1
+brv_mult,30,mlt_taba_mp,6705,6705,100.0,integer,1
+brv_mult,31,mlt_taba_s_mp,6705,6705,100.0,integer,1
+brv_mult,32,mlt_taba_fc_mp,6705,6705,100.0,integer,1
+brv_mult,33,mlt_hard,6705,6705,100.0,integer,1
+brv_mult,34,mlt_hard_s,6705,6705,100.0,integer,1
+brv_mult,35,mlt_hard_fc,6705,6705,100.0,integer,1
+brv_mult,36,mlt_hard_mp,6705,6705,100.0,integer,1
+brv_mult,37,mlt_hard_s_mp,6705,6705,100.0,integer,1
+brv_mult,38,mlt_hard_fc_mp,6705,6705,100.0,integer,1
+brv_mult,39,mlt_tatb,6705,6705,100.0,integer,1
+brv_mult,40,mlt_tatb_s,6705,6705,100.0,integer,1
+brv_mult,41,mlt_tatb_fc,6705,6705,100.0,integer,1
+brv_mult,42,mlt_tatb_mp,6705,6705,100.0,integer,1
+brv_mult,43,mlt_tatb_s_mp,6705,6705,100.0,integer,1
+brv_mult,44,mlt_tatb_fc_mp,6705,6705,100.0,integer,1
+brv_mult,45,mlt_ovhd,6705,6705,100.0,decimal,1.3 | 1.41 | 1
+brv_mult,46,mlt_ovhd_s,6705,6705,100.0,decimal,1.3 | 1.41 | 1
+brv_mult,47,mlt_ovhd_fc,6705,6705,100.0,decimal,1.3 | 1.41 | 1
+brv_mult,48,mlt_ovhd_mp,6705,6705,100.0,decimal,1.3 | 1.41 | 1
+brv_mult,49,mlt_ovhd_s_mp,6705,6705,100.0,decimal,1.3 | 1.41 | 1
+brv_mult,50,mlt_ovhd_fc_mp,6705,6705,100.0,decimal,1.3 | 1.41 | 1
+brv_mult,51,mlt_oth1,6705,6705,100.0,decimal,1 | 1.04
+brv_mult,52,mlt_oth1_s,6705,6705,100.0,decimal,1 | 1.04
+brv_mult,53,mlt_oth1_fc,6705,6705,100.0,integer,1
+brv_mult,54,mlt_oth1_mp,6705,6705,100.0,decimal,1 | 1.04
+brv_mult,55,mlt_oth1_s_mp,6705,6705,100.0,decimal,1 | 1.04
+brv_mult,56,mlt_oth1_fc_mp,6705,6705,100.0,integer,1
+brv_mult,57,mlt_oth2,6705,6705,100.0,integer,1
+brv_mult,58,mlt_oth2_s,6705,6705,100.0,integer,1
+brv_mult,59,mlt_oth2_fc,6705,6705,100.0,integer,1
+brv_mult,60,mlt_oth2_mp,6705,6705,100.0,integer,1
+brv_mult,61,mlt_oth2_s_mp,6705,6705,100.0,integer,1
+brv_mult,62,mlt_oth2_fc_mp,6705,6705,100.0,integer,1
+brv_mult,63,mlt_oth3,6705,6705,100.0,integer,1
+brv_mult,64,mlt_oth3_s,6705,6705,100.0,integer,1
+brv_mult,65,mlt_oth3_fc,6705,6705,100.0,integer,1
+brv_mult,66,mlt_oth3_mp,6705,6705,100.0,integer,1
+brv_mult,67,mlt_oth3_s_mp,6705,6705,100.0,integer,1
+brv_mult,68,mlt_oth3_fc_mp,6705,6705,100.0,integer,1
+brv_mult,69,mlt_zrmp_70,6705,6705,100.0,decimal,0.7 | 1
+brv_mult,70,mlt_zrmp_70_s,6705,6705,100.0,decimal,0.7 | 1
+brv_mult,71,mlt_zrmp_70_fc,6705,6705,100.0,decimal,0.7 | 1
+brv_mult,72,mlt_zrmp_mp,6705,6705,100.0,decimal,1 | 0.9 | 0.7
+brv_mult,73,mlt_zrmp_s_mp,6705,6705,100.0,decimal,1 | 0.9 | 0.7
+brv_mult,74,mlt_zrmp_fc_mp,6705,6705,100.0,decimal,1 | 0.9 | 0.7
+brv_mult,75,mlt_zrmp_70_mp,6705,6705,100.0,decimal,0.7 | 1
+brv_mult,76,mlt_zrmp_70_s_mp,6705,6705,100.0,decimal,0.7 | 1
+brv_mult,77,mlt_zrmp_70_fc_mp,6705,6705,100.0,decimal,0.7 | 1
+brv_mult,78,mlt_sumz,6705,6705,100.0,decimal,1.3 | 2.061854361216 | 1.9825522704
+brv_mult,79,mlt_sumz_s,6705,6705,100.0,decimal,1.3 | 2.061854361216 | 1.41
+brv_mult,80,mlt_sumz_fc,6705,6705,100.0,decimal,1.3 | 1.41 | 1
+brv_mult,81,mlt_sumz_mp,6705,6705,100.0,decimal,0.91 | 1.43071 | 1.430707824
+brv_mult,82,mlt_sumz_s_mp,6705,6705,100.0,decimal,0.91 | 1.43071 | 1.430707824
+brv_mult,83,mlt_sumz_fc_mp,6705,6705,100.0,decimal,0.91 | 0.987 | 0.819
+brv_mult,84,mlt_loca_psn,6705,6705,100.0,integer,1
+brv_mult,85,mlt_loca_s_psn,6705,6705,100.0,integer,1
+brv_mult,86,mlt_loca_fc_psn,6705,6705,100.0,integer,1
+brv_mult,87,mlt_heit_psn,6705,6705,100.0,integer,1
+brv_mult,88,mlt_heit_s_psn,6705,6705,100.0,integer,1
+brv_mult,89,mlt_heit_fc_psn,6705,6705,100.0,integer,1
+brv_mult,90,mlt_taba_psn,6705,6705,100.0,integer,1
+brv_mult,91,mlt_taba_s_psn,6705,6705,100.0,integer,1
+brv_mult,92,mlt_taba_fc_psn,6705,6705,100.0,integer,1
+brv_mult,93,mlt_hard_psn,6705,6705,100.0,integer,1
+brv_mult,94,mlt_hard_s_psn,6705,6705,100.0,integer,1
+brv_mult,95,mlt_hard_fc_psn,6705,6705,100.0,integer,1
+brv_mult,96,mlt_tatb_psn,6705,6705,100.0,integer,1
+brv_mult,97,mlt_tatb_s_psn,6705,6705,100.0,integer,1
+brv_mult,98,mlt_tatb_fc_psn,6705,6705,100.0,integer,1
+brv_mult,99,mlt_ovhd_psn,6705,6705,100.0,decimal,1.3 | 1 | 1.14
+brv_mult,100,mlt_ovhd_s_psn,6705,6705,100.0,decimal,1.3 | 1 | 1.14
+brv_mult,101,mlt_ovhd_fc_psn,6705,6705,100.0,decimal,1.3 | 1
+brv_mult,102,mlt_oth1_psn,6705,6705,100.0,integer,1
+brv_mult,103,mlt_oth1_s_psn,6705,6705,100.0,integer,1
+brv_mult,104,mlt_oth1_fc_psn,6705,6705,100.0,integer,1
+brv_mult,105,mlt_oth2_psn,6705,6705,100.0,integer,1
+brv_mult,106,mlt_oth2_s_psn,6705,6705,100.0,integer,1
+brv_mult,107,mlt_oth2_fc_psn,6705,6705,100.0,integer,1
+brv_mult,108,mlt_oth3_psn,6705,6705,100.0,integer,1
+brv_mult,109,mlt_oth3_s_psn,6705,6705,100.0,integer,1
+brv_mult,110,mlt_oth3_fc_psn,6705,6705,100.0,integer,1
+brv_mult,111,mlt_sumz_psn,6705,6705,100.0,decimal,1.3 | 1 | 1.14
+brv_mult,112,mlt_sumz_s_psn,6705,6705,100.0,decimal,1.3 | 1 | 1.14
+brv_mult,113,mlt_sumz_fc_psn,6705,6705,100.0,decimal,1.3 | 1
+brv_mult,114,ses_49tl_psn,6269,6705,93.5,integer,0
+brv_mult,115,ses_pctl_psn_z,6173,6705,92.07,integer,0
+brv_mult,116,ses_pcfh_tdil_psn,6269,6705,93.5,integer,0
+brv_mult,117,ses_pctl_tdil_psn,6269,6705,93.5,integer,0
+brv_mult,118,ses_pcfh_tdil_psn_z,6269,6705,93.5,integer,0
+brv_mult,119,ses_pctl_tdil_psn_z,6269,6705,93.5,integer,0
+brv_mult,120,mlt_sumz_str,2278,6705,33.97,text,1/38*1/01*1/0088*1/41*1/04 | 1/38*1/01*1/0088*1/41 | 1/3
+brv_mult,121,mlt_sumz_s_str,2278,6705,33.97,text,1/38*1/01*1/0088*1/41*1/04 | 1/41 | 1/3
+brv_mult,122,mlt_sumz_fc_str,2278,6705,33.97,text,1/3 | 1/41 | 3/04
+brv_mult,123,mlt_sumz_mp_str,2278,6705,33.97,text,1/38*1/01*1/41*1/04*0/7 | 1/38*1/01*1/41*0/7 | 1/3*0/7
+brv_mult,124,mlt_sumz_s_mp_str,2278,6705,33.97,text,1/38*1/01*1/41*1/04*0/7 | 1/41*1/04*0/7 | 1/41*0/7
+brv_mult,125,mlt_sumz_fc_mp_str,2278,6705,33.97,text,1/3*0/7 | 1/41*0/7 | 1/3*0/9*0/7
+brv_mult,126,ses_pcfh,477,6705,7.11,decimal,0.0000 | 474934500.0000 | 519170300.0000
+brv_mult,127,ses_pcsx,477,6705,7.11,decimal,0.0000
+brv_mult,128,ses_pcfc,477,6705,7.11,decimal,0.0000 | 473661905556.0000 | 473661925274.0000
+brv_mult,129,ses_pctl,477,6705,7.11,decimal,0.0000 | 474934500.0000 | 519170300.0000
+brv_mult,130,ses_pcfh_z,477,6705,7.11,decimal,0.0000 | 1569304119.0000 | 3356355186.0000
+brv_mult,131,ses_pcsx_z,477,6705,7.11,decimal,0.0000
+brv_mult,132,ses_pcfc_z,477,6705,7.11,decimal,0.0000 | 473661905556.0000 | 473661925274.0000
+brv_mult,133,ses_pctl_z,477,6705,7.11,decimal,0.0000 | 1569304119.0000 | 3356355186.0000
+brv_mult,134,ses_pcfh_work,477,6705,7.11,decimal,708976400.0000 | 865211600.0000 | 648257720.0000
+brv_mult,135,ses_pcsx_work,477,6705,7.11,decimal,0.0000 | 389865300.0000 | 2388358146.0000
+brv_mult,136,ses_pcfc_work,477,6705,7.11,decimal,0.0000 | 196402201965.0000 | 473661925274.0000
+brv_mult,137,ses_pcmp_work,477,6705,7.11,decimal,0.0000 | 3000000000.0000 | 1000000000.0000
+brv_mult,138,ses_pcwo,477,6705,7.11,decimal,708976400.0000 | 1255076900.0000 | 1038123020.0000
+brv_mult,139,ses_pcfh_work_tatb,477,6705,7.11,decimal,708976400.0000 | 865211600.0000 | 648257720.0000
+brv_mult,140,ses_pcsx_work_tatb,477,6705,7.11,decimal,0.0000 | 389865300.0000 | 2388358146.0000
+brv_mult,141,ses_pcfc_work_tatb,477,6705,7.11,decimal,0.0000 | 196402201965.0000 | 473661925274.0000
+brv_mult,142,ses_pcmp_work_tatb,477,6705,7.11,decimal,0.0000 | 3000000000.0000 | 1000000000.0000
+brv_mult,143,ses_pctl_work_tatb,477,6705,7.11,decimal,708976400.0000 | 1255076900.0000 | 1038123020.0000
+brv_mult,144,ses_pcwo_ol,3544,6705,52.86,decimal,0.0000 | 708976400.0000 | 1255076900.0000
+brv_mult,145,ses_prcn_wo,1557,6705,23.22,decimal,1.0312717 | 0.7331494 | 0.473359257
+brv_mult,146,ses_pcfh_work_z,477,6705,7.11,decimal,1461806082.0000 | 1783940311.0000 | 1336613007.0000
+brv_mult,147,ses_pcfh_work_z_fmul,505,6705,7.53,text,"(474,934,500* 1.25 * 3.304253784) + ((3,960,115,734 - 474,934,500 * 1.25 ) * 1.43663208) | (474,934,500* 1.25 * 3.304253784) + ((3,960,115,734 - 474,934,500 * 1.25 ) * 1.9825522704) | (519,170,300* 1.25 * 6.46484436) + ((6,231,701,560 - 519,170,300 * 1.25 ) * 1.43663208)"
+brv_mult,148,ses_pcsx_work_z,477,6705,7.11,decimal,0.0000 | 549710073.0000 | 3367584986.0000
+brv_mult,149,ses_pcsx_work_z_fmul,505,6705,7.53,text,"3,151,171,494 * 1.41 | 3,709,889,844 * 1.41 | 2,453,890,993 * 1.41"
+brv_mult,150,ses_pcfc_work_z,477,6705,7.11,decimal,0.0000 | 597062693974.0000 | 666274829946.0000
+brv_mult,151,ses_pcmp_work_z,477,6705,7.11,decimal,0.0000 | 4186854000.0000 | 1395618000.0000
+brv_mult,152,ses_pcwo_z,477,6705,7.11,decimal,1461806082.0000 | 2333650384.0000 | 1886323080.0000
+brv_mult,153,ses_pcfh_work_tatb_z,477,6705,7.11,decimal,1461806082.0000 | 1783940311.0000 | 1336613007.0000
+brv_mult,154,ses_pcfh_work_tatb_z_fmul,505,6705,7.53,text,"(474,934,500* 1.25 * 3.304253784) + ((3,960,115,734 - 474,934,500 * 1.25 ) * 1.43663208) | (474,934,500* 1.25 * 3.304253784) + ((3,960,115,734 - 474,934,500 * 1.25 ) * 1.9825522704) | (519,170,300* 1.25 * 6.46484436) + ((6,231,701,560 - 519,170,300 * 1.25 ) * 1.43663208)"
+brv_mult,155,ses_pcsx_work_tatb_z,477,6705,7.11,decimal,0.0000 | 549710073.0000 | 3367584986.0000
+brv_mult,156,ses_pcsx_work_tatb_z_fmul,505,6705,7.53,text,"3,151,171,494 * 1.41 | 3,709,889,844 * 1.41 | 2,453,890,993 * 1.41"
+brv_mult,157,ses_pcfc_work_tatb_z,477,6705,7.11,decimal,0.0000 | 597062693974.0000 | 666274829946.0000
+brv_mult,158,ses_pcmp_work_tatb_z,477,6705,7.11,decimal,0.0000 | 4186854000.0000 | 1395618000.0000
+brv_mult,159,ses_pctl_work_tatb_z,477,6705,7.11,decimal,1461806082.0000 | 2333650384.0000 | 1886323080.0000
+brv_mult,160,ses_pcmp_tatb_ol_z,3318,6705,49.49,decimal,0.0000 | 4186854000.0000 | 1395618000.0000
+brv_mult,161,ses_pctl_tatb_ol_z,3318,6705,49.49,decimal,0.0000 | 1461806082.0000 | 2333650384.0000
+brv_mult,162,ses_pcwo_ol_z,3544,6705,52.86,decimal,0.0000 | 1461806082.0000 | 2333650384.0000
+brv_mult,163,ses_prcn_wo_z,835,6705,12.45,decimal,0.939473748 | 0.8294117 | 0.361442953
+brv_mult,164,ses_pcwo_new,477,6705,7.11,decimal,0.0000 | 389865300.0000 | 2388358146.0000
+brv_mult,165,ses_pcwo_afza,477,6705,7.11,decimal,708976400.0000 | 865211600.0000 | 648257720.0000
+brv_mult,166,ses_pcwo_fznew,477,6705,7.11,decimal,708976400.0000 | 1255076900.0000 | 1038123020.0000
+brv_mult,167,ses_pcwo_kahe,477,6705,7.11,decimal,0.0000 | -291611286.0000 | -433779652.0000
+brv_mult,168,ses_sum_afkh,477,6705,7.11,decimal,708976400.0000 | 1255076900.0000 | 1038123020.0000
+brv_mult,169,ses_pcwo_new_z,477,6705,7.11,decimal,0.0000 | 549710073.0000 | 3367584986.0000
+brv_mult,170,ses_pcwo_afza_z,477,6705,7.11,decimal,1461806082.0000 | 1783940311.0000 | 1336613007.0000
+brv_mult,171,ses_pcwo_fznew_z,477,6705,7.11,decimal,1461806082.0000 | 2333650384.0000 | 1886323080.0000
+brv_mult,172,ses_pcwo_kahe_z,477,6705,7.11,decimal,0.0000 | -963557695.0000 | -2804317937.0000
+brv_mult,173,ses_sum_afkh_z,477,6705,7.11,decimal,1461806082.0000 | 2333650384.0000 | 1886323080.0000
+brv_mult,174,ses_pcfh_psn,477,6705,7.11,decimal,0.0000
+brv_mult,175,ses_pcsx_psn,477,6705,7.11,decimal,0.0000
+brv_mult,176,ses_pcfc_psn,477,6705,7.11,decimal,0.0000
+brv_mult,177,ses_pcmp_psn,477,6705,7.11,decimal,0.0000
+brv_mult,178,ses_pctl_psn,477,6705,7.11,decimal,0.0000
+brv_mult,179,ses_pcfh_psn_z,477,6705,7.11,decimal,0.0000
+brv_mult,180,ses_pcsx_psn_z,477,6705,7.11,decimal,0.0000
+brv_mult,181,ses_pcfc_psn_z,477,6705,7.11,decimal,0.0000
+brv_mult,182,ses_pcmp_psn_z,477,6705,7.11,decimal,0.0000
+brv_mult,183,ses_pcfh_sxmb_work,446,6705,6.65,decimal,0.0000 | 5697756000.0000 | 2848884000.0000
+brv_mult,184,ses_pcfh_sxmb_work_z,438,6705,6.53,decimal,0.0000 | 18417591660.0000 | 9208757041.0000
+brv_mult,185,ses_pctl_work_tatb_z_beduneBalasari,446,6705,6.65,decimal,1036741902.0000 | 1655071194.0000 | 1337817787.0000
+brv_mult,186,ses_pcfh_work_tatb_z_bedunebalasari,446,6705,6.65,decimal,1036741902.0000 | 1265205894.0000 | 947952487.0000
+brv_mult,187,ses_pcsx_work_tatb_z_bedunebalasari,446,6705,6.65,decimal,0.0000 | 389865300.0000 | 2388358146.0000
+brv_mult,188,ses_pcfc_work_tatb_z_bedunebalasari,446,6705,6.65,decimal,0.0000 | 597062693974.0000 | 666274829946.0000
+brv_mult,189,ses_pcmp_work_tatb_z_bedunebalasari,446,6705,6.65,decimal,0.0000 | 2969400000.0000 | 989800000.0000
+brv_mult,190,ses_pcwo_HamlItm,477,6705,7.11,decimal,0.0000 | 8408425.0000 | 41783453.0000
+brv_mult,191,ses_pcwo_z_HamlItm,477,6705,7.11,decimal,0.0000 | 56533525.0000 | 280928461.0000
+brv_mult,192,ses_prwo,150,6705,2.24,decimal,833.82 | 102.85 | 1200.32
+brv_mult,193,ses_prwo_z,150,6705,2.24,decimal,433.18 | 550.29 | 833.82
+brv_mult,194,ses_fmulAfzKshJamJabriKsh_Z,68,6705,1.01,text,"-963,557,695 | -213,042,817 | -1,252,755,290"
+brv_mult,195,ses_fmulAfzKshJamJabriAfza_Z,68,6705,1.01,text,"6,192,230,355 | 8,030,042,074 | 958,873,914"
+brv_mult,196,mlt_ityId,366,6705,5.46,integer,5 | 1
+brv_mult,197,mlt_Prnuse,610,6705,9.1,integer,34 | 35 | 36
+brv_mult,198,mlt_Prname,610,6705,9.1,persian/text,اینورتر سامانه های تجدیدپذیر | پنل خورشیدی | سازه های نگهدارنده پنل های خورشیدی
+brv_grop,1,grp_link_proj,1830,1830,100.0,integer,11
+brv_grop,2,grp_nufh,1830,1830,100.0,integer,1
+brv_grop,3,grp_id,1830,1830,100.0,integer,1 | 2 | 3
+brv_grop,4,grp_nusv,1830,1830,100.0,integer,0 | 1 | 2
+brv_grop,5,grp_type,1830,1830,100.0,integer,0 | 1 | 2
+brv_grop,6,grp_grop,1830,1830,100.0,persian/text,آجر سیمانی | آجر فشاری | آجر قزاقی
+brv_grop,7,grp_rad,1830,1830,100.0,integer,3 | 4 | 5
+brv_grop,8,grp_HamlCalc1R,1830,1830,100.0,boolean,true | false
+brv_grop,9,grp_fullDesc,488,1830,26.67,empty/nullable,
+brv_grop,10,grp_NoMahdoodiat,247,1830,13.5,boolean,false
+brv_mogs,1,mog_link_proj,954,954,100.0,integer,11
+brv_mogs,2,mog_id,954,954,100.0,integer,1 | 2 | 3
+brv_mogs,3,mog_nusv,954,954,100.0,integer,1 | 2 | 3
+brv_mogs,4,mog_type,954,954,100.0,integer,0 | 1
+brv_mogs,5,mog_name,954,954,100.0,persian/text,تامین میلگرد | پای کار میلگرد | حمل
+brv_mogs,6,mog_rad,954,954,100.0,integer,1 | 2 | 3
+brv_mogs,7,mog_zrib,954,954,100.0,integer,1
+brv_mogs,8,mog_sj_ok,954,954,100.0,boolean,false | true
+brv_mogs,9,mog_IsBold,954,954,100.0,boolean,false
+brv_mogs,10,mog_isColor,954,954,100.0,boolean,false
+brv_mogs,11,mog_link_previous,878,954,92.03,integer,1 | 2 | 3
+brv_mogs,12,mog_type_previous,878,954,92.03,integer,0
+brv_mogs,13,mog_nusj,508,954,53.25,integer,010 | 012 | 002
+brv_mogs,14,mog_dscr,27,954,2.83,persian/text,بدینوسیه امضاء کنندگان زیر تایید می نمایند  وفق قرارداد شماره C-KH-03-052 مورخ 1403/04/30  و بر اساس  ابلاغ نقشه شاپ زهکش پیرامونی فونداسیون طی نامه شماره 364-L | بدینوسیه امضاء کنندگان زیر تایید می نمایند  وفق قرارداد شماره C-KH-03-052 مورخ 1403/04/30  و بر اساس  ابلاغ نقشه شاپ زهکش پیرامونی فونداسیون طی نامه شماره 364-L | بدینوسیه امضاء کنندگان زیر تایید می نمایند  وفق قرارداد شماره C-KH-03-052 مورخ 1403/04/30  و بر اساس  ابلاغ نقشه شاپ زهکش پیرامونی فونداسیون طی نامه شماره 364-L
+brv_fhbh,1,fbh_link_proj,5116,5116,100.0,integer,11
+brv_fhbh,2,fbh_nufh,5116,5116,100.0,integer,1
+brv_fhbh,3,fbh_nuse,5116,5116,100.0,integer,1 | 12 | 14
+brv_fhbh,4,fbh_cofh,5116,5116,100.0,text,010210 | 010405 | 010405a
+brv_fhbh,5,fbh_nusv,5116,5116,100.0,integer,5 | 6 | 7
+brv_fhbh,6,fbh_type,5116,5116,100.0,integer,0 | 1
+brv_fhbh,7,fbh_astr,5116,5116,100.0,boolean,false | true
+brv_fhbh,8,fbh_fact,5116,5116,100.0,boolean,false | true
+brv_fhbh,9,fbh_mbgh,5116,5116,100.0,boolean,false | true
+brv_fhbh,10,fbh_desc,5116,5116,100.0,persian/text,ايجاد شيار با سطح مقطع تا 20 سانتي‌مترمربع، در سطوح بتني. | تخريب بتن غيرمسلح. | کسر بابت تخریب بتن با ماشین آلات راهسازی،طبق بند 4-3 الزامات گروه 4
+brv_fhbh,11,fbh_abst,5116,5116,100.0,persian/text,ايجاد شيار در سطوح بتني تا مقطع20سانتيمتر مربع | تخريب بتن غيرمسلح | کسر بابت تخریب بتن با ماشین آلات راهسازی
+brv_fhbh,12,fbh_unit,5116,5116,100.0,persian/text,مترطول | مترمکعب | متر مربع
+brv_fhbh,13,fbh_tyun,5116,5116,100.0,persian/text,طول× × | طول×عرض×ارتفاع | × ×
+brv_fhbh,14,fbh_pcun,5056,5116,98.83,decimal,1541000.0000 | 11836000.0000 | 82500.0000
+brv_fhbh,15,fbh_pcun_fmul,1804,5116,35.26,text,"0.50*1,000,000 | 0.5*1,000,000 | 12760743*0.9"
+brv_fhbh,16,fbh_pcun_ana_net,5116,5116,100.0,decimal,0.0000 | 4707237.2000
+brv_fhbh,17,fbh_pcun_ana_amar,5116,5116,100.0,decimal,0.0000 | 1038814.7000
+brv_fhbh,18,fbh_pcun_ana_rooz,5116,5116,100.0,decimal,0.0000
+brv_fhbh,19,fbh_notd,5116,5116,100.0,boolean,false
+brv_fhbh,20,fbh_ader,5116,5116,100.0,boolean,false | true
+brv_fhbh,21,fbh_pcun_ana_zrib,5116,5116,100.0,integer,1
+brv_fhbh,22,fbh_prja,5116,5116,100.0,integer,0
+brv_fhbh,23,fbh_yrja,5116,5116,100.0,integer,1386
+brv_fhbh,24,fbh_Monja,5116,5116,100.0,integer,0
+brv_fhbh,25,fbh_prCofh,3944,5116,77.09,empty/nullable,
+brv_fhbh,26,fbh_FromBaseReal,5116,5116,100.0,boolean,true | false
+brv_fhbh,27,fbh_NoPcunFromBase,5116,5116,100.0,boolean,false | true
+brv_fhbh,28,fbh_NuseForSh,192,5116,3.75,integer,28
+brv_fhbh,29,fbh_tose,30,5116,0.59,integer,7
+brv_rzmt,1,rmt_link_proj,8551,8551,100.0,integer,11
+brv_rzmt,2,rmt_nusv,8551,8551,100.0,integer,1 | 2 | 3
+brv_rzmt,3,rmt_type,8551,8551,100.0,integer,0 | 1
+brv_rzmt,4,rmt_id,8551,8551,100.0,integer,1 | 2 | 3
+brv_rzmt,5,rmt_nufh,8551,8551,100.0,integer,1
+brv_rzmt,6,rmt_nuse,8551,8551,100.0,integer,6 | 8 | 7
+brv_rzmt,7,rmt_cofh,8551,8551,100.0,integer,060102 | 060805 | 080102
+brv_rzmt,8,rmt_link_mog,8551,8551,100.0,integer,2 | 1 | 3
+brv_rzmt,9,rmt_fare,8551,8551,100.0,boolean,false
+brv_rzmt,10,rmt_rad,8551,8551,100.0,integer,1 | 2 | 3
+brv_rzmt,11,rmt_raj,8551,8551,100.0,integer,1 | 2 | 12
+brv_rzmt,12,rmt_sumj,8551,8551,100.0,decimal,112.95 | 10.96 | 482.37
+brv_rzmt,13,rmt_sumt,7764,8551,90.8,decimal,112.95 | 10.96 | 482.37
+brv_rzmt,14,rmt_summ,8540,8551,99.87,decimal,112.95 | 10.96 | 482.37
+brv_rzmt,15,rmt_coac,8551,8551,100.0,integer,00
+brv_rzmt,16,rmt_is_equal_ader,8551,8551,100.0,boolean,false | true
+brv_rzmt,17,rmt_mpwk,8551,8551,100.0,boolean,false | true
+brv_rzmt,18,rmt_sooratjalase_view,8551,8551,100.0,boolean,false
+brv_rzmt,19,rmt_sooratjalase_view1,8551,8551,100.0,boolean,false
+brv_rzmt,20,rmt_sooratjalase_view2,8551,8551,100.0,boolean,true
+brv_rzmt,21,rmt_from_haml,8551,8551,100.0,boolean,false | true
+brv_rzmt,22,rmt_dsam,7090,8551,82.91,persian/text,1403/02/31 | 1403/03/03 | 1403/03/07
+brv_rzmt,23,rmt_weit,7097,8551,83.0,integer,2160 | 3060 | 21200
+brv_rzmt,24,rmt_numo,2458,8551,28.75,decimal,0.9 | -1 | 4
+brv_rzmt,25,rmt_tool,1685,8551,19.71,decimal,8.5 | 5.7 | 8.1
+brv_rzmt,26,rmt_arz,892,8551,10.43,decimal,6.6 | 3.8 | 0.8
+brv_rzmt,27,rmt_heit,1226,8551,14.34,decimal,1 | 0.2 | 300
+brv_rzmt,28,rmt_dsmo,3603,8551,42.14,persian/text,[میلگرد] | درصورت وضعیت قرارداد 025 قبلا منظور و پرداخت شده است. | کسر میگردد حجم خاک چاله قبلی
+brv_rzmt,29,rmt_tool_fmul,1562,8551,18.27,empty/nullable,
+brv_rzmt,30,rmt_arz_fmul,1667,8551,19.49,empty/nullable,
+brv_rzmt,31,rmt_heit_fmul,1694,8551,19.81,empty/nullable,
+brv_rzmt,32,rmt_weit_fmul,1447,8551,16.92,empty/nullable,
+brv_rzmt,33,rmt_haml_mog,4,8551,0.05,integer,1
+brv_rzmt,34,rmt_link_previous,3610,8551,42.22,integer,1 | 2 | 3
+brv_rzmt,35,rmt_type_previous,7350,8551,85.95,integer,0
+brv_rzmt,36,rmt_sumj_fmul,861,8551,10.07,text,346.771 * 1 * ( ( 300 - 30 )+ ( 0.3 * 2 ) ) | 608.396 * 1 * ( ( 94 - 30 )+ ( 0.3 * 2 ) )
+brv_rzmt,37,rmt_numo_fmul,1259,8551,14.72,empty/nullable,
+brv_ader,1,adr_link_proj,4411,4411,100.0,integer,11
+brv_ader,2,adr_nufh,4411,4411,100.0,integer,1
+brv_ader,3,adr_nuse_moth,4411,4411,100.0,integer,1 | 12 | 14
+brv_ader,4,adr_nuse,4411,4411,100.0,integer,1 | 12 | 14
+brv_ader,5,adr_cofh_moth,4411,4411,100.0,integer,010405 | 120402 | 140611
+brv_ader,6,adr_cofh,4411,4411,100.0,text,010405a | 120402b | 120403
+brv_ader,7,adr_nusv,4411,4411,100.0,integer,1 | 2 | 3
+brv_ader,8,adr_type,4411,4411,100.0,integer,0 | 1
+brv_ader,9,adr_fmul_tbdl,4411,4411,100.0,text,-0.5 | 0.07 | 1
+brv_ader,10,adr_pric_or_quan,4411,4411,100.0,boolean,false | true
+brv_ader,11,adr_param_dscr,1068,4411,24.21,persian/text,عمق پی کنی | مسافت حمل با وسایل دستی | ضخامت رنگ
+brv_ader,12,adr_mola,1068,4411,24.21,persian/text,2<x<10 m | x>2m | 20<x<=100 m
+brv_khmt,1,kmt_link_proj,7726,7726,100.0,integer,11
+brv_khmt,2,kmt_nusv,7726,7726,100.0,integer,1 | 2 | 3
+brv_khmt,3,kmt_type,7726,7726,100.0,integer,0 | 1
+brv_khmt,4,kmt_id,7726,7726,100.0,integer,1 | 2 | 6
+brv_khmt,5,kmt_nufh,7726,7726,100.0,integer,1
+brv_khmt,6,kmt_nuse,7726,7726,100.0,integer,6 | 8 | 3
+brv_khmt,7,kmt_cofh,7726,7726,100.0,integer,060102 | 060805 | 080102
+brv_khmt,8,kmt_nagl_rzmt,7726,7726,100.0,integer,1 | 2 | 3
+brv_khmt,9,kmt_link_mog,7726,7726,100.0,integer,2 | 3 | 4
+brv_khmt,10,kmt_rad,7726,7726,100.0,integer,8 | 9 | 14
+brv_khmt,11,kmt_raj,7726,7726,100.0,integer,1 | 2 | 3
+brv_khmt,12,kmt_sumj,7726,7726,100.0,decimal,112.95 | 10.96 | 482.37
+brv_khmt,13,kmt_sujz,7726,7726,100.0,decimal,112.95 | 10.96 | 482.37
+brv_khmt,14,kmt_sumt,1914,7726,24.77,decimal,112.95 | 10.96 | 482.37
+brv_khmt,15,kmt_coac,7726,7726,100.0,integer,00
+brv_khmt,16,kmt_is_equal_ader,7726,7726,100.0,boolean,false
+brv_khmt,17,kmt_mpwk,7726,7726,100.0,boolean,false | true
+brv_khmt,18,kmt_nusj,7686,7726,99.48,integer,002 | 010 | 012
+brv_khmt,19,kmt_dtsj,7686,7726,99.48,empty/nullable,
+brv_khmt,20,kmt_From_Haml,7726,7726,100.0,boolean,false
+brv_khmt,21,kmt_link_previous,3250,7726,42.07,integer,1 | 2 | 6
+brv_khmt,22,kmt_type_previous,6551,7726,84.79,integer,0
+brv_bgml,1,bgm_link_proj,2122,2122,100.0,integer,11
+brv_bgml,2,bgm_nusv,2122,2122,100.0,integer,1 | 2 | 3
+brv_bgml,3,bgm_type,2122,2122,100.0,integer,0 | 1
+brv_bgml,4,bgm_id,2122,2122,100.0,integer,1 | 2 | 6
+brv_bgml,5,bgm_nufh,2122,2122,100.0,integer,1
+brv_bgml,6,bgm_cofh,2122,2122,100.0,integer,060102 | 060805 | 080102
+brv_bgml,7,bgm_coac,2122,2122,100.0,integer,00
+brv_bgml,8,bgm_rad,2122,2122,100.0,integer,8 | 9 | 14
+brv_bgml,9,bgm_nuse,2122,2122,100.0,integer,6 | 8 | 3
+brv_bgml,10,bgm_quan,2122,2122,100.0,integer,0 | 243 | 972
+brv_bgml,11,bgm_qust,1920,2122,90.48,decimal,112.95 | 10.96 | 482.37
+brv_bgml,12,bgm_pcal,2122,2122,100.0,decimal,0.0000 | 39123000.0000 | 6026400.0000
+brv_bgml,13,bgm_pcal_psn,2122,2122,100.0,decimal,0.0000
+brv_bgml,14,bgm_pcst,2122,2122,100.0,decimal,126504000.0000 | 3024960.0000 | 5709331320.0000
+brv_bgml,15,bgm_pcst_psn,2122,2122,100.0,decimal,0.0000
+brv_bgml,16,bgm_prcn,2122,2122,100.0,decimal,0 | 200.93 | 200.92
+brv_bgml,17,bgm_swf2,2122,2122,100.0,boolean,false
+brv_bgml,18,bgm_qufz,2122,2122,100.0,decimal,112.95 | 10.96 | 482.37
+brv_bgml,19,bgm_pcfz,2122,2122,100.0,decimal,126504000.0000 | 3024960.0000 | 5709331320.0000
+brv_bgml,20,bgm_qukh,2122,2122,100.0,decimal,0 | -1039.56 | -674666.52
+brv_bgml,21,bgm_pckh,2122,2122,100.0,decimal,0.0000 | -32954052.0000 | -189918625380.0000
+brv_bgml,22,bgm_IsAnalyzed,2122,2122,100.0,boolean,false
+brv_bgml,23,bgm_is_equal_ader,2122,2122,100.0,boolean,false
+brv_bgml,24,bgm_mpwk,2122,2122,100.0,boolean,false | true
+brv_bgml,25,bgm_qust_ol,2122,2122,100.0,decimal,0 | 102.02 | 408.08
+brv_bgml,26,bgm_pcst_ol,2122,2122,100.0,decimal,0.0000 | 236176300.0000 | 3988982.0000
+brv_bgml,27,bgm_no_tjhz,2122,2122,100.0,boolean,false
+brv_bgml,28,bgm_no_tatbigh_in_cnv,2122,2122,100.0,boolean,false
+brv_bgml,29,bgm_CreatInBgml,2122,2122,100.0,boolean,false | true
+brv_bgml,30,bgm_From_Haml,2122,2122,100.0,boolean,false
+brv_bgml,31,bgm_link_previous,851,2122,40.1,integer,1 | 2 | 6
+brv_bgml,32,bgm_type_previous,1971,2122,92.88,integer,0
+brv_hmbs,1,hmb_link_proj,757,757,100.0,integer,11
+brv_hmbs,2,hmb_nufh,757,757,100.0,integer,1
+brv_hmbs,3,hmb_nuse,757,757,100.0,integer,1 | 12 | 16
+brv_hmbs,4,hmb_cofh,757,757,100.0,integer,010405 | 120402 | 160406
+brv_hmbs,5,hmb_link_grop,757,757,100.0,integer,27 | 23 | 26
+brv_hmbs,6,hmb_dscr,757,757,100.0,empty/nullable,
+brv_hmbs,7,hmb_nusv,757,757,100.0,integer,1 | 2 | 3
+brv_hmbs,8,hmb_type,757,757,100.0,integer,0 | 1
+brv_hmbs,9,hmb_zar1,561,757,74.11,decimal,1 | 1.05 | 0.04
+brv_hmbs,10,hmb_sumz,757,757,100.0,decimal,1 | 2.2 | 0.72600000000000009
+brv_hmbs,11,hmb_checked,757,757,100.0,boolean,true
+brv_hmbs,12,hmb_zar3,42,757,5.55,decimal,2.2 | 0 | 0.67
+brv_hmbs,13,hmb_zar2,488,757,64.46,decimal,2.2 | 0.001 | 0.285
+brv_hmbs,14,hmb_dsz2,611,757,80.71,persian/text,طبق بند 1-3-5 الزامات گروه 1مقدمه فصل 28 | تبدیل واحد به تن | مقدار سیمان طبق جدول 1-1 کلیات فهرست بها
+brv_hmbs,15,hmb_zar4,46,757,6.08,decimal,0.33 | 1.06
+brv_hmbs,16,hmb_dsz4,582,757,76.88,persian/text,ضریب اختلاط ماسه | پرت سیمان طبق بند 1-2-6 الزامات گروه 1 مقدمه فصل 28
+brv_hmbs,17,hmb_dsz1,634,757,83.75,persian/text,پرت طبق بند 1-4-4 الزامات گروه 1مقدمه فصل 28 | ضخامت اندود طبق شرح آیتم | متوسط ضخامت طبق شرح آیتم
+brv_hmbs,18,hmb_dsz3,573,757,75.69,persian/text,ضریب اختلاط شن
+brv_dstb,1,dsb_link_proj,1297,1297,100.0,integer,11
+brv_dstb,2,dsb_link_grop,1297,1297,100.0,integer,11 | 18 | 19
+brv_dstb,3,dsb_nufh,1297,1297,100.0,integer,1
+brv_dstb,4,dsb_frkm,1297,1297,100.0,decimal,30 | 0 | 0.1
+brv_dstb,5,dsb_nusv,1297,1297,100.0,integer,3 | 4 | 5
+brv_dstb,6,dsb_type,1297,1297,100.0,integer,0 | 1
+brv_dstb,7,dsb_nuse,1297,1297,100.0,integer,28 | 3
+brv_dstb,8,dsb_cofh,1297,1297,100.0,integer,280101 | 280102 | 280103
+brv_dstb,9,dsb_tokm,1297,1297,100.0,decimal,75 | 150 | 300
+brv_dstb,10,dsb_zrib,1297,1297,100.0,integer,1 | 10
+brv_dstb,11,dsb_khaki_onvan,1239,1297,95.53,persian/text,خاکی
+brv_dstb,12,dsb_khaki_zarib,1239,1297,95.53,decimal,1.3 | 1
+brv_dstb,13,dsb_sheni_onvan,1239,1297,95.53,persian/text,شنی
+brv_dstb,14,dsb_sheni_zarib,1239,1297,95.53,decimal,1.3 | 1
+brv_dstb,15,dsb_other_onvan,1239,1297,95.53,empty/nullable,
+brv_dstb,16,dsb_other_zarib,1239,1297,95.53,integer,1
+brv_hmpy,1,hmp_link_proj,711,711,100.0,integer,11
+brv_hmpy,2,hmp_nufh,711,711,100.0,integer,1
+brv_hmpy,3,hmp_nuse,711,711,100.0,integer,1 | 12 | 16
+brv_hmpy,4,hmp_cofh,711,711,100.0,integer,010405 | 120402 | 160406
+brv_hmpy,5,hmp_link_grop,711,711,100.0,integer,27 | 23 | 26
+brv_hmpy,6,hmp_dscr,711,711,100.0,empty/nullable,
+brv_hmpy,7,hmp_nusv,711,711,100.0,integer,1 | 2 | 3
+brv_hmpy,8,hmp_type,711,711,100.0,integer,0 | 1
+brv_hmpy,9,hmp_rad,711,711,100.0,integer,1 | 5 | 4
+brv_hmpy,10,hmp_quan,711,711,100.0,decimal,59.9 | 38.94 | 73.1
+brv_hmpy,11,hmp_totl,711,711,100.0,decimal,59.9 | 38.94 | 73.1
+brv_hmpy_rzmt,1,hmp_link_proj,3382,3382,100.0,integer,11
+brv_hmpy_rzmt,2,hmp_nufh,3382,3382,100.0,integer,1
+brv_hmpy_rzmt,3,hmp_nuse,3382,3382,100.0,integer,1 | 12 | 16
+brv_hmpy_rzmt,4,hmp_cofh,3382,3382,100.0,integer,010405 | 120402 | 160406
+brv_hmpy_rzmt,5,hmp_link_grop,3382,3382,100.0,integer,27 | 23 | 26
+brv_hmpy_rzmt,6,hmp_dscr,3382,3382,100.0,empty/nullable,
+brv_hmpy_rzmt,7,hmp_link_mog,3382,3382,100.0,integer,3 | 4 | 5
+brv_hmpy_rzmt,8,hmp_nusv,3382,3382,100.0,integer,3 | 4 | 5
+brv_hmpy_rzmt,9,hmp_type,3382,3382,100.0,integer,0 | 1
+brv_hmpy_rzmt,10,hmp_rad,3382,3382,100.0,integer,2 | 1 | 32
+brv_hmpy_rzmt,11,hmp_quan,3382,3382,100.0,decimal,52.7 | 39.52 | 59.9
+brv_hmpy_rzmt,12,hmp_totl,3382,3382,100.0,decimal,52.7 | 39.52 | 59.9
+brv_dstn_main,1,dsn_link_proj,960,960,100.0,integer,11
+brv_dstn_main,2,dsn_id,960,960,100.0,integer,1 | 2 | 3
+brv_dstn_main,3,dsn_nusv,960,960,100.0,integer,1 | 2 | 3
+brv_dstn_main,4,dsn_type,960,960,100.0,integer,0 | 1
+brv_dstn_main,5,dsn_nufh,960,960,100.0,integer,1
+brv_dstn_main,6,dsn_link_grop,960,960,100.0,integer,1 | 2 | 3
+brv_dstn_main,7,dsn_sum_m,960,960,100.0,decimal,0 | 0.393 | 1.263
+brv_dstn_main,8,dsn_dstn,186,960,19.38,integer,300 | 535 | 94
+brv_dstn_main,9,dsn_sum_i,247,960,25.73,decimal,106.11 | 637.81499999999994 | 2281.5899999999997
+brv_dstn_main,10,dsn_fromto,233,960,24.27,persian/text,از ذوب آهن اصفهان تا پردیس | فیروزکوه تا پردیس | از شهریار تا پردیس
+brv_dstn_fromto,1,dsf_link_proj,122,122,100.0,integer,11
+brv_dstn_fromto,2,dsf_link_grop,122,122,100.0,integer,11 | 19 | 21
+brv_dstn_fromto,3,dsf_link_main,122,122,100.0,integer,11 | 19 | 21
+brv_dstn_fromto,4,dsf_nufh,122,122,100.0,integer,1
+brv_dstn_fromto,5,dsf_frkm,122,122,100.0,integer,30
+brv_dstn_fromto,6,dsf_nusv,122,122,100.0,integer,3 | 4 | 5
+brv_dstn_fromto,7,dsf_type,122,122,100.0,integer,0 | 1
+brv_dstn_fromto,8,dsf_cofh,122,122,100.0,integer,280103 | 280105 | 280102
+brv_dstn_fromto,9,dsf_nuse,122,122,100.0,integer,28
+brv_dstn_fromto,10,dsf_tokm,122,122,100.0,integer,300 | 750 | 150
+brv_dstn_fromto,11,dsf_zrib,122,122,100.0,integer,1
+brv_dstn_fromto,12,dsf_sum_i,122,122,100.0,decimal,106.11 | 637.81499999999994 | 2284.3008
+brv_dstn_fromto,13,dsf_sum_k_i,122,122,100.0,decimal,106.11 | 637.81499999999994 | 2281.5899999999997
+brv_dstn_fromto,14,dsf_Formul,122,122,100.0,text,0.393 * 1 * ( ( 300 - 30 )) | 1.263 * 1 * ( ( 535 - 30 )) | 4.518 * 1 * ( ( 535 - 30 )+ ( 0.3 * 2 ) )
+brv_dstn_fromto,15,dsf_tokmReal,122,122,100.0,integer,300 | 535 | 94
+brv_dstn_fromto,16,dsf_type1_km,14,122,11.48,integer,2
+brv_dstn_main_rzmt,1,dsn_link_proj,28652,28652,100.0,integer,11
+brv_dstn_main_rzmt,2,dsn_link_mog,28652,28652,100.0,integer,1 | 2 | 3
+brv_dstn_main_rzmt,3,dsn_id,28652,28652,100.0,integer,1 | 5 | 9
+brv_dstn_main_rzmt,4,dsn_nusv,28652,28652,100.0,integer,1 | 2 | 3
+brv_dstn_main_rzmt,5,dsn_type,28652,28652,100.0,integer,0 | 1
+brv_dstn_main_rzmt,6,dsn_nufh,28652,28652,100.0,integer,1
+brv_dstn_main_rzmt,7,dsn_link_grop,28652,28652,100.0,integer,1 | 2 | 3
+brv_dstn_main_rzmt,8,dsn_sum_m,28652,28652,100.0,decimal,0 | 269.68 | 67.15
+brv_dstn_main_rzmt,9,dsn_dstn,124,28652,0.43,integer,300 | 556 | 94
+brv_dstn_main_rzmt,10,dsn_sum_i,124,28652,0.43,decimal,72813.6 | 35320.9 | 38937.344
+brv_dstn_main_rzmt,11,dsn_fromto,124,28652,0.43,persian/text,مبدا علی الحساب از کارخانه فولاد کویر کاشان تا مقصد- کارگاه پردیس | مبدا علی الحساب از کارخانه فولاد ذوب آهن اصفهان تا مقصد- کارگاه پردیس | شهریار تا پردیس
+brv_dstn_fromto_rzmt,1,dsf_link_proj,66,66,100.0,integer,11
+brv_dstn_fromto_rzmt,2,dsf_link_main,66,66,100.0,integer,92 | 113 | 116
+brv_dstn_fromto_rzmt,3,dsf_link_mog,66,66,100.0,integer,4 | 1
+brv_dstn_fromto_rzmt,4,dsf_link_grop,66,66,100.0,integer,23 | 29
+brv_dstn_fromto_rzmt,5,dsf_nufh,66,66,100.0,integer,1
+brv_dstn_fromto_rzmt,6,dsf_frkm,66,66,100.0,integer,30
+brv_dstn_fromto_rzmt,7,dsf_nusv,66,66,100.0,integer,2 | 1 | 3
+brv_dstn_fromto_rzmt,8,dsf_type,66,66,100.0,integer,0 | 1
+brv_dstn_fromto_rzmt,9,dsf_cofh,66,66,100.0,integer,280102 | 280103 | 280105
+brv_dstn_fromto_rzmt,10,dsf_nuse,66,66,100.0,integer,28
+brv_dstn_fromto_rzmt,11,dsf_tokm,66,66,100.0,integer,150 | 300 | 750
+brv_dstn_fromto_rzmt,12,dsf_zrib,66,66,100.0,integer,1
+brv_dstn_fromto_rzmt,13,dsf_sum_i,66,66,100.0,decimal,39302.381599999993 | 72813.6 | 93.0864
+brv_dstn_fromto_rzmt,14,dsf_sum_k_i,66,66,100.0,decimal,38937.344 | 72813.6 | 92.88
+brv_dstn_fromto_rzmt,15,dsf_Formul,66,66,100.0,text,608.396 * 1 * ( ( 94 - 30 )+ ( 0.3 * 2 ) ) | 269.68 * 1 * ( ( 300 - 30 )) | 0.344 * 1 * ( ( 300 - 30 )+ ( 0.3 * 2 ) )
+brv_dstn_fromto_rzmt,16,dsf_type1_km,2,66,3.03,integer,2
+brv_dstn_fromto_rzmt,17,dsf_tokmReal,66,66,100.0,integer,94 | 300 | 556
+brv_sorc_all,1,src_link_proj,155,155,100.0,integer,11
+brv_sorc_all,2,src_nusv,155,155,100.0,integer,1 | 2 | 3
+brv_sorc_all,3,src_type,155,155,100.0,integer,0 | 1
+brv_sorc_all,4,src_id,155,155,100.0,integer,1 | 2 | 3
+brv_sorc_all,5,src_grop,155,155,100.0,integer,0 | 2 | 1
+brv_sorc_all,6,src_dscr,155,155,100.0,persian/text,حمل خاک شن  ماسه و مخلوط شن و ماسه | فرگون | بیل
+brv_sorc_all,7,src_unit,155,155,100.0,persian/text,مترمكعب | دستگاه | عدد
+brv_sorc_all,8,src_pcun_net,155,155,100.0,decimal,835519.0000 | 18270000.0000 | 2244600.0000
+brv_sorc_all,9,src_pcun_amar,155,155,100.0,decimal,0.0000 | 668564.0000
+brv_sorc_all,10,src_pcun_rooz,155,155,100.0,decimal,0.0000
+brv_sorc_all,11,src_code_amel,155,155,100.0,integer,41020101 | 28070601 | 28070101
+brv_sorc_all,12,src_Tajmi,155,155,100.0,boolean,false
+brv_sorc,1,src_link_proj,155,155,100.0,integer,11
+brv_sorc,2,src_link_sorclist,155,155,100.0,integer,1 | 2 | 3
+brv_sorc,3,src_nufh,155,155,100.0,integer,1
+brv_sorc,4,src_nusv,155,155,100.0,integer,1 | 2 | 3
+brv_sorc,5,src_type,155,155,100.0,integer,0 | 1
+brv_sorc,6,src_pcun_net,155,155,100.0,decimal,835519.0000 | 18270000.0000 | 2244600.0000
+brv_sorc,7,src_date_amar,155,155,100.0,empty/nullable,
+brv_sorc,8,src_Tajmi,155,155,100.0,boolean,false
+brv_sorc,9,src_pcun_amar,31,155,20.0,decimal,668564.0000
+brv_nmmhb,1,nmb_link_proj,155,155,100.0,integer,11
+brv_nmmhb,2,nmb_link_sorclist,155,155,100.0,integer,1 | 2 | 3
+brv_nmmhb,3,nmb_nufh,155,155,100.0,integer,1
+brv_nmmhb,4,nmb_nuse,155,155,100.0,integer,4
+brv_nmmhb,5,nmb_cofh,155,155,100.0,integer,040103
+brv_nmmhb,6,nmb_nusv,155,155,100.0,integer,1 | 2 | 3
+brv_nmmhb,7,nmb_type,155,155,100.0,integer,0 | 1
+brv_nmmhb,8,nmb_rad,155,155,100.0,integer,1 | 2
+brv_nmmhb,9,nmb_quan,155,155,100.0,decimal,1.1 | 0.0033 | 0.002
+brv_nmmhb,10,nmb_zrib,155,155,100.0,integer,1
+brv_nmmhb,11,nmb_Tajmi,155,155,100.0,boolean,false
+brv_nmmhb,12,nmb_megias,155,155,100.0,integer,1
+brv_nmmhb,13,nmb_quan_kol,155,155,100.0,decimal,1.1 | 0.0033 | 0.002
+brv_nmmhb,14,nmb_quan_kol_Meghyas,155,155,100.0,decimal,1.1 | 0.0033 | 0.002
+brv_nmmhb,15,nmb_quan_nft,155,155,100.0,decimal,1.1 | 0.0033 | 0.002
+brv_Jobrankosoorat,1,tkr_link_proj,186,186,100.0,integer,11
+brv_Jobrankosoorat,2,tkr_nusv,186,186,100.0,integer,1 | 2 | 3
+brv_Jobrankosoorat,3,tkr_type,186,186,100.0,integer,0 | 1 | 2
+brv_Jobrankosoorat,4,tkr_id,186,186,100.0,integer,1 | 2 | 3
+brv_Jobrankosoorat,5,tkr_rad,186,186,100.0,integer,1 | 2 | 3
+brv_Jobrankosoorat,6,tkr_name,186,186,100.0,persian/text,بیمه | مالیات | علی الحساب
+brv_Jobrankosoorat,7,tkr_prcn,186,186,100.0,empty/nullable,
+brv_Jobrankosoorat,8,tkr_PlusOrMinec,186,186,100.0,text,- | +
+brv_Jobrankosoorat,9,Tkr_Mablaghi,186,186,100.0,boolean,false
+brv_Arzkosoorat,1,tkr_link_proj,186,186,100.0,integer,11
+brv_Arzkosoorat,2,tkr_nusv,186,186,100.0,integer,1 | 2 | 3
+brv_Arzkosoorat,3,tkr_type,186,186,100.0,integer,0 | 1 | 2
+brv_Arzkosoorat,4,tkr_id,186,186,100.0,integer,1 | 2 | 3
+brv_Arzkosoorat,5,tkr_rad,186,186,100.0,integer,1 | 2 | 3
+brv_Arzkosoorat,6,tkr_name,186,186,100.0,persian/text,بیمه | مالیات | علی الحساب
+brv_Arzkosoorat,7,tkr_prcn,186,186,100.0,empty/nullable,
+brv_Arzkosoorat,8,tkr_PlusOrMinec,186,186,100.0,text,- | +
+brv_Arzkosoorat,9,Tkr_Mablaghi,186,186,100.0,boolean,false
+brv_Tadilkosorat,1,Tkr_link_proj,192,192,100.0,integer,11
+brv_Tadilkosorat,2,Tkr_nusv,192,192,100.0,integer,1 | 2 | 3
+brv_Tadilkosorat,3,Tkr_type,192,192,100.0,integer,0 | 1
+brv_Tadilkosorat,4,Tkr_id,192,192,100.0,integer,1 | 2 | 3
+brv_Tadilkosorat,5,Tkr_rad,192,192,100.0,integer,1 | 2 | 3
+brv_Tadilkosorat,6,Tkr_name,192,192,100.0,persian/text,بیمه | مالیات | علی الحساب
+brv_Tadilkosorat,7,Tkr_prcn,192,192,100.0,empty/nullable,
+brv_Tadilkosorat,8,Tkr_PlusOrMinec,192,192,100.0,text,- | +
+brv_Tadilkosorat,9,Tkr_Mablaghi,192,192,100.0,boolean,false

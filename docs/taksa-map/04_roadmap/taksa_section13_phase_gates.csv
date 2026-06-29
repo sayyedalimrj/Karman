@@ -1,0 +1,9 @@
+﻿gate_id,gate_name,pass_criteria,blocks,phase
+G0,Architecture Gate,"App shell, auth, RTL, DB migration, Decimal helpers",No feature work before this passes,P0
+G1,Raw Import Gate,"SVZT sample import keeps table count, row count, case, unknown fields",No export work before this passes,P1
+G2,Workflow Gate,"Document state machine, roles, lock effects, audit events",No review/approval without this,P3
+G3,Calculation Gate,Measurement and financial MVP with trace and Decimal,No report validation before this,P5
+G4,Review Gate,Contractor/consultant/employer cycle works with version history,No final lock/export before this,P6
+G5,Adjustment Gate,Coefficient/deduction/adjustment trace exists,No final financial report before this,P7
+G6,Export Gate,PDF/Excel/SVZT validation and diff work,No production test before this,P9
+G7,Golden Test Gate,Taksa comparison suite passes or differences are documented,No MVP release before this,P10

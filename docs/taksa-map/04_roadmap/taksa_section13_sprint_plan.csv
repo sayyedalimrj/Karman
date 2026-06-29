@@ -1,0 +1,13 @@
+﻿sprint,timebox,theme,scope,acceptance,phase_refs
+S0,روز 1-2,Bootstrapping,"Repo cleanup, env, app shell, RTL, auth skeleton, DB migration base",پروژه بالا بیاید و dashboard خالی امن داشته باشد.,P0
+S1,روز 3-6,Data foundation,Prisma models for Project/Contract/Parties/Audit/Decimal helpers,Project setup wizard MVP و role guard کار کند.,P0/P2
+S2,روز 7-11,Taksa raw import,"TaksaArtifact/RawTable/RawRow, upload, parse, validation summary",SVZT نمونه import شود و raw counts حفظ شود.,P1
+S3,روز 12-16,Reference & price list,"ReferenceBook, PriceListExplorer, item search, unit handling",آیتم فهرست‌بها با کد/واحد/قیمت نمایش و انتخاب شود.,P2
+S4,روز 17-22,Commercial document workflow,"CommercialDocument, PaymentPeriod, DocumentVersion, WorkflowCase, Inbox",سند مالی از draft تا submitted state برود.,P3
+S5,روز 23-29,Measurement builder,"MeasurementGroup/Line, grid, formula raw, quantity Decimal, attachments",ریزمتره ثبت و مقدار محاسبه شود.,P4
+S6,روز 30-36,Financial MVP,"FinancialStatementLine, CalculationRun, current/previous/total, summary cards",برگه مالی MVP با trace تولید شود.,P5
+S7,روز 37-44,Review & approval,"ReviewDiffGrid, comments, return/approve, employer summary, version history",سیکل پیمانکار→مشاور→کارفرما→قفل کامل شود.,P6
+S8,روز 45-52,Coefficients/deductions/adjustment,"Coefficient trace, deduction grid, index selection, adjustment run",تعدیل و ضرایب MVP با trace داشته باشیم.,P7
+S9,روز 53-59,Reports & Excel,"Report registry, bgml/seas/rzmt/tdil projections, Excel numeric",خروجی PDF/Excelهای MVP آماده شود.,P8
+S10,روز 60-67,Round-trip export,"Patch merge, SVZT export, export validation, diff viewer",SVZT خروجی با zero critical validation ساخته شود.,P9
+S11,روز 68-75,Golden test & hardening,"Compare with Taksa outputs, rounding fixes, security/performance, bug bash",MVP آماده تست واقعی کاربر شود.,P10

@@ -1,0 +1,69 @@
+﻿prefix,family_guess,create_table_count,xml_import_count,sample_tables
+acti,فعالیت/اکشن,3,0,acti | acti | acti
+acts,فعالیت‌ها/فهرست فعالیت,3,0,acts | acts | acts
+ader,نامشخص/نیازمند بررسی,1,0,ader
+ahta,تعدیل/آحاد,3,0,ahta | ahta | ahta
+base,داده پایه/کدینگ مشترک,0,4,
+bgml,برگه مالی,3,0,bgml | bgml | bgml
+bgts,نامشخص/نیازمند بررسی,1,0,bgts
+bkal,نامشخص/نیازمند بررسی,1,0,bkal
+bmac,پایه/ماشین‌آلات?,3,0,bmac | bmac | bmac
+brv,پروژه/برآورد/صورت‌وضعیت Taksa,0,48,
+contract,قرارداد/پروژه,3,0,contract | contract | contract
+dstb,حمل/فاصله,3,0,dstb | dstb | dstb
+dstn,فاصله/حمل,3,0,dstn | dstn | dstn
+dstn2,نامشخص/نیازمند بررسی,3,0,dstn2 | dstn2 | dstn2
+dstn2c,نامشخص/نیازمند بررسی,3,0,dstn2c | dstn2c | dstn2c
+fhbh,فهرست‌بها/ردیف,4,0,fhbh | fhbh | fhbh | fhbh
+fhpy,فهرست پیمان/فصل‌بندی,3,0,fhpy | fhpy | fhpy
+fsbs,نامشخص/نیازمند بررسی,2,0,fsbs | fsbs
+fsbz,نامشخص/نیازمند بررسی,1,0,fsbz
+fspy,فصل/صورتجلسه/پیشنهاد,3,0,fspy | fspy | fspy
+grop,گروه‌بندی,1,0,grop
+hmbs,نامشخص/نیازمند بررسی,1,0,hmbs
+hmpy,حمل/فاصله,3,0,hmpy | hmpy | hmpy
+hsha,شاخص/حساب?,3,0,hsha | hsha | hsha
+hshm,شاخص/حساب?,3,0,hshm | hshm | hshm
+intm,نامشخص/نیازمند بررسی,1,0,intm
+intp,درون‌یابی شاخص/تعدیل,1,0,intp
+itac,آیتم/فعالیت,3,0,itac | itac | itac
+item,آیتم‌ها,3,0,item | item | item
+khmt,خدمات/کسورات/کارکرد مرتبط,3,0,khmt | khmt | khmt
+kmac,پایه/ماشین‌آلات?,3,0,kmac | kmac | kmac
+mogs,صورتجلسه/مقادیر,3,0,mogs | mogs | mogs
+mult,ضرایب/چندگانه,3,0,mult | mult | mult
+nmac,پایه/ماشین‌آلات?,3,0,nmac | nmac | nmac
+nmmh,منابع/مصالح/حمل,3,0,nmmh | nmmh | nmmh
+nmmhb,نامشخص/نیازمند بررسی,1,0,nmmhb
+nots,یادداشت‌ها,3,0,nots | nots | nots
+ntac,نامشخص/نیازمند بررسی,3,0,ntac | ntac | ntac
+onac,نامشخص/نیازمند بررسی,2,0,onac | onac
+ovhd,بالاسری/هزینه‌های اضافه,1,0,ovhd
+ovma,ماشین‌آلات/هزینه اضافه,1,0,ovma
+ovpr,پرسنل/هزینه اضافه,1,0,ovpr
+pjsz,پروژه/سازمان,3,0,pjsz | pjsz | pjsz
+pyfs,نامشخص/نیازمند بررسی,1,0,pyfs
+rplc,جایگزینی/رابطه,3,0,rplc | rplc | rplc
+rplo,نامشخص/نیازمند بررسی,3,0,rplo | rplo | rplo
+rsdn,نامشخص/نیازمند بررسی,3,0,rsdn | rsdn | rsdn
+rzmt,ریزمتره,3,0,rzmt | rzmt | rzmt
+sact,نامشخص/نیازمند بررسی,3,0,sact | sact | sact
+scac,نامشخص/نیازمند بررسی,3,0,scac | scac | scac
+seas,خلاصه فصل‌ها,3,0,seas | seas | seas
+secu,نامشخص/نیازمند بررسی,5,0,secu | secu_n | secu | secu | secu_n
+shkh1,نامشخص/نیازمند بررسی,1,0,shkh1
+shkh2,نامشخص/نیازمند بررسی,1,0,shkh2
+shkh3,نامشخص/نیازمند بررسی,1,0,shkh3
+situ,نامشخص/نیازمند بررسی,3,0,situ | situ | situ
+sorc,منابع/جمع‌بندی,5,0,sorc | sorc | sorc | sorc_sc | sorc_sn
+srch,نامشخص/نیازمند بررسی,3,0,srch | srch | srch
+srfb,نامشخص/نیازمند بررسی,1,0,srfb
+srrz,نامشخص/نیازمند بررسی,3,0,srrz | srrz | srrz
+tatb,تطبیق,1,0,tatb
+titz,نامشخص/نیازمند بررسی,3,0,titz | titz | titz
+tjhz,نامشخص/نیازمند بررسی,1,0,tjhz
+tmp,جدول موقت/تبدیل,1,0,Tmp_base_sorc_list
+unit,نامشخص/نیازمند بررسی,1,0,unit
+zrhi,نامشخص/نیازمند بررسی,3,0,zrhi | zrhi | zrhi
+zrlc,نامشخص/نیازمند بررسی,1,0,ZrLc
+zrtb,ضرایب/تجهیز,3,0,zrtb | zrtb | zrtb

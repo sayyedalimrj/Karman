@@ -1,0 +1,12 @@
+source,meaning,priority,affected_section,decision
+base_fhbh / base_fsbs / base_book,فهرست‌بها و دفترچه مبنا,بسیار بالا,بخش ۳ و ۸,موتور فهرست‌بها باید از DB مرجع/ویوهای سالانه تغذیه شود، نه فقط PDFها.
+viwBase1400..1404 / viwbase88..99,ویوهای سالانه فهرست‌بها,بالا,بخش ۸,برای نمایش/جستجوی آیتم‌ها و تفاوت سال‌ها باید mapping سالانه داشته باشیم.
+Base_ShakhesYerSeMahe / V_Shakhes*,شاخص‌ها و تعدیل,بسیار بالا,بخش ۸,قوانین شاخص/دوره باید از DB و PDF همزمان تطبیق بخورد.
+BRVIMPORT / SVZIMPORT / PSNIMPORT,ایمپورت فایل‌ها,بسیار بالا,بخش ۵,Mapping ما درست بوده ولی باید با پروسیجرهای واقعی import تکمیل شود.
+CNV* / copy_base_* / Change_Year_in_project,تبدیل و بروزرسانی مبانی,بالا,بخش ۸ و ۱۳,نسخه وب باید مسیر آپدیت فهرست‌بها/سال پروژه داشته باشد.
+CreateBrvFhbh / CreateBrvMult / update_zarib_fhpy_mult,ساخت آیتم پروژه و ضرایب,بسیار بالا,بخش ۸ و ۱۲,موتور ضرایب و قرارداد باید این منطق را بازسازی کند.
+Fn_TypeIsLocked / Fn_VersionNztIsLocked / triggers,قفل نسخه و وابستگی‌ها,بالا,بخش ۱۰ و ۱۲,Workflow وب باید قفل/نسخه/حذف امن داشته باشد.
+viwSooratVaziat / viwTadil / distance_view / viwTatbigh_Paykar,ویوهای گزارش و محاسبه,بسیار بالا,بخش ۲، ۸ و ۱۲,منبع مهم برای خروجی PDF/Excel و تست تطبیق است.
+smn_* / dly_*,نظارت ماهانه و تأخیرات,متوسط رو به بالا,بخش ۹ و ۱۰,ماژول‌هایی هستند که قبلاً کم‌رنگ دیده بودیم و باید در roadmap ثبت شوند.
+peik / pek_reports,درخت گزارش و پیک/گزارش,متوسط,بخش ۲ و ۱۱,برای مرکز گزارش‌ها و دسته‌بندی خروجی‌ها کمک می‌کند.
+connection strings / passwords,اطلاعات حساس,خطرناک,امنیت,نباید در GitHub یا سند عمومی commit شود؛ فقط نسخه sanitize شده نگه‌داری شود.

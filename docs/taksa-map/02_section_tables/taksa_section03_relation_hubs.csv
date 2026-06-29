@@ -1,0 +1,158 @@
+﻿table,prefix,family_guess,fk_as_child,fk_as_parent,total_fk_touch
+brv_type,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,16,18
+brv_situ,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,16,17
+brv_acts,brv,پروژه/برآورد/صورت‌وضعیت Taksa,3,9,12
+brv_fhbh,brv,پروژه/برآورد/صورت‌وضعیت Taksa,3,8,11
+base_fhbh,base,داده پایه/کدینگ مشترک,3,6,9
+atm_Detail_Parts,atm,نامشخص/نیازمند بررسی,3,5,8
+base_book,base,داده پایه/کدینگ مشترک,2,5,7
+base_unit,base,داده پایه/کدینگ مشترک,0,6,6
+brv_fhpy,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,4,6
+brv_mogs,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,4,6
+Pek_detail_property,pek,پایگاه فهرست/پیمان/مدیریت پایه,5,0,5
+brv_contract,brv,پروژه/برآورد/صورت‌وضعیت Taksa,0,5,5
+brv_grop,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,4,5
+brv_intp,brv,پروژه/برآورد/صورت‌وضعیت Taksa,4,1,5
+brv_sorc_all,brv,پروژه/برآورد/صورت‌وضعیت Taksa,3,2,5
+Pek_Ostan,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,4,4
+atm_Detail_Parts_Project,atm,نامشخص/نیازمند بررسی,2,2,4
+base_grop,base,داده پایه/کدینگ مشترک,2,2,4
+base_pvst,base,داده پایه/کدینگ مشترک,0,4,4
+base_year,base,داده پایه/کدینگ مشترک,1,3,4
+brv_Packages_Reports,brv,پروژه/برآورد/صورت‌وضعیت Taksa,3,1,4
+brv_dstb,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,2,4
+brv_hmbs,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,2,4
+brv_mult,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,2,4
+brv_sorc,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,2,4
+Atm_Parameters,atm,نامشخص/نیازمند بررسی,1,2,3
+Atm_detail,atm,نامشخص/نیازمند بررسی,0,3,3
+Pek_detail,pek,پایگاه فهرست/پیمان/مدیریت پایه,2,1,3
+Pek_nstp,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,3,3
+base_acts,base,داده پایه/کدینگ مشترک,2,1,3
+base_fosi,base,داده پایه/کدینگ مشترک,3,0,3
+base_fsbs,base,داده پایه/کدینگ مشترک,1,2,3
+base_sorc,base,داده پایه/کدینگ مشترک,2,1,3
+brv_dstn_main_rzmt,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,1,3
+brv_khmt,brv,پروژه/برآورد/صورت‌وضعیت Taksa,3,0,3
+brv_rzmt,brv,پروژه/برآورد/صورت‌وضعیت Taksa,3,0,3
+pek_dis_point,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,2,3
+pek_dis_zone,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,2,3
+Atm_ParamValue_Part,atm,نامشخص/نیازمند بررسی,2,0,2
+Atm_detail_fhbh,atm,نامشخص/نیازمند بررسی,2,0,2
+Atm_param_history,atm,نامشخص/نیازمند بررسی,1,1,2
+Pek_Msh_List,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+Pek_Msh_Rabet_Manager,pek,پایگاه فهرست/پیمان/مدیریت پایه,2,0,2
+Pek_Msh_Rabet_Peyman,pek,پایگاه فهرست/پیمان/مدیریت پایه,2,0,2
+Pek_Msh_Seri_Degree,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+Pek_Msr_List,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+Pek_Msr_Rabet_Peyman,pek,پایگاه فهرست/پیمان/مدیریت پایه,2,0,2
+Pek_Msr_Seri_Degree,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+Pek_Pym_List,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+Pek_Pym_Rabet_Manager,pek,پایگاه فهرست/پیمان/مدیریت پایه,2,0,2
+Pek_Pym_Rabet_Peyman,pek,پایگاه فهرست/پیمان/مدیریت پایه,2,0,2
+Pek_Pym_Seri_Degree,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+Pek_Pyr_List,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+Pek_Pyr_Rabet_Peyman,pek,پایگاه فهرست/پیمان/مدیریت پایه,2,0,2
+Pek_Pyr_Seri_Degree,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+Pek_nash,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,1,2
+atm_Detail_Project,atm,نامشخص/نیازمند بررسی,1,1,2
+atm_Operation,atm,نامشخص/نیازمند بررسی,0,2,2
+atm_abro_h,atm,نامشخص/نیازمند بررسی,1,1,2
+atm_abro_w,atm,نامشخص/نیازمند بررسی,1,1,2
+base_acts_items,base,داده پایه/کدینگ مشترک,2,0,2
+base_acts_unit,base,داده پایه/کدینگ مشترک,0,2,2
+base_ader,base,داده پایه/کدینگ مشترک,2,0,2
+base_grop_name,base,داده پایه/کدینگ مشترک,0,2,2
+base_hmbs,base,داده پایه/کدینگ مشترک,2,0,2
+base_nmmhb,base,داده پایه/کدینگ مشترک,2,0,2
+base_shfs,base,داده پایه/کدینگ مشترک,2,0,2
+base_shkl,base,داده پایه/کدینگ مشترک,2,0,2
+base_sorc_list,base,داده پایه/کدینگ مشترک,1,1,2
+base_tyun,base,داده پایه/کدینگ مشترک,0,2,2
+brv_Prodecessors,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_TadilKosorat,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_Users,brv,پروژه/برآورد/صورت‌وضعیت Taksa,0,2,2
+brv_ader,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_bgml,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_documents,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_dstn_fromto,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_dstn_fromto_rzmt,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_dstn_main,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,1,2
+brv_fhpy_Acts,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_fspy,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_hmpy_rzmt,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_kosorat,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_mult_acts,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_nmmhb,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_ovhd,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_ovpr,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_ovtj,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_role,brv,پروژه/برآورد/صورت‌وضعیت Taksa,0,2,2
+brv_sorc_acts,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_takhir_ve,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,1,2
+brv_tonl,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_type_situ,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+brv_zrtb,brv,پروژه/برآورد/صورت‌وضعیت Taksa,2,0,2
+pek_dis_distance,pek,پایگاه فهرست/پیمان/مدیریت پایه,2,0,2
+Atm_Abro_Parameter,atm,نامشخص/نیازمند بررسی,1,0,1
+Atm_Detail_Prop_History,atm,نامشخص/نیازمند بررسی,1,0,1
+Atm_Detail_Property,atm,نامشخص/نیازمند بررسی,1,0,1
+Atm_Param_Values_history,atm,نامشخص/نیازمند بررسی,1,0,1
+Atm_Param_values,atm,نامشخص/نیازمند بررسی,1,0,1
+Atm_Parts_history,atm,نامشخص/نیازمند بررسی,1,0,1
+Base_ItemType,base,داده پایه/کدینگ مشترک,0,1,1
+Pek_Ghar_Omur,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_Ghar_typs,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,0,1
+Pek_Msh_Manage,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_Msh_Position,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_Msh_Seri,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_Msr_Seri,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_Pym_Manage,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_Pym_Position,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_Pym_Seri,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_Pyr_Seri,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_about,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,0,1
+Pek_detail_design,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_detail_group,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_detail_property_amal,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_detail_property_eghl,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_detail_property_mogh,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_detail_property_sakh,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1
+Pek_organ_hamkar,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,0,1
+Pek_tbns,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,0,1
+Reports_Tip,reports,نامشخص/نیازمند بررسی,0,1,1
+atm_Contract,atm,نامشخص/نیازمند بررسی,0,1,1
+atm_Detail_Fhbh_Project,atm,نامشخص/نیازمند بررسی,1,0,1
+atm_Parameters_Project,atm,نامشخص/نیازمند بررسی,1,0,1
+atm_abro_Type,atm,نامشخص/نیازمند بررسی,0,1,1
+base_Style_List,base,داده پایه/کدینگ مشترک,1,0,1
+base_Style_Title,base,داده پایه/کدینگ مشترک,0,1,1
+base_ZrLc,base,داده پایه/کدینگ مشترک,1,0,1
+base_acts_type,base,داده پایه/کدینگ مشترک,0,1,1
+base_book_list,base,داده پایه/کدینگ مشترک,0,1,1
+base_dstb,base,داده پایه/کدینگ مشترک,1,0,1
+base_fs,base,داده پایه/کدینگ مشترک,0,1,1
+base_grop_raw,base,داده پایه/کدینگ مشترک,1,0,1
+base_pvst_fosi,base,داده پایه/کدینگ مشترک,0,1,1
+base_shrs,base,داده پایه/کدینگ مشترک,1,0,1
+base_tatbigh,base,داده پایه/کدینگ مشترک,1,0,1
+base_unit_raw,base,داده پایه/کدینگ مشترک,1,0,1
+brv_Access,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_MessageType,brv,پروژه/برآورد/صورت‌وضعیت Taksa,0,1,1
+brv_Messages,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_OpenProjects,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_Packages,brv,پروژه/برآورد/صورت‌وضعیت Taksa,0,1,1
+brv_Packages_Parameters,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_Template,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_Tree_Report,brv,پروژه/برآورد/صورت‌وضعیت Taksa,0,1,1
+brv_UserLog,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_acts_items,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_ahta,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_color,brv,پروژه/برآورد/صورت‌وضعیت Taksa,0,1,1
+brv_elhagh,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_hmpy,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_report_history,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_sorc_price,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+brv_takhir_svz,brv,پروژه/برآورد/صورت‌وضعیت Taksa,1,0,1
+pek_dis_node,pek,پایگاه فهرست/پیمان/مدیریت پایه,1,0,1
+pek_dis_state,pek,پایگاه فهرست/پیمان/مدیریت پایه,0,1,1

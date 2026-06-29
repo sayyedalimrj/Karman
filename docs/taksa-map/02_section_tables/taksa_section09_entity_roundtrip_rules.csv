@@ -1,0 +1,11 @@
+﻿rule_name,applies_to,rule,priority
+Raw preservation,TaksaArtifact/TaksaRawTable/TaksaRawRow,هیچ table/row/field ناشناخته حذف نشود.,Critical
+Case-sensitive table names,TaksaRawTable,نام‌هایی مثل brv_Tadilkosorat دقیقاً مثل فایل ورودی ذخیره و export شوند.,Critical
+Key anchors,All imported entities,link_proj/type/nusv/nufh/nuse/cofh/link_mog/link_grop در مدل وب نگهداری شود.,Critical
+Patch-only export,All editable imported entities,خروجی SVZT با patch روی raw ساخته شود، نه serialize از مدل وب.,Critical
+Numeric preservation,"MeasurementLine, FinancialStatementLine, AdjustmentLine",مقادیر عددی numeric بمانند؛ نمایش فارسی جدا از مقدار واقعی باشد.,Critical
+Unknown fields,TaksaRawRow,فیلدهای ناشناخته در raw_json بمانند و موقع export برگردند.,Critical
+Workflow lock,DocumentVersion/WorkflowCase,قفل نسخه با Fn_TypeIsLocked/Fn_VersionNztIsLocked و منطق وب تطبیق داده شود.,Critical
+Reference snapshots,ProjectItemSnapshot,آیتم پروژه snapshot است؛ تغییر reference نباید اسناد قدیمی را خراب کند.,Critical
+Calculation trace,Financial/Adjustment/Coefficient engines,هر مبلغ محاسباتی trace و audit داشته باشد تا اختلاف با تکسا قابل بررسی باشد.,Critical
+Report vs export separation,ReportTemplate,گزارش PDF/Excel شبیه تکسا است؛ فایل برگشتی تکسا مسیر جدا با validator دارد.,High

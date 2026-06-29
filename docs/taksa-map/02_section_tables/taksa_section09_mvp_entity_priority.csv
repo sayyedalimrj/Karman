@@ -1,0 +1,11 @@
+﻿priority,entity_bundle,reason
+P0,TaksaArtifact + Raw tables,بدون این لایه برگشت به تکسا ریسک دارد.
+P0,Project / Contract / ProjectParty,شروع هر پروژه و workflow به این‌ها وابسته است.
+P0,CommercialDocument / PaymentPeriod / DocumentVersion,type/nusv/situ ستون فقرات برآورد/پیشنهاد/صورت‌وضعیت است.
+P0,ProjectItemSnapshot / ChapterSummary / Coefficients,محاسبات مبلغ و گزارش‌های bgml/seas/zrib به این‌ها وابسته‌اند.
+P0,MeasurementLine / ReviewedWorkLine / FinancialStatementLine,هسته صورت‌وضعیت و رسیدگی.
+P0,DeductionLine / AdjustmentRun / AdjustmentLine / IndexPeriod,تعدیل و کسورات خروجی حیاتی‌اند.
+P1,ReferenceBook / PriceListItem / Unit,برای فهرست‌بها و انتخاب آیتم‌ها باید زود کامل شود.
+P1,ReportTemplate,PDF/Excelهای اصلی باید همزمان با engine تست شوند.
+P1,WorkflowCase / AuditLog,برای نسخه وب حرفه‌ای و قابل اعتماد لازم است.
+P2,TransportDistance / AnalysisLine / ActivitySchedule,مهم است ولی بعد از هسته مالی می‌تواند کامل‌تر شود.

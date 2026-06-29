@@ -1,0 +1,121 @@
+name,hits,module
+base_fhbh,514,base / فهرست‌بها و اطلاعات پایه
+base_fsbs,201,base / فهرست‌بها و اطلاعات پایه
+base_book,159,base / فهرست‌بها و اطلاعات پایه
+taksa_temp,110,unknown / نیازمند بررسی
+faragamara_date.dbo,71,unknown / نیازمند بررسی
+viwbase92,68,view / ویوهای محاسباتی و گزارش‌گیری
+base_sorc,67,base / فهرست‌بها و اطلاعات پایه
+dtproperties,66,system / آبجکت‌های سیستمی SQL Server
+viwbase88,65,view / ویوهای محاسباتی و گزارش‌گیری
+base_nmmhb,59,base / فهرست‌بها و اطلاعات پایه
+base_shrs,56,base / فهرست‌بها و اطلاعات پایه
+base_shfs,52,base / فهرست‌بها و اطلاعات پایه
+svz_importer,47,svz / صورت‌وضعیت یا ایمپورت آن
+base_unit_raw,45,base / فهرست‌بها و اطلاعات پایه
+brv_fhbh,43,brv / برآورد، قرارداد، ریزمتره، منابع
+sysdiagrams,42,system / آبجکت‌های سیستمی SQL Server
+psn_importer,41,psn / پیشنهادی/پرسنلی/ایمپورت مرتبط
+viwBase99,41,view / ویوهای محاسباتی و گزارش‌گیری
+base_shkl,39,base / فهرست‌بها و اطلاعات پایه
+brv_sorc_all,38,brv / برآورد، قرارداد، ریزمتره، منابع
+base_sorc_list,38,base / فهرست‌بها و اطلاعات پایه
+viwBase1403,36,view / ویوهای محاسباتی و گزارش‌گیری
+brv_fhpy,34,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_bgml,32,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_Contract,32,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_sorc,31,brv / برآورد، قرارداد، ریزمتره، منابع
+deleted,30,unknown / نیازمند بررسی
+brv_contract,29,brv / برآورد، قرارداد، ریزمتره، منابع
+DELETED,29,unknown / نیازمند بررسی
+viwBase1400,28,view / ویوهای محاسباتی و گزارش‌گیری
+viwBase1404,28,view / ویوهای محاسباتی و گزارش‌گیری
+base_ader,26,base / فهرست‌بها و اطلاعات پایه
+base_hmbs,26,base / فهرست‌بها و اطلاعات پایه
+brv_importer,25,brv / برآورد، قرارداد، ریزمتره، منابع
+dly_contract,25,dly / تأخیرات و وضعیت‌های روزانه
+dt_getpropertiesbyid_vcs,24,system / آبجکت‌های سیستمی SQL Server
+brv_mogs,23,brv / برآورد، قرارداد، ریزمتره، منابع
+viwBase98,22,view / ویوهای محاسباتی و گزارش‌گیری
+Base_ShakhesYerSeMahe,22,base / فهرست‌بها و اطلاعات پایه
+dly_sv,21,dly / تأخیرات و وضعیت‌های روزانه
+base_dstb,21,base / فهرست‌بها و اطلاعات پایه
+base_grop,21,base / فهرست‌بها و اطلاعات پایه
+smn_contract,21,smn / صورت‌وضعیت، نظارت، ماهانه
+smn_Hgzm_Month,20,smn / صورت‌وضعیت، نظارت، ماهانه
+val,20,unknown / نیازمند بررسی
+brv_khmt,18,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_rzmt,17,brv / برآورد، قرارداد، ریزمتره، منابع
+viwBase1401,17,view / ویوهای محاسباتی و گزارش‌گیری
+pek_ztadil,16,peik / گزارش‌ها و درخت گزارش
+dly_svz,15,dly / تأخیرات و وضعیت‌های روزانه
+base_year,15,base / فهرست‌بها و اطلاعات پایه
+sp_OAMethod,15,unknown / نیازمند بررسی
+brv_nmmhb,13,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_mult,13,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_grop,12,brv / برآورد، قرارداد، ریزمتره، منابع
+base_grop_raw,12,base / فهرست‌بها و اطلاعات پایه
+base_tatbigh,12,base / فهرست‌بها و اطلاعات پایه
+base_acts_items,12,base / فهرست‌بها و اطلاعات پایه
+brv_intp,12,brv / برآورد، قرارداد، ریزمتره، منابع
+Compare_Text_for_Base,12,unknown / نیازمند بررسی
+brv_Users,11,brv / برآورد، قرارداد، ریزمتره، منابع
+dt_displayoaerror,11,system / آبجکت‌های سیستمی SQL Server
+base_fosi,11,base / فهرست‌بها و اطلاعات پایه
+brv_situ,10,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_type,10,brv / برآورد، قرارداد، ریزمتره، منابع
+table_list,10,unknown / نیازمند بررسی
+base_book_list,10,base / فهرست‌بها و اطلاعات پایه
+CASCADE,10,unknown / نیازمند بررسی
+brv_ader,9,brv / برآورد، قرارداد، ریزمتره، منابع
+nusv_type,9,unknown / نیازمند بررسی
+dly_vzt,9,dly / تأخیرات و وضعیت‌های روزانه
+smn_Hgzm_Days,8,smn / صورت‌وضعیت، نظارت، ماهانه
+sp_OACreate,8,unknown / نیازمند بررسی
+base_pvst,8,base / فهرست‌بها و اطلاعات پایه
+brv_ahta,8,brv / برآورد، قرارداد، ریزمتره، منابع
+base_unit,7,base / فهرست‌بها و اطلاعات پایه
+smn_Hgzm_Nezarat,7,smn / صورت‌وضعیت، نظارت، ماهانه
+dt_setpropertybyid,7,system / آبجکت‌های سیستمی SQL Server
+brv_hmbs,7,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_hmpy,7,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_hmpy_rzmt,7,brv / برآورد، قرارداد، ریزمتره، منابع
+base_zrlc,7,base / فهرست‌بها و اطلاعات پایه
+column_list,6,unknown / نیازمند بررسی
+base_grop_name,6,base / فهرست‌بها و اطلاعات پایه
+base_acts_unit,6,base / فهرست‌بها و اطلاعات پایه
+edit_list,6,unknown / نیازمند بررسی
+brv_OpenProjects,6,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_fspy,6,brv / برآورد، قرارداد، ریزمتره، منابع
+fhbh,6,unknown / نیازمند بررسی
+brv_dstn_main,6,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_dstn_main_rzmt,6,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_dstn_fromto,6,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_dstn_fromto_rzmt,6,brv / برآورد، قرارداد، ریزمتره، منابع
+base_mola_haml,6,base / فهرست‌بها و اطلاعات پایه
+Pek_intp,6,peik / گزارش‌ها و درخت گزارش
+tbl_words,5,unknown / نیازمند بررسی
+brv_acts,5,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_messages,5,brv / برآورد، قرارداد، ریزمتره، منابع
+smn_nzs_AddItems,5,smn / صورت‌وضعیت، نظارت، ماهانه
+brv_Access,5,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_access,5,brv / برآورد، قرارداد، ریزمتره، منابع
+inserted,4,unknown / نیازمند بررسی
+Correct,4,unknown / نیازمند بررسی
+viwbase87,4,view / ویوهای محاسباتی و گزارش‌گیری
+Acc_Users,4,unknown / نیازمند بررسی
+fbh_new,4,unknown / نیازمند بررسی
+smn_Hgzm_Year,4,smn / صورت‌وضعیت، نظارت، ماهانه
+pek_dis_distance,4,peik / گزارش‌ها و درخت گزارش
+brv_kosorat,4,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_zrtb,4,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_tonl,4,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_documents,4,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_ovhd,4,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_ovpr,4,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_ovtj,4,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_TadilKosorat,4,brv / برآورد، قرارداد، ریزمتره، منابع
+smn_Version_Type,4,smn / صورت‌وضعیت، نظارت، ماهانه
+childs,4,unknown / نیازمند بررسی
+brv_fhpy_Acts,4,brv / برآورد، قرارداد، ریزمتره، منابع
+brv_mult_acts,4,brv / برآورد، قرارداد، ریزمتره، منابع

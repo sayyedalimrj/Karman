@@ -1,0 +1,13 @@
+﻿field_pattern,points_to,meaning,web_design_note
+*_link_proj,brv_contract.ctc_id,Project/Contract anchor,تقریباً همه جدول‌های عملیاتی به پروژه وصل می‌شوند. در وب: internalProjectId جدا از taksaProjectId باشد.
+*_type,brv_type.typ_id,Party/review side/version type,در نمونه: 0=پیمانکار، 1=مشاور، 2=کارفرما. روی نسخه و مقایسه اثر دارد.
+*_nusv,brv_situ.stu_id / brv_type_situ.tst_nusv,Payment certificate/version number,شماره دوره/صورت‌وضعیت. همراه با type معنی پیدا می‌کند.
+tst_nusv_previous + tst_type_previous,brv_type_situ previous pointer,Version chain,زنجیره نسخه‌ها و رسیدگی؛ برای workflow و rollback حیاتی است.
+*_nufh,price-list/package id,Price list discipline/chapter group,برای اتصال فصل/رشته/فهرست‌بها به آیتم‌ها استفاده می‌شود.
+*_nuse + *_cofh,brv_fhbh item reference,Price-list item / contract item,کلید آیتم فهرست‌بها در ریزمتره، کارکرد و برگه مالی.
+*_link_mog,brv_mogs.mog_id,Measurement group/site minute relation,ردیف‌های ریزمتره و حمل به گروه/صورتجلسه متصل می‌شوند.
+*_link_grop,brv_grop.grp_id,Grouping/transport group,برای حمل، گروه‌بندی و محدودیت‌ها مهم است.
+*_rad,display/order number,Ordering,ترتیب چاپ/نمایش. در export نباید بی‌دلیل تغییر کند.
+*_link_sorclist,brv_sorc_all.src_id,Resource master link,منابع/مصالح/دستمزدها به summary/resource master وصل می‌شوند.
+kmt_nagl_rzmt,brv_rzmt.rmt_id,Review/work line imported from measurement,ردیف کارکرد از ریزمتره آمده؛ برای trace پیمانکار→مشاور مهم است.
+*_link_previous / *_type_previous,previous version/entity,Cross-version trace,برای مقایسه دوره قبل و تغییرات مشاور/پیمانکار باید حفظ شود.

@@ -1,0 +1,11 @@
+﻿risk_id,risk,control,priority
+RISK-001,فرمول قطعی PDF با پیاده‌سازی تکسا فرق کند,فرمول‌ها تا golden test قفل نشوند؛ engine version داشته باشند,P0
+RISK-002,rounding اختلاف ایجاد کند,rounding trace + tolerance report + مقایسه با bgml/seas,P0
+RISK-003,ضرایب با ترتیب اشتباه اعمال شوند,CoefficientTrace و تست brv_mult/update_zarib_fhpy_mult,P0
+RISK-004,نسخه پیمانکار overwrite شود,DocumentVersion جدا + immutable submitted version,P0
+RISK-005,case table در export خراب شود,export از raw table name واقعی، نه اسم نرمال‌شده,P0
+RISK-006,فیلد ناشناخته حذف شود,raw_json complete + patch-only export,P0
+RISK-007,Excel عددی نباشد,cell type numeric، display format جدا,P0
+RISK-008,تغییر سال فهرست‌بها آیتم‌ها را خراب کند,Reference snapshot + conversion engine جدا,P1
+RISK-009,محاسبه تعدیل بدون شاخص درست انجام شود,IndexPeriod source validation + trace,P0
+RISK-010,کاربر سند قفل‌شده را تغییر دهد,DocumentLockGuard در UI و API + revision flow,P0

@@ -1,0 +1,14 @@
+﻿step_no,step_key,persian_name,input_entities,key_inputs,outputs,validation_rule
+1,load_context,بارگذاری پروژه/قرارداد/سند/نسخه,"Project, Contract, CommercialDocument, DocumentVersion","project_id, document_id, version_id",CalculationContext,validate permissions and lock
+2,load_reference_data,بارگذاری مبانی، فهرست‌بها، واحدها، شاخص‌ها,"ReferenceBook, PriceListItem, Unit, IndexPeriod","book_id, year, discipline",ReferenceContext,reference snapshot must match document
+3,load_raw_anchors,بارگذاری anchorهای تکسا,"TaksaRawRow, TaksaRawTable","artifact_id, raw table/key fields",RawAnchorContext,required for imported documents
+4,normalize_measurements,نرمال‌سازی و محاسبه متره,MeasurementLine,"formula, dimensions, count, unit",MeasurementTotals,do not destroy raw formula
+5,reconcile_review_quantities,اعمال نسخه رسیدگی,ReviewedWorkLine,"contractor_qty, consultant_qty, employer_qty",ApprovedQuantities,version-aware; no overwrite
+6,build_financial_lines,ساخت برگه مالی پایه,FinancialStatementLine,"previous/current/total qty, unit price",FinancialLines,numeric decimal only
+7,apply_coefficients,اعمال ضرایب,"CoefficientAssignment, ChapterSummary","scope, coefficient type, order, value",CoefficientTrace,order must be traceable
+8,calculate_deductions,محاسبه کسورات/اضافات,DeductionLine,"base amount, percent, sign, applies_to",DeductionSummary,case-sensitive raw mapping
+9,calculate_adjustment,محاسبه تعدیل و شاخص,"AdjustmentRun, IndexPeriod","base/work indexes, period, chapter/item",AdjustmentLines,formula version + trace
+10,calculate_transport_analysis,محاسبه حمل/آنالیز بها در صورت فعال بودن,"TransportDistance, AnalysisLine",route/resource data,Transport/Analysis impact,P1 modules
+11,aggregate_summary,جمع‌بندی مالی نهایی,"FinancialLines, Deductions, Adjustment",all outputs,FinancialSummary,previous/current/total/payable
+12,produce_report_projection,آماده‌سازی projection گزارش‌ها,ReportTemplate,report keys,ReportProjection,match bgml/seas/rzmt/tdil outputs
+13,validate_against_roundtrip,اعتبارسنجی export,"TaksaRawRow, dirty_patch_json",raw + calculated patch,ExportValidationReport,zero critical errors before SVZT export
