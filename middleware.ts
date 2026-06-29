@@ -30,10 +30,18 @@ function looksLikeSession(token: string | undefined): boolean {
   return dot > 0 && dot < token.length - 1;
 }
 
+/** Header used to forward the current pathname to server components. */
+const PATHNAME_HEADER = "x-karman-pathname";
+
 export function middleware(request: NextRequest): NextResponse {
   const token = request.cookies.get(SESSION_COOKIE_NAME)?.value;
   if (looksLikeSession(token)) {
-    return NextResponse.next();
+    // Forward the pathname so server layouts/pages can derive the active nav
+    // item, section title, and a safe `next` target without re-parsing the URL.
+    // This is presentation metadata only — NOT an authorization signal.
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set(PATHNAME_HEADER, request.nextUrl.pathname);
+    return NextResponse.next({ request: { headers: requestHeaders } });
   }
 
   const url = request.nextUrl.clone();

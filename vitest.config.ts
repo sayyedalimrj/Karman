@@ -13,11 +13,18 @@ import { defineConfig } from "vitest/config";
 const runDbTests = process.env.RUN_DB_TESTS === "1";
 
 export default defineConfig({
+  esbuild: {
+    // Use the automatic JSX runtime so test files and components don't need an
+    // explicit React import in scope (mirrors Next's compiler behavior).
+    jsx: "automatic",
+    jsxImportSource: "react",
+  },
   test: {
     environment: "node",
     globals: true,
     include: [
       "src/**/*.test.ts",
+      "src/**/*.test.tsx",
       "tests/**/*.test.ts",
       ...(runDbTests ? ["tests/**/*.int.test.ts", "src/**/*.int.test.ts"] : []),
     ],
