@@ -61,6 +61,7 @@ export default async function ProjectSetupPage() {
 
       <section className="panel-section">
         <h2 className="panel-section__title">{t.projectSetup.modesTitle}</h2>
+        <p className="panel-section__hint">{t.projectSetup.phase2Blocked}</p>
         <ul className="mode-list">
           <li className="mode-card">
             <span className="mode-card__title">{t.projectSetup.mode1Title}</span>

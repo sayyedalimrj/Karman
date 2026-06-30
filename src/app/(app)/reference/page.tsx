@@ -40,6 +40,12 @@ export default async function ReferencePage() {
 
       {isEmpty ? <EmptyState title={t.reference.empty} /> : null}
 
+      <section className="panel-section panel-section--warn">
+        <p className="readiness__warning" role="alert">
+          {t.reference.importBlockedPhase2}
+        </p>
+      </section>
+
       <section className="panel-section">
         <h2 className="panel-section__title">{t.reference.mustComeFromTitle}</h2>
         <p className="panel-section__hint">{t.reference.mustComeFrom}</p>

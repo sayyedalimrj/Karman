@@ -2,26 +2,31 @@
  * CLI for the canonical reference importer foundation.
  *
  * Usage:
- *   npm run import:reference            # dry-run (validate only, no DB writes)
- *   npm run import:reference -- --apply --source-id <id> --import-run-id <id>
+ *   npm run import:reference -- --dry-run   # validate only, no DB writes
+ *   npm run import:reference -- --apply     # BLOCKED in Phase 2 (see below)
  *
- * The dry-run validates every canonical file in data/incoming/reference and
- * prints a structured report. It fails clearly when no files exist and rejects
- * JS-number numeric values (decimals must be strings). It is NEVER run at app
- * startup. No fake/sample values are ever produced.
+ * PHASE 2 GATING:
+ *   - `--dry-run` validates canonical files (when present) and ALWAYS reports
+ *     that reference import is blocked until the DB audit and mapping review
+ *     are completed. It NEVER imports official data.
+ *   - `--apply` is DISABLED until Phase 3 mapping approval and exits non-zero
+ *     without touching the database. No ReferenceBook/Item/IndexPeriod official
+ *     records are created in Phase 2.
  *
- * Requirements: 15.2, 15.3, 15.5, 15.6
+ * The dry-run is NEVER run at app startup and produces no fake/sample values.
+ *
+ * Requirements: 15.2, 15.3, 15.5, 15.6 (+ Phase 2 reference-import gating)
  */
 import {
-  importReferenceData,
+  validateIncoming,
   NoReferenceFilesError,
+  DEFAULT_INCOMING_DIR,
   type ValidationReport,
 } from "../src/server/reference/importer";
 
-function getFlag(name: string): string | undefined {
-  const idx = process.argv.indexOf(`--${name}`);
-  return idx >= 0 ? process.argv[idx + 1] : undefined;
-}
+const DRY_RUN_BLOCKED_MESSAGE =
+  "Reference import is blocked until DB audit and mapping review are completed.";
+const APPLY_BLOCKED_MESSAGE = "Reference apply is disabled until Phase 3 mapping approval.";
 
 function printReport(report: ValidationReport): void {
   console.log(`Reference import report (dir: ${report.dir})`);
@@ -41,23 +46,35 @@ function printReport(report: ValidationReport): void {
 
 function main(): void {
   const apply = process.argv.includes("--apply");
+
+  if (apply) {
+    // Phase 2: apply is hard-blocked. Nothing is imported.
+    console.error(APPLY_BLOCKED_MESSAGE);
+    process.exitCode = 1;
+    return;
+  }
+
+  // Dry-run: validate when files are present, then always report the block.
   try {
-    const report = importReferenceData({
-      dryRun: !apply,
-      sourceId: getFlag("source-id"),
-      importRunId: getFlag("import-run-id"),
-    });
+    const report = validateIncoming(DEFAULT_INCOMING_DIR);
     printReport(report);
-    process.exitCode = report.ok ? 0 : 1;
   } catch (err) {
     if (err instanceof NoReferenceFilesError) {
-      console.error(err.message);
-      process.exitCode = 2;
+      console.log(err.message);
+    } else {
+      console.error(err instanceof Error ? err.message : String(err));
+      process.exitCode = 1;
       return;
     }
-    console.error(err instanceof Error ? err.message : String(err));
-    process.exitCode = 1;
   }
+
+  console.log("");
+  console.log(DRY_RUN_BLOCKED_MESSAGE);
+  console.log(
+    "No official numbers are imported from Excel or PDF in Phase 2; complete the " +
+      "controlled Taksa DB/script analysis and mapping review first.",
+  );
+  process.exitCode = 0;
 }
 
 main();

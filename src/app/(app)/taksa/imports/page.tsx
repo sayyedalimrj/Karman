@@ -56,6 +56,36 @@ export default async function TaksaImportsPage() {
       />
 
       <section className="panel-section">
+        <h2 className="panel-section__title">{t.taksa.imports.serverPathsTitle}</h2>
+        <ul className="status-list">
+          <li className="status-list__item">{t.taksa.imports.prodAppPath}</li>
+          <li className="status-list__item">{t.taksa.imports.realServerPath}</li>
+          <li className="status-list__item">{t.taksa.imports.symlinkNote}</li>
+        </ul>
+        <p className="panel-section__hint">{t.taksa.imports.sourcesPreparedNote}</p>
+      </section>
+
+      <section className="panel-section panel-section--warn">
+        <h2 className="panel-section__title">{t.taksa.imports.restoreBlockedTitle}</h2>
+        <p className="readiness__warning" role="alert">
+          {t.taksa.imports.restoreBlocked}
+        </p>
+        <p className="panel-section__hint">{t.taksa.imports.phase2ContinuesNote}</p>
+      </section>
+
+      <section className="panel-section">
+        <h2 className="panel-section__title">{t.taksa.imports.commandsTitle}</h2>
+        <ul className="status-list">
+          {t.taksa.imports.commands.map((cmd) => (
+            <li key={cmd} className="status-list__item tabular-digits">
+              <code>{cmd}</code>
+            </li>
+          ))}
+        </ul>
+        <p className="panel-section__hint">{t.taksa.imports.applyBlockedNote}</p>
+      </section>
+
+      <section className="panel-section">
         <p className="panel-section__hint">{t.taksa.imports.honestNote}</p>
       </section>
     </div>

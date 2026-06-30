@@ -111,6 +111,32 @@ export function buildNavSections(systemRole: Role): NavSection[] {
         { key: "taksa-overview", label: t.nav.taksaOverview, href: "/taksa" },
         { key: "taksa-imports", label: t.nav.taksaImports, href: "/taksa/imports" },
         { key: "taksa-raw", label: t.nav.taksaRaw, href: "/taksa/raw" },
+        { key: "taksa-sources", label: t.nav.taksaSources, href: "/taksa/sources" },
+        {
+          key: "taksa-analyze",
+          label: t.nav.taksaAnalyze,
+          href: "/taksa/analyze",
+          children: [
+            { key: "taksa-analyze-runs", label: t.nav.taksaAnalyzeRuns, href: "/taksa/analyze/runs" },
+            {
+              key: "taksa-analyze-scriptxml",
+              label: t.nav.taksaAnalyzeScriptXml,
+              href: "/taksa/analyze/scriptxml",
+            },
+            { key: "taksa-analyze-sql", label: t.nav.taksaAnalyzeSql, href: "/taksa/analyze/sql" },
+            {
+              key: "taksa-analyze-backup-strings",
+              label: t.nav.taksaAnalyzeBackupStrings,
+              href: "/taksa/analyze/backup-strings",
+            },
+            {
+              key: "taksa-analyze-templates",
+              label: t.nav.taksaAnalyzeTemplates,
+              href: "/taksa/analyze/templates",
+            },
+            { key: "taksa-analyze-docs", label: t.nav.taksaAnalyzeDocs, href: "/taksa/analyze/docs" },
+          ],
+        },
       ],
     },
     {

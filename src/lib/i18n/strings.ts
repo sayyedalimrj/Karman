@@ -26,6 +26,14 @@ export const fa = {
     taksaOverview: "نمای کلی تکسا",
     taksaImports: "منابع و واردسازی",
     taksaRaw: "داده خام تکسا",
+    taksaSources: "منابع کشف‌شده",
+    taksaAnalyze: "تحلیل تکسا",
+    taksaAnalyzeRuns: "اجراهای تحلیل",
+    taksaAnalyzeScriptXml: "نگاشت ScriptXML",
+    taksaAnalyzeSql: "تحلیل اسکریپت SQL",
+    taksaAnalyzeBackupStrings: "رشته‌های پشتیبان",
+    taksaAnalyzeTemplates: "قالب‌های اکسل",
+    taksaAnalyzeDocs: "برچسب‌ها و رفتار UI",
     referenceLibrary: "کتابخانه فنی و مرجع",
     referenceOverview: "نمای کلی مرجع",
     referenceSources: "منابع مرجع",
@@ -167,6 +175,8 @@ export const fa = {
     goToSources: "ثبت و مدیریت منابع مرجع",
     goToLibrary: "مشاهده کتابخانه مرجع",
     countsTitle: "شمارش جداول مرجع",
+    importBlockedPhase2:
+      "ورود داده مرجع رسمی بعد از تکمیل تحلیل کنترل‌شده دیتابیس/اسکریپت‌های تکسا و تأیید mapping انجام می‌شود. در این مرحله هیچ عدد رسمی از Excel یا PDF وارد نمی‌شود.",
     sources: {
       title: "منابع مرجع",
       subtitle:
@@ -266,6 +276,82 @@ export const fa = {
       ] as readonly string[],
       honestNote:
         "این موارد به‌صورت قراردادهای تایپ‌شده و شِما آماده شده‌اند تا واردکننده‌های آینده بدون بازنویسی، جدول‌های مرجع را پر کنند.",
+      // Phase 2 — server-aware ingestion guidance + exact paths/commands.
+      serverPathsTitle: "مسیر منابع در سرور",
+      prodAppPath: "مسیر برنامه (production): /opt/civilic/data/incoming/taksa",
+      realServerPath: "مسیر واقعی سرور: /opt/karman-data/app-data/incoming/taksa",
+      symlinkNote: "پیوند نمادین: /opt/civilic/data -> /opt/karman-data/app-data",
+      sourcesPreparedNote:
+        "فایل‌های منبع از قبل روی سرور آماده شده‌اند؛ وب‌سایت هرگز فایل خام تکسا را به‌عنوان منبع داده نمی‌خواند و تنها فراداده‌ی PostgreSQL را نمایش می‌دهد.",
+      restoreBlockedTitle: "وضعیت بازیابی پایگاه‌داده SQL Server",
+      restoreBlocked:
+        "بازیابی کامل پایگاه‌داده SQL Server در حال حاضر به‌دلیل خطای گذرواژه‌ی فایل پشتیبان (SQL Server Msg 3279) مسدود است.",
+      phase2ContinuesNote:
+        "فاز ۲ بدون بازیابی، از طریق SQL/SCP، ScriptXML، رشته‌های امن پشتیبان، MDB، قالب‌های اکسل، اسناد و فراداده‌ی PDF ادامه می‌یابد.",
+      commandsTitle: "دستورهای سمت سرور (با KARMAN_DATA_ROOT)",
+      commands: [
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:discover",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:register-sources",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:analyze",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:db:inspect",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:scriptxml:audit",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:sql:audit",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:backup-strings:audit",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:mdb:audit",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:excel:audit",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:docs:audit",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:pdf:audit",
+        "KARMAN_DATA_ROOT=/opt/civilic/data npm run import:reference -- --dry-run",
+      ] as readonly string[],
+      applyBlockedNote:
+        "اجرای import:reference -- --apply تا زمان بازبینی و تأیید mapping در فاز ۳ مسدود است.",
+    },
+    sources: {
+      title: "منابع کشف‌شده تکسا",
+      subtitle:
+        "فهرست فایل‌های کشف و ثبت‌شده از روی فراداده‌ی PostgreSQL؛ هیچ فایلی هنگام نمایش اسکن نمی‌شود.",
+      empty:
+        "هنوز هیچ منبعی ثبت نشده است. روی سرور دستور taksa:register-sources را اجرا کنید.",
+      colPath: "مسیر نسبی",
+      colType: "نوع منبع",
+      colCategory: "دسته",
+      colSize: "اندازه (بایت)",
+      colAnalysis: "قابل تحلیل",
+      countsTitle: "شمارش بر اساس نوع",
+      adminNote: "ثبت و تحلیل منابع تنها برای مدیر سامانه مجاز است.",
+    },
+    analyze: {
+      title: "تحلیل تکسا",
+      subtitle:
+        "خلاصه‌ی اجراهای تحلیل از روی فراداده‌ی PostgreSQL — بدون اسکن فایل خام در زمان اجرا و بدون اعداد ساختگی.",
+      empty:
+        "هنوز هیچ اجرای تحلیلی ثبت نشده است. روی سرور دستور taksa:analyze را اجرا کنید.",
+      runsTitle: "اجراهای تحلیل",
+      colAnalyzer: "تحلیل‌گر",
+      colStatus: "وضعیت",
+      colFiles: "فایل‌ها",
+      colStarted: "شروع",
+      links: "بخش‌های تحلیل",
+      scriptXmlTitle: "نگاشت ScriptXML",
+      scriptXmlEmpty: "هنوز نگاشتی ثبت نشده است.",
+      sqlTitle: "جدول‌های شناسایی‌شده‌ی SQL",
+      sqlEmpty: "هنوز جدولی شناسایی نشده است.",
+      backupStringsTitle: "نامزدهای جدول از رشته‌های پشتیبان",
+      backupStringsEmpty: "هنوز نامزدی ثبت نشده است.",
+      templatesTitle: "شیت‌های قالب اکسل",
+      templatesEmpty: "هنوز شیتی ثبت نشده است.",
+      docsTitle: "برچسب‌ها و رفتار UI",
+      docsLabels: "برچسب‌های UI",
+      docsHints: "نکات رفتاری",
+      docsEmpty: "هنوز برچسب یا نکته‌ای ثبت نشده است.",
+      colProc: "رویه",
+      colXmlPath: "مسیر XML",
+      colTarget: "جدول مقصد",
+      colName: "نام",
+      colSource: "منبع",
+      colLabel: "برچسب",
+      colTopic: "موضوع",
+      colText: "متن",
     },
   },
   inbox: {
@@ -310,6 +396,8 @@ export const fa = {
     linkSources: "ثبت منابع مرجع",
     linkReference: "کتابخانه فنی و مرجع",
     linkTaksaImports: "منابع و واردسازی تکسا",
+    phase2Blocked:
+      "تعریف پروژه واقعی بعد از تکمیل تحلیل تکسا، mapping داده مرجع و ورود کنترل‌شده فهرست‌بها/شاخص به PostgreSQL فعال می‌شود.",
   },
   common: {
     loading: "در حال بارگذاری…",

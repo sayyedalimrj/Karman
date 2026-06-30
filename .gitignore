@@ -35,6 +35,22 @@ logs/
 *.psnt
 *.bak
 *.backup
+*.dts
+*.scp
+
+# --- Taksa raw inputs under data/ that share extensions used elsewhere ---
+# (.sql is tracked under prisma/migrations; .xls/.xlsx/.pdf/.rpt may exist as
+# tracked assets elsewhere — so these are scoped to the data/ tree only. The
+# broad `/data/**` rule below already covers them; listed here for clarity.)
+/data/**/*.sql
+/data/**/*.scp
+/data/**/*.xls
+/data/**/*.xlsx
+/data/**/*.pdf
+/data/**/*.rpt
+/data/**/*.csv
+/data/**/*.json
+/data/**/*.md.bak
 
 # --- Recovered / sensitive text dumps (NEVER commit) ---
 readable_strings*

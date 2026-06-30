@@ -681,3 +681,141 @@ model ReferenceMapping {
   @@index([importRunId])
   @@index([mappingStatus])
 }
+
+
+
+// ============================================================================
+// Taksa STAGING / ANALYSIS layer (Phase 2)
+// ----------------------------------------------------------------------------
+// Server-aware ingestion + analysis metadata for Taksa sources. These models
+// store ONLY safe, non-sensitive metadata produced by the discovery/analysis
+// CLIs (relative paths, checksums, detected types, structural mappings, UI
+// labels, behavior hints). They NEVER store raw file content, official values,
+// secrets, or connection strings.
+//
+// They are intentionally SEPARATE from the raw-preservation models
+// (TaksaArtifact/RawTable/RawRow) and the Reference* master-data models — this
+// is analyzer/staging metadata, not preserved rows and not normalized business
+// data. The website reads these models to render the Taksa analysis UI without
+// ever scanning raw files at request time.
+// ============================================================================
+
+model TaksaDiscoveredFile {
+  id                   String   @id @default(uuid())
+  relativePath         String // SAFE relative path from the data root (never absolute)
+  fileName             String
+  extension            String
+  sourceType           String
+  sourceFamily         String?
+  category             String
+  sizeBytes            Int
+  checksum             String
+  modifiedAt           DateTime?
+  supportedForAnalysis Boolean  @default(false)
+  supportedForIngestion Boolean @default(false)
+  status               String   @default("DISCOVERED")
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  @@unique([checksum, relativePath])
+  @@index([sourceType])
+  @@index([category])
+  @@index([status])
+}
+
+model TaksaAnalysisRun {
+  id           String    @id @default(uuid())
+  analyzerType String
+  status       String    @default("STARTED")
+  startedAt    DateTime  @default(now())
+  finishedAt   DateTime?
+  totalFiles   Int       @default(0)
+  successCount Int       @default(0)
+  warningCount Int       @default(0)
+  errorCount   Int       @default(0)
+  outputDir    String?
+  summaryJson  Json?
+  createdById  String?
+  createdAt    DateTime  @default(now())
+
+  detectedEntities  TaksaDetectedEntity[]
+  scriptXmlMappings TaksaScriptXmlMapping[]
+  uiLabels          TaksaUiLabel[]
+  behaviorHints     TaksaBehaviorHint[]
+
+  @@index([analyzerType])
+  @@index([status])
+  @@index([createdById])
+  @@index([startedAt])
+}
+
+model TaksaDetectedEntity {
+  id         String   @id @default(uuid())
+  runId      String
+  entityType String
+  sourceType String
+  sourceFile String
+  family     String?
+  name       String
+  parentName String?
+  metadata   Json?
+  // Non-money confidence score (Float by design; check:decimal only constrains
+  // Decimal/money-named fields — `confidence` is neither).
+  confidence Float?
+  createdAt  DateTime @default(now())
+
+  run TaksaAnalysisRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId])
+  @@index([entityType])
+  @@index([sourceType])
+  @@index([name])
+}
+
+model TaksaScriptXmlMapping {
+  id            String   @id @default(uuid())
+  runId         String
+  procedureName String?
+  xmlPath       String?
+  targetTable   String
+  columns       Json?
+  confidence    Float?
+  createdAt     DateTime @default(now())
+
+  run TaksaAnalysisRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId])
+  @@index([targetTable])
+}
+
+model TaksaUiLabel {
+  id               String   @id @default(uuid())
+  runId            String
+  sourceFile       String
+  label            String
+  dataPropertyName String?
+  formName         String?
+  gridName         String?
+  metadata         Json?
+  createdAt        DateTime @default(now())
+
+  run TaksaAnalysisRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId])
+  @@index([sourceFile])
+}
+
+model TaksaBehaviorHint {
+  id         String   @id @default(uuid())
+  runId      String
+  sourceFile String
+  topic      String
+  text       String
+  metadata   Json?
+  createdAt  DateTime @default(now())
+
+  run TaksaAnalysisRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId])
+  @@index([topic])
+}

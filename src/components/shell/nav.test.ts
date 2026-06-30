@@ -25,13 +25,21 @@ import {
 } from "./nav";
 import { t } from "@/lib/i18n";
 
-/** Routes that are actually implemented in Phase 1. */
+/** Routes that are actually implemented (Phase 1 + Phase 2 Taksa analysis). */
 const IMPLEMENTED_ROUTES = new Set<string>([
   "/dashboard",
   "/inbox",
   "/taksa",
   "/taksa/imports",
   "/taksa/raw",
+  "/taksa/sources",
+  "/taksa/analyze",
+  "/taksa/analyze/runs",
+  "/taksa/analyze/scriptxml",
+  "/taksa/analyze/sql",
+  "/taksa/analyze/backup-strings",
+  "/taksa/analyze/templates",
+  "/taksa/analyze/docs",
   "/reference",
   "/reference/sources",
   "/reference/library",
