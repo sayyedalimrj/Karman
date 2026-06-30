@@ -1,0 +1,70 @@
+{
+  "name": "karman",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Karman - production-grade platform for construction-project financial and review workflows (RTL/Persian-first).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check:decimal": "tsx scripts/check-decimal-fields.ts",
+    "import:reference": "tsx scripts/import-reference-data.ts",
+    "taksa:discover": "tsx scripts/taksa/discover.ts",
+    "taksa:register-sources": "tsx scripts/taksa/register-sources.ts",
+    "taksa:analyze": "tsx scripts/taksa/analyze.ts",
+    "taksa:db:inspect": "tsx scripts/taksa/db-inspect.ts",
+    "taksa:scriptxml:audit": "tsx scripts/taksa/scriptxml-audit.ts",
+    "taksa:sql:audit": "tsx scripts/taksa/sql-audit.ts",
+    "taksa:backup-strings:audit": "tsx scripts/taksa/backup-strings-audit.ts",
+    "taksa:mdb:audit": "tsx scripts/taksa/mdb-audit.ts",
+    "taksa:excel:audit": "tsx scripts/taksa/excel-audit.ts",
+    "taksa:docs:audit": "tsx scripts/taksa/docs-audit.ts",
+    "taksa:pdf:audit": "tsx scripts/taksa/pdf-audit.ts",
+    "taksa:dts:audit": "tsx scripts/taksa/dts-audit.ts",
+    "taksa:rpt:audit": "tsx scripts/taksa/rpt-audit.ts",
+    "extract:research": "tsx scripts/extract-research.ts",
+    "extract:brand": "tsx scripts/extract-brand.ts",
+    "extract:fonts": "tsx scripts/extract-fonts.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "prisma:migrate:dev": "prisma migrate dev",
+    "seed": "tsx prisma/seed.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "decimal.js": "^10.4.3",
+    "next": "^15.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.4",
+    "@types/react-dom": "^19.0.2",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "^15.1.4",
+    "eslint-config-prettier": "^9.1.0",
+    "fast-check": "^3.23.2",
+    "jsdom": "^25.0.1",
+    "prettier": "^3.4.2",
+    "prisma": "^6.2.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

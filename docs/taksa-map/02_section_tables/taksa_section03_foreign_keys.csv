@@ -1,0 +1,380 @@
+﻿constraint,child_table,child_columns,parent_table,parent_columns,on_update,on_delete
+FK_tbns_nash,Pek_tbns,NSC_Numv|NSC_Type,Pek_nash,nsh_numv|nsh_type,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pyr_Seri_degree_Pyr_Seri,Pek_Pyr_Seri_Degree,sd_CodeSeri,Pek_Pyr_Seri,ser_CodeSeri,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pyr_Rabet_Peyman_Pyr_Seri_degree,Pek_Pyr_Rabet_Peyman,rrp_CodeSeri|rrp_CodeDegree,Pek_Pyr_Seri_Degree,sd_CodeSeri|sd_CodeDegree,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pek_Pyr_Rabet_Peyman_Pek_Pyr_List,Pek_Pyr_Rabet_Peyman,rrp_CompanyID,Pek_Pyr_List,lst_ID,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pek_Pyr_List_Pek_Ostan,Pek_Pyr_List,lst_OstanName,Pek_Ostan,ost_English,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_Pym_Seri_degree_Pym_Seri,Pek_Pym_Seri_Degree,sd_CodeSeri,Pek_Pym_Seri,ser_CodeSeri,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pym_Rabet_Peyman_Pym_Seri_degree,Pek_Pym_Rabet_Peyman,rrp_CodeSeri|rrp_CodeDegree,Pek_Pym_Seri_Degree,sd_CodeSeri|sd_CodeDegree,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pek_Pym_Rabet_Peyman_Pek_Pym_List,Pek_Pym_Rabet_Peyman,rrp_CompanyID,Pek_Pym_List,lst_ID,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pym_Rabet_Manager_Pym_Position,Pek_Pym_Rabet_Manager,rhm_Position,Pek_Pym_Position,pos_Code,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pym_Rabet_Manager_Pym_Manage,Pek_Pym_Rabet_Manager,rhm_CodeManage,Pek_Pym_Manage,mng_Rad,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_Pym_List_Pek_Ostan,Pek_Pym_List,lst_OstanName,Pek_Ostan,ost_English,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_organ_hamkar_Pek_nstp,Pek_organ_hamkar,ogh_nstp,Pek_nstp,nstp_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_Pek_nash_Pek_nstp,Pek_nash,nsh_type,Pek_nstp,nstp_id,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_Msr_Seri_degree_Msr_Seri,Pek_Msr_Seri_Degree,sd_CodeSeri,Pek_Msr_Seri,ser_CodeSeri,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pek_Msr_Rabet_Peyman_Pek_Msr_List,Pek_Msr_Rabet_Peyman,rrp_CompanyID,Pek_Msr_List,lst_ID,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Msr_Rabet_Peyman_Msr_Seri_degree,Pek_Msr_Rabet_Peyman,rrp_CodeSeri|rrp_CodeDegree,Pek_Msr_Seri_Degree,sd_CodeSeri|sd_CodeDegree,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pek_Msr_List_Pek_Ostan,Pek_Msr_List,lst_OstanName,Pek_Ostan,ost_English,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_Msh_Seri_degree_Msh_Seri,Pek_Msh_Seri_Degree,sd_CodeSeri,Pek_Msh_Seri,ser_CodeSeri,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pek_Msh_Rabet_Peyman_Pek_Msh_Seri_Degree,Pek_Msh_Rabet_Peyman,rrp_CodeSeri|rrp_CodeDegree,Pek_Msh_Seri_Degree,sd_CodeSeri|sd_CodeDegree,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Pek_Msh_Rabet_Peyman_Pek_Msh_List,Pek_Msh_Rabet_Peyman,rrp_CompanyID,Pek_Msh_List,lst_ID,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_Msh_Rabet_Manager_Msh_Position,Pek_Msh_Rabet_Manager,rhm_Position,Pek_Msh_Position,pos_Code,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Msh_Rabet_Manager_Msh_Manage,Pek_Msh_Rabet_Manager,rhm_CodeManage,Pek_Msh_Manage,mng_Rad,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_Msh_List_Pek_Ostan,Pek_Msh_List,lst_OstanName,Pek_Ostan,ost_English,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_Ghar_typs_Pek_Ghar_Omur1,Pek_Ghar_typs,typ_omur,Pek_Ghar_Omur,ghom_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_pek_dis_zone_pek_dis_state,pek_dis_zone,zn_link_state,pek_dis_state,st_id,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_pek_dis_point_pek_dis_zone,pek_dis_point,pt_link_zone|pt_link_state,pek_dis_zone,zn_id|zn_link_state,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_pek_dis_node_pek_dis_zone,pek_dis_node,nd_link_zone|nd_link_state,pek_dis_zone,zn_id|zn_link_state,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_pek_dis_distance_pek_dis_point1,pek_dis_distance,dis_dst_point|dis_dst_state|dis_dst_zone,pek_dis_point,pt_id|pt_link_state|pt_link_zone,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_pek_dis_distance_pek_dis_point,pek_dis_distance,dis_src_point|dis_src_state|dis_src_zone,pek_dis_point,pt_id|pt_link_state|pt_link_zone,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_Pek_detail_property_Pek_detail_property_sakh,Pek_detail_property,prty_sakh,Pek_detail_property_sakh,id_sakh,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_detail_property_Pek_detail_property_mogh,Pek_detail_property,prty_mogh,Pek_detail_property_mogh,id_mogh,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_detail_property_Pek_detail_property_eghl,Pek_detail_property,prty_eghl,Pek_detail_property_eghl,id_eghl,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_detail_property_Pek_detail_property_amal,Pek_detail_property,prty_amal,Pek_detail_property_amal,id_amal,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_detail_property_Pek_detail,Pek_detail_property,det_index,Pek_detail,det_index,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_detail_Pek_detail_group,Pek_detail,det_shakhe,Pek_detail_group,id_code,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_detail_Pek_detail_design,Pek_detail,det_design,Pek_detail_design,id_design,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Pek_about_Pek_nstp,Pek_about,abt_nstp,Pek_nstp,nstp_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_zrtb_brv_type,brv_zrtb,ztb_link_proj|ztb_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_zrtb_brv_situ,brv_zrtb,ztb_link_proj|ztb_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_UserLog_brv_Users,brv_UserLog,log_UserID,brv_Users,usr_id,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_type_situ_brv_type,brv_type_situ,tst_link_proj|tst_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_type_situ_brv_situ,brv_type_situ,tst_link_proj|tst_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_type_brv_contract,brv_type,typ_link_proj,brv_contract,ctc_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_type_brv_color,brv_type,typ_color_name_far,brv_color,col_name_far,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_tonl_brv_type,brv_tonl,tnl_link_proj|tnl_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_tonl_brv_situ,brv_tonl,tnl_link_proj|tnl_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_Template_brv_role,brv_Template,tmp_RoleID,brv_role,rol_id,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_takhir_ve_brv_contract,brv_takhir_ve,ve_link_proj,brv_contract,ctc_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_takhir_svz_brv_takhir_ve,brv_takhir_svz,svz_link_proj|svz_veId,brv_takhir_ve,ve_link_proj|ve_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_TadilKosorat_brv_type,brv_TadilKosorat,Tkr_link_proj|Tkr_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_TadilKosorat_brv_situ,brv_TadilKosorat,Tkr_link_proj|Tkr_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_sorc_price_brv_sorc_all,brv_sorc_price,srcp_link_proj|srcp_type|srcp_nusv|srcp_src_id,brv_sorc_all,src_link_proj|src_type|src_nusv|src_id,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_sorc_all_brv_type,brv_sorc_all,src_link_proj|src_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_sorc_all_brv_situ,brv_sorc_all,src_link_proj|src_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_sorc_all_base_unit,brv_sorc_all,src_unit,base_unit,unt_unit,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_sorc_acts_brv_sorc,brv_sorc_acts,src_link_proj|src_link_sorclist|src_nufh|src_type|src_nusv,brv_sorc,src_link_proj|src_link_sorclist|src_nufh|src_type|src_nusv,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_sorc_acts_brv_acts,brv_sorc_acts,src_link_proj|src_coac|src_nusv|src_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_sorc_brv_sorc_all,brv_sorc,src_link_proj|src_type|src_nusv|src_link_sorclist,brv_sorc_all,src_link_proj|src_type|src_nusv|src_id,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_sorc_brv_fhpy,brv_sorc,src_link_proj|src_nufh|src_type|src_nusv,brv_fhpy,fhp_link_proj|fhp_nufh|fhp_type|fhp_nusv,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_situ_brv_contract,brv_situ,stu_link_proj,brv_contract,ctc_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_rzmt_brv_mogs,brv_rzmt,rmt_link_proj|rmt_link_mog|rmt_type|rmt_nusv,brv_mogs,mog_link_proj|mog_id|mog_type|mog_nusv,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_rzmt_brv_fhbh,brv_rzmt,rmt_link_proj|rmt_nufh|rmt_nuse|rmt_cofh|rmt_type|rmt_nusv,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_cofh|fbh_type|fbh_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_rzmt_brv_acts,brv_rzmt,rmt_link_proj|rmt_coac|rmt_nusv|rmt_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_report_history_brv_contract,brv_report_history,rph_link_proj,brv_contract,ctc_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_Prodecessors_brv_acts1,brv_Prodecessors,prd_link_proj|prd_Prodecessor_coac|prd_nusv|prd_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_Prodecessors_brv_acts,brv_Prodecessors,prd_link_proj|prd_Task_coac|prd_nusv|prd_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_Packages_Reports_Reports_Tip,brv_Packages_Reports,rpt_RptShowType,Reports_Tip,Tip_rad,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_Packages_Reports_brv_Tree_Report,brv_Packages_Reports,rpt_AppType|rpt_ReportId,brv_Tree_Report,trp_ApplicationType|trp_Index,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_Packages_Reports_brv_Packages,brv_Packages_Reports,rpt_PackageId,brv_Packages,pkg_PackageId,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_Packages_Parameters_brv_Packages_Reports,brv_Packages_Parameters,Par_RptId,brv_Packages_Reports,rpt_Id,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_ovtj_brv_type,brv_ovtj,ovt_link_proj|ovt_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_ovtj_brv_situ,brv_ovtj,ovt_link_proj|ovt_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_ovpr_brv_type,brv_ovpr,ovp_link_proj|ovp_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_ovpr_brv_situ,brv_ovpr,ovp_link_proj|ovp_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_ovhd_brv_type,brv_ovhd,ovh_link_proj|ovh_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_ovhd_brv_situ,brv_ovhd,ovh_link_proj|ovh_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_OpenProjects_brv_Users,brv_OpenProjects,prj_UserID,brv_Users,usr_id,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_nmmhb_brv_sorc,brv_nmmhb,nmb_link_proj|nmb_link_sorclist|nmb_nufh|nmb_type|nmb_nusv,brv_sorc,src_link_proj|src_link_sorclist|src_nufh|src_type|src_nusv,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_nmmh_brv_fhbh,brv_nmmhb,nmb_link_proj|nmb_nufh|nmb_nuse|nmb_cofh|nmb_type|nmb_nusv,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_cofh|fbh_type|fbh_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_mult_Base_ItemType,brv_mult,mlt_ityId,Base_ItemType,Ity_id,,
+FK_brv_mult_acts_brv_mult,brv_mult_acts,mlt_link_proj|mlt_nufh|mlt_nuse|mlt_type|mlt_nusv,brv_mult,mlt_link_proj|mlt_nufh|mlt_nuse|mlt_type|mlt_nusv,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_mult_acts_brv_acts,brv_mult_acts,mlt_link_proj|mlt_coac|mlt_nusv|mlt_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_mult_brv_fhpy,brv_mult,mlt_link_proj|mlt_nufh|mlt_type|mlt_nusv,brv_fhpy,fhp_link_proj|fhp_nufh|fhp_type|fhp_nusv,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_mogs_brv_type,brv_mogs,mog_link_proj|mog_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_mogs_brv_situ,brv_mogs,mog_link_proj|mog_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_Messages_brv_MessageType,brv_Messages,msg_type,brv_MessageType,typ_id,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_kosorat_brv_type,brv_kosorat,ksr_link_proj|ksr_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_kosorat_brv_situ,brv_kosorat,ksr_link_proj|ksr_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_khmt_brv_mogs,brv_khmt,kmt_link_proj|kmt_link_mog|kmt_type|kmt_nusv,brv_mogs,mog_link_proj|mog_id|mog_type|mog_nusv,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_khmt_brv_fhbh,brv_khmt,kmt_link_proj|kmt_nufh|kmt_nuse|kmt_cofh|kmt_type|kmt_nusv,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_cofh|fbh_type|fbh_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_khmt_brv_acts,brv_khmt,kmt_link_proj|kmt_coac|kmt_nusv|kmt_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_intp_brv_type1,brv_intp,itp_link_proj|itp_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_intp_brv_type,brv_intp,itp_link_proj|itp_type_previous,brv_type,typ_link_proj|typ_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_intp_brv_situ1,brv_intp,itp_link_proj|itp_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_intp_brv_situ,brv_intp,itp_link_proj|itp_nusv_previous,brv_situ,stu_link_proj|stu_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_hmpy_rzmt_brv_mogs,brv_hmpy_rzmt,hmp_link_proj|hmp_link_mog|hmp_type|hmp_nusv,brv_mogs,mog_link_proj|mog_id|mog_type|mog_nusv,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_hmpy_rzmt_brv_hmbs,brv_hmpy_rzmt,hmp_link_proj|hmp_nufh|hmp_nuse|hmp_cofh|hmp_link_grop|hmp_dscr|hmp_nusv|hmp_type,brv_hmbs,hmb_link_proj|hmb_nufh|hmb_nuse|hmb_cofh|hmb_link_grop|hmb_dscr|hmb_nusv|hmb_type,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_hmpy_brv_hmbs,brv_hmpy,hmp_link_proj|hmp_nufh|hmp_nuse|hmp_cofh|hmp_link_grop|hmp_dscr|hmp_nusv|hmp_type,brv_hmbs,hmb_link_proj|hmb_nufh|hmb_nuse|hmb_cofh|hmb_link_grop|hmb_dscr|hmb_nusv|hmb_type,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_hmbs_brv_grop,brv_hmbs,hmb_link_proj|hmb_nufh|hmb_link_grop|hmb_type|hmb_nusv,brv_grop,grp_link_proj|grp_nufh|grp_id|grp_type|grp_nusv,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_hmbs_brv_fhbh,brv_hmbs,hmb_link_proj|hmb_nufh|hmb_nuse|hmb_cofh|hmb_type|hmb_nusv,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_cofh|fbh_type|fbh_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_grop_brv_fhpy,brv_grop,grp_link_proj|grp_nufh|grp_type|grp_nusv,brv_fhpy,fhp_link_proj|fhp_nufh|fhp_type|fhp_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_fspy_brv_type,brv_fspy,fsp_link_proj|fsp_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_fspy_brv_situ,brv_fspy,fsp_link_proj|fsp_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_fhpy_Acts_brv_fhpy,brv_fhpy_Acts,fhp_link_proj|fhp_nufh|fhp_type|fhp_nusv,brv_fhpy,fhp_link_proj|fhp_nufh|fhp_type|fhp_nusv,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_fhpy_Acts_brv_acts,brv_fhpy_Acts,fhp_link_proj|fhp_coac|fhp_nusv|fhp_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_fhpy_brv_type,brv_fhpy,fhp_link_proj|fhp_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_fhpy_brv_situ,brv_fhpy,fhp_link_proj|fhp_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_fhbh_brv_mult,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_type|fbh_nusv,brv_mult,mlt_link_proj|mlt_nufh|mlt_nuse|mlt_type|mlt_nusv,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_fhbh_base_unit,brv_fhbh,fbh_unit,base_unit,unt_unit,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_fhbh_base_tyun,brv_fhbh,fbh_tyun,base_tyun,tyn_tyun,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_elhagh_brv_contract,brv_elhagh,elh_link_proj,brv_contract,ctc_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_dstn_main_rzmt_brv_mogs,brv_dstn_main_rzmt,dsn_link_proj|dsn_link_mog|dsn_type|dsn_nusv,brv_mogs,mog_link_proj|mog_id|mog_type|mog_nusv,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_dstn_main_rzmt_brv_grop,brv_dstn_main_rzmt,dsn_link_proj|dsn_nufh|dsn_link_grop|dsn_type|dsn_nusv,brv_grop,grp_link_proj|grp_nufh|grp_id|grp_type|grp_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_dstn_main_brv_grop,brv_dstn_main,dsn_link_proj|dsn_nufh|dsn_link_grop|dsn_type|dsn_nusv,brv_grop,grp_link_proj|grp_nufh|grp_id|grp_type|grp_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_dstn_fromto_rzmt_brv_dstn_main_rzmt,brv_dstn_fromto_rzmt,dsf_link_proj|dsf_link_mog|dsf_link_main|dsf_nusv|dsf_type,brv_dstn_main_rzmt,dsn_link_proj|dsn_link_mog|dsn_id|dsn_nusv|dsn_type,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_dstn_fromto_rzmt_brv_dstb,brv_dstn_fromto_rzmt,dsf_link_proj|dsf_link_grop|dsf_nufh|dsf_frkm|dsf_nusv|dsf_type|dsf_tokm,brv_dstb,dsb_link_proj|dsb_link_grop|dsb_nufh|dsb_frkm|dsb_nusv|dsb_type|dsb_tokm,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_dstn_fromto_brv_dstn_main,brv_dstn_fromto,dsf_link_proj|dsf_link_main|dsf_nusv|dsf_type,brv_dstn_main,dsn_link_proj|dsn_id|dsn_nusv|dsn_type,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_dstn_fromto_brv_dstb,brv_dstn_fromto,dsf_link_proj|dsf_link_grop|dsf_nufh|dsf_frkm|dsf_nusv|dsf_type|dsf_tokm,brv_dstb,dsb_link_proj|dsb_link_grop|dsb_nufh|dsb_frkm|dsb_nusv|dsb_type|dsb_tokm,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_dstb_brv_grop,brv_dstb,dsb_link_proj|dsb_nufh|dsb_link_grop|dsb_type|dsb_nusv,brv_grop,grp_link_proj|grp_nufh|grp_id|grp_type|grp_nusv,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_dstb_brv_fhbh,brv_dstb,dsb_link_proj|dsb_nufh|dsb_nuse|dsb_cofh|dsb_type|dsb_nusv,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_cofh|fbh_type|fbh_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_documents_brv_type,brv_documents,doc_link_proj|doc_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_documents_brv_situ,brv_documents,doc_link_proj|doc_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_bgml_brv_fhbh,brv_bgml,bgm_link_proj|bgm_nufh|bgm_nuse|bgm_cofh|bgm_type|bgm_nusv,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_cofh|fbh_type|fbh_nusv,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_bgml_brv_acts,brv_bgml,bgm_link_proj|bgm_coac|bgm_nusv|bgm_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_ahta_brv_intp,brv_ahta,ata_link_proj|ata_nusv_previous|ata_type_previous|ata_nusv|ata_type|ata_inrd|ata_year|ata_inMon|ata_itprad,brv_intp,itp_link_proj|itp_nusv_previous|itp_type_previous|itp_nusv|itp_type|itp_num_prod|itp_year|itp_num_mon_prod|itp_rad,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_ader_brv_fhbh_moth,brv_ader,adr_link_proj|adr_nufh|adr_nuse_moth|adr_cofh_moth|adr_type|adr_nusv,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_cofh|fbh_type|fbh_nusv,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_brv_ader_brv_fhbh_child,brv_ader,adr_link_proj|adr_nufh|adr_nuse|adr_cofh|adr_type|adr_nusv,brv_fhbh,fbh_link_proj|fbh_nufh|fbh_nuse|fbh_cofh|fbh_type|fbh_nusv,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_brv_acts_items_brv_acts,brv_acts_items,aci_link_proj|aci_coac|aci_nusv|aci_type,brv_acts,act_link_proj|act_coac|act_nusv|act_type,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_acts_brv_type,brv_acts,act_link_proj|act_type,brv_type,typ_link_proj|typ_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_acts_brv_situ,brv_acts,act_link_proj|act_nusv,brv_situ,stu_link_proj|stu_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_acts_base_acts_unit,brv_acts,act_unit,base_acts_unit,acu_unit,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_brv_Access_brv_role,brv_Access,acs_RoleID,brv_role,rol_id,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_base_ZrLc_base_book,base_ZrLc,Zlc_year|Zlc_nufh,base_book,bok_year|bok_nufh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_year_base_pvst,base_year,yer_pvst|yer_pvst_year,base_pvst,pvs_id|pvs_year_pvst,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_unit_raw_base_unit,base_unit_raw,unt_link_unit,base_unit,unt_unit,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_tatbigh_base_fhbh,base_tatbigh,ttb_year|ttb_nufh|ttb_nuse|ttb_cofh,base_fhbh,fbh_year|fbh_nufh|fbh_nuse|fbh_cofh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_Style_List_base_Style_Title,base_Style_List,lst_MaterialID,base_Style_Title,tit_MaterialID,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_base_sorc_list_base_unit,base_sorc_list,src_unit,base_unit,unt_unit,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_sorc_base_sorc_list,base_sorc,src_link_sorclist,base_sorc_list,src_id,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_sorc_base_book,base_sorc,src_year|src_nufh,base_book,bok_year|bok_nufh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_shrs_base_pvst,base_shrs,shk_pvst|shk_year_pvst,base_pvst,pvs_id|pvs_year_pvst,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_shkl2_base_year,base_shkl,shk_year,base_year,yer_year,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_base_shkl_base_pvst,base_shkl,shk_pvst|shk_year_pvst,base_pvst,pvs_id|pvs_year_pvst,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_shfs_base_pvst,base_shfs,shk_pvst|shk_year_pvst,base_pvst,pvs_id|pvs_year_pvst,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_shfs_base_fsbs,base_shfs,shk_year_pvst|shk_nufh|shk_nuse,base_fsbs,fsb_year|fsb_nufh|fsb_nuse,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_nmmhb_base_sorc,base_nmmhb,nmb_link_sorclist|nmb_year|nmb_nufh,base_sorc,src_link_sorclist|src_year|src_nufh,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_base_nmmhb_base_fhbh,base_nmmhb,nmb_year|nmb_nufh|nmb_nuse|nmb_cofh,base_fhbh,fbh_year|fbh_nufh|fbh_nuse|fbh_cofh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_hmbs_base_grop,base_hmbs,hmb_year|hmb_nufh|hmb_grop,base_grop,grp_year|grp_nufh|grp_grop,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_hmbs_base_fhbh,base_hmbs,hmb_year|hmb_nufh|hmb_nuse|hmb_cofh,base_fhbh,fbh_year|fbh_nufh|fbh_nuse|fbh_cofh,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_base_grop_raw_base_grop_name,base_grop_raw,grp_link_grop,base_grop_name,grp_grop,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_grop_base_grop_name,base_grop,grp_grop,base_grop_name,grp_grop,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_grop_base_book,base_grop,grp_year|grp_nufh,base_book,bok_year|bok_nufh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_fsbs_base_book,base_fsbs,fsb_year|fsb_nufh,base_book,bok_year|bok_nufh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_fosi_base_year,base_fosi,pfs_year,base_year,yer_year,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_base_fosi_base_pvst_fosi,base_fosi,pfs_pvst,base_pvst_fosi,psf_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_base_fosi_base_fs,base_fosi,pfs_dscr,base_fs,fs_dscr,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_fhbh_base_unit,base_fhbh,fbh_unit,base_unit,unt_unit,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_fhbh_base_fsbs,base_fhbh,fbh_year|fbh_nufh|fbh_nuse,base_fsbs,fsb_year|fsb_nufh|fsb_nuse,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_fhbh_base_acut,base_fhbh,fbh_tyun,base_tyun,tyn_tyun,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_dstb_base_grop,base_dstb,dsb_year|dsb_nufh|dsb_grop,base_grop,grp_year|grp_nufh|grp_grop,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_book_base_year,base_book,bok_year,base_year,yer_year,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_base_book_base_book_list,base_book,bok_nufh,base_book_list,bls_nufh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_ader_base_fhbh1,base_ader,adr_year|adr_nufh|adr_nuse_moth|adr_cofh_moth,base_fhbh,fbh_year|fbh_nufh|fbh_nuse|fbh_cofh,"NO ACTION
+  ON DELETE CASCADE",CASCADE
+FK_base_ader_base_fhbh,base_ader,adr_year|adr_nufh|adr_nuse|adr_cofh,base_fhbh,fbh_year|fbh_nufh|fbh_nuse|fbh_cofh,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_base_acts_items_base_fhbh,base_acts_items,aci_year|aci_nufh|aci_nuse|aci_cofh,base_fhbh,fbh_year|fbh_nufh|fbh_nuse|fbh_cofh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_acts_items_base_acts,base_acts_items,aci_coac|aci_type,base_acts,act_coac|act_type,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_base_acts_base_acts_unit,base_acts,act_unit,base_acts_unit,acu_unit,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_base_acts_base_acts_type,base_acts,act_type,base_acts_type,acp_type,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_Atm_Parts_history_atm_Detail_Parts,Atm_Parts_history,dpth_Detail_Index|dpth_Part_Index,atm_Detail_Parts,dpt_Detail_Index|dpt_Part_Index,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_Atm_ParamValue_Part_Atm_Parameters,Atm_ParamValue_Part,prmvp_detail_index|prmvp_parameter_id,Atm_Parameters,prm_Detail_Index|prm_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Atm_ParamValue_Part_atm_Detail_Parts,Atm_ParamValue_Part,prmvp_detail_index|prmvp_Part_ID,atm_Detail_Parts,dpt_Detail_Index|dpt_Part_Index,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_Parameters_Project_atm_Detail_Parts_Project,atm_Parameters_Project,prm_Link_Project|prm_Detail_Index|prm_Part_Index,atm_Detail_Parts_Project,dpt_Link_Project|dpt_Detail_Index|dpt_Part_Index,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Atm_Parameters_Atm_detail,Atm_Parameters,prm_Detail_Index,Atm_detail,det_index,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Atm_Param_Values_history_Atm_param_history,Atm_Param_Values_history,prmvh_detail_index|prmvh_Part_Index|prmvh_parameter_id,Atm_param_history,prmh_Detail_Index|prmh_Part_Index|prmh_id,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_Atm_Param_values_Atm_Parameters,Atm_Param_values,prmv_detail_index|prmv_parameter_id,Atm_Parameters,prm_Detail_Index|prm_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Atm_param_history_atm_Detail_Parts,Atm_param_history,prmh_Detail_Index|prmh_Part_Index,atm_Detail_Parts,dpt_Detail_Index|dpt_Part_Index,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_Atm_Detail_Property_Atm_detail,Atm_Detail_Property,prop_Detail_index,Atm_detail,det_index,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Atm_Detail_Prop_History_atm_Detail_Parts,Atm_Detail_Prop_History,proph_Detail_index|proph_Part_Index,atm_Detail_Parts,dpt_Detail_Index|dpt_Part_Index,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_atm_Detail_Project_atm_Contract,atm_Detail_Project,det_Link_Proj,atm_Contract,ctc_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_Detail_Parts_Project_atm_Operation,atm_Detail_Parts_Project,dpt_operation,atm_Operation,opr_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_Detail_Parts_Project_atm_Detail_Project,atm_Detail_Parts_Project,dpt_Link_Project|dpt_Detail_Index,atm_Detail_Project,det_Link_Proj|det_Index,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_Detail_Parts_base_unit,atm_Detail_Parts,dpt_unit,base_unit,unt_unit,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_Detail_Parts_atm_Operation,atm_Detail_Parts,dpt_operation,atm_Operation,opr_id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_Detail_Parts_Atm_detail,atm_Detail_Parts,dpt_Detail_Index,Atm_detail,det_index,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_Detail_Fhbh_Project_atm_Detail_Parts_Project,atm_Detail_Fhbh_Project,dfh_Link_Project|dfh_Detail_Index|dfh_Part_Index,atm_Detail_Parts_Project,dpt_Link_Project|dpt_Detail_Index|dpt_Part_Index,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_Atm_detail_fhbh_base_book,Atm_detail_fhbh,dfh_year|dfh_nufh,base_book,bok_year|bok_nufh,"CASCADE
+  ON DELETE CASCADE",CASCADE
+FK_Atm_detail_fhbh_atm_Detail_Parts,Atm_detail_fhbh,dfh_Detail_Index|dfh_Part_Index,atm_Detail_Parts,dpt_Detail_Index|dpt_Part_Index,"CASCADE
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_abro_w_atm_abro_Type,atm_abro_w,Type_Id,atm_abro_Type,Id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_Atm_Abro_Parameter_atm_abro_h,Atm_Abro_Parameter,H_id,atm_abro_h,Id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION
+FK_atm_abro_h_atm_abro_w,atm_abro_h,W_Id,atm_abro_w,Id,"NO ACTION
+  ON DELETE NO ACTION",NO ACTION

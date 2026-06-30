@@ -1,0 +1,9 @@
+﻿recommendation,description,applies_to,priority
+Timeline instead of hidden state,همه اسناد یک timeline واضح داشته باشند: Draft → Submit → Review → Approval → Lock → Export.,"PaymentCertificate, Adjustment, Import",P0
+Diff-first review,در رسیدگی، ستون‌های پیمانکار/مشاور/کارفرما و اختلاف‌ها کنار هم دیده شوند.,Review Desk,P0
+Wizard for complex entry,تعریف پروژه، ساخت صورت‌وضعیت و تعدیل به شکل wizard باشد، نه فرم بزرگ شلوغ.,"Project Setup, Payment Builder, Adjustment",P0
+Raw hidden from normal users,جدول‌های خام تکسا فقط برای support/admin نمایش داده شوند.,Compatibility Layer,P0
+Live financial summary,در حین متره/صورت‌وضعیت، جمع مالی، ضرایب و کسورات به شکل کارت زنده دیده شود.,Payment Builder,P0
+Issue queue,ایرادات رسیدگی به شکل لیست قابل فیلتر باشد: بحرانی، مالی، مقدار، پیوست، توضیح.,Review Desk,P1
+Export health badge,قبل از خروجی تکسا، نوار سلامت round-trip نمایش داده شود.,Export Center,P0
+Revision comparison,نسخه‌های برگشتی و اصلاحی با diff قابل مقایسه باشند.,Version History,P0

@@ -1,0 +1,9 @@
+﻿policy_key,area,storage_rule,implementation_note,priority
+money_precision,مبلغ,"Decimal, not float",ذخیره با precision بالا؛ نمایش تومان/ریال جدا,P0
+quantity_precision,مقدار,"Decimal, not float",مقدار متره و کارکرد decimal باشد؛ نمایش با جداکننده فارسی مجاز,P0
+rounding_mode,گرد کردن,Rule-driven,تا زمان تست با تکسا، rounding policy قابل تنظیم و traceable بماند,P0
+display_locale,نمایش فارسی,Presentation only,فارسی‌سازی ارقام فقط در UI؛ مقدار ذخیره numeric لاتین/decimal,P0
+date_policy,تاریخ,Jalali UI + ISO/internal,تاریخ شمسی در UI؛ ذخیره استاندارد و raw تاریخ تکسا حفظ شود,P0
+zero_null_empty,صفر/خالی/null,Preserve raw semantics,در export تفاوت empty، zero، false، null حفظ شود,P0
+case_sensitivity,نام table/tag,Case-sensitive,برخلاف SQL، XML tagها دقیقاً case-sensitive export شوند,P0
+formula_storage,فرمول متره,raw + parsed,فرمول خام کنار parsed AST نگهداری شود,P0

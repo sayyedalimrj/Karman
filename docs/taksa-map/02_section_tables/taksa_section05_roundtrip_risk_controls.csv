@@ -1,0 +1,11 @@
+﻿id,risk,evidence,control
+EXP-001,Case-sensitive XML tags,actual tag brv_Tadilkosorat با ScriptXML brv_TadilKosorat case فرق دارد.,export باید tag واقعی ورودی را حفظ کند؛ برای new export از canonical actual table name استفاده شود.
+EXP-002,Whitespace typo in ScriptXML paths,در ScriptXML مسیر /NewDataSet/ brv_bgml و /NewDataSet/ brv_sorc_all با فاصله دیده شد.,از tagهای actual XML استفاده کنیم، نه path typo.
+EXP-003,Actual-only tables,lookupها و brv_Arzkosoorat/brv_Jobrankosoorat در sample هستند اما در ScriptXML استخراج‌شده نیامده‌اند.,passthrough قطعی + mapping اختیاری.
+EXP-004,Script-only tables,۱۸ جدول در ScriptXML هستند ولی در sample داده ندارند.,نباید در خروجی بی‌دلیل جدول خالی تولید شود؛ فقط اگر در raw یا patch وجود داشت.
+EXP-005,Project ID remap in Taksa importer,SpProjectXMLToDB در restore ممکن است Project_ID جدید بسازد.,internal ID وب جدا، taksa ctc_id و original ctc_id ذخیره شود.
+EXP-006,Lock/password fields,tst_lock_pass و ctc_Pass_Lock و lock flags وجود دارند.,حفظ بدون رمزگشایی/تغییر، مگر کاربر عمداً قفل وب را جدا مدیریت کند.
+EXP-007,Numeric precision,اعداد با چهار رقم اعشار و مقادیر بزرگ ریالی وجود دارد.,Decimal/string-safe؛ تبدیل تومان فقط UI.
+EXP-008,Boolean values,true/false رشته‌ای در XML دیده می‌شود.,همان casing و format ورودی حفظ شود.
+EXP-009,Ordering,rad/order و ترتیب table/row روی گزارش و import اثر دارد.,row order و *_rad حفظ شود؛ insert جدید آخر همان table یا با rad کنترل‌شده.
+EXP-010,No destructive recalculation,برگه مالی و ضرایب از محاسبات تکسا آمده‌اند.,تا قبل از تکمیل engine، فقط patch کنترل‌شده؛ محاسبات حجمی بازنویسی نشوند.

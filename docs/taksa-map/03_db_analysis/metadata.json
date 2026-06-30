@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-06-29T11:10:29",
+  "source_files_found": {
+    "sql_objects": "D:\\taksa_extract\\sql_objects.txt",
+    "candidate_tables": "D:\\taksa_extract\\candidate_tables.csv",
+    "readable_strings": "D:\\taksa_extract\\readable_strings.txt"
+  },
+  "db_file_exists": true,
+  "db_file_size_bytes": 1026639360,
+  "objects_count": 280,
+  "objects_by_type": {
+    "TRIGGER": 11,
+    "FUNCTION": 58,
+    "PROCEDURE": 143,
+    "VIEW": 63,
+    "TABLE": 5
+  },
+  "candidate_tables_count": 334,
+  "modules_count": {
+    "base / فهرست‌بها و اطلاعات پایه": 52,
+    "unknown / نیازمند بررسی": 90,
+    "view / ویوهای محاسباتی و گزارش‌گیری": 35,
+    "system / آبجکت‌های سیستمی SQL Server": 36,
+    "svz / صورت‌وضعیت یا ایمپورت آن": 3,
+    "brv / برآورد، قرارداد، ریزمتره، منابع": 70,
+    "psn / پیشنهادی/پرسنلی/ایمپورت مرتبط": 2,
+    "dly / تأخیرات و وضعیت‌های روزانه": 4,
+    "smn / صورت‌وضعیت، نظارت، ماهانه": 25,
+    "peik / گزارش‌ها و درخت گزارش": 15,
+    "bhz / بخش بهای زیاد یا ماژول خاص": 2
+  },
+  "warning": "This package is sanitized. Passwords, users, server names and IPs are redacted."
+}

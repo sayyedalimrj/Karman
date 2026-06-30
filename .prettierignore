@@ -1,0 +1,9 @@
+node_modules/
+.next/
+src/generated/
+docs/taksa-map/
+public/brand/
+src/assets/fonts/
+prisma/migrations/
+*.lock
+package-lock.json

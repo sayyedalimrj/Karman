@@ -1,0 +1,90 @@
+# ============================================================================
+# Karman repository hygiene
+# Prevents sensitive/raw Taksa material, secrets, and build cruft from being
+# tracked. See docs/TAKSA_COMPATIBILITY.md and Requirement 12.
+# ============================================================================
+
+# --- Dependencies & build output ---
+node_modules/
+.next/
+out/
+build/
+dist/
+next-env.d.ts
+*.tsbuildinfo
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+
+# --- Environment files (never commit secrets; keep .env.example only) ---
+.env
+.env.*
+!.env.example
+
+# --- Raw Taksa database / source files (NEVER commit) ---
+*.DB
+*.MDB
+*.mdb
+*.svzt
+*.brvt
+*.psnt
+*.bak
+*.backup
+*.dts
+*.scp
+
+# --- Taksa raw inputs under data/ that share extensions used elsewhere ---
+# (.sql is tracked under prisma/migrations; .xls/.xlsx/.pdf/.rpt may exist as
+# tracked assets elsewhere — so these are scoped to the data/ tree only. The
+# broad `/data/**` rule below already covers them; listed here for clarity.)
+/data/**/*.sql
+/data/**/*.scp
+/data/**/*.xls
+/data/**/*.xlsx
+/data/**/*.pdf
+/data/**/*.rpt
+/data/**/*.csv
+/data/**/*.json
+/data/**/*.md.bak
+
+# --- Recovered / sensitive text dumps (NEVER commit) ---
+readable_strings*
+taksa_passwords_found*
+sql_objects.txt
+
+# --- Binaries (NEVER commit) ---
+*.exe
+*.dll
+*.ocx
+*.sys
+
+# --- Archives (extracted at build time, then removed from VCS) ---
+*.zip
+*.rar
+*.7z
+
+# --- Private / licensed assets ---
+private-assets/
+
+# --- Canonical reference import working dirs ---
+# Real incoming/processed/rejected reference data is NEVER committed; only the
+# explanatory README.md placeholders in each directory are tracked. (Directories
+# are re-included so git can descend to the README files.)
+/data/**
+!/data/**/
+!/data/**/README.md
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# --- Prisma local artifacts ---
+src/generated/

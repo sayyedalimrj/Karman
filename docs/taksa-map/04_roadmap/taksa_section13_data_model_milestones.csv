@@ -1,0 +1,11 @@
+﻿milestone,name,models,target_sprint
+M-DB-01,Core Governance,"User, Role, ProjectMember, AuditLog, Attachment",S1
+M-DB-02,Taksa Raw,"TaksaArtifact, TaksaRawTable, TaksaRawRow, ImportJob, ExportJob",S2
+M-DB-03,Reference,"ReferenceBook, PriceListChapter, PriceListItem, Unit, Resource, IndexPeriod",S3
+M-DB-04,Project Core,"Project, Contract, ProjectParty",S1/S3
+M-DB-05,Documents,"CommercialDocument, PaymentPeriod, DocumentVersion, WorkflowCase",S4
+M-DB-06,Measurement,"MeasurementGroup, MeasurementLine, ActivitySchedule",S5
+M-DB-07,Financial,"ProjectItemSnapshot, ChapterSummary, CoefficientAssignment, FinancialStatementLine, DeductionLine",S6/S8
+M-DB-08,Review,"ReviewedWorkLine, ReviewComment",S7
+M-DB-09,Adjustment,"AdjustmentRun, AdjustmentLine",S8
+M-DB-10,Reports/Calculation,"CalculationRun, CalculationTrace, ReportTemplate, ReportRenderJob",S6/S9

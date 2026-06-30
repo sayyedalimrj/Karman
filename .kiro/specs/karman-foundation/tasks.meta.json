@@ -1,0 +1,191 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Initialize Next.js App Router + TypeScript project configuration": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782728937314
+      },
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730207766
+      }
+    ],
+    "1.3 Add repository hygiene rules": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782728960176
+      },
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730211060
+      }
+    ],
+    "2.1 Extract research archive to docs map": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782728961181
+      },
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730211229
+      }
+    ],
+    "3.1 Implement typed design tokens": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782728962175
+      },
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730214784
+      }
+    ],
+    "4.1 Implement typed domain errors": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782728962983
+      },
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730217773
+      }
+    ],
+    "1.2 Create RTL/Persian-first root layout": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730208773
+      }
+    ],
+    "1. Project scaffolding and RTL-first foundation": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730211063
+      }
+    ],
+    "2.2 Extract brand assets and wire metadata": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730211782
+      }
+    ],
+    "2.3 Extract Persian font and wire via next/font/local": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730212779
+      }
+    ],
+    "2.4 Remove archives and sensitive intermediates from version control": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730213776
+      }
+    ],
+    "2. Build-time archive extraction steps": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730213781
+      }
+    ],
+    "3.2 Surface tokens as CSS variables": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730215811
+      }
+    ],
+    "3. Centralized design-token system": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730215815
+      }
+    ],
+    "4.2 Implement decimal-safe money helpers and rounding policy": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730218762
+      }
+    ],
+    "4.3 Implement i18n string module": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730219762
+      }
+    ],
+    "4. Core libraries": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730219767
+      }
+    ],
+    "5.1 Create Prisma singleton client": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730220756
+      }
+    ],
+    "5.2 Define the full base Prisma schema": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730221769
+      }
+    ],
+    "5.3 Enforce decimal-only monetary fields": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730222762
+      }
+    ],
+    "5.4 Create the initial database migration": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730223767
+      }
+    ],
+    "5.5 Implement the seed routine": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730224766
+      }
+    ],
+    "5. Data layer (Prisma)": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730224770
+      }
+    ],
+    "6. Checkpoint - Foundation builds and migrates": [
+      {
+        "executionId": "d709d181-d9c7-450f-b403-4e86b67d57c3",
+        "chatSessionId": "8bb33e90-8648-4074-81fd-691633d851ac",
+        "timestamp": 1782730224995
+      }
+    ]
+  }
+}

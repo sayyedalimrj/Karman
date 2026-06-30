@@ -1,0 +1,17 @@
+﻿prefix,meaning,report_count,unique_names,priority
+sv,صورت‌وضعیت / Payment certificate,630,148,High
+ps,پیشنهاد/پیمان / Proposal-Contract,394,201,High
+br,برآورد / Estimate,352,116,High
+bs,پایه، فهرست‌بها، شاخص و گزارش‌های مرجع / Base,146,33,High
+pk,فاصله/نقاط/محاسبات جانبی / PK utilities,56,36,Medium
+report,نمونه/گزارش عمومی,6,3,Low
+intp,درون‌یابی شاخص,5,1,Medium
+az,آنالیز/ارز/گروه خاص - نیازمند بررسی,5,1,Low
+ppsv,صورت‌وضعیت/برآورد خاص,3,1,Low
+arm,لوگو/دارایی تصویری,2,2,Low
+psport,گزارش پورت/پروپوزال خاص,2,2,Low
+sub,زیرگزارش,1,1,Low
+rpt,گزارش خاص,1,1,Low
+pstp,گزارش خاص,1,1,Low
+pbr,گزارش خاص برآورد,1,1,Low
+item,گزارش آیتم,1,1,Low

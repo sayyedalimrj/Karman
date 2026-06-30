@@ -1,0 +1,13 @@
+﻿area,test_case,source_basis,acceptance_criteria
+فهرست‌بها,انتخاب آیتم از سال 1404,base_fhbh/viwBase1404/Note PDFs,کد، شرح، واحد، فصل و قیمت با تکسا برابر باشد
+تطبیق سال,تبدیل پروژه 1403 به 1404,base_tatbigh + لیست مغایرت,آیتم‌های حذف/اضافه/تغییر یافته گزارش شوند
+ضرایب,اعمال چند ضریب روی فصل/پروژه,brv_mult + update_zarib_fhpy_mult,مبلغ فصل و برگه مالی با تکسا برابر شود
+صورت‌وضعیت,محاسبه مقدار قبلی/این دوره/تجمعی,brv_situ/brv_bgml/viwSooratVaziat,اعداد bgml و seas برابر گزارش تکسا باشند
+ریزمتره,ثبت فرمول مقدار و کد فعالیت,brv_rzmt/rzmt_act.xls,مقدار نهایی numeric و قابل export باشد
+تعدیل,محاسبه تعدیل دوره سه‌ماهه,Shkh + brv_intp + viwTadil,ضریب و مبلغ تعدیل با تکسا برابر باشد
+کسورات,اعمال بیمه/مالیات/حسن انجام,brv_kosorat/Mali.xls,خالص پرداخت و کسورات با تکسا برابر باشد
+مصالح پایکار,تفکیک کار انجام‌شده و پایکار,viwTatbigh_Paykar + Tadil PDFs,تعدیل و برگه مالی مغایرت نداشته باشد
+حمل,محاسبه فاصله/حمل,distance_view + pk_dist reports,مبلغ حمل و جدول فاصله برابر خروجی تکسا باشد
+Round-trip,خروجی SVZT بعد از ویرایش,Raw XML + export merge,فایل در تکسا باز شود و table/tag/row order حفظ شود
+قفل و نسخه,ویرایش بعد از تأیید,Fn_TypeIsLocked/Fn_VersionNztIsLocked,سند قفل‌شده قابل تغییر نباشد و audit ثبت شود
+نرمال‌سازی,اعشار/صفر/null/تاریخ شمسی,decimal_swap/MakeDate/ISZeroOrNUll,اختلاف formatting باعث اختلاف عددی نشود

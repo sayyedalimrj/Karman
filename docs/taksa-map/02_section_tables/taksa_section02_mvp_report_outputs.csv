@@ -1,0 +1,13 @@
+﻿priority_order,output_group,tokens,example_reports,web_screen,target_output,priority,why
+01,پیمان/مشخصات قرارداد,pymn,sv_pymn.rpt / br_pymn.rpt / ps_pymn.rpt,Project/Contract,PDF + Print,High,پایه هر پروژه و قبل از صورت‌وضعیت لازم است.
+02,برگه مالی,bgml,sv_bgml_norm.rpt / br_bgml_norm.rpt,Payment/Estimate Financial,PDF + Excel,Critical,خروجی مالی اصلی؛ باید اولویت اول تطبیق باشد.
+03,خلاصه فصل‌ها,seas,sv_seas_norm.rpt / br_seas_norm.rpt,Chapter Summary,PDF + Excel,Critical,برای صورت‌وضعیت و برآورد ضروری است.
+04,ریزمتره,rzmt,sv_rzmt.rpt / sv_rzmt_btf.rpt,Measurement,PDF + Excel,Critical,هسته متره و مستند مقدارها.
+05,آنالیز بها,ana,br_ana.rpt / ps_ana.rpt / sv_ana.rpt,Analysis,PDF + Excel,High,برای آیتم‌های آنالیزی و کنترل قیمت لازم است.
+06,ضرایب,zrib,sv_zrib_koli.rpt / br_zrib_koli.rpt,Coefficients,PDF + Screen,High,برای صحت محاسبات مبلغ و گزارش‌ها ضروری است.
+07,تعدیل,tdil,sv_note_tdil.rpt / sv_seas_v_tdil.rpt / sv_tdil_intp.rpt,Adjustment,PDF + Excel,Critical,یکی از ستون‌های اصلی محصول وب.
+08,شاخص‌ها,shkh/intp,bs_shkh_fasli.rpt / intp.rpt,Index/Interpolation,PDF + Table,High,برای تعدیل و دوره‌های شاخص لازم است.
+09,فهرست‌بها,fhbh,sv_fhbh.rpt / bs_fhbh0.rpt / bs_fhbh1.rpt,Price List,PDF + Table,High,برای قرارداد، آیتم‌ها و فصل‌ها.
+10,فاصله/حمل,dist/hmpy,pk_dist_points.rpt / pk_dist_distances.rpt / br_hmpy_distance.rpt,Transport/Distance,PDF + Map/Table,Medium-High,برای پروژه‌های راه/حمل مهم است.
+11,مابه‌التفاوت/اختلاف,dife/mhtd/mhjo,sv_dife_* / sv_mhtd_fasli.rpt,Delta/Difference,PDF + Excel,Medium-High,برای رسیدگی و تطبیق مبلغ‌ها مهم است.
+12,گزارش‌های ردیفی/جمع‌بندی,sorc,sv_sorc_* / bs_sorc_*,Control/Summary,PDF + Excel,Medium,پرتکرار است ولی معنی دقیق باید در بخش DB/RPT تثبیت شود.

@@ -1,0 +1,12 @@
+﻿from_item,to_item,reason
+Taksa Import Raw Layer,SVZT Patch Export,raw anchors and table order are required for export
+Project Setup Wizard,CommercialDocument Model,documents require project/contract/party/reference context
+Price List Explorer,DocumentItems,project item snapshot is selected from reference items
+Measurement Builder,Financial Summary MVP,financial lines depend on measured/reviewed quantities
+Financial Summary MVP,Review Desk,review needs financial impact and quantities
+Review Desk,Employer Approval,employer page depends on consultant approved/reviewed version
+Employer Approval,Document Lock,final lock happens after approval
+Document Lock,Export Validation,final export should only happen after lock or controlled export state
+Calculation Orchestrator,Coefficient/Deduction/Adjustment engines,engines should run through common traceable pipeline
+Report Registry,PDF/Excel Export,exports use report projections
+Golden Test Harness,Rounding Policy Finalization,rounding rules are finalized only after comparison with Taksa outputs

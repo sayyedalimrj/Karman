@@ -1,0 +1,737 @@
+﻿object_type,object_name,depends_on,depends_on_module
+TRIGGER,child_id_updater,pek_reports,peik / گزارش‌ها و درخت گزارش
+FUNCTION,KhmtHasErrInRadDT,brv_khmt,brv / برآورد، قرارداد، ریزمتره، منابع
+FUNCTION,KhmtHasErrInRad,brv_khmt,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,DeleteStarItems,DeleteStarItems,unknown / نیازمند بررسی
+PROCEDURE,Change_Year_in_project,Change_Year_in_project,unknown / نیازمند بررسی
+PROCEDURE,Change_Year_in_project,Change_Year_in_project,unknown / نیازمند بررسی
+PROCEDURE,Change_Year_in_project,Change_Year_in_project,unknown / نیازمند بررسی
+FUNCTION,decimal_swap,decimal_swap,unknown / نیازمند بررسی
+VIEW,viwbase95,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase95,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase95,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase95,viwbase95,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,SetCodeAmelInSource,Correct,unknown / نیازمند بررسی
+PROCEDURE,SetCodeAmelInSource,SetCodeAmelInSource,unknown / نیازمند بررسی
+VIEW,viwbase87,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,viwbase87,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwbase87,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,viwbase87,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwbase87,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,viwbase87,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwbase93,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase93,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase93,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase93,viwbase93,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,dt_addtosourcecontrol_u,dt_addtosourcecontrol,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_addtosourcecontrol_u,dt_addtosourcecontrol_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkinobject_u,dt_checkinobject,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkinobject_u,dt_checkinobject_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkoutobject_u,dt_checkoutobject,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkoutobject_u,dt_checkoutobject_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol_u,dt_isundersourcecontrol,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol_u,dt_isundersourcecontrol_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_validateloginparams_u,dt_validateloginparams,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_validateloginparams_u,dt_validateloginparams_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_whocheckedout_u,dt_whocheckedout,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_whocheckedout_u,dt_whocheckedout_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,set_user_state_Acc,set_user_state_Acc,unknown / نیازمند بررسی
+PROCEDURE,dt_generateansiname,dt_generateansiname,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBase1402,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1402,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1402,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1402,viwBase1402,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,SVZIMPORT01_prepare,svz_importer,svz / صورت‌وضعیت یا ایمپورت آن
+FUNCTION,ISEmptyOrNUll,ISEmptyOrNUll,unknown / نیازمند بررسی
+PROCEDURE,set_user_state_brv,set_user_state_brv,unknown / نیازمند بررسی
+PROCEDURE,set_user_state_brv,set_user_state_brv,unknown / نیازمند بررسی
+PROCEDURE,set_user_state_brv,set_user_state_brv,unknown / نیازمند بررسی
+PROCEDURE,set_user_state_brv,set_user_state_brv,unknown / نیازمند بررسی
+FUNCTION,ReturnZeroWithNullForInt,ReturnZeroWithNullForInt,unknown / نیازمند بررسی
+FUNCTION,ReturnZeroWithNullMoney,ReturnZeroWithNullMoney,unknown / نیازمند بررسی
+PROCEDURE,update_db,update_db,unknown / نیازمند بررسی
+PROCEDURE,copy_base_fhbh,copy_base_fhbh,unknown / نیازمند بررسی
+TRIGGER,User_Delete,brv_Users,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,copy_base_fhbh,copy_base_fhbh,unknown / نیازمند بررسی
+FUNCTION,ReturnZeroWithNullForFloat,ReturnZeroWithNullForFloat,unknown / نیازمند بررسی
+PROCEDURE,copy_base_hmbs,copy_base_hmbs,unknown / نیازمند بررسی
+PROCEDURE,copy_base_hmbs,copy_base_hmbs,unknown / نیازمند بررسی
+VIEW,vwNezarat,smn_Hgzm_Days,smn / صورت‌وضعیت، نظارت، ماهانه
+VIEW,vwNezarat,smn_Hgzm_Month,smn / صورت‌وضعیت، نظارت، ماهانه
+VIEW,vwNezarat,smn_Hgzm_Nezarat,smn / صورت‌وضعیت، نظارت، ماهانه
+VIEW,vwNezarat,smn_Hgzm_Year,smn / صورت‌وضعیت، نظارت، ماهانه
+VIEW,vwNezarat,smn_contract,smn / صورت‌وضعیت، نظارت، ماهانه
+VIEW,vwNezarat,smn_nzs_AddItems,smn / صورت‌وضعیت، نظارت، ماهانه
+VIEW,vwNezarat,vwNezarat,view / ویوهای محاسباتی و گزارش‌گیری
+FUNCTION,ReturnZeroWithNullForString,ReturnZeroWithNullForString,unknown / نیازمند بررسی
+PROCEDURE,set_user_state_peik,set_user_state_peik,unknown / نیازمند بررسی
+TRIGGER,Trg_Delete,Trg_Delete,unknown / نیازمند بررسی
+TRIGGER,Trg_Delete,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,Tender_Shrs,Tender_Shrs,unknown / نیازمند بررسی
+VIEW,Tender_Shrs,base_book_list,base / فهرست‌بها و اطلاعات پایه
+VIEW,Tender_Shrs,base_shrs,base / فهرست‌بها و اطلاعات پایه
+FUNCTION,RemoveLastDot,RemoveLastDot,unknown / نیازمند بررسی
+VIEW,distance_view,distance_view,unknown / نیازمند بررسی
+PROCEDURE,CopyProjectProp,CopyProjectProp,unknown / نیازمند بررسی
+PROCEDURE,CopyProjectProp,brv_contract,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwbase88,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase88,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase88,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase88,viwbase88,view / ویوهای محاسباتی و گزارش‌گیری
+FUNCTION,ISZeroOrNUllFloat,ISZeroOrNUllFloat,unknown / نیازمند بررسی
+FUNCTION,ReturnZeroWithNullForString500,ReturnZeroWithNullForString500,unknown / نیازمند بررسی
+FUNCTION,ReturnZeroWithNullForBit,ReturnZeroWithNullForBit,unknown / نیازمند بررسی
+FUNCTION,compare_projects_fhpy,compare_projects_fhpy,unknown / نیازمند بررسی
+FUNCTION,MyReplace,MyReplace,unknown / نیازمند بررسی
+PROCEDURE,update_vb,update_vb,unknown / نیازمند بررسی
+PROCEDURE,BRVIMPORT01_prepare,BRVIMPORT01_prepare,import / جدول‌ها و پروسه‌های ورود اطلاعات
+PROCEDURE,BRVIMPORT01_prepare,brv_importer,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,copy_base_fasl,copy_base_fasl,unknown / نیازمند بررسی
+PROCEDURE,BRVIMPORT02_unit,BRVIMPORT02_unit,import / جدول‌ها و پروسه‌های ورود اطلاعات
+PROCEDURE,set_user_state_asnad,set_user_state_asnad,unknown / نیازمند بررسی
+PROCEDURE,new_project_permissions_asnad,new_project_permissions_asnad,unknown / نیازمند بررسی
+VIEW,viwbase94,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase94,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase94,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase94,viwbase94,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,set_user_state_bhz,set_user_state_bhz,unknown / نیازمند بررسی
+FUNCTION,Correct,Correct,unknown / نیازمند بررسی
+FUNCTION,Correct,Correct,unknown / نیازمند بررسی
+TRIGGER,trg_contract,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+TRIGGER,trg_contract,base_sorc_list,base / فهرست‌بها و اطلاعات پایه
+TRIGGER,trg_contract,base_unit_raw,base / فهرست‌بها و اطلاعات پایه
+TRIGGER,trg_contract,brv_contract,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,trg_contract,brv_fhbh,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,trg_contract,brv_sorc_all,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,trg_contract,trg_contract,unknown / نیازمند بررسی
+FUNCTION,Fn_TypeIsLocked,brv_type_situ,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,new_project_permissions_Full,brv_Access,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,new_project_permissions_Full,new_project_permissions_Full,unknown / نیازمند بررسی
+PROCEDURE,sp_upgraddiagrams,sp_upgraddiagrams,unknown / نیازمند بررسی
+PROCEDURE,sp_upgraddiagrams,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+TABLE,sysdiagrams,sysdiagram_properties,system / آبجکت‌های سیستمی SQL Server
+TABLE,sysdiagrams,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+TABLE,sysdiagram_properties,dtproperties,system / آبجکت‌های سیستمی SQL Server
+TABLE,sysdiagram_properties,sysdiagram_properties,system / آبجکت‌های سیستمی SQL Server
+TABLE,sysdiagram_properties,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+FUNCTION,ISZeroOrNUllDecimal_6,ISZeroOrNUllDecimal_6,unknown / نیازمند بررسی
+FUNCTION,ISZeroOrNUllDecimal_10,ISZeroOrNUllDecimal_10,unknown / نیازمند بررسی
+FUNCTION,ISZeroOrNUllDecimal_10,brv_nmmhb,brv / برآورد، قرارداد، ریزمتره، منابع
+FUNCTION,ISZeroOrNUllDecimal_10,brv_sorc,brv / برآورد، قرارداد، ریزمتره، منابع
+FUNCTION,ISZeroOrNUllDecimal_10,brv_sorc_all,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,dt_getpropertiesbyid_vcs_u,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_getpropertiesbyid_vcs_u,dt_getpropertiesbyid_vcs_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_displayoaerror_u,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_displayoaerror_u,dt_displayoaerror_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_setpropertybyid_u,dt_generateansiname,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_setpropertybyid_u,dt_setpropertybyid_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_setpropertybyid_u,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwSooratVaziat,dly_contract,dly / تأخیرات و وضعیت‌های روزانه
+VIEW,viwSooratVaziat,dly_sv,dly / تأخیرات و وضعیت‌های روزانه
+VIEW,viwSooratVaziat,dly_vzt,dly / تأخیرات و وضعیت‌های روزانه
+VIEW,viwSooratVaziat,viwSooratVaziat,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,dt_adduserobject,dt_adduserobject,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_adduserobject,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBase85,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase85,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase85,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase85,viwBase85,view / ویوهای محاسباتی و گزارش‌گیری
+FUNCTION,Fn_VersionNztIsLocked,Fn_VersionNztIsLocked,unknown / نیازمند بررسی
+FUNCTION,Fn_VersionNztIsLocked,smn_Version_Type,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,dt_setpropertybyid,dt_setpropertybyid,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_setpropertybyid,dtproperties,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,UpdateYearCol_Biharz,UpdateYearCol_Biharz,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Biharz,base_fosi,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Biharz,base_year,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Biharz,bhz_Contract,bhz / بخش بهای زیاد یا ماژول خاص
+VIEW,viwTakhirat,dly_contract,dly / تأخیرات و وضعیت‌های روزانه
+VIEW,viwTakhirat,dly_sv,dly / تأخیرات و وضعیت‌های روزانه
+VIEW,viwTakhirat,dly_svz,dly / تأخیرات و وضعیت‌های روزانه
+VIEW,viwTakhirat,dly_vzt,dly / تأخیرات و وضعیت‌های روزانه
+VIEW,viwTakhirat,viwTakhirat,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,sp_alterdiagram,sp_alterdiagram,unknown / نیازمند بررسی
+PROCEDURE,sp_alterdiagram,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,sp_dropdiagram,sp_dropdiagram,unknown / نیازمند بررسی
+PROCEDURE,sp_dropdiagram,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+FUNCTION,project_row_count,project_row_count,unknown / نیازمند بررسی
+PROCEDURE,Sp_Manage_ader_fhbh_Relation,Sp_Manage_ader_fhbh_Relation,unknown / نیازمند بررسی
+PROCEDURE,Sp_Manage_ader_fhbh_Relation,base_ader,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,Sp_Manage_ader_fhbh_Relation,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+FUNCTION,Correct_reverse,Correct_reverse,unknown / نیازمند بررسی
+FUNCTION,Correct_reverse,Correct_reverse,unknown / نیازمند بررسی
+PROCEDURE,set_user_state_Acc,set_user_state_Acc,unknown / نیازمند بررسی
+PROCEDURE,dt_generateansiname,dt_generateansiname,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,update_zarib_fhpy_mult,val,unknown / نیازمند بررسی
+PROCEDURE,dt_adduserobject,dt_adduserobject,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_adduserobject,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBase85,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase85,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase85,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase85,viwBase85,view / ویوهای محاسباتی و گزارش‌گیری
+FUNCTION,Fn_VersionNztIsLocked,Fn_VersionNztIsLocked,unknown / نیازمند بررسی
+FUNCTION,Fn_VersionNztIsLocked,smn_Version_Type,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,dt_setpropertybyid,dt_setpropertybyid,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_setpropertybyid,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBase86,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase86,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase86,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase86,viwBase86,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,dt_getobjwithprop,dt_getobjwithprop,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_getobjwithprop,dtproperties,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_getpropertiesbyid,dt_getpropertiesbyid,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_getpropertiesbyid,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBase_Added,viwBase98,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase99,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase_Added,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted,viwBase98,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted,viwBase99,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted,viwBase_Deleted,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase1400,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase99,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase_Added,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted,viwBase1400,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted,viwBase99,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted,viwBase_Deleted,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase1400,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase1401,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase98,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase99,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase_Added,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,dt_getobjwithprop_u,dt_getobjwithprop_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_getobjwithprop_u,dtproperties,system / آبجکت‌های سیستمی SQL Server
+TRIGGER,User_Delete,brv_Users,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,dt_getpropertiesbyid_u,dt_getpropertiesbyid_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_getpropertiesbyid_u,dtproperties,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_getpropertiesbyid_u,the,unknown / نیازمند بررسی
+PROCEDURE,dt_dropuserobjectbyid,dt_dropuserobjectbyid,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_dropuserobjectbyid,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBase1401,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1401,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1401,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1401,viwBase1401,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase1403,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1403,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1403,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1403,viwBase1403,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,GetCurrentQueryCode,dbo,unknown / نیازمند بررسی
+PROCEDURE,GetCurrentQueryCode,sysprocesses,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwbase87,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase87,viwbase87,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,GetCurrentQueryCode,dbo,unknown / نیازمند بررسی
+PROCEDURE,GetCurrentQueryCode,sysprocesses,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,ChangeNufhCode,ChangeNufhCode,unknown / نیازمند بررسی
+PROCEDURE,ChangeNufhCode,brv_ader,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_bgml,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_dstb,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_dstn_fromto,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_dstn_fromto_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_dstn_main,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_dstn_main_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_fhbh,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_fhpy,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_fhpy_Acts,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_grop,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_hmbs,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_hmpy,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_hmpy_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_khmt,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_mult_acts,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_nmmhb,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_sorc,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_sorc_acts,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,ChangeNufhCode,brv_tatbigh,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CNV00_definitions,taksa_temp,unknown / نیازمند بررسی
+PROCEDURE,dt_getpropertiesbyid_vcs,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_getpropertiesbyid_vcs,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwbase92,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase92,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase92,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase92,viwbase92,view / ویوهای محاسباتی و گزارش‌گیری
+TRIGGER,Trg_SetDefaultSooratMajlesFieldInRzmt,brv_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,dt_displayoaerror,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_displayoaerror,sp_OAGetErrorInfo,unknown / نیازمند بررسی
+VIEW,viwBase_Added92From88,viwBase_Added92From88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added92From88,viwbase88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added92From88,viwbase92,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,dt_adduserobject_vcs,dt_adduserobject_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_adduserobject_vcs,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBaseDifference92From88,Compare_Text_for_Base,unknown / نیازمند بررسی
+VIEW,viwBaseDifference92From88,viwBaseDifference92From88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBaseDifference92From88,viwbase88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBaseDifference92From88,viwbase92,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwbase96,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase96,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase96,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwbase96,viwbase96,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_Shakhes1,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Shakhes1,V_Shakhes1,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_Shakhes1,base_shfs,base / فهرست‌بها و اطلاعات پایه
+FUNCTION,GetCofhExists,base_book,base / فهرست‌بها و اطلاعات پایه
+FUNCTION,GetCofhExists,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Shakhes3,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Shakhes3,V_Shakhes3,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_Shakhes3,base_shfs,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Shakhes3,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+VIEW,V_Shakhes3,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+VIEW,V_Shakhes3,sp_OACreate,unknown / نیازمند بررسی
+VIEW,V_Shakhes3,sp_OAGetProperty,unknown / نیازمند بررسی
+VIEW,V_Shakhes3,sp_OAMethod,unknown / نیازمند بررسی
+VIEW,viwBase_SamePrice92From88,viwBase_SamePrice92From88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_SamePrice92From88,viwbase88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_SamePrice92From88,viwbase92,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_Shakhes4,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Shakhes4,V_Shakhes4,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_Shakhes4,base_shfs,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Ana,V_Ana,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_Ana,base_nmmhb,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Ana,base_sorc,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Ana,base_sorc_list,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Ana,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol,dt_isundersourcecontrol,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol,dtproperties,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol,sp_OACreate,unknown / نیازمند بررسی
+PROCEDURE,dt_isundersourcecontrol,sp_OAGetProperty,unknown / نیازمند بررسی
+PROCEDURE,dt_isundersourcecontrol,sp_OAMethod,unknown / نیازمند بررسی
+FUNCTION,AddZeroToMake2Digit,AddZeroToMake2Digit,unknown / نیازمند بررسی
+VIEW,V_Ana,V_Ana,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_Ana,base_nmmhb,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Ana,base_sorc,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Ana,base_sorc_list,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,dt_removefromsourcecontrol,dt_droppropertiesbyid,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_removefromsourcecontrol,dt_removefromsourcecontrol,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_removefromsourcecontrol,dtproperties,system / آبجکت‌های سیستمی SQL Server
+FUNCTION,LstUsesOfUnit,LstUsesOfUnit,unknown / نیازمند بررسی
+FUNCTION,LstUsesOfUnit,atm_Detail_Parts,unknown / نیازمند بررسی
+FUNCTION,LstUsesOfUnit,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+FUNCTION,LstUsesOfUnit,base_sorc_list,base / فهرست‌بها و اطلاعات پایه
+FUNCTION,LstUsesOfUnit,base_unit_raw,base / فهرست‌بها و اطلاعات پایه
+FUNCTION,LstUsesOfUnit,brv_fhbh,brv / برآورد، قرارداد، ریزمتره، منابع
+FUNCTION,LstUsesOfUnit,brv_sorc_all,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,V_ShakhesReshte2,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_ShakhesReshte2,V_ShakhesReshte2,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_ShakhesReshte2,base_shrs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,dt_validateloginparams,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_validateloginparams,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_validateloginparams,dt_validateloginparams,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_validateloginparams,dtproperties,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_validateloginparams,sp_OACreate,unknown / نیازمند بررسی
+PROCEDURE,dt_validateloginparams,sp_OAMethod,unknown / نیازمند بررسی
+TRIGGER,smn_contract_DELETE,smn_contract,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,new_project_permissions_For_Tree,brv_Template,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,new_project_permissions_For_Tree,new_project_permissions_For_Tree,unknown / نیازمند بررسی
+FUNCTION,FN_CheckAnalyze,FN_CheckAnalyze,unknown / نیازمند بررسی
+FUNCTION,FN_CheckAnalyze,base_nmmhb,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateDateCol,UpdateDateCol,unknown / نیازمند بررسی
+VIEW,V_ShakhesReshte3,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_ShakhesReshte3,V_ShakhesReshte3,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_ShakhesReshte3,base_shrs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,CNV08_FOSI_update_all,CNV08_FOSI_update_all,unknown / نیازمند بررسی
+PROCEDURE,dt_vcsenabled,dt_vcsenabled,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_vcsenabled,sp_OACreate,unknown / نیازمند بررسی
+VIEW,V_ShakhesReshte4,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_ShakhesReshte4,V_ShakhesReshte4,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_ShakhesReshte4,base_shrs,base / فهرست‌بها و اطلاعات پایه
+FUNCTION,GetStuBarcode,GetStuBarcode,unknown / نیازمند بررسی
+PROCEDURE,ValidateDateCol,MakeDate,unknown / نیازمند بررسی
+PROCEDURE,ValidateDateCol,ValidateDateCol,unknown / نیازمند بررسی
+FUNCTION,GetLinkSorclist,GetLinkSorclist,unknown / نیازمند بررسی
+FUNCTION,GetLinkSorclist,base_sorc_list,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,dt_whocheckedout,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_whocheckedout,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_whocheckedout,dt_whocheckedout,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_whocheckedout,dtproperties,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_whocheckedout,sp_OACreate,unknown / نیازمند بررسی
+PROCEDURE,dt_whocheckedout,sp_OAMethod,unknown / نیازمند بررسی
+PROCEDURE,SetKarnamaFields,GetPersonalityTypeId,unknown / نیازمند بررسی
+PROCEDURE,SetKarnamaFields,SetKarnamaFields,unknown / نیازمند بررسی
+PROCEDURE,SetKarnamaFields,brv_type,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwBase1404,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1404,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1404,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1404,viwBase1404,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,SetKarnamaFields,GetPersonalityTypeId,unknown / نیازمند بررسی
+PROCEDURE,SetKarnamaFields,GetStuBarcode,unknown / نیازمند بررسی
+PROCEDURE,SetKarnamaFields,SetKarnamaFields,unknown / نیازمند بررسی
+PROCEDURE,SetKarnamaFields,brv_situ,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,SetKarnamaFields,brv_type,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,SetKarnamaFields,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_displayoaerror_u,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_displayoaerror_u,dt_displayoaerror_u,system / آبجکت‌های سیستمی SQL Server
+FUNCTION,MyReplace,MyReplace,unknown / نیازمند بررسی
+FUNCTION,ReturnZeroWithNullForSmallInt,ReturnZeroWithNullForSmallInt,unknown / نیازمند بررسی
+FUNCTION,compare_projects_fhpy,compare_projects_fhpy,unknown / نیازمند بررسی
+FUNCTION,ReturnZeroWithNullForSmallInt,ReturnZeroWithNullForSmallInt,unknown / نیازمند بررسی
+FUNCTION,MyReplace,MyReplace,unknown / نیازمند بررسی
+PROCEDURE,CreateBrvFhbhFk,CreateBrvFhbhFk,unknown / نیازمند بررسی
+PROCEDURE,CreateBrvFhbhFk,brv_ader,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvFhbhFk,brv_bgml,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvFhbhFk,brv_dstb,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvFhbhFk,brv_hmbs,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvFhbhFk,brv_khmt,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvFhbhFk,brv_nmmhb,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvFhbhFk,brv_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+FUNCTION,RemoveLastDot,RemoveLastDot,unknown / نیازمند بررسی
+PROCEDURE,CreateBrvMultFk,CreateBrvMultFk,unknown / نیازمند بررسی
+PROCEDURE,CreateBrvMultFk,brv_acts,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvMultFk,brv_fhbh,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvMultFk,brv_mult_acts,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,CreateBrvMultFk,brv_mult_sub,brv / برآورد، قرارداد، ریزمتره، منابع
+TABLE,brv_fhbh,brv_fhbh,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,SetKarnamaFieldsSitu,GetStuBarcode,unknown / نیازمند بررسی
+PROCEDURE,SetKarnamaFieldsSitu,SetKarnamaFieldsSitu,unknown / نیازمند بررسی
+PROCEDURE,SetKarnamaFieldsSitu,brv_situ,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,Trg_Delete,Trg_Delete,unknown / نیازمند بررسی
+TRIGGER,Trg_Delete,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,set_user_state_peik,set_user_state_peik,unknown / نیازمند بررسی
+PROCEDURE,PSNIMPORT01_prepare,psn_importer,psn / پیشنهادی/پرسنلی/ایمپورت مرتبط
+VIEW,viwTadil,brv_ahta,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwTadil,viwTadil,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,shrs,base_shrs,base / فهرست‌بها و اطلاعات پایه
+VIEW,shrs,shrs,unknown / نیازمند بررسی
+PROCEDURE,copy_base_nmmhb,copy_base_nmmhb,unknown / نیازمند بررسی
+FUNCTION,ReturnZeroORNullForFloat,ReturnZeroORNullForFloat,unknown / نیازمند بررسی
+VIEW,shfs,base_shfs,base / فهرست‌بها و اطلاعات پایه
+VIEW,shfs,shfs,unknown / نیازمند بررسی
+VIEW,viwBase97,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase97,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase97,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase97,viwBase97,view / ویوهای محاسباتی و گزارش‌گیری
+FUNCTION,ReturnZeroWithNullForTinyInt,ReturnZeroWithNullForTinyInt,unknown / نیازمند بررسی
+VIEW,shkl,base_shkl,base / فهرست‌بها و اطلاعات پایه
+VIEW,shkl,shkl,unknown / نیازمند بررسی
+PROCEDURE,dt_checkinobject_u,dt_checkinobject,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkinobject_u,dt_checkinobject_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkoutobject_u,dt_checkoutobject,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkoutobject_u,dt_checkoutobject_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol_u,dt_isundersourcecontrol,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_isundersourcecontrol_u,dt_isundersourcecontrol_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_validateloginparams_u,dt_validateloginparams,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_validateloginparams_u,dt_validateloginparams_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_whocheckedout_u,dt_whocheckedout,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_whocheckedout_u,dt_whocheckedout_u,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,UpdateYearCol_Mabna,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,Pek_intp,peik / گزارش‌ها و درخت گزارش
+PROCEDURE,UpdateYearCol_Mabna,Pek_nash,peik / گزارش‌ها و درخت گزارش
+PROCEDURE,UpdateYearCol_Mabna,UpdateYearCol_Mabna,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Mabna,base_ZrLc,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_acts_items,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_ader,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_book,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_dstb,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_fosi,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_grop,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_hmbs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_mola_Year,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_mola_haml,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_mola_year,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_nmmhb,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_pvst,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_shfs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_shkl,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_shrs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_sorc,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_tatbigh,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_year,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,base_zrlc,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Mabna,pek_ztadil,peik / گزارش‌ها و درخت گزارش
+PROCEDURE,UpdateYearCol_Mabna,smn_Base_Days,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Hgzm_Days,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Hgzm_Gathering_Price,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Hgzm_Month,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Hgzm_Nailing_Price,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Hgzm_Road_Price,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Hgzm_Salary,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Hgzm_Year,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Survey_Tariff,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Survey_Tariff_Base,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Tender_FieldPrice,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Tender_Main,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Tunnel_PriceFac,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_Tunnel_PriceFac_Base,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Mabna,smn_contract,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,dt_checkinobject,dt_checkinobject,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkinobject,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkinobject,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkinobject,dtproperties,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkinobject,sp_OACreate,unknown / نیازمند بررسی
+PROCEDURE,dt_checkinobject,sp_OAGetProperty,unknown / نیازمند بررسی
+PROCEDURE,dt_checkinobject,sp_OAMethod,unknown / نیازمند بررسی
+PROCEDURE,dt_checkinobject,viwBase1400,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,dt_checkinobject,viwBase1401,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase1404,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Added,viwBase_Added,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,dt_droppropertiesbyid,dt_droppropertiesbyid,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_droppropertiesbyid,dtproperties,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBase_Deleted,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase_Deleted,viwBase1403,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted,viwBase1404,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted,viwBase_Deleted,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,Pek_List,Pek_List,peik / گزارش‌ها و درخت گزارش
+VIEW,Pek_List,Pek_Msr_List,peik / گزارش‌ها و درخت گزارش
+VIEW,Pek_List,Pek_Msr_Rabet_Peyman,peik / گزارش‌ها و درخت گزارش
+VIEW,Pek_List,Pek_Msr_Seri,peik / گزارش‌ها و درخت گزارش
+VIEW,Pek_List,Pek_Msr_Seri_Degree,peik / گزارش‌ها و درخت گزارش
+VIEW,Pek_List,Pek_Ostan,peik / گزارش‌ها و درخت گزارش
+PROCEDURE,dt_verstamp006,dt_verstamp006,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwBase_Difference,viwBase1403,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Difference,viwBase1404,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Difference,viwBase_Difference,view / ویوهای محاسباتی و گزارش‌گیری
+TRIGGER,Role_Delete,brv_role,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,dt_verstamp007,dt_verstamp007,system / آبجکت‌های سیستمی SQL Server
+FUNCTION,VAL,VAL,unknown / نیازمند بررسی
+VIEW,viwBase_SamePrice,viwBase1403,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_SamePrice,viwBase1404,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_SamePrice,viwBase_SamePrice,view / ویوهای محاسباتی و گزارش‌گیری
+TABLE,brv_mult,brv_mult,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,V_ShakhesReshte1,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_ShakhesReshte1,V_ShakhesReshte1,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_ShakhesReshte1,base_shrs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,dt_checkoutobject,dt_checkoutobject,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkoutobject,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkoutobject,dt_getpropertiesbyid_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkoutobject,dtproperties,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_checkoutobject,sp_OACreate,unknown / نیازمند بررسی
+PROCEDURE,dt_checkoutobject,sp_OAGetProperty,unknown / نیازمند بررسی
+PROCEDURE,dt_checkoutobject,sp_OAMethod,unknown / نیازمند بررسی
+FUNCTION,MakeDate,AddZeroToMake2Digit,unknown / نیازمند بررسی
+FUNCTION,MakeDate,MakeDate,unknown / نیازمند بررسی
+VIEW,V_Shakhes2,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,V_Shakhes2,V_Shakhes2,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,V_Shakhes2,base_shfs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,dt_addtosourcecontrol,dt_addtosourcecontrol,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_addtosourcecontrol,dt_adduserobject_vcs,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_addtosourcecontrol,dt_displayoaerror,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_addtosourcecontrol,dt_setpropertybyid,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,dt_addtosourcecontrol,sp_OACreate,unknown / نیازمند بررسی
+PROCEDURE,dt_addtosourcecontrol,sp_OAMethod,unknown / نیازمند بررسی
+VIEW,viewbgml,brv_bgml,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viewbgml,viewbgml,unknown / نیازمند بررسی
+VIEW,viwBase_Deleted92From88,viwBase_Deleted92From88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted92From88,viwbase88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted92From88,viwbase92,view / ویوهای محاسباتی و گزارش‌گیری
+FUNCTION,fn_diagramobjects,fn_diagramobjects,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_alterdiagram,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_creatediagram,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_dropdiagram,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_helpdiagramdefinition,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_helpdiagrams,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_renamediagram,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_upgraddiagrams,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+FUNCTION,GetCofhOfNmmhb,base_nmmhb,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1400,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1400,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1400,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1400,brv_mult,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwBase1400,viwBase1400,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBaseDifference92From88,Compare_Text_for_Base,unknown / نیازمند بررسی
+VIEW,viwBaseDifference92From88,viwBaseDifference92From88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBaseDifference92From88,viwbase88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBaseDifference92From88,viwbase92,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBaseDifference92From88,Compare_Text_for_Base,unknown / نیازمند بررسی
+VIEW,viwBaseDifference92From88,viwBaseDifference92From88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBaseDifference92From88,viwbase88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBaseDifference92From88,viwbase92,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viewbgml,brv_bgml,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viewbgml,viewbgml,unknown / نیازمند بررسی
+VIEW,v3,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase_Deleted92From88,viwBase_Deleted92From88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted92From88,viwbase88,view / ویوهای محاسباتی و گزارش‌گیری
+VIEW,viwBase_Deleted92From88,viwbase92,view / ویوهای محاسباتی و گزارش‌گیری
+FUNCTION,get_new_id,brv_mogs,brv / برآورد، قرارداد، ریزمتره، منابع
+FUNCTION,get_new_id,get_new_id,unknown / نیازمند بررسی
+FUNCTION,get_new_id,val,unknown / نیازمند بررسی
+TRIGGER,type_situ_DELETE,brv_TadilKosorat,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_acts,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_ader,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_bgml,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_documents,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_dstn_fromto,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_dstn_fromto_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_dstn_main,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_dstn_main_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_fhbh,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_fhpy,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_fspy,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_grop,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_hmbs,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_hmpy,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_hmpy_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_intp,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_khmt,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_kosorat,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_m,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_mult,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_mult_sub,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_ovhd,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_ovpr,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_ovtj,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_rzmt,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_tonl,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_type_situ,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,brv_zrtb,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,type_situ_DELETE,type_situ_DELETE,unknown / نیازمند بررسی
+PROCEDURE,MakeDB,Base_ItemType,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,Base_Months,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,Base_SeMahe,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,MakeDB,unknown / نیازمند بررسی
+PROCEDURE,MakeDB,base_IntpVaziat,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_NoteGroup,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_PersonalityTyp,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_ShakhesType,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_TajhzType,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_ZrLc,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_ader,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_book,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_book_list,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_nmmhb,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_pvst,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_shfs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_sorc,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_sorc_list,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_tyun,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_unit,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,base_unit_raw,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,MakeDB,brv_mult,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,MakeDB,dbo,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,Atm_detail_fhbh,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,BaseBarcode,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,BaseSituNoe,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,Report_Frames,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,Reports,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,Reports_Tip,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,TblCtrl,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,UpdateYearCol_Taksa,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,atm_contract,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,atm_detail_fhbh,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,atm_detail_fhbh_project,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,base_DocFanni,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_Style_List,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_Style_Title,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_ZrLc,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_acts,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_acts_items,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_acts_type,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_acts_unit,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_ader,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_book,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_dstb,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_fosi,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_fs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_grop,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_grop_name,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_grop_raw,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_hmbs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_mola_Year,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_mola_haml,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_mola_year,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_nmmhb,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_pakati,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_pvst,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_pvst_fosi,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_shfs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_shkl,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_shrs,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_sorc,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_tatbigh,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_year,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_zrlc,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,base_zrtj,base / فهرست‌بها و اطلاعات پایه
+PROCEDURE,UpdateYearCol_Taksa,brv_Contract,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,brv_Forms,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,brv_Tree_Report,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,brv_ahta,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,brv_color,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,brv_contract,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,brv_fhbh,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,brv_intp,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,brv_mult,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,UpdateYearCol_Taksa,dbo,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,pek_ztadil,peik / گزارش‌ها و درخت گزارش
+PROCEDURE,UpdateYearCol_Taksa,smn_Tender_FieldPrice,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Taksa,smn_contract,smn / صورت‌وضعیت، نظارت، ماهانه
+PROCEDURE,UpdateYearCol_Taksa,tbl_letters,unknown / نیازمند بررسی
+PROCEDURE,UpdateYearCol_Taksa,tbl_words,unknown / نیازمند بررسی
+VIEW,viwBase98,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase98,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase98,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase98,brv_mogs,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwBase98,brv_nmmhb,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwBase98,brv_sorc,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwBase98,brv_sorc_all,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwBase98,viwBase98,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,change_book_in_project,brv_HelpFilm,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,brv_MessageType,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,brv_SetSms,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,brv_Tender_AlfaFactor,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,brv_Tender_Import,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,brv_Tender_ImportFactors_Base,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,brv_Tender_Stages,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,brv_Tender_TendererCount,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,brv_special_type,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,change_book_in_project,change_book_in_project,unknown / نیازمند بررسی
+PROCEDURE,change_book_in_project,dbo,unknown / نیازمند بررسی
+PROCEDURE,change_book_in_project,pek_dis_point,peik / گزارش‌ها و درخت گزارش
+PROCEDURE,change_book_in_project,pek_dis_state,peik / گزارش‌ها و درخت گزارش
+PROCEDURE,change_book_in_project,pek_dis_zone,peik / گزارش‌ها و درخت گزارش
+PROCEDURE,sp_helpdiagrams,sp_helpdiagrams,unknown / نیازمند بررسی
+PROCEDURE,sp_helpdiagrams,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,sp_creatediagram,sp_creatediagram,unknown / نیازمند بررسی
+PROCEDURE,sp_creatediagram,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,CopyMog,brv_mogs,brv / برآورد، قرارداد، ریزمتره، منابع
+PROCEDURE,sp_helpdiagramdefinition,sp_helpdiagramdefinition,unknown / نیازمند بررسی
+PROCEDURE,sp_helpdiagramdefinition,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,sp_creatediagram,sp_creatediagram,unknown / نیازمند بررسی
+PROCEDURE,sp_creatediagram,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+PROCEDURE,sp_renamediagram,sp_renamediagram,unknown / نیازمند بررسی
+PROCEDURE,sp_renamediagram,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+VIEW,viwTatbigh_Paykar,viwTatbigh_Paykar,view / ویوهای محاسباتی و گزارش‌گیری
+FUNCTION,GetNuse,GetNuse,unknown / نیازمند بررسی
+FUNCTION,GetNuse,brv_fhbh,brv / برآورد، قرارداد، ریزمتره، منابع
+FUNCTION,fn_diagramobjects,fn_diagramobjects,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_alterdiagram,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_creatediagram,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_dropdiagram,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_helpdiagramdefinition,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_helpdiagrams,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_renamediagram,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sp_upgraddiagrams,unknown / نیازمند بررسی
+FUNCTION,fn_diagramobjects,sysdiagrams,system / آبجکت‌های سیستمی SQL Server
+FUNCTION,GetCofhOfNmmhb,base_nmmhb,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1400,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1400,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1400,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase1400,viwBase1400,view / ویوهای محاسباتی و گزارش‌گیری
+TRIGGER,brv_contract_DELETE,brv_contract,brv / برآورد، قرارداد، ریزمتره، منابع
+TRIGGER,brv_contract_DELETE,brv_contract_DELETE,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,viwBase99,base_book,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase99,base_fhbh,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase99,base_fsbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,viwBase99,viwBase99,view / ویوهای محاسباتی و گزارش‌گیری
+PROCEDURE,CopyProjectProp,CopyProjectProp,unknown / نیازمند بررسی
+PROCEDURE,CopyProjectProp,brv_contract,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,distance_view,Base_ShakhesYerSeMahe,base / فهرست‌بها و اطلاعات پایه
+VIEW,distance_view,base_hmbs,base / فهرست‌بها و اطلاعات پایه
+VIEW,distance_view,brv_grop,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,distance_view,brv_mogs,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,distance_view,brv_nmmhb,brv / برآورد، قرارداد، ریزمتره، منابع
+VIEW,distance_view,distance_view,unknown / نیازمند بررسی

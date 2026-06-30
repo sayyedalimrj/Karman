@@ -1,0 +1,64 @@
+﻿name_key,actual_xml_table,scriptxml_table,status,actual_row_count,actual_field_count,script_column_count,script_family
+base_acts_unit,base_acts_unit,base_acts_unit,both,203,3,1,داده پایه/کدینگ مشترک
+base_intpvaziat,base_IntpVaziat,,actual_only,3,2,,
+base_itemtype,Base_ItemType,,actual_only,6,5,,
+base_months,Base_Months,,actual_only,13,2,,
+base_personalitytyp,base_PersonalityTyp,,actual_only,7,5,,
+base_shakhestype,base_ShakhesType,,actual_only,2,2,,
+base_tajhztype,base_TajhzType,,actual_only,4,2,,
+base_tyun,base_tyun,base_tyun,both,8,3,2,داده پایه/کدینگ مشترک
+base_unit,base_unit,base_unit,both,1802,3,1,داده پایه/کدینگ مشترک
+base_zrtj,base_zrtj,base_zrtj,both,18,3,1,داده پایه/کدینگ مشترک
+basebarcode,BaseBarcode,,actual_only,1000,5,,
+basesitunoe,BaseSituNoe,,actual_only,3,3,,
+brv_acts,brv_acts,brv_acts,both,122,30,39,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_acts_items,,brv_acts_items,script_only,0,0,9,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_ader,brv_ader,brv_ader,both,4411,12,13,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_ahta,brv_ahta,brv_ahta,both,781,46,39,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_arzkosoorat,brv_Arzkosoorat,,actual_only,186,9,,
+brv_bgml,brv_bgml,brv_bgml,both,2122,32,53,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_color,brv_color,,actual_only,16,6,,
+brv_contract,brv_contract,brv_contract,both,1,161,171,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_documents,,brv_documents,script_only,0,0,8,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_dstb,brv_dstb,brv_dstb,both,1297,16,16,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_dstn_fromto,brv_dstn_fromto,brv_dstn_fromto,both,122,16,18,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_dstn_fromto_rzmt,brv_dstn_fromto_rzmt,brv_dstn_fromto_rzmt,both,66,17,19,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_dstn_main,brv_dstn_main,brv_dstn_main,both,960,10,10,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_dstn_main_rzmt,brv_dstn_main_rzmt,brv_dstn_main_rzmt,both,28652,11,11,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_elhagh,brv_elhagh,brv_elhagh,both,1,5,8,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_fhbh,brv_fhbh,brv_fhbh,both,5116,29,37,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_fhpy,brv_fhpy,brv_fhpy,both,183,286,322,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_fhpy_acts,,brv_fhpy_Acts,script_only,0,0,187,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_fspy,,brv_fspy,script_only,0,0,29,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_grop,brv_grop,brv_grop,both,1830,10,7,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_hmbs,brv_hmbs,brv_hmbs,both,757,18,19,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_hmpy,brv_hmpy,brv_hmpy,both,711,11,11,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_hmpy_rzmt,brv_hmpy_rzmt,brv_hmpy_rzmt,both,3382,12,12,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_intp,brv_intp,brv_intp,both,7,24,16,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_jobrankosoorat,brv_Jobrankosoorat,,actual_only,186,9,,
+brv_khmt,brv_khmt,brv_khmt,both,7726,22,29,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_kosorat,brv_kosorat,brv_kosorat,both,360,10,9,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_mogs,brv_mogs,brv_mogs,both,954,14,24,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_mult,brv_mult,brv_mult,both,6705,198,295,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_mult_acts,,brv_mult_acts,script_only,0,0,171,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_nmmhb,brv_nmmhb,brv_nmmhb,both,155,15,15,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_ovhd,,brv_ovhd,script_only,0,0,9,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_ovma,,brv_ovma,script_only,0,0,18,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_ovpr,,brv_ovpr,script_only,0,0,11,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_ovtj,,brv_ovtj,script_only,0,0,11,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_prodecessors,,brv_Prodecessors,script_only,0,0,6,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_report_history,,brv_report_history,script_only,0,0,4,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_rzmt,brv_rzmt,brv_rzmt,both,8551,37,58,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_situ,brv_situ,brv_situ,both,21,6,4,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_sorc,brv_sorc,brv_sorc,both,155,9,46,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_sorc_acts,,brv_sorc_acts,script_only,0,0,41,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_sorc_all,brv_sorc_all,brv_sorc_all,both,155,12,19,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_sorc_price,,brv_sorc_price,script_only,0,0,15,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_tadilkosorat,brv_Tadilkosorat,,actual_only,192,9,,
+brv_takhir_svz,,brv_takhir_svz,script_only,0,0,17,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_takhir_ve,,brv_takhir_ve,script_only,0,0,6,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_tatbigh,,brv_tatbigh,script_only,0,0,10,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_tonl,,brv_tonl,script_only,0,0,8,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_type,brv_type,brv_type,both,3,11,6,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_type_situ,brv_type_situ,brv_type_situ,both,33,41,49,پروژه/برآورد/صورت‌وضعیت Taksa
+brv_zrtb,,brv_zrtb,script_only,0,0,10,پروژه/برآورد/صورت‌وضعیت Taksa

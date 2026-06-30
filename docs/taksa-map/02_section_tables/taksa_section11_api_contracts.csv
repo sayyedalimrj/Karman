@@ -1,0 +1,43 @@
+﻿method,endpoint,used_by,purpose,returns,permission,priority
+GET,/api/projects,ProjectListPage,list projects by membership,Project[],read_projects,P0
+POST,/api/projects,ProjectSetupWizardPage,create draft project,Project,create_project,P0
+GET,/api/projects/[projectId],ProjectShell,read project context,ProjectContext,read_project,P0
+PATCH,/api/projects/[projectId],ProjectSetupWizardPage,update project basics,Project,configure_project,P0
+GET,/api/projects/[projectId]/contract,ContractPage,read contract,Contract,read_contract,P0
+PATCH,/api/projects/[projectId]/contract,ContractPage,update contract if unlocked,Contract,update_contract,P0
+GET,/api/projects/[projectId]/parties,ProjectPartiesPage,list parties,ProjectParty[],read_parties,P0
+POST,/api/projects/[projectId]/parties,ProjectPartiesPage,add party/role,ProjectParty,manage_parties,P0
+GET,/api/projects/[projectId]/price-list/items,PriceListExplorerPage,search price list,PriceListItemPage,read_price_list,P0
+POST,/api/imports,ImportCenterPage,create import job and upload artifact,ImportJob,import_taksa,P0
+GET,/api/imports/[importId],ImportCenterPage,get import status and validation,ImportStatus,import_taksa,P0
+POST,/api/imports/[importId]/validate,ImportValidationPanel,run validation,ValidationReport,import_taksa,P0
+POST,/api/imports/[importId]/approve-mapping,ImportCenterPage,approve mapping and normalize,MappingResult,import_taksa,P0
+GET,/api/taksa/artifacts/[artifactId]/raw-tables,ArtifactInspector,list raw tables,RawTableSummary[],view_raw,P0
+GET,/api/taksa/artifacts/[artifactId]/raw-tables/[tableName]/rows,RawTableViewer,page raw rows,RawRowPage,view_raw,P0
+GET,/api/projects/[projectId]/documents,CommercialDocumentListPage,list documents,CommercialDocument[],read_documents,P0
+POST,/api/projects/[projectId]/documents,NewCommercialDocumentWizard,create document,CommercialDocument,create_document,P0
+GET,/api/documents/[documentId],DocumentOverviewPage,read document overview,DocumentOverview,read_document,P0
+PATCH,/api/documents/[documentId],DocumentOverviewPage,update document header if allowed,CommercialDocument,edit_document,P0
+POST,/api/documents/[documentId]/transitions/[transitionKey],StateActionBar,execute workflow transition,TransitionResult,state_transition,P0
+GET,/api/documents/[documentId]/items,DocumentItemsPage,list project item snapshots,ProjectItemSnapshot[],read_items,P0
+POST,/api/documents/[documentId]/items,DocumentItemsPage,add item snapshot,ProjectItemSnapshot,edit_items_by_state,P0
+PATCH,/api/documents/[documentId]/items/[itemId],DocumentItemsPage,update item snapshot,ProjectItemSnapshot,edit_items_by_state,P0
+GET,/api/documents/[documentId]/measurement,MeasurementBuilderPage,list measurement groups and lines,MeasurementDocument,read_measurement,P0
+POST,/api/documents/[documentId]/measurement/groups,MeasurementBuilderPage,create measurement group,MeasurementGroup,edit_measurement_by_state,P0
+POST,/api/documents/[documentId]/measurement/lines,MeasurementBuilderPage,create measurement line,MeasurementLine,edit_measurement_by_state,P0
+PATCH,/api/documents/[documentId]/measurement/lines/[lineId],MeasurementBuilderPage,update measurement line,MeasurementLine,edit_measurement_by_state,P0
+POST,/api/documents/[documentId]/measurement/recalculate,MeasurementBuilderPage,recalculate quantities and financial draft,CalculationResult,calculate_document,P0
+GET,/api/documents/[documentId]/financial,FinancialSummaryPage,read financial summary,FinancialSummary,read_financial_summary,P0
+POST,/api/documents/[documentId]/financial/recalculate,FinancialSummaryPage,recalculate financial lines,FinancialSummary,calculate_document,P0
+GET,/api/documents/[documentId]/review,ConsultantReviewDeskPage,read review diff,ReviewDocument,review_document,P0
+PATCH,/api/documents/[documentId]/review/lines/[lineId],ReviewDiffGrid,update consultant quantity/status/comment,ReviewedWorkLine,review_document,P0
+POST,/api/documents/[documentId]/review/bulk,BulkReviewToolbar,bulk approve/return lines,BulkReviewResult,review_document,P1
+GET,/api/documents/[documentId]/adjustment,AdjustmentEnginePage,read adjustment runs,AdjustmentRun[],read_adjustment,P0
+POST,/api/documents/[documentId]/adjustment,AdjustmentEnginePage,create adjustment run,AdjustmentRun,manage_adjustment_by_state,P0
+POST,/api/adjustments/[adjustmentRunId]/calculate,AdjustmentEnginePage,calculate adjustment lines,AdjustmentRunResult,calculate_adjustment,P0
+GET,/api/documents/[documentId]/reports,DocumentReportsPage,list report templates for document,ReportTemplate[],read_reports,P0
+POST,/api/documents/[documentId]/reports/[reportKey]/render,ReportPreviewFrame,render PDF/Excel/preview,ReportRenderJob,generate_reports,P0
+GET,/api/documents/[documentId]/export/check,ExportValidationChecklist,run export validation,ExportValidationReport,export_document,P0
+POST,/api/documents/[documentId]/export/svzt,DocumentExportCenterPage,merge patch and export SVZT,ExportJob,export_svzt,P0
+GET,/api/exports/[exportJobId]/diff,ExportDiffViewer,read export diff,ExportDiff,view_raw,P0
+GET,/api/documents/[documentId]/versions,VersionHistoryPage,read versions and audit,DocumentVersion[],read_versions,P0

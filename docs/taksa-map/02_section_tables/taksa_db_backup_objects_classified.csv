@@ -1,0 +1,219 @@
+type,name,dependencies_count,dependencies,header,category
+FUNCTION,AddZeroToMake2Digit,1,AddZeroToMake2Digit,create FUNCTION [dbo].[AddZeroToMake2Digit] (@num NVARCHAR(10)),Utility / نرمال‌سازی مقدار
+FUNCTION,CalcFbhNusu,0,,CREATE FUNCTION CalcFbhNusu,نیازمند بررسی
+FUNCTION,compare_projects_fhpy,1,compare_projects_fhpy,"CREATE FUNCTION dbo.compare_projects_fhpy(@p1 int , @p2 int )",نیازمند بررسی
+FUNCTION,Correct,1,Correct,CREATE FUNCTION [dbo].[Correct] (@vchValue nvarchar(4000)),Utility / نرمال‌سازی مقدار
+FUNCTION,Correct_reverse,1,Correct_reverse,CREATE FUNCTION [dbo].[Correct_reverse] (@vchValue nvarchar(4000)),Utility / نرمال‌سازی مقدار
+FUNCTION,decimal_swap,1,decimal_swap,CREATE FUNCTION [dbo].[decimal_swap] (@vchValue nvarchar(4000)) RETURNS nvarchar(4000),Utility / نرمال‌سازی مقدار
+FUNCTION,FN_CheckAnalyze,2,"FN_CheckAnalyze, base_nmmhb","CREATE FUNCTION [dbo].[FN_CheckAnalyze] (@Year INT,@Nufh INT,@Nuse INT,@Cofh NVARCHAR(10))",نیازمند بررسی
+FUNCTION,fn_diagramobjects,9,"fn_diagramobjects, sp_alterdiagram, sp_creatediagram, sp_dropdiagram, sp_helpdiagramdefinition, sp_helpdiagrams, sp_renamediagram, sp_upgraddiagrams, sysdiagrams",CREATE FUNCTION dbo.fn_diagramobjects(),نیازمند بررسی
+FUNCTION,Fn_TypeIsLocked,1,brv_type_situ,"CREATE FUNCTION Fn_TypeIsLocked ( @Link_Proj INT,@Type_ID INT )",قفل/حذف/حفظ وابستگی
+FUNCTION,Fn_VersionNztIsLocked,2,"Fn_VersionNztIsLocked, smn_Version_Type","CREATE FUNCTION [dbo].[Fn_VersionNztIsLocked] ( @Link_Proj INT,@Type_ID INT )",قفل/حذف/حفظ وابستگی
+FUNCTION,get_new_id,3,"brv_mogs, get_new_id, val","CREATE FUNCTION dbo.get_new_id ()-- (@table nvarchar(500) , @grop nvarchar(500) )",نیازمند بررسی
+FUNCTION,GetCofhExists,2,"base_book, base_fhbh",CREATE FUNCTION GetCofhExists,نیازمند بررسی
+FUNCTION,GetCofhOfNmmhb,1,base_nmmhb,CREATE FUNCTION GetCofhOfNmmhb,نیازمند بررسی
+FUNCTION,GetLinkSorclist,2,"GetLinkSorclist, base_sorc_list",CREATE FUNCTION [dbo].[GetLinkSorclist],نیازمند بررسی
+FUNCTION,GetNuse,2,"GetNuse, brv_fhbh",CREATE FUNCTION [dbo].[GetNuse],نیازمند بررسی
+FUNCTION,GetStuBarcode,1,GetStuBarcode,CREATE FUNCTION [dbo].[GetStuBarcode],نیازمند بررسی
+FUNCTION,GetTypId,0,,CREATE FUNCTION GetTypId,نیازمند بررسی
+FUNCTION,IsChar,0,,CREATE FUNCTION IsChar,Utility / نرمال‌سازی مقدار
+FUNCTION,ISEmptyOrNUll,1,ISEmptyOrNUll,CREATE FUNCTION [dbo].[ISEmptyOrNUll],Utility / نرمال‌سازی مقدار
+FUNCTION,IsProjectAvailable,0,,"CREATE FUNCTION IsProjectAvailable ( @ContractID int, @RoleID int)",نیازمند بررسی
+FUNCTION,ISZeroOrNUll,0,,CREATE FUNCTION ISZeroOrNUll,Utility / نرمال‌سازی مقدار
+FUNCTION,ISZeroOrNUllDecimal_10,4,"ISZeroOrNUllDecimal_10, brv_nmmhb, brv_sorc, brv_sorc_all",CREATE FUNCTION [dbo].[ISZeroOrNUllDecimal_10],Utility / نرمال‌سازی مقدار
+FUNCTION,ISZeroOrNUllDecimal_6,1,ISZeroOrNUllDecimal_6,CREATE FUNCTION [dbo].[ISZeroOrNUllDecimal_6],Utility / نرمال‌سازی مقدار
+FUNCTION,ISZeroOrNUllFloat,1,ISZeroOrNUllFloat,CREATE FUNCTION [dbo].[ISZeroOrNUllFloat],Utility / نرمال‌سازی مقدار
+FUNCTION,KhmtHasErrInRad,1,brv_khmt,CREATE FUNCTION KhmtHasErrInRad,نیازمند بررسی
+FUNCTION,KhmtHasErrInRadDT,1,brv_khmt,CREATE FUNCTION KhmtHasErrInRadDT,نیازمند بررسی
+FUNCTION,LstUsesOfUnit,7,"LstUsesOfUnit, atm_Detail_Parts, base_fhbh, base_sorc_list, base_unit_raw, brv_fhbh, brv_sorc_all",CREATE FUNCTION [dbo].[LstUsesOfUnit],نیازمند بررسی
+FUNCTION,make_nuse,0,,create Function make_nuse (@Str nvarchar(2) ),نیازمند بررسی
+FUNCTION,MakeDate,2,"AddZeroToMake2Digit, MakeDate",CREATE FUNCTION [dbo].[MakeDate],Utility / نرمال‌سازی مقدار
+FUNCTION,MakeFilterForNufh,0,,CREATE FUNCTION MakeFilterForNufh,نیازمند بررسی
+FUNCTION,MyReplace,1,MyReplace,CREATE FUNCTION [dbo].[MyReplace] (@vchValue nvarchar(4000)),Utility / نرمال‌سازی مقدار
+FUNCTION,project_row_count,1,project_row_count,"CREATE FUNCTION [dbo].project_row_count ( @code int , @nusv int , @type int)",نیازمند بررسی
+FUNCTION,RemoveLastDot,1,RemoveLastDot,CREATE FUNCTION [dbo].[RemoveLastDot],نیازمند بررسی
+FUNCTION,ReturnZeroORNullForFloat,1,ReturnZeroORNullForFloat,CREATE FUNCTION [dbo].[ReturnZeroORNullForFloat],Utility / نرمال‌سازی مقدار
+FUNCTION,ReturnZeroWithNullForBit,1,ReturnZeroWithNullForBit,CREATE FUNCTION [dbo].[ReturnZeroWithNullForBit],Utility / نرمال‌سازی مقدار
+FUNCTION,ReturnZeroWithNullForFloat,1,ReturnZeroWithNullForFloat,create FUNCTION [dbo].[ReturnZeroWithNullForFloat],Utility / نرمال‌سازی مقدار
+FUNCTION,ReturnZeroWithNullForInt,1,ReturnZeroWithNullForInt,create FUNCTION [dbo].[ReturnZeroWithNullForInt],Utility / نرمال‌سازی مقدار
+FUNCTION,ReturnZeroWithNullForSmallInt,1,ReturnZeroWithNullForSmallInt,CREATE FUNCTION [dbo].[ReturnZeroWithNullForSmallInt],Utility / نرمال‌سازی مقدار
+FUNCTION,ReturnZeroWithNullForString,1,ReturnZeroWithNullForString,CREATE FUNCTION [dbo].[ReturnZeroWithNullForString],Utility / نرمال‌سازی مقدار
+FUNCTION,ReturnZeroWithNullForString500,1,ReturnZeroWithNullForString500,create FUNCTION [dbo].[ReturnZeroWithNullForString500],Utility / نرمال‌سازی مقدار
+FUNCTION,ReturnZeroWithNullForTinyInt,1,ReturnZeroWithNullForTinyInt,create FUNCTION [dbo].[ReturnZeroWithNullForTinyInt],Utility / نرمال‌سازی مقدار
+FUNCTION,ReturnZeroWithNullMoney,1,ReturnZeroWithNullMoney,CREATE FUNCTION [dbo].[ReturnZeroWithNullMoney],Utility / نرمال‌سازی مقدار
+FUNCTION,text_swap,0,,CREATE FUNCTION text_swap (@text nvarchar(4000)),Utility / نرمال‌سازی مقدار
+FUNCTION,VAL,1,VAL,CREATE FUNCTION [dbo].[VAL] (@vchValue nvarchar(255)) RETURNS float,Utility / نرمال‌سازی مقدار
+PROCEDURE,Auto_Edit_Act_Units,0,,CREATE PROCEDURE Auto_Edit_Act_Units,نیازمند بررسی
+PROCEDURE,Auto_Edit_Grop_Names,0,,CREATE PROCEDURE Auto_Edit_Grop_Names,نیازمند بررسی
+PROCEDURE,Auto_Edit_Units,0,,CREATE PROCEDURE Auto_Edit_Units,نیازمند بررسی
+PROCEDURE,BRVIMPORT01_prepare,2,"BRVIMPORT01_prepare, brv_importer",CREATE PROCEDURE [dbo].[BRVIMPORT01_prepare],ورود/ایمپورت فایل‌ها
+PROCEDURE,BRVIMPORT02_unit,1,BRVIMPORT02_unit,CREATE PROCEDURE [dbo].[BRVIMPORT02_unit],ورود/ایمپورت فایل‌ها
+PROCEDURE,BRVIMPORT05_add_ader,0,,CREATE PROCEDURE BRVIMPORT05_add_ader @code int,ورود/ایمپورت فایل‌ها
+PROCEDURE,change_book_in_project,14,"brv_HelpFilm, brv_MessageType, brv_SetSms, brv_Tender_AlfaFactor, brv_Tender_Import, brv_Tender_ImportFactors_Base, brv_Tender_Stages, brv_Tender_TendererCount, brv_special_type, change_book_in_project, dbo, pek_dis_point, pek_dis_state, pek_dis_zone","CREATE PROCEDURE [dbo].[change_book_in_project] @code int , @base_nusv int , @base_type int",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,change_book_zarib_name_in_project,0,,CREATE PROCEDURE change_book_zarib_name_in_project @code int,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,Change_Year_in_project,1,Change_Year_in_project,"CREATE PROCEDURE [dbo].[Change_Year_in_project] @code int , @delete_flag bit",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,ChangeNufhCode,22,"ChangeNufhCode, brv_ader, brv_bgml, brv_dstb, brv_dstn_fromto, brv_dstn_fromto_rzmt, brv_dstn_main, brv_dstn_main_rzmt, brv_fhbh, brv_fhpy, brv_fhpy_Acts, brv_grop, brv_hmbs, brv_hmpy, brv_hmpy_rzmt, brv_khmt, brv_mult_acts, brv_nmmhb, brv_rzmt, brv_sorc, brv_sorc_acts, brv_tatbigh","CREATE PROCEDURE [dbo].[ChangeNufhCode] (@SrcID INT , @DestID INT , @DestAbst NVARCHAR(100) , @DestDscr NVARCHAR(500) ,",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CNV00_definitions,1,taksa_temp,CREATE PROCEDURE CNV00_definitions @year int,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CNV02_unit_insert,0,,CREATE PROCEDURE CNV02_unit_insert @year int,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CNV04_grop_dstb_hmbs_refinement,0,,CREATE PROCEDURE CNV04_grop_dstb_hmbs_refinement @year int,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CNV05_grop_insert,0,,CREATE PROCEDURE CNV05_grop_insert @year int,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CNV06_grop_correction_hmbs_dstb,0,,CREATE PROCEDURE CNV06_grop_correction_hmbs_dstb @year int,Utility / نرمال‌سازی مقدار
+PROCEDURE,CNV07_sorc_nmmhb,0,,CREATE PROCEDURE CNV07_sorc_nmmhb @year int,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CNV08_FOSI_update_all,1,CNV08_FOSI_update_all,CREATE PROCEDURE [dbo].[CNV08_FOSI_update_all],Utility / نرمال‌سازی مقدار
+PROCEDURE,CNV09_shkh_update_all,0,,CREATE PROCEDURE CNV09_shkh_update_all,Utility / نرمال‌سازی مقدار
+PROCEDURE,copy_base_book,0,,"CREATE PROCEDURE copy_base_book (@year_source int,@year_dest int,@nufh int)",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,copy_base_fasl,1,copy_base_fasl,"CREATE PROCEDURE [dbo].[copy_base_fasl] (@year_source int,@year_dest int,@nufh_source int,@nufh_dest int,@fasl_source nvarchar(100),@fasl_dest nvarchar(100),@zarib numeric(18,3))",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,copy_base_fhbh,1,copy_base_fhbh,"CREATE PROCEDURE [dbo].[copy_base_fhbh] (@year_source int,@year_dest int,@nufh_source int,@nufh_dest int,@zarib numeric(18,3) , @SetNullPcun bit",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,copy_base_hmbs,0,,"CREATE PROCEDURE copy_base_hmbs (@year_source int,@year_dest int,@nufh_source int,@nufh_dest int)",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,copy_base_nmmhb,1,copy_base_nmmhb,"CREATE PROCEDURE [dbo].[copy_base_nmmhb] (@year_source int,@year_dest int,@nufh_source int,@nufh_dest int)",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,copy_base_sorc,0,,"CREATE PROCEDURE copy_base_sorc (@year_source int,@year_dest int,@nufh_source int,@nufh_dest int)",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,copy_base_zrlc,0,,"CREATE PROCEDURE copy_base_zrlc (@year_source int,@year_dest int,@nufh_source int,@nufh_dest int)",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,copy_delay,0,,"CREATE procedure copy_delay(@fromPymn int,@toPymn int)",تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,copy_psn_to_subprojects,0,,CREATE PROCEDURE copy_psn_to_subprojects @code int,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CopyMog,1,brv_mogs,CREATE PROCEDURE CopyMog,نیازمند بررسی
+PROCEDURE,CopyProjectProp,2,"CopyProjectProp, brv_contract",CREATE PROCEDURE [dbo].[CopyProjectProp],نیازمند بررسی
+PROCEDURE,Correct_Letters_in_Faragamara,0,,CREATE PROCEDURE Correct_Letters_in_Faragamara,Utility / نرمال‌سازی مقدار
+PROCEDURE,CreateBrvFhbh,0,,CREATE PROCEDURE CreateBrvFhbh,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CreateBrvFhbhFk,8,"CreateBrvFhbhFk, brv_ader, brv_bgml, brv_dstb, brv_hmbs, brv_khmt, brv_nmmhb, brv_rzmt",create PROCEDURE [dbo].[CreateBrvFhbhFk],تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CreateBrvMult,0,,CREATE PROCEDURE CreateBrvMult,تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,CreateBrvMultFk,5,"CreateBrvMultFk, brv_acts, brv_fhbh, brv_mult_acts, brv_mult_sub",create PROCEDURE [dbo].[CreateBrvMultFk],تبدیل/به‌روزرسانی/کپی مبانی
+PROCEDURE,delete_all,0,,CREATE PROCEDURE delete_all AS,قفل/حذف/حفظ وابستگی
+PROCEDURE,delete_contract,0,,CREATE PROCEDURE delete_contract @code int,قفل/حذف/حفظ وابستگی
+PROCEDURE,Delete_delay,0,,"create procedure Delete_delay (@Pymn_Id int,@From_rad int ,@To_Rad int)",قفل/حذف/حفظ وابستگی
+PROCEDURE,delete_dly_contract,0,,CREATE PROCEDURE delete_dly_contract @code int,قفل/حذف/حفظ وابستگی
+PROCEDURE,DeleteStarItems,1,DeleteStarItems,CREATE PROCEDURE [dbo].[DeleteStarItems],قفل/حذف/حفظ وابستگی
+PROCEDURE,dt_addtosourcecontrol,6,"dt_addtosourcecontrol, dt_adduserobject_vcs, dt_displayoaerror, dt_setpropertybyid, sp_OACreate, sp_OAMethod",create proc dbo.dt_addtosourcecontrol,نیازمند بررسی
+PROCEDURE,dt_addtosourcecontrol_u,2,"dt_addtosourcecontrol, dt_addtosourcecontrol_u",create proc dbo.dt_addtosourcecontrol_u,نیازمند بررسی
+PROCEDURE,dt_adduserobject,2,"dt_adduserobject, dtproperties",create procedure dbo.dt_adduserobject,نیازمند بررسی
+PROCEDURE,dt_adduserobject_vcs,2,"dt_adduserobject_vcs, dtproperties",create procedure dbo.dt_adduserobject_vcs,نیازمند بررسی
+PROCEDURE,dt_checkinobject,9,"dt_checkinobject, dt_displayoaerror, dt_getpropertiesbyid_vcs, dtproperties, sp_OACreate, sp_OAGetProperty, sp_OAMethod, viwBase1400, viwBase1401",create proc dbo.dt_checkinobject,نیازمند بررسی
+PROCEDURE,dt_checkinobject_u,2,"dt_checkinobject, dt_checkinobject_u",create proc dbo.dt_checkinobject_u,نیازمند بررسی
+PROCEDURE,dt_checkoutobject,7,"dt_checkoutobject, dt_displayoaerror, dt_getpropertiesbyid_vcs, dtproperties, sp_OACreate, sp_OAGetProperty, sp_OAMethod",create proc dbo.dt_checkoutobject,نیازمند بررسی
+PROCEDURE,dt_checkoutobject_u,2,"dt_checkoutobject, dt_checkoutobject_u",create proc dbo.dt_checkoutobject_u,نیازمند بررسی
+PROCEDURE,dt_displayoaerror,2,"dt_displayoaerror, sp_OAGetErrorInfo",CREATE PROCEDURE dbo.dt_displayoaerror,نیازمند بررسی
+PROCEDURE,dt_displayoaerror_u,2,"dt_displayoaerror, dt_displayoaerror_u",CREATE PROCEDURE dbo.dt_displayoaerror_u,نیازمند بررسی
+PROCEDURE,dt_droppropertiesbyid,2,"dt_droppropertiesbyid, dtproperties",create procedure dbo.dt_droppropertiesbyid,نیازمند بررسی
+PROCEDURE,dt_dropuserobjectbyid,2,"dt_dropuserobjectbyid, dtproperties",create procedure dbo.dt_dropuserobjectbyid,نیازمند بررسی
+PROCEDURE,dt_generateansiname,1,dt_generateansiname,create procedure dbo.dt_generateansiname(@name varchar(255) output),نیازمند بررسی
+PROCEDURE,dt_getobjwithprop,2,"dt_getobjwithprop, dtproperties",create procedure dbo.dt_getobjwithprop,نیازمند بررسی
+PROCEDURE,dt_getobjwithprop_u,2,"dt_getobjwithprop_u, dtproperties",create procedure dbo.dt_getobjwithprop_u,نیازمند بررسی
+PROCEDURE,dt_getpropertiesbyid,2,"dt_getpropertiesbyid, dtproperties",create procedure dbo.dt_getpropertiesbyid,نیازمند بررسی
+PROCEDURE,dt_getpropertiesbyid_u,3,"dt_getpropertiesbyid_u, dtproperties, the",create procedure dbo.dt_getpropertiesbyid_u,نیازمند بررسی
+PROCEDURE,dt_getpropertiesbyid_vcs,2,"dt_getpropertiesbyid_vcs, dtproperties",create procedure dbo.dt_getpropertiesbyid_vcs,نیازمند بررسی
+PROCEDURE,dt_getpropertiesbyid_vcs_u,2,"dt_getpropertiesbyid_vcs, dt_getpropertiesbyid_vcs_u",create procedure dbo.dt_getpropertiesbyid_vcs_u,نیازمند بررسی
+PROCEDURE,dt_isundersourcecontrol,7,"dt_displayoaerror, dt_getpropertiesbyid_vcs, dt_isundersourcecontrol, dtproperties, sp_OACreate, sp_OAGetProperty, sp_OAMethod",create proc dbo.dt_isundersourcecontrol,نیازمند بررسی
+PROCEDURE,dt_isundersourcecontrol_u,2,"dt_isundersourcecontrol, dt_isundersourcecontrol_u",create proc dbo.dt_isundersourcecontrol_u,نیازمند بررسی
+PROCEDURE,dt_removefromsourcecontrol,3,"dt_droppropertiesbyid, dt_removefromsourcecontrol, dtproperties",create procedure dbo.dt_removefromsourcecontrol,نیازمند بررسی
+PROCEDURE,dt_setpropertybyid,2,"dt_setpropertybyid, dtproperties",create procedure dbo.dt_setpropertybyid,نیازمند بررسی
+PROCEDURE,dt_setpropertybyid_u,3,"dt_generateansiname, dt_setpropertybyid_u, dtproperties",create procedure dbo.dt_setpropertybyid_u,نیازمند بررسی
+PROCEDURE,dt_validateloginparams,6,"dt_displayoaerror, dt_getpropertiesbyid_vcs, dt_validateloginparams, dtproperties, sp_OACreate, sp_OAMethod",create proc dbo.dt_validateloginparams,Utility / نرمال‌سازی مقدار
+PROCEDURE,dt_validateloginparams_u,2,"dt_validateloginparams, dt_validateloginparams_u",create proc dbo.dt_validateloginparams_u,Utility / نرمال‌سازی مقدار
+PROCEDURE,dt_vcsenabled,2,"dt_vcsenabled, sp_OACreate",create proc dbo.dt_vcsenabled,نیازمند بررسی
+PROCEDURE,dt_verstamp006,1,dt_verstamp006,create procedure dbo.dt_verstamp006,نیازمند بررسی
+PROCEDURE,dt_verstamp007,1,dt_verstamp007,create procedure dbo.dt_verstamp007,نیازمند بررسی
+PROCEDURE,dt_whocheckedout,6,"dt_displayoaerror, dt_getpropertiesbyid_vcs, dt_whocheckedout, dtproperties, sp_OACreate, sp_OAMethod",create proc dbo.dt_whocheckedout,نیازمند بررسی
+PROCEDURE,dt_whocheckedout_u,2,"dt_whocheckedout, dt_whocheckedout_u",create proc dbo.dt_whocheckedout_u,نیازمند بررسی
+PROCEDURE,GetCurrentQueryCode,2,"dbo, sysprocesses",CREATE PROCEDURE GetCurrentQueryCode,نیازمند بررسی
+PROCEDURE,MakeDB,26,"Base_ItemType, Base_Months, Base_SeMahe, Base_ShakhesYerSeMahe, MakeDB, base_IntpVaziat, base_NoteGroup, base_PersonalityTyp, base_ShakhesType, base_TajhzType, base_ZrLc, base_ader, base_book, base_book_list, base_fhbh, base_fsbs, base_nmmhb, base_pvst, base_shfs, base_sorc, base_sorc_list, base_tyun, base_unit, base_unit_raw, brv_mult, dbo",CREATE PROCEDURE [dbo].[MakeDB] @NoAna bit,نیازمند بررسی
+PROCEDURE,Manual_Edit_Acts_Units,0,,"CREATE PROCEDURE Manual_Edit_Acts_Units @Wrong_code int , @correct_code int AS",نیازمند بررسی
+PROCEDURE,Manual_Edit_Grop_Names,0,,"CREATE PROCEDURE Manual_Edit_Grop_Names @Wrong_code int , @correct_code int AS",نیازمند بررسی
+PROCEDURE,Manual_Edit_Sorc_List,0,,"CREATE PROCEDURE Manual_Edit_Sorc_List @Wrong_code int , @correct_code int",نیازمند بررسی
+PROCEDURE,Manual_Edit_Units,0,,"CREATE PROCEDURE Manual_Edit_Units @Wrong_code int , @correct_code int AS",نیازمند بررسی
+PROCEDURE,new_project_permissions_asnad,1,new_project_permissions_asnad,"CREATE PROCEDURE [dbo].[new_project_permissions_asnad] (@contract_id int,@role_id int)",دسترسی/نقش/وضعیت کاربر
+PROCEDURE,new_project_permissions_For_Tree,2,"brv_Template, new_project_permissions_For_Tree","CREATE PROCEDURE [dbo].[new_project_permissions_For_Tree] (@contract_id int,@role_id INT , @HasEdit INT)",دسترسی/نقش/وضعیت کاربر
+PROCEDURE,new_project_permissions_Full,2,"brv_Access, new_project_permissions_Full","CREATE PROCEDURE [dbo].[new_project_permissions_Full] (@contract_id int,@role_id int)",دسترسی/نقش/وضعیت کاربر
+PROCEDURE,Optimize_DB,0,,CREATE PROCEDURE Optimize_DB @db nvarchar(100),نیازمند بررسی
+PROCEDURE,PSNIMPORT01_prepare,1,psn_importer,CREATE PROCEDURE PSNIMPORT01_prepare,ورود/ایمپورت فایل‌ها
+PROCEDURE,PSNIMPORT02_unit,0,,CREATE PROCEDURE PSNIMPORT02_unit,ورود/ایمپورت فایل‌ها
+PROCEDURE,PSNIMPORT05_add_ader,0,,CREATE PROCEDURE PSNIMPORT05_add_ader @code int,ورود/ایمپورت فایل‌ها
+PROCEDURE,RebuildAllIndex,0,,CREATE PROCEDURE RebuildAllIndex,نیازمند بررسی
+PROCEDURE,set_user_state_Acc,1,set_user_state_Acc,"CREATE PROCEDURE [dbo].[set_user_state_Acc] @ComputerName nvarchar(50),@ForceLogOut bit AS",دسترسی/نقش/وضعیت کاربر
+PROCEDURE,set_user_state_asnad,1,set_user_state_asnad,CREATE PROCEDURE dbo.set_user_state_asnad @ComputerName nvarchar(50) AS,دسترسی/نقش/وضعیت کاربر
+PROCEDURE,set_user_state_bhz,1,set_user_state_bhz,"CREATE PROCEDURE dbo.set_user_state_bhz @ComputerName nvarchar(50),@ForceLogOut bit AS",دسترسی/نقش/وضعیت کاربر
+PROCEDURE,set_user_state_brv,1,set_user_state_brv,"CREATE PROCEDURE [dbo].[set_user_state_brv] @ComputerName nvarchar(50),@ForceLogOut bit AS",دسترسی/نقش/وضعیت کاربر
+PROCEDURE,set_user_state_peik,1,set_user_state_peik,CREATE PROCEDURE dbo.set_user_state_peik @ComputerName nvarchar(50) AS,گزارش‌ها/درخت گزارش
+PROCEDURE,SetCodeAmelInSource,2,"Correct, SetCodeAmelInSource",CREATE PROCEDURE [dbo].[SetCodeAmelInSource] (@Code int),نیازمند بررسی
+PROCEDURE,SetKarnamaFields,3,"GetPersonalityTypeId, SetKarnamaFields, brv_type",CREATE PROCEDURE [dbo].[SetKarnamaFields],نیازمند بررسی
+PROCEDURE,SetKarnamaFieldsSitu,3,"GetStuBarcode, SetKarnamaFieldsSitu, brv_situ",create PROCEDURE [dbo].[SetKarnamaFieldsSitu],نیازمند بررسی
+PROCEDURE,sp_alterdiagram,2,"sp_alterdiagram, sysdiagrams",CREATE PROCEDURE dbo.sp_alterdiagram,نیازمند بررسی
+PROCEDURE,sp_creatediagram,2,"sp_creatediagram, sysdiagrams",CREATE PROCEDURE dbo.sp_creatediagram,نیازمند بررسی
+PROCEDURE,sp_dropdiagram,2,"sp_dropdiagram, sysdiagrams",CREATE PROCEDURE dbo.sp_dropdiagram,نیازمند بررسی
+PROCEDURE,sp_helpdiagramdefinition,2,"sp_helpdiagramdefinition, sysdiagrams",CREATE PROCEDURE dbo.sp_helpdiagramdefinition,نیازمند بررسی
+PROCEDURE,sp_helpdiagrams,2,"sp_helpdiagrams, sysdiagrams",CREATE PROCEDURE dbo.sp_helpdiagrams,نیازمند بررسی
+PROCEDURE,Sp_Manage_ader_fhbh_Relation,3,"Sp_Manage_ader_fhbh_Relation, base_ader, base_fhbh",CREATE PROCEDURE [dbo].[Sp_Manage_ader_fhbh_Relation] ( @Flag INT ),نیازمند بررسی
+PROCEDURE,sp_renamediagram,2,"sp_renamediagram, sysdiagrams",CREATE PROCEDURE dbo.sp_renamediagram,نیازمند بررسی
+PROCEDURE,sp_upgraddiagrams,2,"sp_upgraddiagrams, sysdiagrams",CREATE PROCEDURE dbo.sp_upgraddiagrams,نیازمند بررسی
+PROCEDURE,SpDeleteTypeSituDependencies,0,,CREATE PROCEDURE SpDeleteTypeSituDependencies,قفل/حذف/حفظ وابستگی
+PROCEDURE,SVZIMPORT01_prepare,1,svz_importer,CREATE PROCEDURE SVZIMPORT01_prepare,ورود/ایمپورت فایل‌ها
+PROCEDURE,SVZIMPORT02_unit,0,,CREATE PROCEDURE SVZIMPORT02_unit,ورود/ایمپورت فایل‌ها
+PROCEDURE,SVZIMPORT03_01_nusv,0,,CREATE PROCEDURE SVZIMPORT03_01_nusv,ورود/ایمپورت فایل‌ها
+PROCEDURE,SVZIMPORT05_add_ader,0,,CREATE PROCEDURE SVZIMPORT05_add_ader @code int,ورود/ایمپورت فایل‌ها
+PROCEDURE,update_db,1,update_db,CREATE procedure [dbo].[update_db] ( @nufh int )as,Utility / نرمال‌سازی مقدار
+PROCEDURE,update_vb,1,update_vb,CREATE procedure [dbo].[update_vb] (@nufh int),Utility / نرمال‌سازی مقدار
+PROCEDURE,update_zarib_fhpy_mult,1,val,CREATE procedure update_zarib_fhpy_mult (@code int),Utility / نرمال‌سازی مقدار
+PROCEDURE,UpdateDateCol,1,UpdateDateCol,CREATE PROCEDURE [dbo].[UpdateDateCol],Utility / نرمال‌سازی مقدار
+PROCEDURE,UpdateYearCol_Biharz,4,"UpdateYearCol_Biharz, base_fosi, base_year, bhz_Contract",create PROCEDURE [dbo].[UpdateYearCol_Biharz],Utility / نرمال‌سازی مقدار
+PROCEDURE,UpdateYearCol_Mabna,42,"Base_ShakhesYerSeMahe, Pek_intp, Pek_nash, UpdateYearCol_Mabna, base_ZrLc, base_acts_items, base_ader, base_book, base_dstb, base_fhbh, base_fosi, base_fsbs, base_grop, base_hmbs, base_mola_Year, base_mola_haml, base_mola_year, base_nmmhb, base_pvst, base_shfs, base_shkl, base_shrs, base_sorc, base_tatbigh, base_year, base_zrlc, pek_ztadil, smn_Base_Days, smn_Hgzm_Days, smn_Hgzm_Gathering_Price, smn_Hgzm_Month, smn_Hgzm_Nailing_Price, smn_Hgzm_Road_Price, smn_Hgzm_Salary, smn_Hgzm_Year, smn_Survey_Tariff, smn_Survey_Tariff_Base, smn_Tender_FieldPrice, smn_Tender_Main, smn_Tunnel_PriceFac, smn_Tunnel_PriceFac_Base, smn_contract",CREATE PROCEDURE [dbo].[UpdateYearCol_Mabna],Utility / نرمال‌سازی مقدار
+PROCEDURE,UpdateYearCol_Taksa,61,"Atm_detail_fhbh, BaseBarcode, BaseSituNoe, Base_ShakhesYerSeMahe, Report_Frames, Reports, Reports_Tip, TblCtrl, UpdateYearCol_Taksa, atm_contract, atm_detail_fhbh, atm_detail_fhbh_project, base_DocFanni, base_Style_List, base_Style_Title, base_ZrLc, base_acts, base_acts_items, base_acts_type, base_acts_unit, base_ader, base_book, base_dstb, base_fhbh, base_fosi, base_fs, base_fsbs, base_grop, base_grop_name, base_grop_raw, base_hmbs, base_mola_Year, base_mola_haml, base_mola_year, base_nmmhb, base_pakati, base_pvst, base_pvst_fosi, base_shfs, base_shkl, base_shrs, base_sorc, base_tatbigh, base_year, base_zrlc, base_zrtj, brv_Contract, brv_Forms, brv_Tree_Report, brv_ahta, brv_color, brv_contract, brv_fhbh, brv_intp, brv_mult, dbo, pek_ztadil, smn_Tender_FieldPrice, smn_contract, tbl_letters, tbl_words",CREATE PROCEDURE [dbo].[UpdateYearCol_Taksa],Utility / نرمال‌سازی مقدار
+PROCEDURE,ValidateDateCol,2,"MakeDate, ValidateDateCol",CREATE PROCEDURE [dbo].[ValidateDateCol],Utility / نرمال‌سازی مقدار
+TABLE,base_conc,0,,CREATE TABLE base_conc (,فهرست‌بها / مبانی / شاخص
+TABLE,brv_fhbh,1,brv_fhbh,CREATE TABLE [dbo].[brv_fhbh](,نیازمند بررسی
+TABLE,brv_mult,1,brv_mult,CREATE TABLE [dbo].[brv_mult](,نیازمند بررسی
+TABLE,sysdiagram_properties,3,"dtproperties, sysdiagram_properties, sysdiagrams",CREATE TABLE dbo.sysdiagram_properties,نیازمند بررسی
+TABLE,sysdiagrams,2,"sysdiagram_properties, sysdiagrams",CREATE TABLE dbo.sysdiagrams,نیازمند بررسی
+TRIGGER,brv_contract_DELETE,2,"brv_contract, brv_contract_DELETE",CREATE TRIGGER [dbo].[brv_contract_DELETE] ON dbo.brv_contract,قفل/حذف/حفظ وابستگی
+TRIGGER,child_id_updater,1,pek_reports,CREATE TRIGGER child_id_updater ON dbo.pek_reports,Utility / نرمال‌سازی مقدار
+TRIGGER,Role_Delete,1,brv_role,CREATE TRIGGER Role_Delete ON dbo.brv_role,دسترسی/نقش/وضعیت کاربر
+TRIGGER,smn_contract_DELETE,1,smn_contract,CREATE TRIGGER smn_contract_DELETE ON dbo.smn_contract,قفل/حذف/حفظ وابستگی
+TRIGGER,trg_contract,7,"base_fhbh, base_sorc_list, base_unit_raw, brv_contract, brv_fhbh, brv_sorc_all, trg_contract",CREATE TRIGGER [dbo].[trg_contract] ON dbo.brv_contract,قفل/حذف/حفظ وابستگی
+TRIGGER,Trg_Delete,2,"Trg_Delete, base_fhbh",CREATE TRIGGER [dbo].[Trg_Delete] ON dbo.base_fhbh,قفل/حذف/حفظ وابستگی
+TRIGGER,Trg_SetDefaultSooratMajlesFieldInRzmt,1,brv_rzmt,CREATE TRIGGER Trg_SetDefaultSooratMajlesFieldInRzmt ON dbo.brv_rzmt,قفل/حذف/حفظ وابستگی
+TRIGGER,type_situ_DELETE,30,"brv_TadilKosorat, brv_acts, brv_ader, brv_bgml, brv_documents, brv_dstn_fromto, brv_dstn_fromto_rzmt, brv_dstn_main, brv_dstn_main_rzmt, brv_fhbh, brv_fhpy, brv_fspy, brv_grop, brv_hmbs, brv_hmpy, brv_hmpy_rzmt, brv_intp, brv_khmt, brv_kosorat, brv_m, brv_mult, brv_mult_sub, brv_ovhd, brv_ovpr, brv_ovtj, brv_rzmt, brv_tonl, brv_type_situ, brv_zrtb, type_situ_DELETE",CREATE TRIGGER [dbo].[type_situ_DELETE] ON [dbo].[brv_type_situ],قفل/حذف/حفظ وابستگی
+TRIGGER,User_Delete,1,brv_Users,CREATE TRIGGER User_Delete ON dbo.brv_Users,قفل/حذف/حفظ وابستگی
+VIEW,distance_view,1,distance_view,CREATE VIEW dbo.[distance_view],ویو گزارش/محاسبات
+VIEW,Pek_List,6,"Pek_List, Pek_Msr_List, Pek_Msr_Rabet_Peyman, Pek_Msr_Seri, Pek_Msr_Seri_Degree, Pek_Ostan",CREATE VIEW dbo.Pek_List,گزارش‌ها/درخت گزارش
+VIEW,shfs,2,"base_shfs, shfs",CREATE VIEW dbo.shfs,فهرست‌بها / مبانی / شاخص
+VIEW,shkl,2,"base_shkl, shkl",CREATE VIEW dbo.shkl,فهرست‌بها / مبانی / شاخص
+VIEW,shrs,2,"base_shrs, shrs",CREATE VIEW dbo.shrs,فهرست‌بها / مبانی / شاخص
+VIEW,Tender_Shrs,3,"Tender_Shrs, base_book_list, base_shrs",CREATE VIEW [dbo].[Tender_Shrs],مناقصه/پیشنهاد
+VIEW,v3,1,base_fhbh,create view v3 as select p.fbh_cofh from (select * from base_fhbh where fbh_year=88 and fbh_ader=1) p inner join,نیازمند بررسی
+VIEW,V_Ana,5,"V_Ana, base_nmmhb, base_sorc, base_sorc_list, dt_displayoaerror",CREATE VIEW dbo.V_Ana,نیازمند بررسی
+VIEW,V_Shakhes1,3,"Base_ShakhesYerSeMahe, V_Shakhes1, base_shfs",CREATE VIEW [dbo].[V_Shakhes1],ویو گزارش/محاسبات
+VIEW,V_Shakhes2,3,"Base_ShakhesYerSeMahe, V_Shakhes2, base_shfs",CREATE VIEW dbo.V_Shakhes2,ویو گزارش/محاسبات
+VIEW,V_Shakhes3,8,"Base_ShakhesYerSeMahe, V_Shakhes3, base_shfs, dt_displayoaerror, dt_getpropertiesbyid_vcs, sp_OACreate, sp_OAGetProperty, sp_OAMethod",CREATE VIEW dbo.V_Shakhes3,ویو گزارش/محاسبات
+VIEW,V_Shakhes4,3,"Base_ShakhesYerSeMahe, V_Shakhes4, base_shfs",CREATE VIEW dbo.V_Shakhes4,ویو گزارش/محاسبات
+VIEW,V_ShakhesReshte1,3,"Base_ShakhesYerSeMahe, V_ShakhesReshte1, base_shrs",CREATE VIEW dbo.V_ShakhesReshte1,ویو گزارش/محاسبات
+VIEW,V_ShakhesReshte2,3,"Base_ShakhesYerSeMahe, V_ShakhesReshte2, base_shrs",CREATE VIEW dbo.V_ShakhesReshte2,ویو گزارش/محاسبات
+VIEW,V_ShakhesReshte3,3,"Base_ShakhesYerSeMahe, V_ShakhesReshte3, base_shrs",CREATE VIEW dbo.V_ShakhesReshte3,ویو گزارش/محاسبات
+VIEW,V_ShakhesReshte4,3,"Base_ShakhesYerSeMahe, V_ShakhesReshte4, base_shrs",CREATE VIEW dbo.V_ShakhesReshte4,ویو گزارش/محاسبات
+VIEW,viewbgml,2,"brv_bgml, viewbgml",CREATE VIEW dbo.viewbgml,نیازمند بررسی
+VIEW,viwBase1400,5,"base_book, base_fhbh, base_fsbs, brv_mult, viwBase1400",CREATE VIEW [dbo].[viwBase1400],فهرست‌بها / مبانی / شاخص
+VIEW,viwBase1401,4,"base_book, base_fhbh, base_fsbs, viwBase1401",CREATE VIEW [dbo].[viwBase1401],فهرست‌بها / مبانی / شاخص
+VIEW,viwBase1402,4,"base_book, base_fhbh, base_fsbs, viwBase1402",CREATE VIEW [dbo].[viwBase1402],فهرست‌بها / مبانی / شاخص
+VIEW,viwBase1403,4,"base_book, base_fhbh, base_fsbs, viwBase1403",CREATE VIEW [dbo].[viwBase1403],فهرست‌بها / مبانی / شاخص
+VIEW,viwBase1404,4,"base_book, base_fhbh, base_fsbs, viwBase1404",CREATE VIEW [dbo].[viwBase1404],فهرست‌بها / مبانی / شاخص
+VIEW,viwBase85,4,"base_book, base_fhbh, base_fsbs, viwBase85",CREATE VIEW dbo.viwBase85,فهرست‌بها / مبانی / شاخص
+VIEW,viwBase86,4,"base_book, base_fhbh, base_fsbs, viwBase86",CREATE VIEW dbo.viwBase86,فهرست‌بها / مبانی / شاخص
+VIEW,viwbase87,4,"base_book, base_fhbh, base_fsbs, viwbase87",CREATE VIEW dbo.viwbase87,فهرست‌بها / مبانی / شاخص
+VIEW,viwbase88,4,"base_book, base_fhbh, base_fsbs, viwbase88",CREATE VIEW dbo.viwbase88,فهرست‌بها / مبانی / شاخص
+VIEW,viwbase92,4,"base_book, base_fhbh, base_fsbs, viwbase92",CREATE VIEW dbo.viwbase92,فهرست‌بها / مبانی / شاخص
+VIEW,viwbase93,4,"base_book, base_fhbh, base_fsbs, viwbase93",CREATE VIEW dbo.viwbase93,فهرست‌بها / مبانی / شاخص
+VIEW,viwbase94,4,"base_book, base_fhbh, base_fsbs, viwbase94",CREATE VIEW [dbo].[viwbase94],فهرست‌بها / مبانی / شاخص
+VIEW,viwbase95,4,"base_book, base_fhbh, base_fsbs, viwbase95",CREATE VIEW dbo.viwbase95,فهرست‌بها / مبانی / شاخص
+VIEW,viwbase96,4,"base_book, base_fhbh, base_fsbs, viwbase96",CREATE VIEW [dbo].[viwbase96],فهرست‌بها / مبانی / شاخص
+VIEW,viwBase97,4,"base_book, base_fhbh, base_fsbs, viwBase97",CREATE VIEW dbo.viwBase97,فهرست‌بها / مبانی / شاخص
+VIEW,viwBase98,8,"base_book, base_fhbh, base_fsbs, brv_mogs, brv_nmmhb, brv_sorc, brv_sorc_all, viwBase98",CREATE VIEW dbo.viwBase98,فهرست‌بها / مبانی / شاخص
+VIEW,viwBase99,4,"base_book, base_fhbh, base_fsbs, viwBase99",CREATE VIEW dbo.viwBase99,فهرست‌بها / مبانی / شاخص
+VIEW,viwBase_Added,3,"viwBase98, viwBase99, viwBase_Added",CREATE VIEW dbo.viwBase_Added,فهرست‌بها / مبانی / شاخص
+VIEW,viwBase_Added92From88,3,"viwBase_Added92From88, viwbase88, viwbase92",CREATE VIEW dbo.viwBase_Added92From88,فهرست‌بها / مبانی / شاخص
+VIEW,viwBase_Deleted,3,"viwBase98, viwBase99, viwBase_Deleted",CREATE VIEW dbo.viwBase_Deleted,قفل/حذف/حفظ وابستگی
+VIEW,viwBase_Deleted92From88,3,"viwBase_Deleted92From88, viwbase88, viwbase92",CREATE VIEW dbo.viwBase_Deleted92From88,قفل/حذف/حفظ وابستگی
+VIEW,viwBase_Difference,3,"viwBase1403, viwBase1404, viwBase_Difference",CREATE VIEW dbo.viwBase_Difference,فهرست‌بها / مبانی / شاخص
+VIEW,viwBase_SamePrice,3,"viwBase1403, viwBase1404, viwBase_SamePrice",CREATE VIEW dbo.viwBase_SamePrice,فهرست‌بها / مبانی / شاخص
+VIEW,viwBase_SamePrice92From88,3,"viwBase_SamePrice92From88, viwbase88, viwbase92",CREATE VIEW dbo.viwBase_SamePrice92From88,فهرست‌بها / مبانی / شاخص
+VIEW,viwBaseDifference92From88,4,"Compare_Text_for_Base, viwBaseDifference92From88, viwbase88, viwbase92",CREATE VIEW dbo.viwBaseDifference92From88,فهرست‌بها / مبانی / شاخص
+VIEW,viwSooratVaziat,4,"dly_contract, dly_sv, dly_vzt, viwSooratVaziat",CREATE VIEW dbo.viwSooratVaziat,ویو گزارش/محاسبات
+VIEW,viwTadil,2,"brv_ahta, viwTadil",CREATE VIEW dbo.viwTadil,ویو گزارش/محاسبات
+VIEW,viwTakhirat,5,"dly_contract, dly_sv, dly_svz, dly_vzt, viwTakhirat",CREATE VIEW dbo.viwTakhirat,ویو گزارش/محاسبات
+VIEW,viwTatbigh_Paykar,1,viwTatbigh_Paykar,CREATE VIEW dbo.viwTatbigh_Paykar,ویو گزارش/محاسبات
+VIEW,vwNezarat,7,"smn_Hgzm_Days, smn_Hgzm_Month, smn_Hgzm_Nezarat, smn_Hgzm_Year, smn_contract, smn_nzs_AddItems, vwNezarat",CREATE VIEW dbo.vwNezarat,نیازمند بررسی

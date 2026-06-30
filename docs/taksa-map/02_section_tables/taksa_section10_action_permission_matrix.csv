@@ -1,0 +1,120 @@
+﻿role,action,allowed,condition
+project_admin,create_project,yes,طبق وضعیت workflow و قفل سند
+project_admin,configure_project,yes,طبق وضعیت workflow و قفل سند
+project_admin,import_taksa,yes,طبق وضعیت workflow و قفل سند
+project_admin,create_document,yes,طبق وضعیت workflow و قفل سند
+project_admin,edit_measurement,no,
+project_admin,submit_to_consultant,no,
+project_admin,review_lines,no,
+project_admin,return_document,no,
+project_admin,consultant_approve,no,
+project_admin,employer_approve,no,
+project_admin,calculate_adjustment,no,
+project_admin,edit_deductions,no,
+project_admin,lock_document,yes,طبق وضعیت workflow و قفل سند
+project_admin,export_pdf_excel,yes,طبق وضعیت workflow و قفل سند
+project_admin,export_svzt,yes,طبق وضعیت workflow و قفل سند
+project_admin,view_raw,yes,طبق وضعیت workflow و قفل سند
+project_admin,unlock_request,yes,طبق وضعیت workflow و قفل سند
+contractor,create_project,no,
+contractor,configure_project,no,
+contractor,import_taksa,no,
+contractor,create_document,yes,طبق وضعیت workflow و قفل سند
+contractor,edit_measurement,yes,طبق وضعیت workflow و قفل سند
+contractor,submit_to_consultant,yes,طبق وضعیت workflow و قفل سند
+contractor,review_lines,no,
+contractor,return_document,no,
+contractor,consultant_approve,no,
+contractor,employer_approve,no,
+contractor,calculate_adjustment,no,
+contractor,edit_deductions,no,
+contractor,lock_document,no,
+contractor,export_pdf_excel,yes,طبق وضعیت workflow و قفل سند
+contractor,export_svzt,no,
+contractor,view_raw,no,
+contractor,unlock_request,no,
+consultant_reviewer,create_project,no,
+consultant_reviewer,configure_project,no,
+consultant_reviewer,import_taksa,no,
+consultant_reviewer,create_document,no,
+consultant_reviewer,edit_measurement,no,
+consultant_reviewer,submit_to_consultant,no,
+consultant_reviewer,review_lines,yes,طبق وضعیت workflow و قفل سند
+consultant_reviewer,return_document,yes,طبق وضعیت workflow و قفل سند
+consultant_reviewer,consultant_approve,yes,طبق وضعیت workflow و قفل سند
+consultant_reviewer,employer_approve,no,
+consultant_reviewer,calculate_adjustment,yes,طبق وضعیت workflow و قفل سند
+consultant_reviewer,edit_deductions,no,
+consultant_reviewer,lock_document,no,
+consultant_reviewer,export_pdf_excel,yes,طبق وضعیت workflow و قفل سند
+consultant_reviewer,export_svzt,no,
+consultant_reviewer,view_raw,no,
+consultant_reviewer,unlock_request,yes,طبق وضعیت workflow و قفل سند
+employer_approver,create_project,no,
+employer_approver,configure_project,no,
+employer_approver,import_taksa,no,
+employer_approver,create_document,no,
+employer_approver,edit_measurement,no,
+employer_approver,submit_to_consultant,no,
+employer_approver,review_lines,no,
+employer_approver,return_document,yes,طبق وضعیت workflow و قفل سند
+employer_approver,consultant_approve,no,
+employer_approver,employer_approve,yes,طبق وضعیت workflow و قفل سند
+employer_approver,calculate_adjustment,no,
+employer_approver,edit_deductions,no,
+employer_approver,lock_document,no,
+employer_approver,export_pdf_excel,yes,طبق وضعیت workflow و قفل سند
+employer_approver,export_svzt,no,
+employer_approver,view_raw,no,
+employer_approver,unlock_request,yes,طبق وضعیت workflow و قفل سند
+financial_controller,create_project,no,
+financial_controller,configure_project,no,
+financial_controller,import_taksa,no,
+financial_controller,create_document,no,
+financial_controller,edit_measurement,no,
+financial_controller,submit_to_consultant,no,
+financial_controller,review_lines,no,
+financial_controller,return_document,no,
+financial_controller,consultant_approve,no,
+financial_controller,employer_approve,no,
+financial_controller,calculate_adjustment,yes,طبق وضعیت workflow و قفل سند
+financial_controller,edit_deductions,yes,طبق وضعیت workflow و قفل سند
+financial_controller,lock_document,no,
+financial_controller,export_pdf_excel,yes,طبق وضعیت workflow و قفل سند
+financial_controller,export_svzt,no,
+financial_controller,view_raw,no,
+financial_controller,unlock_request,yes,طبق وضعیت workflow و قفل سند
+viewer,create_project,no,
+viewer,configure_project,no,
+viewer,import_taksa,no,
+viewer,create_document,no,
+viewer,edit_measurement,no,
+viewer,submit_to_consultant,no,
+viewer,review_lines,no,
+viewer,return_document,no,
+viewer,consultant_approve,no,
+viewer,employer_approve,no,
+viewer,calculate_adjustment,no,
+viewer,edit_deductions,no,
+viewer,lock_document,no,
+viewer,export_pdf_excel,yes,طبق وضعیت workflow و قفل سند
+viewer,export_svzt,no,
+viewer,view_raw,no,
+viewer,unlock_request,no,
+support_admin,create_project,no,
+support_admin,configure_project,no,
+support_admin,import_taksa,yes,طبق وضعیت workflow و قفل سند
+support_admin,create_document,no,
+support_admin,edit_measurement,no,
+support_admin,submit_to_consultant,no,
+support_admin,review_lines,no,
+support_admin,return_document,no,
+support_admin,consultant_approve,no,
+support_admin,employer_approve,no,
+support_admin,calculate_adjustment,no,
+support_admin,edit_deductions,no,
+support_admin,lock_document,no,
+support_admin,export_pdf_excel,no,
+support_admin,export_svzt,yes,طبق وضعیت workflow و قفل سند
+support_admin,view_raw,yes,طبق وضعیت workflow و قفل سند
+support_admin,unlock_request,yes,طبق وضعیت workflow و قفل سند

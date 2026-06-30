@@ -1,0 +1,29 @@
+﻿state_key,persian_name,state_group,description,owner_role,primary_entity
+import_uploaded,فایل بارگذاری شده,Import,"File uploaded, not parsed yet.",support_admin/project_admin,TaksaArtifact
+import_parsed,فایل خوانده شده,Import,XML parsed and raw tables/rows created.,system,TaksaRawTable/TaksaRawRow
+import_validated,اعتبارسنجی اولیه موفق,Import,"Raw tags, counts, required anchors and case rules checked.",system/support_admin,ValidationReport
+import_mapping_review,بازبینی نگاشت,Import,Suspicious/unknown tables or fields need mapping confirmation.,support_admin,MappingIssue
+import_ready,آماده استفاده در پروژه,Import,Normalized entities created and linked to raw anchors.,system/project_admin,Project/CommercialDocument
+import_rejected,رد import,Import,File cannot be used safely.,support_admin/project_admin,ImportJob
+project_draft,پروژه پیش‌نویس,Project,Project exists but contract/parties/reference data incomplete.,project_admin,Project
+project_configured,پروژه پیکربندی‌شده,Project,"Contract, parties, reference book and permissions configured.",project_admin,Project
+project_active,پروژه فعال,Project,Documents can be created/submitted.,project_admin,Project
+project_archived,پروژه بایگانی,Project,Read-only archive.,project_admin,Project
+doc_draft,پیش‌نویس سند,Document,Document created but not submitted.,contractor/project_admin,CommercialDocument
+measurement_in_progress,متره در حال تکمیل,Measurement,Measurement and attachments being prepared.,contractor,MeasurementLine
+contractor_internal_check,کنترل داخلی پیمانکار,Document,Contractor checks totals before submission.,contractor,CommercialDocument
+submitted_to_consultant,ارسال به مشاور,Review,Contractor submitted document to consultant.,contractor,DocumentVersion
+consultant_reviewing,در حال رسیدگی مشاور,Review,Consultant line-by-line review and correction.,consultant_reviewer,ReviewedWorkLine
+returned_to_contractor,برگشت به پیمانکار,Review,Consultant returned document for correction.,consultant_reviewer,WorkflowCase
+consultant_approved,تأیید مشاور,Review,Consultant approved reviewed version.,consultant_reviewer,DocumentVersion
+submitted_to_employer,ارسال به کارفرما,Approval,Approved by consultant and sent to employer.,consultant_reviewer/project_admin,WorkflowCase
+employer_reviewing,در حال بررسی کارفرما,Approval,Employer reviews financial summary/reports.,employer_approver,FinancialStatementLine
+returned_by_employer,برگشت توسط کارفرما,Approval,Employer returned for correction.,employer_approver,WorkflowCase
+employer_approved,تأیید کارفرما,Approval,Employer approved final version.,employer_approver,DocumentVersion
+document_locked,قفل سند,Lock,Final document locked; only controlled correction allowed.,system/project_admin,DocumentVersion
+export_ready,آماده خروجی,Export,Reports and Taksa-compatible export can be generated.,system,ReportTemplate/TaksaArtifact
+exported_to_taksa,خروجی سازگار با تکسا گرفته شد,Export,SVZT/Excel/PDF exported and audit logged.,support_admin/project_admin,ExportJob
+adjustment_draft,پیش‌نویس تعدیل,Adjustment,Adjustment run configured but not calculated.,financial_controller/consultant_reviewer,AdjustmentRun
+adjustment_calculated,تعدیل محاسبه شد,Adjustment,Indexes applied and lines generated.,system,AdjustmentLine
+adjustment_reviewing,رسیدگی تعدیل,Adjustment,Consultant/financial controller checks adjustment.,consultant_reviewer/financial_controller,AdjustmentRun
+adjustment_approved,تعدیل تأیید شد,Adjustment,Adjustment locked or attached to document.,employer_approver,AdjustmentRun

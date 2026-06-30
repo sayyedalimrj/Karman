@@ -1,0 +1,18 @@
+﻿Source group,Observed files,Primary use,Web reconstruction use,Priority,Status
+_inventory/files_inventory.csv + tree_full.txt,۲۳۷۰ فایل در نصب کامل؛ حجم کل حدود ۱.۸GB,نقشه کل منابع، حذف فایل‌های غیرضروری، اولویت‌بندی,تصمیم‌گیری اینکه کدام منبع برای داده، قانون، UI، گزارش یا import/export استفاده شود,P0,Checked
+DB/myscr.sql,۳۲۴KB، حدود ۱۵۷ CREATE TABLE,استخراج schema اولیه دیتابیس تکسا,شروع data dictionary و مدل موجودیت‌ها,P0,Queued for DB phase
+DB/ScriptConst.sql,۱۳۹KB، شامل حدود ۱۹۵ FK/constraint و ثابت‌ها/ارتباطات,قوانین ساختاری، constraintها، رابطه‌ها و ثابت‌ها,طراحی روابط Prisma/Postgres و validationها,P0,Queued for DB phase
+DB/ScriptXML.sql,۷۵KB، stored procedure SpProjectXMLToDB، حدود ۵۴ جدول مقصد import,فهم import/restore پروژه و فایل‌های تکسا,طراحی importer .svzt و raw→normalized mapping,P0,Queued for import/export phase
+DB/prj*.scp,۴ فایل comparer project,مسیر مقایسه schema و PK/FK/SP,کمک به اولویت بررسی دیتابیس؛ خود فایل‌ها داده تجاری مستقیم ندارند,P1,Checked lightly
+"Main/SVZT.MDB, BRVT.MDB, PSNT.MDB, MSPSchema.mdb",۴ فایل MDB حدود ۲.۱۲MB,قالب/ساختار فایل‌های صورت‌وضعیت، برآورد/پیشنهاد، MS Project,فهم فرمت فایل و mapping ورودی/خروجی,P0,Queued for format phase
+Main/*_importer.dts,۳ فایل DTS حدود ۸.۱۵MB,mapping import برای brv/svz/psn,تشخیص ترتیب انتقال داده و تبدیل نوع ستون‌ها,P0,Queued for import/export phase
+Main/gws.ini,XML-like config حدود ۶۲۴KB، حداقل ۲۹ فرم از کامنت‌های Frm_*,تنظیمات Grid/Form، ستون‌ها، headerها و data propertyها,طراحی UI table/grid و نام ستون‌های واقعی,P0,Queued for UI module phase
+Main/tx_tips*.txt,۳ فایل tips؛ ۵۲، ۵۵ و ۶۶ نکته فرم,شناخت قابلیت‌های فرم‌ها و قوانین کاربری,ساخت glossary، module map و help text نسخه وب,P0,Queued for module/rules phase
+Main/TAKSA.xml,XML documentation حدود ۳۷KB,منبع ضعیف‌تر برای منابع برنامه/assembly,کمک محدود به سند UI/resources,P2,Checked lightly
+Main/*.xls/*.xlsx/*.mpp,۶ فایل قالب اکسل/پروژه,قالب‌های متره، مالی، فصل‌ها، قیمت منابع و MS Project,طراحی خروجی Excel و import/export برنامه زمان‌بندی,P1,Queued for template phase
+Reports_RPT_only.csv,۱۶۰۶ قالب RPT؛ sv=630، ps=394، br=352، bs=146,کاتالوگ خروجی‌های تکسا,لیست گزارش‌های PDF/Print/Excel نسخه وب و MVP خروجی‌ها,P0,Checked and queued for report phase
+pdfs_selected/fhbh + Fhbh_No_Itms,۲۲۴ PDF برای یادداشت‌های فهرست‌بها ۱۴۰۳/۱۴۰۴,قوانین و یادداشت فصل‌ها,موتور قوانین فهرست‌بها، note viewer و validation,P1,Queued for rules phase
+pdfs_selected/Lc + Shkh,۴ PDF؛ LC و شاخص ۱۴۰۳/۱۴۰۴,شاخص‌ها و ضرایب تعدیل,Adjustment engine,P0,Queued for adjustment rules
+Main_Docs_Selected,۲۱ PDF مرتبط با تعدیل، ارز، ضرایب، تجهیز,قوانین رسمی محاسباتی,Business rules و تست تطبیق موتور محاسبات,P0,Queued for rules phase
+Help + root_files,۱۹ فایل CHM/PDF نصب، SQL access، مغایرت فهرست‌بها و راهنماها,راهنما و اختلاف سال‌ها,کمک به glossary و migration/upgrade concept,P1/P2,Checked
+Excluded: EXE/DLL/Lock/Tools/full .DB,DB کامل حدود ۹۸۸MB؛ help_taksa.chm حدود ۴۷MB؛ ابزارها/قفل/باینری‌ها,فعلاً استفاده نمی‌شود,نباید داخل ریپو public بیاید؛ فقط اگر لازم شد schema DB دستی باز شود,Excluded,Registered

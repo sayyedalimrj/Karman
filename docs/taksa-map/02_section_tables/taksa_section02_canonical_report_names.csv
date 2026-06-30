@@ -1,0 +1,334 @@
+﻿name_lower,count,folders,prefixes
+br_bgml_norm.rpt,9,"Comp_NaftGaz, Custom_1, Custom_2, Custom_5, Fhbh_NaftGaz, Land, Port, Shahrdari",br
+br_seas_norm.rpt,9,"Comp_NaftGaz, Custom, Custom_1, Custom_2, Custom_5, Fhbh_NaftGaz, Land, Port",br
+br_ana.rpt,8,"Comp_NaftGaz, Custom_1, Custom_2, Custom_5, Fhbh_NaftGaz, Land, Port, stnd",br
+br_pymn_mash.rpt,8,"Comp_NaftGaz, Custom_1, Custom_2, Custom_5, Fhbh_NaftGaz, Land, Port, stnd",br
+sv_bgml_norm.rpt,8,"Custom, Custom_3, Custom_4, Land, Port, Shahrdari, abfa, stnd",sv
+sv_pymn.rpt,8,"Custom, Custom_3, Custom_4, Land, Port, abfa, abfa_ghom, stnd",sv
+sv_seas_norm.rpt,8,"Custom, Custom_3, Custom_4, Land, Port, Shahrdari, abfa, stnd",sv
+sv_bgml_brv_ol.rpt,7,"Custom, Custom_3, Custom_4, Land, Port, gaz, stnd",sv
+sv_bgml_tj_shahrdari.rpt,7,"Custom_3, Custom_4, Custom_5, Land, Port, Shahrdari, stnd",sv
+sv_seas_brv_ol.rpt,7,"Custom, Custom_3, Custom_4, Land, Port, gaz, stnd",sv
+br_note_tdil.rpt,6,"Custom_1, Custom_5, Fhbh_NaftGaz, Land, Port, stnd",br
+br_pymn.rpt,6,"Land, Naft_refahi, Naft_refahi_brv, Port, Shahrdari, stnd",br
+br_seas_tdil.rpt,6,"Custom_1, Custom_5, Fhbh_NaftGaz, Land, Port, stnd",br
+br_zrib_koli.rpt,6,"Custom_1, Custom_5, Fhbh_NaftGaz, Land, Port, stnd",br
+sv_bgml_afka.rpt,6,"Custom, Custom_3, Custom_4, Land, Port, stnd",sv
+sv_hmpy_rzmt.rpt,6,"Custom, Custom_3, Custom_4, Land, Port, stnd",sv
+sv_rzmt.rpt,6,"Custom, Custom_3, Custom_4, Land, Port, stnd",sv
+sv_rzmt_btf.rpt,6,"Custom, Custom_3, Custom_4, Land, Port, stnd",sv
+az_anamb.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",az
+br_bgml_comp.rpt,5,"Custom_1, Fhbh_NaftGaz, Land, Port, stnd",br
+br_bgml_fhbh.rpt,5,"Custom, Custom_2, Land, Port, stnd",br
+bs_anab.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_comp_tdil.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_fhbh0.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_fhbh1.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_fhbh_ader0.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_fhbh_ader1.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_shkh_fasli.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_shkh_koli.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_shkh_rest.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_sorc_ama.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_sorc_net.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_sorc_roz.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+bs_sorc_tot.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",bs
+intp.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",intp
+pk_dist_distances.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",pk
+pk_dist_points.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",pk
+pk_zrtd_intp.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",pk
+sv_ana.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_ana_acts.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_anam.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_anams.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_anams_in.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_anams_pj.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_bgml_76574.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_bgml_acts.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_bgml_anjam_pish.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_bgml_brv.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_bgml_moth.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_bgml_pish.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_dife_one_10000.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_dife_one_bakh.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_dife_one_fatd.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_dife_totl_10000.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_dife_totl_bakh.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_dife_totl_fatd.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_fhbh.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_intp.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_note_tdil.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_pymn_list.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_pymn_list_all.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_pymn_tree.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_pymn_tree_all.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_rzmt_acts.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_seas_76574.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_seas_afka.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_seas_afka_76574.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_seas_anjam_pish.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_seas_brv.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_seas_moth.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_seas_pish.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_seas_v_tdil.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_acts.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_brv.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_brv_one.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_brv_totl.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_inpt.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_inpt_one.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_inpt_totl.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_nufh_acts.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_one.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_totl.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_sorc_totl_acts.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_tatb_seas.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_zrib_koli.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_zrib_pykr.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+sv_zrib_work.rpt,5,"Custom_3, Custom_4, Land, Port, stnd",sv
+br_bgml_tj_shahrdari.rpt,4,"Land, Port, Shahrdari, stnd",br
+ps_ana.rpt,4,"Custom, Land, Port, stnd",ps
+ps_bgml_norm.rpt,4,"Land, Port, Shahrdari, stnd",ps
+ps_bgml_tj_shahrdari.rpt,4,"Land, Port, Shahrdari, stnd",ps
+ps_pymn.rpt,4,"Land, Port, Shahrdari, stnd",ps
+sv_rzmt_stmj.rpt,4,"Custom, Custom_4, Shahrdari, stnd",sv
+sv_seas_acts.rpt,4,"Custom_3, Custom_4, Port, stnd",sv
+br_ana_4951.rpt,3,"Land, Port, stnd",br
+br_ana_4951_new.rpt,3,"Land, Port, stnd",br
+br_ana_4951_new_empty.rpt,3,"Land, Port, stnd",br
+br_ana_acts.rpt,3,"Land, Port, stnd",br
+br_ana_list.rpt,3,"Land, Port, stnd",br
+br_ana_naft.rpt,3,"Land, Port, stnd",br
+br_ana_new.rpt,3,"Land, Port, stnd",br
+br_ana_ovhd.rpt,3,"Land, Port, stnd",br
+br_bgml_10000.rpt,3,"Land, Port, stnd",br
+br_bgml_65.rpt,3,"Land, Port, stnd",br
+br_bgml_acts.rpt,3,"Land, Port, stnd",br
+br_bgml_afka.rpt,3,"Land, Port, stnd",br
+br_bgml_done.rpt,3,"Land, Port, stnd",br
+br_bgml_mash_norm.rpt,3,"Custom_1, Custom_2, stnd",br
+br_bgml_moth.rpt,3,"Land, Port, stnd",br
+br_bgml_nozoli.rpt,3,"Land, Port, stnd",br
+br_bgml_sarjam.rpt,3,"Land, Port, stnd",br
+br_bgml_tdil.rpt,3,"Land, Port, stnd",br
+br_dife_one_10000.rpt,3,"Land, Port, stnd",br
+br_dife_one_bakh.rpt,3,"Land, Port, stnd",br
+br_dife_one_fatd.rpt,3,"Land, Port, stnd",br
+br_dife_totl_10000.rpt,3,"Land, Port, stnd",br
+br_dife_totl_bakh.rpt,3,"Land, Port, stnd",br
+br_dife_totl_fatd.rpt,3,"Land, Port, stnd",br
+br_fhbh.rpt,3,"Land, Port, stnd",br
+br_fhbh_mash.rpt,3,"Land, Port, stnd",br
+br_hmpy_distance.rpt,3,"Land, Port, stnd",br
+br_hmpy_rzmt.rpt,3,"Land, Port, stnd",br
+br_pymn_list.rpt,3,"Land, Port, stnd",br
+br_pymn_list_all.rpt,3,"Land, Port, stnd",br
+br_pymn_tree.rpt,3,"Land, Port, stnd",br
+br_pymn_tree_all.rpt,3,"Land, Port, stnd",br
+br_rzmt.rpt,3,"Land, Port, stnd",br
+br_rzmt_acts.rpt,3,"Land, Port, stnd",br
+br_seas_10000.rpt,3,"Land, Port, stnd",br
+br_seas_4951.rpt,3,"Land, Port, stnd",br
+br_seas_63219.rpt,3,"Land, Port, stnd",br
+br_seas_acts.rpt,3,"Land, Port, stnd",br
+br_seas_afkh.rpt,3,"Land, Port, stnd",br
+br_seas_done.rpt,3,"Land, Port, stnd",br
+br_seas_moth.rpt,3,"Land, Port, stnd",br
+br_sorc_acts.rpt,3,"Land, Port, stnd",br
+br_sorc_nufh_acts.rpt,3,"Land, Port, stnd",br
+br_sorc_one.rpt,3,"Land, Port, stnd",br
+br_sorc_totl.rpt,3,"Land, Port, stnd",br
+br_sorc_totl_acts.rpt,3,"Land, Port, stnd",br
+br_tajmi_bgml.rpt,3,"Land, Port, stnd",br
+br_tajmi_seas.rpt,3,"Land, Port, stnd",br
+br_zrib.rpt,3,"Land, Port, stnd",br
+ppsv_bgml_brv_ol.rpt,3,"Custom_3, Custom_4, Port",ppsv
+ps_ana_4951.rpt,3,"Land, Port, stnd",ps
+ps_ana_4951_new.rpt,3,"Land, Port, stnd",ps
+ps_ana_acts.rpt,3,"Land, Port, stnd",ps
+ps_ana_col.rpt,3,"Land, Port, stnd",ps
+ps_ana_list.rpt,3,"Land, Port, stnd",ps
+ps_ana_naft.rpt,3,"Land, Port, stnd",ps
+ps_ana_new.rpt,3,"Land, Port, stnd",ps
+ps_ana_ovhd.rpt,3,"Land, Port, stnd",ps
+ps_bgml_65.rpt,3,"Land, Port, stnd",ps
+ps_bgml_acts.rpt,3,"Land, Port, stnd",ps
+ps_bgml_afka.rpt,3,"Land, Port, stnd",ps
+ps_bgml_comp.rpt,3,"Land, Port, stnd",ps
+ps_bgml_done.rpt,3,"Land, Port, stnd",ps
+ps_bgml_fhbh.rpt,3,"Land, Port, stnd",ps
+ps_bgml_moth.rpt,3,"Land, Port, stnd",ps
+ps_bgml_nops.rpt,3,"Land, Port, stnd",ps
+ps_bgml_nozoli.rpt,3,"Land, Port, stnd",ps
+ps_bgml_tdil.rpt,3,"Land, Port, stnd",ps
+ps_bgml_tdil_inv.rpt,3,"Land, Port, stnd",ps
+ps_bgml_tdil_norm.rpt,3,"Land, Port, stnd",ps
+ps_dife_one_10000.rpt,3,"Land, Port, stnd",ps
+ps_dife_one_bakh.rpt,3,"Land, Port, stnd",ps
+ps_dife_one_fatd.rpt,3,"Land, Port, stnd",ps
+ps_dife_totl_10000.rpt,3,"Land, Port, stnd",ps
+ps_dife_totl_bakh.rpt,3,"Land, Port, stnd",ps
+ps_dife_totl_fatd.rpt,3,"Land, Port, stnd",ps
+ps_fhbh.rpt,3,"Land, Port, stnd",ps
+ps_fhbh_mash.rpt,3,"Land, Port, stnd",ps
+ps_hmpy_rzmt.rpt,3,"Land, Port, stnd",ps
+ps_note_tdil.rpt,3,"Land, Port, stnd",ps
+ps_note_tdil_inv.rpt,3,"Land, Port, stnd",ps
+ps_note_tdil_norm.rpt,3,"Land, Port, stnd",ps
+ps_pymn_list.rpt,3,"Land, Port, stnd",ps
+ps_pymn_list_all.rpt,3,"Land, Port, stnd",ps
+ps_pymn_mash.rpt,3,"Land, Port, stnd",ps
+ps_pymn_tree.rpt,3,"Land, Port, stnd",ps
+ps_pymn_tree_all.rpt,3,"Land, Port, stnd",ps
+ps_rzmt.rpt,3,"Land, Port, stnd",ps
+ps_rzmt_acts.rpt,3,"Land, Port, stnd",ps
+ps_seas_4951.rpt,3,"Land, Port, stnd",ps
+ps_seas_63219.rpt,3,"Land, Port, stnd",ps
+ps_seas_acts.rpt,3,"Land, Port, stnd",ps
+ps_seas_afkh.rpt,3,"Land, Port, stnd",ps
+ps_seas_moth.rpt,3,"Land, Port, stnd",ps
+ps_seas_nops.rpt,3,"Land, Port, stnd",ps
+ps_seas_norm.rpt,3,"Land, Port, stnd",ps
+ps_seas_tdil.rpt,3,"Land, Port, stnd",ps
+ps_seas_tdil_inv.rpt,3,"Land, Port, stnd",ps
+ps_seas_tdil_norm.rpt,3,"Land, Port, stnd",ps
+ps_sorc_acts.rpt,3,"Land, Port, stnd",ps
+ps_sorc_nufh_acts.rpt,3,"Land, Port, stnd",ps
+ps_sorc_one.rpt,3,"Land, Port, stnd",ps
+ps_sorc_totl.rpt,3,"Land, Port, stnd",ps
+ps_sorc_totl_acts.rpt,3,"Land, Port, stnd",ps
+ps_tajmi_bgml.rpt,3,"Land, Port, stnd",ps
+ps_tajmi_seas.rpt,3,"Land, Port, stnd",ps
+ps_zrib.rpt,3,"Land, Port, stnd",ps
+ps_zrib_koli.rpt,3,"Land, Port, stnd",ps
+sv_acts_seas_btf.rpt,3,"Custom_4, Port, stnd",sv
+sv_ana_list.rpt,3,"Custom_4, Port, stnd",sv
+sv_ana_new.rpt,3,"Land, Port, stnd",sv
+sv_anam_in.rpt,3,"Custom_4, Port, stnd",sv
+sv_anam_pj.rpt,3,"Custom_4, Port, stnd",sv
+sv_seas_norm_kh.rpt,3,"Custom_4, Port, stnd",sv
+sv_seas_norm_zr.rpt,3,"Custom_4, Port, stnd",sv
+sv_tdil_intp.rpt,3,"Custom_4, Port, stnd",sv
+br_bgml_fhbh0.rpt,2,"Port, stnd",br
+br_seas_tdil_zrib.rpt,2,"Custom_1, stnd",br
+bs_ana_net_comp.rpt,2,"Custom_3, Land",bs
+bs_fhbh11.rpt,2,"Port, stnd",bs
+ps_bgml_fhbh0.rpt,2,"Port, stnd",ps
+sv_bgml_65_mash.rpt,2,"Custom_4, stnd",sv
+sv_bgml_norm_mash.rpt,2,"Custom_4, stnd",sv
+sv_bgml_tafk.rpt,2,"Custom_3, Land",sv
+sv_dife_total.rpt,2,"Custom_3, Land",sv
+sv_seas_v_tdil1.rpt,2,"Custom_3, Land",sv
+br_bgml_65_mash.rpt,1,stnd,br
+br_bgml_acts_mash.rpt,1,stnd,br
+br_bgml_actsrpt.rpt,1,Land,br
+br_bgml_mash_afka.rpt,1,stnd,br
+br_bgml_mash_done.rpt,1,stnd,br
+br_bgml_moth_mash.rpt,1,stnd,br
+br_bgml_nozoli_mash.rpt,1,stnd,br
+br_bgml_tdil_mash.rpt,1,stnd,br
+br_bgml_tdil_mash_xml.rpt,1,Land,br
+br_compareana.rpt,1,stnd,br
+br_dife_one.rpt,1,Land,br
+br_dife_totl.rpt,1,Land,br
+br_note_acts_zrib.rpt,1,stnd,br
+br_note_moth_zrib.rpt,1,stnd,br
+br_note_tdil_zrib.rpt,1,stnd,br
+br_pymn_tree_1.rpt,1,Land,br
+br_rzmt_acts-old.rpt,1,stnd,br
+br_rzmt_mash.rpt,1,stnd,br
+br_seas_moth_zrib.rpt,1,stnd,br
+bs_fhbh1_eng.rpt,1,English,bs
+pbr_bgml_norm.rpt,1,Port,pbr
+pk_pymn_comp_alef_mash.rpt,1,stnd,pk
+pk_pymn_comp_alef_mokh.rpt,1,stnd,pk
+pk_pymn_comp_filt_mash.rpt,1,stnd,pk
+pk_pymn_comp_filt_mokh.rpt,1,stnd,pk
+pk_pymn_comp_resh_mash.rpt,1,stnd,pk
+pk_pymn_comp_resh_mokh.rpt,1,stnd,pk
+pk_pymn_pers_alef_mash.rpt,1,stnd,pk
+pk_pymn_pers_alef_mokh.rpt,1,stnd,pk
+pk_pymn_pers_filt_mash.rpt,1,stnd,pk
+pk_pymn_pers_filt_mokh.rpt,1,stnd,pk
+pk_pymn_pers_resh_mash.rpt,1,stnd,pk
+pk_pymn_pers_resh_mokh.rpt,1,stnd,pk
+ps_ana_4951_new_orig.rpt,1,stnd,ps
+ps_anab.rpt,1,Land,ps
+ps_anam.rpt,1,Land,ps
+ps_anamb.rpt,1,Land,ps
+ps_anams.rpt,1,Land,ps
+ps_anams_in.rpt,1,Land,ps
+ps_anams_pj.rpt,1,Land,ps
+ps_bgml_acts_mash.rpt,1,stnd,ps
+ps_bgml_actsrpt.rpt,1,Land,ps
+ps_bgml_anjam_pish.rpt,1,Land,ps
+ps_bgml_brv.rpt,1,Land,ps
+ps_bgml_brv_ol.rpt,1,Land,ps
+ps_bgml_mash_afka.rpt,1,stnd,ps
+ps_bgml_mash_done.rpt,1,stnd,ps
+ps_bgml_mash_norm.rpt,1,stnd,ps
+ps_bgml_moth_mash.rpt,1,stnd,ps
+ps_bgml_nozoli_mash.rpt,1,stnd,ps
+ps_bgml_pish.rpt,1,Land,ps
+ps_bgml_tafk.rpt,1,Land,ps
+ps_bgml_tdil_mash.rpt,1,stnd,ps
+ps_bgml_tdil_mash_xml.rpt,1,Land,ps
+ps_comp_tdil.rpt,1,Land,ps
+ps_compareana.rpt,1,stnd,ps
+ps_dife_one.rpt,1,Land,ps
+ps_dife_total.rpt,1,Land,ps
+ps_dife_totl.rpt,1,Land,ps
+ps_dist_distances.rpt,1,Land,ps
+ps_dist_points.rpt,1,Land,ps
+ps_fhbh0.rpt,1,Land,ps
+ps_fhbh1.rpt,1,Land,ps
+ps_fhbh_ader0.rpt,1,Land,ps
+ps_fhbh_ader1.rpt,1,Land,ps
+ps_hmpy_mash_rzmt.rpt,1,stnd,ps
+ps_intp.rpt,1,Land,ps
+ps_note_acts_zrib.rpt,1,stnd,ps
+ps_note_moth_zrib.rpt,1,stnd,ps
+ps_note_tdil_zrib.rpt,1,stnd,ps
+ps_pymn_tree_1.rpt,1,Land,ps
+ps_rzmt_acts_mash.rpt,1,stnd,ps
+ps_rzmt_mash.rpt,1,stnd,ps
+ps_seas_acts1.rpt,1,Land,ps
+ps_seas_acts2.rpt,1,Land,ps
+ps_seas_acts_zrib.rpt,1,stnd,ps
+ps_seas_afka.rpt,1,Land,ps
+ps_seas_anjam_pish.rpt,1,Land,ps
+ps_seas_brv.rpt,1,Land,ps
+ps_seas_brv_ol.rpt,1,Land,ps
+ps_seas_done.rpt,1,Land,ps
+ps_seas_moth_zrib.rpt,1,stnd,ps
+ps_seas_norm_zr.rpt,1,Land,ps
+ps_seas_pish.rpt,1,Land,ps
+ps_seas_tdil_zrib.rpt,1,stnd,ps
+ps_seas_v_tdil.rpt,1,Land,ps
+ps_seas_v_tdil1.rpt,1,Land,ps
+ps_shkh_fasli.rpt,1,Land,ps
+ps_shkh_koli.rpt,1,Land,ps
+ps_shkh_rest.rpt,1,Land,ps
+ps_sorc.rpt,1,Land,ps
+ps_sorc_ama.rpt,1,Land,ps
+ps_sorc_brv.rpt,1,Land,ps
+ps_sorc_inpt.rpt,1,Land,ps
+ps_sorc_net.rpt,1,Land,ps
+ps_sorc_roz.rpt,1,Land,ps
+ps_sorc_tot.rpt,1,Land,ps
+ps_tatb_seas.rpt,1,Land,ps
+ps_zrib1.rpt,1,Land,ps
+ps_zrib_pykr.rpt,1,Land,ps
+ps_zrib_work.rpt,1,Land,ps
+ps_zrtd_intp.rpt,1,Land,ps
+rpt_comparebgml.rpt,1,Fhbh_NaftGaz,rpt
+sv_ana_naft2.rpt,1,stnd,sv
+sv_bgml_norm_eng.rpt,1,English,sv
+sv_compareana.rpt,1,stnd,sv
+sv_pymn1.rpt,1,abfa,sv
+sv_pymn_eng.rpt,1,English,sv
+sv_pymnold.rpt,1,abfa,sv
+sv_rzmt_eng.rpt,1,English,sv
+sv_rzmt_stmj-old.rpt,1,stnd,sv
+sv_seas_norm_eng.rpt,1,English,sv

@@ -1,0 +1,18 @@
+﻿path,purpose
+src/app/(auth)/login,صفحه ورود
+src/app/app/inbox,کارتابل
+src/app/app/projects,لیست و صفحات پروژه
+src/components/layout,"AppShell, ProjectShell, DocumentShell"
+src/components/workflow,"WorkflowTimeline, StateActionBar"
+src/components/grids,"SmartDataGrid, ReviewDiffGrid"
+src/components/taksa,"ImportValidationPanel, RawTableViewer, ExportDiffViewer"
+src/components/financial,"FinancialSummaryCards, CoefficientMatrixEditor"
+src/components/adjustment,"AdjustmentIndexSelector, AdjustmentFormulaPanel"
+src/lib/taksa,parse/validate/raw mapping/export merge
+src/lib/calculation,orchestrator and engines
+src/lib/workflow,state machine and permissions
+src/lib/reports,report registry/projections/exporters
+src/lib/decimal,Decimal helpers and formatting
+src/server/api,API route handlers/services
+prisma/schema.prisma,مدل دیتابیس
+docs/taksa-map,همه خروجی‌های تحلیل و نقشه‌ها

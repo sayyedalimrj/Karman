@@ -1,0 +1,13 @@
+﻿id,title,requirement,layer,reason
+RT-001,Raw XML preservation,فایل ورودی باید به عنوان raw artifact با SHA256، اندازه، نام، زمان import و نسخه parser ذخیره شود.,Upload/Import,ضروری برای export مجدد و تست تطبیق
+RT-002,Table order preservation,ترتیب direct child table elements داخل NewDataSet باید ذخیره شود.,SVZT XML,برای سازگاری با تکسا حتی اگر XML از نظر نظری order-free باشد
+RT-003,Case-sensitive table names,نام table/tag دقیقاً با حروف فعلی حفظ شود؛ مثل brv_Tadilkosorat و BaseBarcode.,SVZT XML,برخی نام‌ها با ScriptXML هم‌نام ولی case متفاوت یا actual-only هستند
+RT-004,Unknown table passthrough,جدول‌هایی که هنوز map نشده‌اند نباید حذف شوند؛ باید raw passthrough شوند.,Importer,actual_only/script_only table mismatch داریم
+RT-005,Unknown field passthrough,فیلدهای ناشناخته هر row باید حفظ شوند و هنگام export برگردند.,Exporter,برای جلوگیری از خراب شدن فایل در تکسا
+RT-006,Raw + normalized separation,داده خام با مدل نرمال وب یکی نشود؛ مدل وب یک projection از raw باشد.,Architecture,اصلاحات وب باید قابل merge به raw باشند
+RT-007,Empty/missing/null policy,فرق بین نبودن tag، tag خالی و مقدار صفر/false حفظ شود.,XML Writer,برای محاسبات و import تکسا مهم است
+RT-008,Persian UTF-8 safety,encoding خروجی UTF-8 با اعلان XML و standalone=yes تولید شود.,XML Writer,فایل نمونه UTF-8 XML است
+RT-009,Numeric formatting,عددها با فرمت سازگار تکسا ذخیره شوند؛ تبدیل تومان/ریال فقط در UI باشد.,Calculation/Export,برای re-import نباید precision عوض شود
+RT-010,Boolean formatting,booleanها به شکل true/false مشابه ورودی صادر شوند مگر برای فیلدهای 0/1.,Exporter,در فایل نمونه true/false زیاد دیده شد
+RT-011,No destructive recalculation,تا قبل از تایید کاربر، export نباید همه مبالغ را از نو جایگزین کند؛ فقط تغییرات کنترل‌شده merge شوند.,Calculation Engine,برای کم کردن ریسک اختلاف با تکسا
+RT-012,Validation manifest,همراه export یک manifest از row counts، table counts، هش فایل و تغییرات تولید شود.,QA,برای مقایسه با تکسا و rollback

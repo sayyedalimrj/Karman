@@ -1,0 +1,85 @@
+# Dependency Graph Summary
+
+
+## Most referenced tables/objects
+
+- `base_fhbh` — referenced 32 times — base / فهرست‌بها و اطلاعات پایه
+- `base_book` — referenced 27 times — base / فهرست‌بها و اطلاعات پایه
+- `base_fsbs` — referenced 25 times — base / فهرست‌بها و اطلاعات پایه
+- `dtproperties` — referenced 20 times — system / آبجکت‌های سیستمی SQL Server
+- `sysdiagrams` — referenced 12 times — system / آبجکت‌های سیستمی SQL Server
+- `Base_ShakhesYerSeMahe` — referenced 12 times — base / فهرست‌بها و اطلاعات پایه
+- `dt_displayoaerror` — referenced 11 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_getpropertiesbyid_vcs` — referenced 9 times — system / آبجکت‌های سیستمی SQL Server
+- `base_shrs` — referenced 8 times — base / فهرست‌بها و اطلاعات پایه
+- `viwbase88` — referenced 8 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `brv_fhbh` — referenced 8 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `viwbase92` — referenced 8 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `base_shfs` — referenced 8 times — base / فهرست‌بها و اطلاعات پایه
+- `sp_OACreate` — referenced 8 times — unknown / نیازمند بررسی
+- `base_nmmhb` — referenced 8 times — base / فهرست‌بها و اطلاعات پایه
+- `sp_OAMethod` — referenced 7 times — unknown / نیازمند بررسی
+- `base_sorc_list` — referenced 6 times — base / فهرست‌بها و اطلاعات پایه
+- `viwBase99` — referenced 6 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `viwBase1400` — referenced 6 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `brv_khmt` — referenced 5 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `brv_contract` — referenced 5 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `brv_nmmhb` — referenced 5 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `dbo` — referenced 5 times — unknown / نیازمند بررسی
+- `brv_bgml` — referenced 5 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `base_sorc` — referenced 5 times — base / فهرست‌بها و اطلاعات پایه
+- `viwBase1404` — referenced 5 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `brv_mult` — referenced 5 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `viwbase87` — referenced 4 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `set_user_state_brv` — referenced 4 times — unknown / نیازمند بررسی
+- `smn_contract` — referenced 4 times — smn / صورت‌وضعیت، نظارت، ماهانه
+- `brv_sorc_all` — referenced 4 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `base_ader` — referenced 4 times — base / فهرست‌بها و اطلاعات پایه
+- `viwBase98` — referenced 4 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `viwBase_Added` — referenced 4 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `viwBase1403` — referenced 4 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `brv_rzmt` — referenced 4 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `sp_OAGetProperty` — referenced 4 times — unknown / نیازمند بررسی
+- `sp_creatediagram` — referenced 4 times — unknown / نیازمند بررسی
+- `brv_mogs` — referenced 4 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `Change_Year_in_project` — referenced 3 times — unknown / نیازمند بررسی
+- `Correct` — referenced 3 times — unknown / نیازمند بررسی
+- `dt_checkinobject` — referenced 3 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_checkoutobject` — referenced 3 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_isundersourcecontrol` — referenced 3 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_validateloginparams` — referenced 3 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_whocheckedout` — referenced 3 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_generateansiname` — referenced 3 times — system / آبجکت‌های سیستمی SQL Server
+- `MyReplace` — referenced 3 times — unknown / نیازمند بررسی
+- `base_unit_raw` — referenced 3 times — base / فهرست‌بها و اطلاعات پایه
+- `sp_upgraddiagrams` — referenced 3 times — unknown / نیازمند بررسی
+- `brv_sorc` — referenced 3 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `dt_setpropertybyid` — referenced 3 times — system / آبجکت‌های سیستمی SQL Server
+- `base_fosi` — referenced 3 times — base / فهرست‌بها و اطلاعات پایه
+- `base_year` — referenced 3 times — base / فهرست‌بها و اطلاعات پایه
+- `sp_alterdiagram` — referenced 3 times — unknown / نیازمند بررسی
+- `sp_dropdiagram` — referenced 3 times — unknown / نیازمند بررسی
+- `viwBase_Deleted` — referenced 3 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `viwBase1401` — referenced 3 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `brv_ader` — referenced 3 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `brv_grop` — referenced 3 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `brv_hmbs` — referenced 3 times — brv / برآورد، قرارداد، ریزمتره، منابع
+- `Compare_Text_for_Base` — referenced 3 times — unknown / نیازمند بررسی
+- `viwBaseDifference92From88` — referenced 3 times — view / ویوهای محاسباتی و گزارش‌گیری
+- `GetStuBarcode` — referenced 3 times — unknown / نیازمند بررسی
+- `base_shkl` — referenced 3 times — base / فهرست‌بها و اطلاعات پایه
+- `base_ZrLc` — referenced 3 times — base / فهرست‌بها و اطلاعات پایه
+- `base_hmbs` — referenced 3 times — base / فهرست‌بها و اطلاعات پایه
+- `base_pvst` — referenced 3 times — base / فهرست‌بها و اطلاعات پایه
+- `sp_helpdiagramdefinition` — referenced 3 times — unknown / نیازمند بررسی
+- `sp_helpdiagrams` — referenced 3 times — unknown / نیازمند بررسی
+- `sp_renamediagram` — referenced 3 times — unknown / نیازمند بررسی
+- `dt_addtosourcecontrol` — referenced 2 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_checkinobject_u` — referenced 2 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_checkoutobject_u` — referenced 2 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_isundersourcecontrol_u` — referenced 2 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_validateloginparams_u` — referenced 2 times — system / آبجکت‌های سیستمی SQL Server
+- `dt_whocheckedout_u` — referenced 2 times — system / آبجکت‌های سیستمی SQL Server
+- `set_user_state_Acc` — referenced 2 times — unknown / نیازمند بررسی
+- `copy_base_fhbh` — referenced 2 times — unknown / نیازمند بررسی
+- `brv_Users` — referenced 2 times — brv / برآورد، قرارداد، ریزمتره، منابع

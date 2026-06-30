@@ -1,0 +1,53 @@
+﻿template,sheet,column_order,column_name,inferred_domain,web_entity_hint,roundtrip_required
+Fosool.xls,Sheet1,1,شماره فصل,فصل / خلاصه فصل,ChapterSummary,Recommended
+Fosool.xls,Sheet1,2,مبلغ فصل بااحتساب ضرایب,مالی / مبلغ,FinancialLine,Recommended
+kholaseh_metreh.xls,Sheet1,1,کد فهرست بها,فهرست‌بها / آیتم,PriceListItem / PaymentItem,Yes
+kholaseh_metreh.xls,Sheet1,2,جمع جزیی,متره / مقدار,MeasurementLine,Yes
+kholaseh_metreh.xls,Sheet1,3,شرح ملاحظات,توضیحات / مستندات,Note / Description,Yes
+kholaseh_metreh.xls,Sheet1,4,شماره صورتمجلس,صورتجلسه,SiteMinute,Yes
+kholaseh_metreh.xls,Sheet1,5,تاریخ صورتمجلس,صورتجلسه,SiteMinute,Yes
+kholaseh_metreh.xls,Sheet1,6,نقل از,توضیحات / مستندات,Note / Description,Yes
+kholaseh_metreh.xls,Sheet1,7,شرح کامل آیتم,توضیحات / مستندات,Note / Description,Yes
+kholaseh_metreh.xls,Sheet1,8,شرح مختصر,توضیحات / مستندات,Note / Description,Yes
+kholaseh_metreh.xls,Sheet1,9,بهای واحد,مالی / مبلغ,FinancialLine,Yes
+kholaseh_metreh.xls,Sheet1,10,واحد کار,واحد,Unit,Yes
+Mali.xls,Sheet1,1,کد فهرست بها,فهرست‌بها / آیتم,PriceListItem / PaymentItem,Yes
+Mali.xls,Sheet1,2,مقدار کارکرد,متره / مقدار,MeasurementLine,Yes
+Mali.xls,Sheet1,3,مقدار برآوردی,متره / مقدار,MeasurementLine,Yes
+Mali.xls,Sheet1,4,ملاحظات,توضیحات / مستندات,Note / Description,Yes
+Mali.xls,Sheet1,5,شرح کامل آیتم,توضیحات / مستندات,Note / Description,Yes
+Mali.xls,Sheet1,6,شرح مختصر,توضیحات / مستندات,Note / Description,Yes
+Mali.xls,Sheet1,7,بهای واحد پایه,مالی / مبلغ,FinancialLine,Yes
+Mali.xls,Sheet1,8,واحد کار,واحد,Unit,Yes
+Mali.xls,Sheet1,9,بهای واحد پیشنهادی,مالی / مبلغ,FinancialLine,Yes
+Rizmertreh.xls,Sheet1,1,کد فهرست بها,فهرست‌بها / آیتم,PriceListItem / PaymentItem,Yes
+Rizmertreh.xls,Sheet1,2,تعداد,متره / مقدار,MeasurementLine,Yes
+Rizmertreh.xls,Sheet1,3,طول,متره / مقدار,MeasurementLine,Yes
+Rizmertreh.xls,Sheet1,4,عرض,متره / مقدار,MeasurementLine,Yes
+Rizmertreh.xls,Sheet1,5,ارتفاع,متره / مقدار,MeasurementLine,Yes
+Rizmertreh.xls,Sheet1,6,وزن یا ...,متره / مقدار,MeasurementLine,Yes
+Rizmertreh.xls,Sheet1,7,جمع جزیی,متره / مقدار,MeasurementLine,Yes
+Rizmertreh.xls,Sheet1,8,شرح عملیات,توضیحات / مستندات,Note / Description,Yes
+Rizmertreh.xls,Sheet1,9,شرح ملاحظات,توضیحات / مستندات,Note / Description,Yes
+Rizmertreh.xls,Sheet1,10,شرح کامل آیتم,توضیحات / مستندات,Note / Description,Yes
+Rizmertreh.xls,Sheet1,11,شرح مختصر,توضیحات / مستندات,Note / Description,Yes
+Rizmertreh.xls,Sheet1,12,بهای واحد,مالی / مبلغ,FinancialLine,Yes
+Rizmertreh.xls,Sheet1,13,واحد کار,واحد,Unit,Yes
+rzmt_act.xls,Sheet1,1,کد فهرست بها,فهرست‌بها / آیتم,PriceListItem / PaymentItem,Yes
+rzmt_act.xls,Sheet1,2,تعداد,متره / مقدار,MeasurementLine,Yes
+rzmt_act.xls,Sheet1,3,طول,متره / مقدار,MeasurementLine,Yes
+rzmt_act.xls,Sheet1,4,عرض,متره / مقدار,MeasurementLine,Yes
+rzmt_act.xls,Sheet1,5,ارتفاع,متره / مقدار,MeasurementLine,Yes
+rzmt_act.xls,Sheet1,6,وزن یا ...,متره / مقدار,MeasurementLine,Yes
+rzmt_act.xls,Sheet1,7,جمع جزیی,متره / مقدار,MeasurementLine,Yes
+rzmt_act.xls,Sheet1,8,شرح عملیات,توضیحات / مستندات,Note / Description,Yes
+rzmt_act.xls,Sheet1,9,شرح ملاحظات,توضیحات / مستندات,Note / Description,Yes
+rzmt_act.xls,Sheet1,10,شرح کامل آیتم,توضیحات / مستندات,Note / Description,Yes
+rzmt_act.xls,Sheet1,11,شرح مختصر,توضیحات / مستندات,Note / Description,Yes
+rzmt_act.xls,Sheet1,12,بهای واحد,مالی / مبلغ,FinancialLine,Yes
+rzmt_act.xls,Sheet1,13,واحد کار,واحد,Unit,Yes
+rzmt_act.xls,Sheet1,14,کد فعالیت,برنامه زمان‌بندی / فعالیت,Activity / Schedule,Yes
+resource_price.xlsx,Sheet1,1,کدعامل,منابع / عوامل,ResourcePrice,Yes
+resource_price.xlsx,Sheet1,2,بهای واحد(ریال),مالی / مبلغ,FinancialLine,Yes
+resource_price.xlsx,Sheet1,3,شرح منبع(عامل),توضیحات / مستندات,Note / Description,Yes
+resource_price.xlsx,Sheet1,4,واحد,واحد,Unit,Yes

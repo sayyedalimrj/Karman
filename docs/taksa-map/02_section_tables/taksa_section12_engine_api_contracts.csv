@@ -1,0 +1,10 @@
+﻿method,endpoint,engine,purpose,returns
+POST,/api/documents/[documentId]/calculate/measurement,measurement_engine,محاسبه متره و quantityها,CalculationJob
+POST,/api/documents/[documentId]/calculate/financial,payment_certificate_engine,محاسبه برگه مالی و خلاصه,FinancialSummary
+POST,/api/documents/[documentId]/calculate/coefficients,coefficient_engine,اعمال ضرایب و تولید trace,CoefficientTrace[]
+POST,/api/documents/[documentId]/calculate/deductions,deduction_engine,محاسبه کسورات و قابل پرداخت,DeductionSummary
+POST,/api/adjustments/[adjustmentRunId]/calculate,adjustment_index_engine,محاسبه تعدیل و شاخص,AdjustmentRunResult
+POST,/api/documents/[documentId]/calculate/all,orchestrator,اجرای pipeline کامل محاسبات,CalculationRun
+GET,/api/calculation-runs/[runId],orchestrator,وضعیت، هشدارها و trace محاسبه,CalculationRunDetail
+GET,/api/calculation-runs/[runId]/trace,trace_store,مشاهده trace کامل به تفکیک engine,CalculationTrace
+GET,/api/documents/[documentId]/validation/taksa,roundtrip_validation_engine,تطبیق خروجی با raw/export rules,ExportValidationReport

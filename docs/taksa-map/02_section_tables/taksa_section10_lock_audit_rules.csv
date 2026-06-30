@@ -1,0 +1,8 @@
+﻿rule_name,state_or_scope,rule,entity,audit_event,priority
+Soft lock after contractor submission,submitted_to_consultant,نسخه ارسالی پیمانکار read-only شود؛ اصلاح فقط با revision جدید.,DocumentVersion,SubmittedToConsultant,P0
+Consultant version lock,consultant_approved,نسخه مشاور بعد از تأیید قفل شود.,DocumentVersion,ConsultantApproved,P0
+Employer final lock,document_locked,بعد از تأیید کارفرما، سند اصلی، برگه مالی، تعدیل و خروجی نهایی قفل شوند.,DocumentVersion/CommercialDocument,DocumentLocked,P0
+No silent raw mutation,all states,هیچ raw row بدون audit و patch ref تغییر نکند.,TaksaRawRow,RawPatchCreated,P0
+Revision instead of overwrite,returned states,در برگشت/اصلاح، نسخه قبلی حفظ و نسخه جدید ساخته شود.,DocumentVersion,RevisionCreated,P0
+Export validation lock,export_ready,قبل از export به تکسا، validator باید خطای بحرانی صفر داشته باشد.,ExportJob,ExportValidated,P0
+Admin unlock request,locked states,بازکردن سند فقط با درخواست، دلیل، سطح دسترسی و audit مجاز است.,WorkflowCase,UnlockRequested/Approved,P1

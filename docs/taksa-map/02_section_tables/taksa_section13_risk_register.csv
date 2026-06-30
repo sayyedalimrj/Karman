@@ -1,0 +1,11 @@
+﻿risk_id,risk,impact,likelihood,mitigation,phase
+R-001,SVZT export در تکسا باز نشود,Critical,High,raw + patch merge، حفظ case/table/row، validation before export,P1/P9
+R-002,اختلاف مبلغ با تکسا,Critical,High,Calculation trace + Golden tests + rounding policy,P5/P10
+R-003,ضرایب اشتباه اعمال شوند,Critical,Medium,CoefficientTrace + test against brv_mult/update_zarib_fhpy_mult,P7
+R-004,نسخه‌های رسیدگی overwrite شوند,Critical,Medium,DocumentVersion immutable after submit/approve,P6
+R-005,فایل‌های حساس/پسورد وارد ریپو شوند,High,Medium,secret scan، gitignore، no readable_strings/password files,P0
+R-006,UI خیلی شبیه تکسا و شلوغ شود,Medium,Medium,workflow-first صفحات، raw فقط support,P11
+R-007,Excel خروجی numeric نباشد,High,Medium,openpyxl numeric cells + display format separate,P8
+R-008,Reference DB ناقص باشد,High,Medium,base_* extraction plan + fallback import + PDF cross-check,P2
+R-009,Performance جدول‌های بزرگ ضعیف شود,Medium,Medium,server pagination، virtual grid، indexed queries,P4/P6
+R-010,قفل و permission فقط در UI باشد,Critical,Medium,API-side PermissionGuard and WorkflowStateGuard,P0/P3
