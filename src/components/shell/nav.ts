@@ -92,108 +92,62 @@ export function adminOnlyKeys(sections: NavSection[]): string[] {
  * - Visibility is presentation only; the server remains the real boundary.
  */
 export function buildNavSections(systemRole: Role): NavSection[] {
-  const projectsChildren: NavItem[] = [];
-  if (canManageProjects(systemRole)) {
-    projectsChildren.push({
-      key: "project-setup",
-      label: t.nav.projectSetup,
-      href: "/projects/setup",
-    });
-  }
-
-  const main: NavItem[] = [
+  // 1) Workspace
+  const workspace: NavItem[] = [
     { key: "workbench", label: t.nav.workbench, href: "/dashboard" },
     { key: "inbox", label: t.nav.inboxReview, href: "/inbox" },
-    {
-      key: "taksa",
-      label: t.nav.taksaIntake,
-      children: [
-        { key: "taksa-overview", label: t.nav.taksaOverview, href: "/taksa" },
-        { key: "taksa-imports", label: t.nav.taksaImports, href: "/taksa/imports" },
-        { key: "taksa-raw", label: t.nav.taksaRaw, href: "/taksa/raw" },
-        { key: "taksa-sources", label: t.nav.taksaSources, href: "/taksa/sources" },
-        {
-          key: "taksa-analyze",
-          label: t.nav.taksaAnalyze,
-          href: "/taksa/analyze",
-          children: [
-            { key: "taksa-analyze-runs", label: t.nav.taksaAnalyzeRuns, href: "/taksa/analyze/runs" },
-            {
-              key: "taksa-analyze-scriptxml",
-              label: t.nav.taksaAnalyzeScriptXml,
-              href: "/taksa/analyze/scriptxml",
-            },
-            { key: "taksa-analyze-sql", label: t.nav.taksaAnalyzeSql, href: "/taksa/analyze/sql" },
-            {
-              key: "taksa-analyze-backup-strings",
-              label: t.nav.taksaAnalyzeBackupStrings,
-              href: "/taksa/analyze/backup-strings",
-            },
-            {
-              key: "taksa-analyze-templates",
-              label: t.nav.taksaAnalyzeTemplates,
-              href: "/taksa/analyze/templates",
-            },
-            { key: "taksa-analyze-docs", label: t.nav.taksaAnalyzeDocs, href: "/taksa/analyze/docs" },
-          ],
-        },
-      ],
-    },
-    {
-      key: "reference",
-      label: t.nav.referenceLibrary,
-      children: [
-        { key: "reference-overview", label: t.nav.referenceOverview, href: "/reference" },
-        { key: "reference-sources", label: t.nav.referenceSources, href: "/reference/sources" },
-        { key: "reference-library", label: t.nav.referenceLibraryItems, href: "/reference/library" },
-      ],
-    },
   ];
 
+  // 2) Reference data — sync dashboard, update packages, validation/mapping
+  //    (disabled until built), and the reference library.
+  const dataReference: NavItem[] = [
+    { key: "sources-sync", label: t.nav.sourcesSync, href: "/taksa/imports" },
+    { key: "update-packages", label: t.nav.updatePackages, href: "/taksa/updates" },
+    {
+      key: "validation-mapping",
+      label: t.nav.validationMapping,
+      disabled: true,
+      note: t.nav.validationMappingNote,
+    },
+    { key: "reference-library", label: t.nav.referenceLibraryNav, href: "/reference/library" },
+  ];
 
-  main.push({
-    key: "projects",
-    label: t.nav.projectsContracts,
-    // The group surfaces real project routes only; when the user cannot manage
-    // projects there is no buildable child route, so the group links to setup
-    // is omitted and the parent is shown as a non-link group header.
-    href: projectsChildren.length > 0 ? "/projects/setup" : undefined,
-    children: projectsChildren.length > 0 ? projectsChildren : undefined,
-    disabled: projectsChildren.length === 0,
-    note: projectsChildren.length === 0 ? t.projectSetup.forbiddenDescription : undefined,
-  });
-
-  // Future operational modules — honest DISABLED states with a real reason.
-  main.push(
-    {
-      key: "statements",
-      label: t.nav.statements,
-      disabled: true,
-      note: t.nav.statementsReason,
-    },
-    {
-      key: "metering",
-      label: t.nav.metering,
-      disabled: true,
-      note: t.nav.meteringReason,
-    },
-    // Index/adjustment/coefficients point at the REAL reference library focus.
-    {
-      key: "index-adjustment",
-      label: t.nav.indexAdjustment,
-      href: "/reference/library",
-    },
-    {
-      key: "reports",
-      label: t.nav.reportsExports,
-      disabled: true,
-      note: t.nav.reportsReason,
-    },
+  // 3) Projects & contracts — real project setup (role-gated) + disabled future
+  //    operational modules with honest reasons.
+  const projects: NavItem[] = [];
+  if (canManageProjects(systemRole)) {
+    projects.push({ key: "project-setup", label: t.nav.projectSetup, href: "/projects/setup" });
+  }
+  projects.push(
+    { key: "contracts", label: t.nav.contracts, disabled: true, note: t.nav.contractsReason },
+    { key: "statements", label: t.nav.statements, disabled: true, note: t.nav.statementsReason },
+    { key: "metering", label: t.nav.metering, disabled: true, note: t.nav.meteringReason },
   );
 
-  const sections: NavSection[] = [{ key: "main", title: t.nav.workspace, items: main }];
+  // 4) Index / adjustment / coefficients — focused views of the real reference
+  //    library (no dedicated pages yet → no dead links).
+  const indices: NavItem[] = [
+    { key: "indices", label: t.nav.indices, href: "/reference/library" },
+    { key: "coefficients", label: t.nav.coefficients, href: "/reference/library" },
+    { key: "adjustment", label: t.nav.adjustment, href: "/reference/library" },
+  ];
 
+  // 5) Reports — disabled future modules with reasons.
+  const reports: NavItem[] = [
+    { key: "reports", label: t.nav.reports, disabled: true, note: t.nav.reportsReason },
+    { key: "exports", label: t.nav.exports, disabled: true, note: t.nav.exportsReason },
+  ];
 
+  const sections: NavSection[] = [
+    { key: "workspace", title: t.nav.workspace, items: workspace },
+    { key: "data-reference", title: t.nav.dataReference, items: dataReference },
+    { key: "projects", title: t.nav.projectsContracts, items: projects },
+    { key: "index-adjustment", title: t.nav.indexAdjustment, items: indices },
+    { key: "reports", title: t.nav.reportsExports, items: reports },
+  ];
+
+  // 6) System administration — SYSTEM_ADMIN only. Real diagnostics page +
+  //    disabled-with-note future admin items.
   if (isSystemAdmin(systemRole)) {
     sections.push({
       key: "admin",
@@ -204,14 +158,20 @@ export function buildNavSections(systemRole: Role): NavSection[] {
           label: t.nav.userManagement,
           adminOnly: true,
           disabled: true,
-          note: t.nav.comingSoon,
+          note: t.nav.usersReason,
         },
         {
           key: "admin-audit",
           label: t.nav.auditLog,
           adminOnly: true,
           disabled: true,
-          note: t.nav.comingSoon,
+          note: t.nav.auditReason,
+        },
+        {
+          key: "admin-diagnostics",
+          label: t.nav.technicalDiagnostics,
+          href: "/admin/data-diagnostics",
+          adminOnly: true,
         },
       ],
     });

@@ -1,36 +1,54 @@
 /**
- * Taksa imports map (SERVER, protected) — /taksa/imports.
+ * Operational data-sync dashboard (SERVER, protected) — /taksa/imports.
  *
- * An HONEST, product-specific map of the required Taksa source types and what
- * IS implemented (source registration, reference schema, raw-preservation
- * schema, mapping contracts, importer foundation) versus what is INTENTIONALLY
- * NOT implemented yet (full Taksa DB restore, SVZT/BRVT/PSNT parser, PDF
- * extraction, export serialization). It deliberately does NOT claim a parser
- * exists.
+ * «منابع و همگام‌سازی داده‌های مرجع» — a product-grade RTL Persian operational
+ * page. Every status card is backed by a REAL Prisma query (zero is a valid,
+ * truthful value). It shows the server-data readiness, discovered/registered
+ * counts, update packages, last analysis/sync, reference readiness, and a
+ * last-sync history list, plus the primary «همگام‌سازی داده‌های سرور» action
+ * (SYSTEM_ADMIN only) which calls the real API.
  *
- * Requirements: 9.4, 15.6, 10.4
+ * It deliberately shows NO server paths, shell commands, env vars, restore
+ * errors, raw logs, or dev-roadmap text — those live only on the admin
+ * diagnostics page. When nothing has run yet it uses product language
+ * («آخرین تحلیل انجام نشده است» / run-sync prompt), never "data missing".
  */
 import * as React from "react";
+import { Role } from "@prisma/client";
 import { requirePageUser } from "@/server/auth/page-guard";
-import { t } from "@/lib/i18n";
+import { loadSyncDashboard } from "@/server/data-sync/queries";
+import { CountGrid, Badge } from "@/components/ui";
+import { ErrorState } from "@/components/states";
+import { t, formatNumber, formatDate } from "@/lib/i18n";
+import type { BadgeTone } from "@/components/ui";
+import { SyncActionPanel } from "./SyncActionPanel";
 
-function ListPanel({ title, items, tone }: { title: string; items: readonly string[]; tone: string }) {
-  return (
-    <section className={`panel-section panel-section--${tone}`}>
-      <h2 className="panel-section__title">{title}</h2>
-      <ul className="status-list">
-        {items.map((it) => (
-          <li key={it} className="status-list__item">
-            {it}
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
+function syncStatusTone(status: string | null): BadgeTone {
+  if (status === "COMPLETED") return "ok";
+  if (status === "COMPLETED_WITH_WARNINGS") return "warn";
+  if (status === "FAILED") return "error";
+  if (status === "RUNNING") return "info";
+  return "neutral";
 }
 
 export default async function TaksaImportsPage() {
-  await requirePageUser("/taksa/imports");
+  const user = await requirePageUser("/taksa/imports");
+  const isAdmin = user.systemRole === Role.SYSTEM_ADMIN;
+
+  let data;
+  try {
+    data = await loadSyncDashboard();
+  } catch {
+    return <ErrorState title={t.states.errorTitle} description={t.states.errorDescription} />;
+  }
+
+  const c = data.cards;
+  const cardEntries = [
+    { label: t.taksa.imports.cardDiscoveredFiles, value: c.discoveredFiles },
+    { label: t.taksa.imports.cardRegisteredSources, value: c.registeredSources },
+    { label: t.taksa.imports.cardUpdatePackages, value: c.updatePackages },
+    { label: t.taksa.imports.cardReadiness, value: c.referenceReadyGroups },
+  ];
 
   return (
     <div className="workbench">
@@ -39,54 +57,66 @@ export default async function TaksaImportsPage() {
         <p className="workbench__subtitle">{t.taksa.imports.subtitle}</p>
       </header>
 
-      <ListPanel
-        title={t.taksa.imports.requiredTitle}
-        items={t.taksa.imports.requiredSources}
-        tone="neutral"
-      />
-      <ListPanel
-        title={t.taksa.imports.implementedTitle}
-        items={t.taksa.imports.implemented}
-        tone="ok"
-      />
-      <ListPanel
-        title={t.taksa.imports.deferredTitle}
-        items={t.taksa.imports.deferred}
-        tone="warn"
-      />
-
-      <section className="panel-section">
-        <h2 className="panel-section__title">{t.taksa.imports.serverPathsTitle}</h2>
-        <ul className="status-list">
-          <li className="status-list__item">{t.taksa.imports.prodAppPath}</li>
-          <li className="status-list__item">{t.taksa.imports.realServerPath}</li>
-          <li className="status-list__item">{t.taksa.imports.symlinkNote}</li>
-        </ul>
-        <p className="panel-section__hint">{t.taksa.imports.sourcesPreparedNote}</p>
-      </section>
-
-      <section className="panel-section panel-section--warn">
-        <h2 className="panel-section__title">{t.taksa.imports.restoreBlockedTitle}</h2>
-        <p className="readiness__warning" role="alert">
-          {t.taksa.imports.restoreBlocked}
+      <section className="panel-section panel-section--ok">
+        <h2 className="panel-section__title">{t.taksa.imports.cardServerData}</h2>
+        <p className="panel-section__hint">
+          <Badge tone="ok">{t.taksa.imports.cardServerDataReady}</Badge>
         </p>
-        <p className="panel-section__hint">{t.taksa.imports.phase2ContinuesNote}</p>
       </section>
 
       <section className="panel-section">
-        <h2 className="panel-section__title">{t.taksa.imports.commandsTitle}</h2>
+        <h2 className="panel-section__title">{t.taksa.imports.cardsTitle}</h2>
+        <CountGrid entries={cardEntries} />
         <ul className="status-list">
-          {t.taksa.imports.commands.map((cmd) => (
-            <li key={cmd} className="status-list__item tabular-digits">
-              <code>{cmd}</code>
-            </li>
-          ))}
+          <li className="status-list__item">
+            {t.taksa.imports.cardLastAnalysis}:{" "}
+            <span className="tabular-digits">
+              {c.lastAnalysisAt ? formatDate(c.lastAnalysisAt) : t.taksa.imports.noAnalysisYet}
+            </span>
+          </li>
+          <li className="status-list__item">
+            {t.taksa.imports.cardLastSync}:{" "}
+            <span className="tabular-digits">
+              {c.lastSyncAt ? formatDate(c.lastSyncAt) : t.taksa.imports.noSyncYet}
+            </span>
+            {c.lastSyncStatus ? (
+              <> <Badge tone={syncStatusTone(c.lastSyncStatus)}>{c.lastSyncStatus}</Badge></>
+            ) : null}
+          </li>
+          <li className="status-list__item">
+            {t.taksa.imports.cardReadiness}:{" "}
+            <span className="tabular-digits">
+              {formatNumber(c.referenceReadyGroups)} / {formatNumber(c.referenceTotalGroups)}
+            </span>
+          </li>
         </ul>
-        <p className="panel-section__hint">{t.taksa.imports.applyBlockedNote}</p>
+      </section>
+
+      <SyncActionPanel isAdmin={isAdmin} />
+
+      <section className="panel-section">
+        <h2 className="panel-section__title">{t.taksa.imports.historyTitle}</h2>
+        {data.history.length === 0 ? (
+          <p className="panel-section__hint">{t.taksa.imports.historyEmpty}</p>
+        ) : (
+          <ul className="record-list">
+            {data.history.map((h) => (
+              <li key={h.id} className="record-list__item">
+                <div className="record-list__main">
+                  <span className="record-list__title tabular-digits">{formatDate(h.startedAt)}</span>
+                  <span className="record-list__meta tabular-digits">
+                    {t.taksa.imports.colFiles}: {formatNumber(h.discoveredSources)}
+                  </span>
+                </div>
+                <Badge tone={syncStatusTone(h.status)}>{h.status}</Badge>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
 
       <section className="panel-section">
-        <p className="panel-section__hint">{t.taksa.imports.honestNote}</p>
+        <p className="panel-section__hint">{t.taksa.imports.pendingApprovalNote}</p>
       </section>
     </div>
   );

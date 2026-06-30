@@ -48,6 +48,24 @@ export const fa = {
     systemAdmin: "مدیریت سامانه",
     userManagement: "مدیریت کاربران",
     auditLog: "گزارش رخدادها",
+    // Data-sync / reference navigation (product structure)
+    dataReference: "داده‌های مرجع",
+    sourcesSync: "منابع و همگام‌سازی",
+    updatePackages: "بسته‌های بروزرسانی",
+    validationMapping: "اعتبارسنجی و نگاشت",
+    validationMappingNote: "نیازمند تأیید نگاشت/در دست آماده‌سازی",
+    referenceLibraryNav: "کتابخانه مرجع",
+    contracts: "قراردادها",
+    contractsReason: "پس از تعریف پروژه فعال می‌شود.",
+    indices: "شاخص‌ها",
+    coefficients: "ضرایب",
+    adjustment: "تعدیل",
+    reports: "گزارش‌ها",
+    exports: "خروجی‌ها",
+    exportsReason: "پس از تکمیل محاسبات فعال می‌شود.",
+    technicalDiagnostics: "تشخیص فنی داده‌ها",
+    usersReason: "در دست آماده‌سازی است.",
+    auditReason: "در دست آماده‌سازی است.",
     // Disabled-reason notes (honest unavailable states)
     comingSoon: "به‌زودی",
     futureLabel: "آینده",
@@ -245,73 +263,68 @@ export const fa = {
       colExport: "وضعیت خروج",
       colTables: "جدول‌ها",
     },
+    /**
+     * Operational data-sync dashboard («منابع و همگام‌سازی داده‌های مرجع»).
+     * Product language ONLY — no server paths, commands, env vars, restore
+     * errors, or dev-roadmap wording. Every count rendered is DB-backed.
+     */
     imports: {
-      title: "منابع و واردسازی تکسا",
+      title: "منابع و همگام‌سازی داده‌های مرجع",
       subtitle:
-        "نقشهٔ صادقانهٔ آنچه اکنون پیاده‌سازی شده در برابر آنچه عمداً به مراحل بعد موکول شده است.",
-      requiredTitle: "انواع منابع موردنیاز",
-      requiredSources: [
-        "پایگاه‌داده تکسا (Taksa DB)",
-        "اسکریپت‌های SQL",
-        "فایل‌های SVZT",
-        "فایل‌های BRVT",
-        "فایل‌های PSNT",
-        "قالب‌های اکسل",
-        "اسناد رسمی PDF",
-      ] as readonly string[],
-      implementedTitle: "آنچه پیاده‌سازی شده است",
-      implemented: [
-        "ثبت فرادادهٔ منبع مرجع (ReferenceSource)",
-        "شِمای کامل داده مرجع نرمال‌شده (Reference*)",
-        "شِمای حفظ داده خام (TaksaArtifact/RawTable/RawRow)",
-        "قراردادهای نگاشت داده خام به مرجع و چرخهٔ وضعیت نگاشت",
-        "پایهٔ خط‌لولهٔ واردسازی مرجع (schema/کشف فایل/اعتبارسنجی/dry-run)",
-      ] as readonly string[],
-      deferredTitle: "آنچه عمداً هنوز پیاده‌سازی نشده است",
-      deferred: [
-        "بازیابی کامل پایگاه‌داده تکسا (Taksa DB restore)",
-        "تجزیهٔ کامل SVZT/BRVT/PSNT",
-        "استخراج خودکار از اسناد رسمی PDF",
-        "سریال‌سازی و خروجی به تکسا",
-      ] as readonly string[],
-      honestNote:
-        "این موارد به‌صورت قراردادهای تایپ‌شده و شِما آماده شده‌اند تا واردکننده‌های آینده بدون بازنویسی، جدول‌های مرجع را پر کنند.",
-      // Phase 2 — server-aware ingestion guidance + exact paths/commands.
-      serverPathsTitle: "مسیر منابع در سرور",
-      prodAppPath: "مسیر برنامه (production): /opt/civilic/data/incoming/taksa",
-      realServerPath: "مسیر واقعی سرور: /opt/karman-data/app-data/incoming/taksa",
-      symlinkNote: "پیوند نمادین: /opt/civilic/data -> /opt/karman-data/app-data",
-      sourcesPreparedNote:
-        "فایل‌های منبع از قبل روی سرور آماده شده‌اند؛ وب‌سایت هرگز فایل خام تکسا را به‌عنوان منبع داده نمی‌خواند و تنها فراداده‌ی PostgreSQL را نمایش می‌دهد.",
-      restoreBlockedTitle: "وضعیت بازیابی پایگاه‌داده SQL Server",
-      restoreBlocked:
-        "بازیابی کامل پایگاه‌داده SQL Server در حال حاضر به‌دلیل خطای گذرواژه‌ی فایل پشتیبان (SQL Server Msg 3279) مسدود است.",
-      phase2ContinuesNote:
-        "فاز ۲ بدون بازیابی، از طریق SQL/SCP، ScriptXML، رشته‌های امن پشتیبان، MDB، قالب‌های اکسل، اسناد و فراداده‌ی PDF ادامه می‌یابد.",
-      commandsTitle: "دستورهای سمت سرور (با KARMAN_DATA_ROOT)",
-      commands: [
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:discover",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:register-sources",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:analyze",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:db:inspect",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:scriptxml:audit",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:sql:audit",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:backup-strings:audit",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:mdb:audit",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:excel:audit",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:docs:audit",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run taksa:pdf:audit",
-        "KARMAN_DATA_ROOT=/opt/civilic/data npm run import:reference -- --dry-run",
-      ] as readonly string[],
-      applyBlockedNote:
-        "اجرای import:reference -- --apply تا زمان بازبینی و تأیید mapping در فاز ۳ مسدود است.",
+        "داده‌های مرجع روی سرور آماده است. از این بخش می‌توانید وضعیت منابع را بررسی، تحلیل و با پایگاه‌داده کارمان همگام‌سازی کنید.",
+      // Primary action
+      runSync: "همگام‌سازی داده‌های سرور",
+      running: "در حال همگام‌سازی…",
+      runHint: "همگام‌سازی، داده‌های آماده‌ی سرور را بررسی و با پایگاه‌داده کارمان هماهنگ می‌کند.",
+      // Status cards (all DB-backed)
+      cardsTitle: "وضعیت منابع و همگام‌سازی",
+      cardServerData: "وضعیت داده‌های سرور",
+      cardServerDataReady: "آماده همگام‌سازی",
+      cardDiscoveredFiles: "فایل‌های شناسایی‌شده",
+      cardRegisteredSources: "منابع ثبت‌شده",
+      cardUpdatePackages: "بسته‌های بروزرسانی",
+      cardLastAnalysis: "آخرین تحلیل",
+      cardLastSync: "آخرین همگام‌سازی",
+      cardReadiness: "وضعیت آماده‌سازی داده مرجع",
+      noAnalysisYet: "آخرین تحلیل انجام نشده است",
+      noSyncYet: "برای به‌روزرسانی، همگام‌سازی را اجرا کنید",
+      // Result summary
+      resultTitle: "خلاصه‌ی آخرین همگام‌سازی",
+      resultCompleted: "همگام‌سازی با موفقیت انجام شد.",
+      resultCompletedWarnings: "همگام‌سازی انجام شد؛ برخی مراحل با هشدار همراه بود.",
+      resultFailed: "همگام‌سازی کامل نشد. لطفاً دوباره تلاش کنید.",
+      stepsTitle: "مراحل همگام‌سازی",
+      warningsTitle: "هشدارها",
+      historyTitle: "تاریخچه‌ی همگام‌سازی",
+      historyEmpty: "هنوز همگام‌سازی‌ای ثبت نشده است.",
+      colStatus: "وضعیت",
+      colStarted: "شروع",
+      colFiles: "فایل‌ها",
+      pendingApprovalNote:
+        "برخی نگاشت‌ها نیازمند تأیید مدیر سامانه است؛ واردسازی نهایی پس از اعتبارسنجی انجام می‌شود.",
+      adminOnlyNote: "اجرای همگام‌سازی تنها برای مدیر سامانه مجاز است.",
+    },
+    updates: {
+      title: "بسته‌های بروزرسانی",
+      subtitle:
+        "بسته‌های بروزرسانی داده‌ی مرجع که روی سرور شناسایی و تجزیه شده‌اند. مقادیر تنها از روی محتوای واقعی بسته استخراج می‌شود.",
+      empty: "آخرین تحلیل انجام نشده است",
+      emptyHint: "برای به‌روزرسانی، همگام‌سازی را اجرا کنید.",
+      colPackage: "نام بسته",
+      colStatus: "وضعیت",
+      colTables: "جدول‌های متأثر",
+      colInserts: "افزوده‌ها",
+      colDeletes: "حذف‌ها",
+      colPending: "ردیف‌های در انتظار تأیید",
+      pendingNote:
+        "ردیف‌های استخراج‌شده در وضعیت در انتظار تأیید نگه داشته می‌شوند؛ واردسازی نهایی پس از اعتبارسنجی و تأیید مدیر سامانه انجام می‌شود.",
     },
     sources: {
       title: "منابع کشف‌شده تکسا",
       subtitle:
         "فهرست فایل‌های کشف و ثبت‌شده از روی فراداده‌ی PostgreSQL؛ هیچ فایلی هنگام نمایش اسکن نمی‌شود.",
       empty:
-        "هنوز هیچ منبعی ثبت نشده است. روی سرور دستور taksa:register-sources را اجرا کنید.",
+        "هنوز منبعی برای نمایش وجود ندارد. برای به‌روزرسانی، همگام‌سازی را اجرا کنید.",
       colPath: "مسیر نسبی",
       colType: "نوع منبع",
       colCategory: "دسته",
@@ -325,7 +338,7 @@ export const fa = {
       subtitle:
         "خلاصه‌ی اجراهای تحلیل از روی فراداده‌ی PostgreSQL — بدون اسکن فایل خام در زمان اجرا و بدون اعداد ساختگی.",
       empty:
-        "هنوز هیچ اجرای تحلیلی ثبت نشده است. روی سرور دستور taksa:analyze را اجرا کنید.",
+        "آخرین تحلیل انجام نشده است. برای به‌روزرسانی، همگام‌سازی را اجرا کنید.",
       runsTitle: "اجراهای تحلیل",
       colAnalyzer: "تحلیل‌گر",
       colStatus: "وضعیت",
@@ -398,6 +411,53 @@ export const fa = {
     linkTaksaImports: "منابع و واردسازی تکسا",
     phase2Blocked:
       "تعریف پروژه واقعی بعد از تکمیل تحلیل تکسا، mapping داده مرجع و ورود کنترل‌شده فهرست‌بها/شاخص به PostgreSQL فعال می‌شود.",
+  },
+  /**
+   * SYSTEM_ADMIN-only technical diagnostics («تشخیص فنی داده‌ها»).
+   * This namespace is the ONLY place technical detail (server paths, internal
+   * command names, raw run logs, restore status) is allowed — and it renders
+   * exclusively on the admin diagnostics page, never in normal user UI.
+   */
+  admin: {
+    diagnostics: {
+      title: "تشخیص فنی داده‌ها",
+      subtitle:
+        "این صفحه تنها برای مدیر سامانه است و جزئیات فنی همگام‌سازی داده‌های سرور را نمایش می‌دهد.",
+      pathsTitle: "مسیرهای داده‌ی سرور",
+      appPath: "مسیر برنامه: /opt/civilic/data/incoming/taksa",
+      realPath: "مسیر واقعی سرور: /opt/karman-data/app-data/incoming/taksa",
+      symlink: "پیوند نمادین: /opt/civilic/data -> /opt/karman-data/app-data",
+      envNote: "ریشه‌ی داده از طریق KARMAN_DATA_ROOT یا مقدار پیش‌فرض /opt/civilic/data تعیین می‌شود.",
+      commandsTitle: "دستورهای داخلی نگه‌داری (مدیر سامانه)",
+      commands: [
+        "taksa:discover",
+        "taksa:register-sources",
+        "taksa:analyze",
+        "taksa:db:inspect",
+        "taksa:scriptxml:audit",
+        "taksa:sql:audit",
+        "taksa:backup-strings:audit",
+        "taksa:mdb:audit",
+        "taksa:excel:audit",
+        "taksa:docs:audit",
+        "taksa:pdf:audit",
+        "import:reference -- --dry-run",
+      ] as readonly string[],
+      restoreTitle: "وضعیت بازیابی SQL Server (اختیاری)",
+      restoreOptional:
+        "بازیابی کامل پایگاه‌داده SQL Server اختیاری است و هرگز همگام‌سازی را متوقف نمی‌کند. در صورت مسدودبودن (مثلاً Msg 3279) فرایند به‌صورت امن از آن عبور می‌کند.",
+      latestRunTitle: "آخرین اجرای همگام‌سازی",
+      stepsTitle: "مراحل و رخدادها",
+      fileCountsTitle: "شمارش فایل‌ها بر اساس دسته",
+      warningsTitle: "هشدارها",
+      errorsTitle: "خطاها",
+      noRuns: "هنوز اجرایی ثبت نشده است.",
+      colStep: "مرحله",
+      colStatus: "وضعیت",
+      colMessage: "پیام",
+      sourceRoot: "ریشه‌ی منبع (مسیر نسبی امن)",
+      forbidden: "این صفحه تنها برای مدیر سامانه قابل دسترسی است.",
+    },
   },
   common: {
     loading: "در حال بارگذاری…",

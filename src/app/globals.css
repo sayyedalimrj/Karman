@@ -929,3 +929,29 @@ body {
   font-size: 0.85rem;
   color: color-mix(in srgb, var(--color-text-dark) 60%, transparent);
 }
+
+
+/* ---- Data-sync action / result ------------------------------------------ */
+.sync-action {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.sync-action__progress {
+  font-size: 0.9rem;
+  color: var(--status-info);
+}
+.sync-result {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border-subtle);
+}
+.sync-result__headline {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-weight: var(--font-weight-medium);
+}

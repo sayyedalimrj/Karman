@@ -819,3 +819,105 @@ model TaksaBehaviorHint {
   @@index([runId])
   @@index([topic])
 }
+
+
+
+// ============================================================================
+// Data-sync layer (admin-triggered, server-aware reference sync)
+// ----------------------------------------------------------------------------
+// An admin (SYSTEM_ADMIN) triggers a data-sync run that reads the server-side
+// Taksa data (already present on the production server), runs the existing
+// Phase 2 analyzers, and writes deterministic metadata + staging rows to
+// PostgreSQL. These models record the RUN itself (status, counts, per-step
+// outcomes) so the operational dashboard can render real progress/history and
+// the admin diagnostics page can surface raw step logs.
+//
+// They store ONLY safe metadata (relative paths, checksums, counts, step
+// statuses) — never raw file content, secrets, connection strings, or absolute
+// server paths. No monetary fields here (counts are Int by design; check:decimal
+// only constrains money-named/Decimal fields).
+// ============================================================================
+
+model DataSyncRun {
+  id                String    @id @default(uuid())
+  status            String    @default("RUNNING")
+  startedAt         DateTime  @default(now())
+  finishedAt        DateTime?
+  triggeredByUserId String
+  // SAFE relative source root (never an absolute server path).
+  sourceRoot        String
+  // Counts of discovered files keyed by category/type (Json, safe metadata).
+  fileCounts        Json?
+  discoveredSources Int       @default(0)
+  warnings          Json?
+  errors            Json?
+  summaryJson       Json?
+  createdAt         DateTime  @default(now())
+
+  steps DataSyncStep[]
+
+  @@index([status])
+  @@index([startedAt])
+  @@index([triggeredByUserId])
+}
+
+model DataSyncStep {
+  id         String    @id @default(uuid())
+  runId      String
+  stepKey    String
+  status     String    @default("PENDING")
+  startedAt  DateTime  @default(now())
+  finishedAt DateTime?
+  message    String?
+  metrics    Json?
+  createdAt  DateTime  @default(now())
+
+  run DataSyncRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId])
+  @@index([stepKey])
+}
+
+model ReferenceUpdatePackage {
+  id                String   @id @default(uuid())
+  packageName       String
+  // SAFE relative path of the package folder under incoming/taksa/updates.
+  relativePath      String
+  scriptFile        String?
+  status            String   @default("DETECTED")
+  // Legacy tables the parsed Script.sql affects (Json array of names).
+  affectedTables    Json?
+  insertIntentCount Int      @default(0)
+  deleteIntentCount Int      @default(0)
+  parsedSummary     Json?
+  runId             String?
+  checksum          String?
+  detectedAt        DateTime @default(now())
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  stagingRows ReferenceUpdateStagingRow[]
+
+  @@unique([packageName, relativePath])
+  @@index([status])
+  @@index([packageName])
+}
+
+model ReferenceUpdateStagingRow {
+  id          String   @id @default(uuid())
+  packageId   String
+  // INSERT | DELETE — the parsed intent (NOT applied as official data).
+  intent      String
+  targetTable String
+  // Parsed columns/values or where-clause (staging only, pending approval).
+  rowData     Json?
+  provenance  String?
+  status      String   @default("PENDING")
+  createdAt   DateTime @default(now())
+
+  package ReferenceUpdatePackage @relation(fields: [packageId], references: [id], onDelete: Cascade)
+
+  @@index([packageId])
+  @@index([targetTable])
+  @@index([intent])
+}

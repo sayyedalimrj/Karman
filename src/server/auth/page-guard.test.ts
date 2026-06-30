@@ -25,7 +25,7 @@ vi.mock("next/navigation", () => ({
   redirect: (to: string) => redirect(to),
 }));
 
-import { requirePageUser, redirectIfAuthenticated } from "./page-guard";
+import { requirePageUser, redirectIfAuthenticated, requireSystemAdminPage } from "./page-guard";
 
 beforeEach(() => {
   getCurrentUser.mockReset();
@@ -49,6 +49,38 @@ describe("requirePageUser", () => {
     const user = { id: "u1", email: "a@b.c", fullName: "A", systemRole: "VIEWER" };
     getCurrentUser.mockResolvedValueOnce(user);
     await expect(requirePageUser("/dashboard")).resolves.toEqual(user);
+    expect(redirect).not.toHaveBeenCalled();
+  });
+});
+
+describe("requireSystemAdminPage", () => {
+  it("redirects to /login when unauthenticated", async () => {
+    getCurrentUser.mockResolvedValueOnce(null);
+    await expect(requireSystemAdminPage("/admin/data-diagnostics")).rejects.toBeInstanceOf(
+      RedirectError,
+    );
+    expect(redirect).toHaveBeenCalledWith(
+      `/login?next=${encodeURIComponent("/admin/data-diagnostics")}`,
+    );
+  });
+
+  it("redirects a non-admin authenticated user to the dashboard (forbidden)", async () => {
+    getCurrentUser.mockResolvedValueOnce({
+      id: "u1",
+      email: "v@b.c",
+      fullName: "V",
+      systemRole: "VIEWER",
+    });
+    await expect(requireSystemAdminPage("/admin/data-diagnostics")).rejects.toBeInstanceOf(
+      RedirectError,
+    );
+    expect(redirect).toHaveBeenCalledWith("/dashboard");
+  });
+
+  it("returns the user for a SYSTEM_ADMIN (no redirect)", async () => {
+    const admin = { id: "a", email: "a@b.c", fullName: "A", systemRole: "SYSTEM_ADMIN" };
+    getCurrentUser.mockResolvedValueOnce(admin);
+    await expect(requireSystemAdminPage("/admin/data-diagnostics")).resolves.toEqual(admin);
     expect(redirect).not.toHaveBeenCalled();
   });
 });

@@ -1,15 +1,13 @@
 /**
- * Unit tests for the Taksa-first, permission-aware navigation
- * (presentation-only).
+ * Unit tests for the product, permission-aware navigation (presentation-only).
  *
- * Verifies that:
- *  - the real Taksa-first labels/routes are present (میز کار, کارتابل رسیدگی,
- *    ورود اطلاعات تکسا, کتابخانه فنی و مرجع, ...),
- *  - future modules are surfaced as clearly DISABLED items WITH a reason and no
- *    href (no dead links, no fake pages),
- *  - admin-only items are surfaced to SYSTEM_ADMIN but not to a VIEWER,
- *  - project-setup visibility tracks the project-management roles,
- *  - every enabled link points to an implemented route (no dead links).
+ * Verifies the operational product structure:
+ *  - فضای کاری, داده‌های مرجع, پروژه‌ها و قراردادها, شاخص/تعدیل/ضرایب, گزارش‌ها,
+ *    and (SYSTEM_ADMIN-only) مدیریت سامانه,
+ *  - every enabled href points to an implemented route (NO dead links),
+ *  - disabled items carry an honest Persian note,
+ *  - the admin section (incl. the real diagnostics page) is SYSTEM_ADMIN-only,
+ *  - project-setup visibility tracks the project-management roles.
  *
  * Visibility is UX only — the server remains the authorization boundary.
  *
@@ -17,67 +15,61 @@
  */
 import { describe, it, expect } from "vitest";
 import { Role } from "@prisma/client";
-import {
-  buildNavSections,
-  adminOnlyKeys,
-  allItems,
-  canManageProjects,
-} from "./nav";
+import { buildNavSections, adminOnlyKeys, allItems, canManageProjects } from "./nav";
 import { t } from "@/lib/i18n";
 
-/** Routes that are actually implemented (Phase 1 + Phase 2 Taksa analysis). */
+/** Routes that are actually implemented and may be linked from the nav. */
 const IMPLEMENTED_ROUTES = new Set<string>([
   "/dashboard",
   "/inbox",
-  "/taksa",
   "/taksa/imports",
-  "/taksa/raw",
-  "/taksa/sources",
-  "/taksa/analyze",
-  "/taksa/analyze/runs",
-  "/taksa/analyze/scriptxml",
-  "/taksa/analyze/sql",
-  "/taksa/analyze/backup-strings",
-  "/taksa/analyze/templates",
-  "/taksa/analyze/docs",
-  "/reference",
-  "/reference/sources",
+  "/taksa/updates",
   "/reference/library",
   "/projects/setup",
+  "/admin/data-diagnostics",
 ]);
 
-
-describe("buildNavSections — Taksa-first structure", () => {
-  it("surfaces the real Taksa-first top-level labels", () => {
-    const items = allItems(buildNavSections(Role.SYSTEM_ADMIN));
-    const labels = items.map((i) => i.label);
-    expect(labels).toContain(t.nav.workbench); // میز کار
-    expect(labels).toContain(t.nav.inboxReview); // کارتابل رسیدگی
-    expect(labels).toContain(t.nav.taksaIntake); // ورود اطلاعات تکسا
-    expect(labels).toContain(t.nav.referenceLibrary); // کتابخانه فنی و مرجع
-    expect(labels).toContain(t.nav.projectsContracts); // پروژه‌ها و قراردادها
-    expect(labels).toContain(t.nav.indexAdjustment); // شاخص، تعدیل و ضرایب
+describe("buildNavSections — product structure", () => {
+  it("surfaces the real top-level section labels", () => {
+    const sections = buildNavSections(Role.SYSTEM_ADMIN);
+    const titles = sections.map((s) => s.title);
+    expect(titles).toContain(t.nav.workspace); // فضای کاری
+    expect(titles).toContain(t.nav.dataReference); // داده‌های مرجع
+    expect(titles).toContain(t.nav.projectsContracts); // پروژه‌ها و قراردادها
+    expect(titles).toContain(t.nav.indexAdjustment); // شاخص، تعدیل و ضرایب
+    expect(titles).toContain(t.nav.reportsExports); // گزارش‌ها
+    expect(titles).toContain(t.nav.administration); // مدیریت سامانه
   });
 
-  it("links Taksa intake and reference groups to their real routes", () => {
+  it("links the data-reference items to their real routes", () => {
     const items = allItems(buildNavSections(Role.SYSTEM_ADMIN));
     const byKey = (k: string) => items.find((i) => i.key === k);
-    expect(byKey("taksa-overview")?.href).toBe("/taksa");
-    expect(byKey("taksa-imports")?.href).toBe("/taksa/imports");
-    expect(byKey("taksa-raw")?.href).toBe("/taksa/raw");
-    expect(byKey("reference-overview")?.href).toBe("/reference");
-    expect(byKey("reference-sources")?.href).toBe("/reference/sources");
+    expect(byKey("workbench")?.href).toBe("/dashboard");
+    expect(byKey("inbox")?.href).toBe("/inbox");
+    expect(byKey("sources-sync")?.href).toBe("/taksa/imports");
+    expect(byKey("update-packages")?.href).toBe("/taksa/updates");
     expect(byKey("reference-library")?.href).toBe("/reference/library");
   });
 
   it("points index/adjustment/coefficients at the real reference library", () => {
     const items = allItems(buildNavSections(Role.VIEWER));
-    expect(items.find((i) => i.key === "index-adjustment")?.href).toBe("/reference/library");
+    for (const key of ["indices", "coefficients", "adjustment"]) {
+      expect(items.find((i) => i.key === key)?.href).toBe("/reference/library");
+    }
   });
 
-  it("renders future modules as DISABLED with a reason and no href (no fake pages)", () => {
+  it("renders disabled items WITH a note and no href (no fake pages)", () => {
     const items = allItems(buildNavSections(Role.SYSTEM_ADMIN));
-    for (const key of ["statements", "metering", "reports"]) {
+    for (const key of [
+      "validation-mapping",
+      "contracts",
+      "statements",
+      "metering",
+      "reports",
+      "exports",
+      "admin-users",
+      "admin-audit",
+    ]) {
       const item = items.find((i) => i.key === key);
       expect(item).toBeDefined();
       expect(item!.disabled).toBe(true);
@@ -98,7 +90,6 @@ describe("buildNavSections — Taksa-first structure", () => {
   });
 });
 
-
 describe("permission-aware visibility (presentation only)", () => {
   it("never exposes admin-only items to a VIEWER", () => {
     const sections = buildNavSections(Role.VIEWER);
@@ -106,15 +97,14 @@ describe("permission-aware visibility (presentation only)", () => {
     expect(sections.some((s) => s.key === "admin")).toBe(false);
   });
 
-  it("exposes the administration section (disabled future items) to a SYSTEM_ADMIN", () => {
+  it("exposes the administration section to a SYSTEM_ADMIN with a real diagnostics page", () => {
     const sections = buildNavSections(Role.SYSTEM_ADMIN);
     const admin = sections.find((s) => s.key === "admin");
     expect(admin).toBeDefined();
     expect(adminOnlyKeys(sections).length).toBeGreaterThan(0);
-    for (const item of admin!.items) {
-      expect(item.disabled).toBe(true);
-      expect(item.href).toBeUndefined();
-    }
+    const diag = admin!.items.find((i) => i.key === "admin-diagnostics");
+    expect(diag?.href).toBe("/admin/data-diagnostics");
+    expect(diag?.adminOnly).toBe(true);
   });
 
   it("shows the project-setup link only to project managers", () => {
