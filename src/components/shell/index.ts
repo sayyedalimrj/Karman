@@ -13,5 +13,7 @@ export {
   canManageProjects,
   isSystemAdmin,
   adminOnlyKeys,
+  allItems,
+  flattenItems,
 } from "./nav";
 export type { NavItem, NavSection } from "./nav";

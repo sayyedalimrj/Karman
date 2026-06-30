@@ -692,3 +692,240 @@ body {
   color: var(--status-error);
   text-align: start;
 }
+
+
+
+/* =============================================================================
+ * Phase 1 — Taksa-first operational workbench styles.
+ * Dense, informative, enterprise construction-finance feel. Every value flows
+ * through the design tokens (CSS custom properties); no new raw hex.
+ * ========================================================================== */
+
+/* ---- Workbench page scaffold --------------------------------------------- */
+.workbench {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+.workbench__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+.workbench__title {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  font-variation-settings: "wght" 700;
+  color: var(--color-primary-navy);
+  margin: 0;
+}
+.workbench__subtitle {
+  color: color-mix(in srgb, var(--color-text-dark) 62%, transparent);
+  margin: 0;
+  max-width: 80ch;
+}
+
+/* ---- Panel section variants + hint --------------------------------------- */
+.panel-section__hint {
+  color: color-mix(in srgb, var(--color-text-dark) 66%, transparent);
+  margin-block: 0 var(--space-md);
+  max-width: 80ch;
+}
+.panel-section--ok {
+  border-inline-start: 4px solid var(--status-ok);
+}
+.panel-section--warn {
+  border-inline-start: 4px solid var(--status-warn);
+}
+.panel-section--neutral {
+  border-inline-start: 4px solid var(--border-strong);
+}
+
+/* ---- Count grid (real DB-derived counts) --------------------------------- */
+.count-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: var(--space-md);
+}
+.count-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+.count-card__value {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  font-variation-settings: "wght" 700;
+  color: var(--color-primary-navy);
+}
+.count-card__label {
+  font-size: 0.85rem;
+  color: color-mix(in srgb, var(--color-text-dark) 60%, transparent);
+}
+
+/* ---- Readiness ----------------------------------------------------------- */
+.readiness {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.readiness__meter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+.readiness__percent {
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-bold);
+  font-variation-settings: "wght" 700;
+  color: var(--color-primary-navy);
+}
+.readiness__label {
+  font-size: 0.85rem;
+  color: color-mix(in srgb, var(--color-text-dark) 60%, transparent);
+}
+.readiness__bar {
+  block-size: 8px;
+  inline-size: 100%;
+  background: color-mix(in srgb, var(--color-text-dark) 8%, transparent);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+.readiness__bar-fill {
+  display: block;
+  block-size: 100%;
+  background: var(--status-ok);
+  border-radius: var(--radius-pill);
+  transition: inline-size 0.3s ease;
+}
+.readiness__groups {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-sm);
+}
+.readiness__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-md);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--surface-panel);
+}
+.readiness__group-label {
+  color: var(--color-text-dark);
+}
+.readiness__warning {
+  margin: var(--space-md) 0 0;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--status-warn) 12%, transparent);
+  color: color-mix(in srgb, var(--status-warn) 82%, black);
+  border: 1px solid color-mix(in srgb, var(--status-warn) 30%, transparent);
+}
+.readiness__ready {
+  margin: var(--space-md) 0 0;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--status-ok) 12%, transparent);
+  color: var(--status-ok);
+  border: 1px solid color-mix(in srgb, var(--status-ok) 28%, transparent);
+}
+
+/* ---- Link row, chips, status lists --------------------------------------- */
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+.chip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+.chip {
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-md);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-primary-navy) 6%, transparent);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  color: var(--color-text-dark);
+}
+.status-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+.status-list__item {
+  padding-block: var(--space-sm);
+  padding-inline: var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--surface-panel);
+  border: 1px solid var(--border-subtle);
+  color: var(--color-text-dark);
+}
+
+/* ---- Reference source form ----------------------------------------------- */
+.ref-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+  align-items: end;
+}
+.ref-form .form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.8125rem;
+  color: color-mix(in srgb, var(--color-text-dark) 58%, transparent);
+}
+.ref-form .btn {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+.form-success {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--status-ok) 12%, transparent);
+  color: var(--status-ok);
+}
+
+/* ---- Project setup modes ------------------------------------------------- */
+.mode-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+.mode-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: var(--surface-panel);
+}
+.mode-card__title {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary-navy);
+}
+.mode-card__desc {
+  font-size: 0.85rem;
+  color: color-mix(in srgb, var(--color-text-dark) 60%, transparent);
+}

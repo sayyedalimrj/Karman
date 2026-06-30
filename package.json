@@ -12,6 +12,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check:decimal": "tsx scripts/check-decimal-fields.ts",
+    "import:reference": "tsx scripts/import-reference-data.ts",
     "extract:research": "tsx scripts/extract-research.ts",
     "extract:brand": "tsx scripts/extract-brand.ts",
     "extract:fonts": "tsx scripts/extract-fonts.ts",

@@ -20,6 +20,12 @@ import { t } from "@/lib/i18n";
 /** Derives the top-bar / section title from the current path. */
 function titleForPath(pathname: string): string {
   if (pathname.startsWith("/inbox")) return t.inbox.title;
+  if (pathname.startsWith("/taksa/imports")) return t.taksa.imports.title;
+  if (pathname.startsWith("/taksa/raw")) return t.taksa.raw.title;
+  if (pathname.startsWith("/taksa")) return t.taksa.title;
+  if (pathname.startsWith("/reference/sources")) return t.reference.sources.title;
+  if (pathname.startsWith("/reference/library")) return t.reference.library.title;
+  if (pathname.startsWith("/reference")) return t.reference.title;
   if (pathname.startsWith("/projects/setup")) return t.projectSetup.title;
   if (pathname.startsWith("/dashboard")) return t.dashboard.title;
   return t.app.name;

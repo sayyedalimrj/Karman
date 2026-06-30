@@ -55,6 +55,14 @@ sql_objects.txt
 # --- Private / licensed assets ---
 private-assets/
 
+# --- Canonical reference import working dirs ---
+# Real incoming/processed/rejected reference data is NEVER committed; only the
+# explanatory README.md placeholders in each directory are tracked. (Directories
+# are re-included so git can descend to the README files.)
+/data/**
+!/data/**/
+!/data/**/README.md
+
 # --- OS / editor cruft ---
 .DS_Store
 Thumbs.db
